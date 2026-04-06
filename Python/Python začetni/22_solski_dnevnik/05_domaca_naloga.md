@@ -1,5 +1,7 @@
 # Domača naloga – 22 – Slovarji v praksi – mini šolski dnevnik
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Podan je slovar `dnevnik`. Napiši funkcijo `izpisi_ucenca(ucenec)`, ki izpiše ime, razred ter vse predmete in ocene.
 

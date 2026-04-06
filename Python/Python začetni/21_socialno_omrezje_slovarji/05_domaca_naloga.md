@@ -1,5 +1,7 @@
 # Domača naloga – 21 – Slovarji v praksi – socialno omrežje
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Podan je seznam uporabnikov. Napiši funkcijo `izpisi_profil(uporabnik)`, ki izpiše uporabniško ime in število sledilcev.
 

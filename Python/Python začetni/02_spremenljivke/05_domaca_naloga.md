@@ -1,5 +1,7 @@
 # Domača naloga – 02 – Spremenljivke in poimenovanje podatkov
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši program, ki ustvari spremenljivki `ime` in `starost`. Nato izpiši stavek: `Moje ime je ___ in star sem ___ let.`
 

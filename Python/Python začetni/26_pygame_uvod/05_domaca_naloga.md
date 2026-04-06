@@ -1,5 +1,7 @@
 # Domača naloga – 26 – Pygame – uvod, okno, risanje in premikanje
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši program, ki ustvari okno velikosti `600 × 400` in naslov `Moja prva igra`.
 

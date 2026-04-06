@@ -1,5 +1,7 @@
 # Učni list – 32 – Projekt – Mini Wolfenstein
 
+To je projektni sklop. Delaj po korakih, po vsakem koraku zaženi program in preveri, ali nova funkcionalnost res deluje, preden nadaljuješ.
+
 ## Cilj
 
 Iz 2D mreže naredi lažni 3D pogled s pomočjo žarkov.

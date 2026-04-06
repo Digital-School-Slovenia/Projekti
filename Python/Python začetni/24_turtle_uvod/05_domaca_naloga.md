@@ -1,5 +1,7 @@
 # Domača naloga – 24 – Turtle – uvod v risanje s funkcijami
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši funkcijo `naprej(dolzina)`, ki želvo premakne naprej brez risanja.
 

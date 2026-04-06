@@ -1,5 +1,7 @@
 # Učni list – 31 – Projekt – Pac-Man labirint
 
+To je projektni sklop. Delaj po korakih, po vsakem koraku zaženi program in preveri, ali nova funkcionalnost res deluje, preden nadaljuješ.
+
 ## Cilj
 
 Naredi preprosto igro v mreži: igralec se premika po labirintu in pobira točke.

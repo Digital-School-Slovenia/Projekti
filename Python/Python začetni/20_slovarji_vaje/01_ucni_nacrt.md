@@ -1,9 +1,5 @@
 # 20 – Slovarji – vaje, zanke in seznam slovarjev
 
-## Trajanje
-
-- 1 srečanje = 2 uri
-
 ## Kaj delamo
 
 Slovarji – vaje, zanke in seznam slovarjev – delo skozi naloge, sprotno testiranje in čim manj prazne razlage.
@@ -15,31 +11,3 @@ Slovarji – vaje, zanke in seznam slovarjev – delo skozi naloge, sprotno test
 - Reši več krajših nalog in ne obstane pri eni sami
 - Zna pokazati osnovno rešitev in vsaj eno nadgradnjo
 
-## Minimum do konca ure
-
-- delujoče jedro: 🟢 Naloga 1: Profil uporabnika
-- vsaj še ena pravilno rešena naloga iz glavnega bloka
-- učenec zna pokazati, kaj je popravil ali dodal
-
-## Naloge po nivojih
-
-- Za vse: 🟢 Naloga 1: Profil uporabnika
-- Za hitrejše: izpiše `"Ključ obstaja"` ali `"Ključa ni"`.
-- Izziv: 🟡 Naloga 5: Izpis vseh podatkov
-
-## Učitelj pripravi
-
-- 02_ucni_list.md
-- 03_resitev.md
-- 04_dodatne_naloge.md
-- 05_domaca_naloga.md
-- 08_uciteljski_scenarij_ure.md
-- 06_referencni_primer.py
-
-## Viri iz tvojega paketa
-
-- `11_slovarji/VAJE – PYTHON SLOVARJI (DICT).md`
-
-## Opomba
-
-Pokaži minimum. Potem naj učenci čim prej začnejo delati.

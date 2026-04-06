@@ -1,10 +1,6 @@
 # 32 – Projekt – Mini Wolfenstein
 
-## Trajanje
-
-- 1 srečanje = 2 uri
-
-## Kaj naredimo v tej uri
+## Kaj delamo
 
 Učenci izdelajo preprost 3D projekt v slogu Wolfenstein:
 
@@ -15,7 +11,7 @@ Učenci izdelajo preprost 3D projekt v slogu Wolfenstein:
 - lažni 3D pogled,
 - minimapa.
 
-## Do konca ure mora delovati
+## Cilji
 
 - mapa,
 - premikanje,
@@ -23,19 +19,3 @@ Učenci izdelajo preprost 3D projekt v slogu Wolfenstein:
 - vsaj osnovni 3D stolpci,
 - minimapa ali cilj.
 
-## Če ostane čas
-
-- miška,
-- zmaga,
-- več tipov sten,
-- ključi ali vrata.
-
-## Učitelj pripravi
-
-- `02_ucni_list.md`
-- `03_resitev.md`
-- `04_dodatne_naloge.md`
-- `05_domaca_naloga.md`
-- `06_uciteljska_resitev.py`
-- `07_resitev_z_misko.py`
-- `08_uciteljski_scenarij_ure.md`

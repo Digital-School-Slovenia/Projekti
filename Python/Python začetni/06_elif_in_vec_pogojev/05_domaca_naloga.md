@@ -1,5 +1,7 @@
 # Domača naloga – 06 – `elif`, `else` in več možnosti odločanja
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši program, ki vpraša, koliko mačk ima uporabnik. Program naj glede na število izpiše tri različne odzive.
 

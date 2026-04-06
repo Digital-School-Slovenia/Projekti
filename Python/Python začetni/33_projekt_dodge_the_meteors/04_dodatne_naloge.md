@@ -1,5 +1,7 @@
 # Dodatne naloge – 33 – Projekt – Dodge the Meteors
 
+Te naloge so namenjene nadgradnji osnovnega programa ali igre. Dodajaj jih po eno in po vsaki spremembi preveri, da osnovna rešitev še vedno deluje.
+
 ### Naloga 1
 Dodaj restart na tipko `R`.
 

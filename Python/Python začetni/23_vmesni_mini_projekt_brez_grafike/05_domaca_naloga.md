@@ -1,5 +1,7 @@
 # Domača naloga – 23 – Vmesni mini projekt brez grafike
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Prepiši ali dokončaj današnji mini projekt tako, da bo brez pomoči delovalo:
 - dodajanje,

@@ -1,5 +1,7 @@
 # Učni list – 35 – Zaključni projekt
 
+To je projektni sklop. Delaj po korakih, po vsakem koraku zaženi program in preveri, ali nova funkcionalnost res deluje, preden nadaljuješ.
+
 ## Cilj
 
 Naredi svoj program ali igro. Projekt naj bo dovolj majhen, da ga v dveh urah lahko dokončaš in pokažeš.

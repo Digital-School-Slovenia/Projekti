@@ -1,5 +1,7 @@
 # Domača naloga – 03 – Osnovne operacije in računanje s programom
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši program, ki izračuna, koliko stane 5 pic, če ena stane 8 €.
 

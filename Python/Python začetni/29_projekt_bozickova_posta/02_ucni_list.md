@@ -1,5 +1,7 @@
 # Učni list – 29 – Projekt – Božičkova pošta
 
+To je projektni sklop. Delaj po korakih, po vsakem koraku zaženi program in preveri, ali nova funkcionalnost res deluje, preden nadaljuješ.
+
 ## Cilj
 
 Pomagaj Božičku ujeti dobre emaile in se izogniti spamu.

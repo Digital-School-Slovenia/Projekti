@@ -1,5 +1,7 @@
 # Učni list – 30 – Projekt – Dirkalna igra
 
+To je projektni sklop. Delaj po korakih, po vsakem koraku zaženi program in preveri, ali nova funkcionalnost res deluje, preden nadaljuješ.
+
 ## Cilj
 
 Naredi preprosto dirkalno igro, kjer igralec vozi avto po cesti in se izogiba oviram.

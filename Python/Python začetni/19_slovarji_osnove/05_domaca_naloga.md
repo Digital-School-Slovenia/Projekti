@@ -1,5 +1,7 @@
 # Domača naloga – 19 – Slovarji – osnove
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Podan je slovar `profil = {"ime": "Ana", "starost": 12, "tocke": 150}`. Napiši funkcijo `izpisi_profil(profil)`, ki izpiše vse podatke.
 

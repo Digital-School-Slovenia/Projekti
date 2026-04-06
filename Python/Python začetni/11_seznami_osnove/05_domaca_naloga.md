@@ -1,5 +1,7 @@
 # Domača naloga – 11 – Seznami – osnove in izpis z zankami
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Ustvari seznam treh jedi, ki si jih danes jedel. Nato jih izpiši eno pod drugo.
 

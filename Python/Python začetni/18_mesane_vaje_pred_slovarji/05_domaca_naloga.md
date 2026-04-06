@@ -1,5 +1,7 @@
 # Domača naloga – 18 – Velika delavnica vaj – mešane naloge pred slovarji
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši program, ki prebere 5 števil v seznam in nato izpiše najmanjše, največje in povprečje.
 

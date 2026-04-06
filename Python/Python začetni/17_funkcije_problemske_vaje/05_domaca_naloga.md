@@ -1,5 +1,7 @@
 # Domača naloga – 17 – Ponovitvene vaje – funkcije in problemsko razmišljanje
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši funkcijo `vsota_sodih(seznam)`, ki vrne vsoto vseh sodih števil v seznamu.
 

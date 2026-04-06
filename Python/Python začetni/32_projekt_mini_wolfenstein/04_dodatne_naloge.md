@@ -1,5 +1,7 @@
 # Dodatne naloge – 32 – Projekt – Mini Wolfenstein
 
+Te naloge so namenjene nadgradnji osnovnega programa ali igre. Dodajaj jih po eno in po vsaki spremembi preveri, da osnovna rešitev še vedno deluje.
+
 ### Naloga 1
 Dodaj cilj oziroma izhod iz labirinta.
 

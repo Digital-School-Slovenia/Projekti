@@ -1,5 +1,7 @@
 # Učni list – 27 – Projekt – Lov na kovance
 
+To je projektni sklop. Delaj po korakih, po vsakem koraku zaženi program in preveri, ali nova funkcionalnost res deluje, preden nadaljuješ.
+
 ## Cilj
 
 Naredi igro, v kateri se igralec premika po zaslonu, pobira kovance in nabira točke.

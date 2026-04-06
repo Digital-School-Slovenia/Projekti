@@ -1,5 +1,7 @@
 # Dodatne naloge – 23 – Vmesni mini projekt brez grafike
 
+Te naloge so namenjene nadgradnji osnovnega programa ali igre. Dodajaj jih po eno in po vsaki spremembi preveri, da osnovna rešitev še vedno deluje.
+
 ### Naloga 1
 Dodaj izpis števila vseh predmetov v inventarju.
 

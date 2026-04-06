@@ -1,5 +1,7 @@
 # Domača naloga – 25 – Turtle – zahtevnejši vzorci in problemsko risanje
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši funkcijo `vec_kvadratov(zacetna_dolzina)`, ki nariše tri kvadrate, vsak večji od prejšnjega.
 

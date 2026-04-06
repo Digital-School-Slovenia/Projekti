@@ -1,5 +1,7 @@
 # Domača naloga – 15 – Funkcije – prvi koraki
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši funkcijo `pozdrav(ime)`, ki vrne pozdrav v obliki `Hej, Matej!`.
 

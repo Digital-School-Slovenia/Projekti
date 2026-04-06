@@ -1,5 +1,7 @@
 # Domača naloga – 12 – Seznami v praksi, `for` zanke in mini inventarji
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Ustvari prazno listo `playlist = []`. Nato petkrat vprašaj za najljubšo pesem in jo dodaj v seznam.
 

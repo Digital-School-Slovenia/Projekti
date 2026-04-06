@@ -1,5 +1,7 @@
 # Dodatne naloge – 29 – Projekt – Božičkova pošta
 
+Te naloge so namenjene nadgradnji osnovnega programa ali igre. Dodajaj jih po eno in po vsaki spremembi preveri, da osnovna rešitev še vedno deluje.
+
 ### Naloga 1
 Dodaj piškotek, ki vrne +1 življenje.
 

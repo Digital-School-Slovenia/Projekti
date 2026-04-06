@@ -1,5 +1,7 @@
 # Domača naloga – 08 – Zanka `while` – osnove ponavljanja
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši program, ki s pomočjo zanke `while` izpiše števila od 1 do 10.
 

@@ -1,5 +1,7 @@
 # Učni list – 28 – Projekt – Mini Zelda
 
+To je projektni sklop. Delaj po korakih, po vsakem koraku zaženi program in preveri, ali nova funkcionalnost res deluje, preden nadaljuješ.
+
 ## Cilj
 
 Naredi preprosto top-down igro: igralec se giblje po svetu, pobira kovance, izgublja življenja in lahko napade sovražnika.

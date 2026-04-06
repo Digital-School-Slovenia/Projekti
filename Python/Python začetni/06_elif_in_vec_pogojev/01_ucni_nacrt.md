@@ -1,9 +1,5 @@
 # 06 – `elif`, `else` in več možnosti odločanja
 
-## Trajanje
-
-- 1 srečanje = 2 uri
-
 ## Kaj delamo
 
 `elif`, `else` in več možnosti odločanja – delo skozi naloge, sprotno testiranje in čim manj prazne razlage.
@@ -15,32 +11,3 @@
 - Reši več krajših nalog in ne obstane pri eni sami
 - Zna pokazati osnovno rešitev in vsaj eno nadgradnjo
 
-## Minimum do konca ure
-
-- delujoče jedro: ## Naloge
-- vsaj še ena pravilno rešena naloga iz glavnega bloka
-- učenec zna pokazati, kaj je popravil ali dodal
-
-## Naloge po nivojih
-
-- Za vse: ## Naloge
-- Za hitrejše: Napiši program, ki te vpraša koliko mačk imaš:
-- Izziv: med 21 in 30 °C → "Prijetno vreme ☀️"
-
-## Učitelj pripravi
-
-- 02_ucni_list.md
-- 03_resitev.md
-- 04_dodatne_naloge.md
-- 05_domaca_naloga.md
-- 08_uciteljski_scenarij_ure.md
-- 06_referencni_primer.py
-
-## Viri iz tvojega paketa
-
-- `02/naloge.md`
-- `02/2025-10-13 Za tiste ki ste že vse rešili 111334.md`
-
-## Opomba
-
-Pokaži minimum. Potem naj učenci čim prej začnejo delati.

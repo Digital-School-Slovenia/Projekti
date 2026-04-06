@@ -1,5 +1,7 @@
 # Domača naloga – 07 – Random, mini kvizi in odločanje v praksi
 
+Naloge reši samostojno in po vsaki večji spremembi svoj odgovor ali program preveri. Če se zatakne, si najprej pomagaj z učnim listom tega sklopa, šele nato poglej rešitev ali vprašaj za pomoč.
+
 ### Naloga 1
 Napiši program, ki uporabniku zastavi eno vprašanje iz poštevanke. Števili izžrebaj z `random.randint`.
 

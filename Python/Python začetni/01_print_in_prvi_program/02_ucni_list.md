@@ -26,4 +26,4 @@ Napiši program, ki izpiše eno svojo "čudno resnico".
 Preizkusi še izpis z enojnimi in dvojnimi narekovaji.
 
 ### Naloga 8
-Napiši program, ki z več `print()` ukazi nariše preprost ASCII obraz ali robota.
+Napiši program, ki z več `print()` ukazi nariše preprost obraz ali robota.

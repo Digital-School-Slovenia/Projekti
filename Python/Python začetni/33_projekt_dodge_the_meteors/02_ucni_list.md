@@ -1,5 +1,7 @@
 # Učni list – 33 – Projekt – Dodge the Meteors
 
+To je projektni sklop. Delaj po korakih, po vsakem koraku zaženi program in preveri, ali nova funkcionalnost res deluje, preden nadaljuješ.
+
 ## Cilj
 
 Premikaj ladjo levo/desno in se izogibaj meteorjem. Vsaka sekunda preživetja naj prinese točko.

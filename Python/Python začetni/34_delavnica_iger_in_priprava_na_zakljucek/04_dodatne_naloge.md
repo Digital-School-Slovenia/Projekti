@@ -1,5 +1,7 @@
 # Dodatne naloge – 34 – Delavnica iger in priprava na zaključek
 
+Te naloge so namenjene nadgradnji osnovnega programa ali igre. Dodajaj jih po eno in po vsaki spremembi preveri, da osnovna rešitev še vedno deluje.
+
 ### Naloga 1
 Napiši še drugo rezervno idejo za projekt.
 
