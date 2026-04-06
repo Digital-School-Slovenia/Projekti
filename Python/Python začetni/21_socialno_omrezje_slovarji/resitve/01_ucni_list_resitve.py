@@ -2,8 +2,6 @@
 
 # Namen: glavna delovna rešitev za učni list tega sklopa.
 
-# Namen: učiteljska orientacija pri razlagi ključnih gradnikov sklopa.
-
 seznam_uporabnikov = [
     {"uime": "ana", "ugeslo": "ana123", "sledilci": 120, "spol": "Ž"},  # 0
     {"uime": "miha", "ugeslo": "miha123", "sledilci": 80},  # 1

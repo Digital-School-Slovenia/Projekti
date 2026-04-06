@@ -1,5 +1,5 @@
-# Učiteljska referenčna rešitev – 24 Turtle uvod
-# Namen: učiteljska orientacija pri razlagi ključnih gradnikov sklopa.
+# Referenčna rešitev – 24 Turtle uvod
+# Namen: demonstracijska rešitev za razlago ključnih gradnikov sklopa.
 
 import turtle
 

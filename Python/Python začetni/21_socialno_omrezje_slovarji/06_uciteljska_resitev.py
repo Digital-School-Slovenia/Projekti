@@ -1,6 +1,6 @@
-# Učiteljska referenčna rešitev – 21 Socialno omrežje
+# Referenčna rešitev – 21 Socialno omrežje
 
-# Namen: učiteljska orientacija pri razlagi ključnih gradnikov sklopa.
+# Namen: demonstracijska rešitev za razlago ključnih gradnikov sklopa.
 
 seznam_uporabnikov = [
     {"uime": "ana", "ugeslo": "ana123", "sledilci": 120, "spol": "Ž"},  # 0

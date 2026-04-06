@@ -5,8 +5,8 @@
 projekt = {
     "ime": "Lov na zvezde",
     "mehanika": ["premikanje", "zbiranje predmetov", "sovrazniki"],
-    "robustnost": ["restart", "zaslon game over", "potrditev zmage"],
-    "hud": ["score", "zivljenja", "cas"],
+    "robustnost": ["restart", "zaslon za konec igre", "potrditev zmage"],
+    "hud": ["tocke", "zivljenja", "cas"],
 }
 
 
@@ -17,7 +17,7 @@ def pocisti_imena():
 
 
 def meni_za_sosolca():
-    return ["ENTER - zacetek", "R - restart", "ESC - izhod"]
+    return ["ENTER - zacetek", "R - ponovni zagon", "ESC - izhod"]
 
 
 print(projekt)

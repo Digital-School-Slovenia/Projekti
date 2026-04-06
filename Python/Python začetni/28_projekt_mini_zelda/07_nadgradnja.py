@@ -9,7 +9,7 @@ pygame.init()
 
 WIDTH, HEIGHT = 960, 640
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Mini Zelda LEVEL 2 - nadgradnja")
+pygame.display.set_caption("Mini Zelda - nadgradnja")
 clock = pygame.time.Clock()
 
 font = pygame.font.SysFont(None, 32)

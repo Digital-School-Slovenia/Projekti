@@ -1,6 +1,6 @@
-# Učiteljska referenčna rešitev – 31 Projekt Pac-Man
+# Referenčna rešitev – 31 Projekt Pac-Man
 
-# Namen: učiteljska orientacija pri postopni gradnji projekta in razlagi glavnih mehanik igre.
+# Namen: demonstracijska rešitev za postopno gradnjo projekta in razlago glavnih mehanik igre.
 
 import pygame
 import sys

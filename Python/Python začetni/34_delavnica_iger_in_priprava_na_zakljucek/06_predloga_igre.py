@@ -35,7 +35,7 @@ while running:
     screen.fill((25, 25, 40))
     pygame.draw.rect(screen, (220, 70, 70), player)
 
-    score_text = font.render(f"Score: {score}", True, (255, 255, 255))
+    score_text = font.render(f"Točke: {score}", True, (255, 255, 255))
     screen.blit(score_text, (10, 10))
 
     pygame.display.flip()

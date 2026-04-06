@@ -11,5 +11,5 @@ Učenci izdelajo igro, kjer ladja preživi čim dlje in se izogiba meteorjem.
 - spawn meteorjev,
 - padanje meteorjev,
 - trk,
-- `game over`.
+- zaslon za konec igre.
 

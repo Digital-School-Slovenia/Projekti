@@ -15,5 +15,5 @@ Učenci izdelajo dirkalno igro v `pygame`:
 - cesta,
 - vsaj ena ovira,
 - trk,
-- `game over`.
+- zaslon za konec igre.
 

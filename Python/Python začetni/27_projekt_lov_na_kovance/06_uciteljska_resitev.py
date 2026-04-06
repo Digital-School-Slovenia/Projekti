@@ -1,6 +1,6 @@
-# Učiteljska referenčna rešitev – 27 Projekt Lov na kovance
+# Referenčna rešitev – 27 Projekt Lov na kovance
 
-# Namen: učiteljska orientacija pri postopni gradnji projekta in razlagi glavnih mehanik igre.
+# Namen: demonstracijska rešitev za postopno gradnjo projekta in razlago glavnih mehanik igre.
 
 import pygame
 import sys
@@ -147,7 +147,7 @@ while True:
         pygame.draw.circle(screen, COIN_COLOR, coin.center, 10)
 
     # UI: rezultat
-    score_text = font.render(f"Score: {score}", True, TEXT_COLOR)
+    score_text = font.render(f"Točke: {score}", True, TEXT_COLOR)
     remaining_text = font.render(f"Preostali kovanci: {len(coins)}", True, TEXT_COLOR)
     screen.blit(score_text, (10, 10))
     screen.blit(remaining_text, (10, 45))

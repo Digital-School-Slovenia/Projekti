@@ -2,8 +2,6 @@
 
 # Namen: glavna delovna rešitev za učni list tega sklopa.
 
-# Namen: učiteljska orientacija pri razlagi ključnih gradnikov sklopa.
-
 dnevnik = {
     "Ana": {"razred": 7, "matematika": 4, "anglescina": 5, "sport": 5},
     "Klara": {"razred": 7, "matematika": 3, "anglescina": 3, "sport": 5},

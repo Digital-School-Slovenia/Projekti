@@ -1,5 +1,5 @@
-# Učiteljska referenčna rešitev – 25 Turtle vzorci in težje naloge
-# Namen: učiteljska orientacija pri razlagi ključnih gradnikov sklopa.
+# Referenčna rešitev – 25 Turtle vzorci in težje naloge
+# Namen: demonstracijska rešitev za razlago ključnih gradnikov sklopa.
 
 import turtle
 

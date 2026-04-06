@@ -38,7 +38,7 @@ while running:
     screen.fill((30, 30, 50))
     pygame.draw.rect(screen, (80, 170, 255), player)
 
-    # Sem dodaj svoje objekte, trke, pravila in sistem točkovanja.
+    # Tukaj postopno dodaj svoje objekte, trke, pravila in sistem točkovanja.
     hud = font.render(f"Točke: {score}", True, (255, 255, 255))
     screen.blit(hud, (10, 10))
     pygame.display.flip()

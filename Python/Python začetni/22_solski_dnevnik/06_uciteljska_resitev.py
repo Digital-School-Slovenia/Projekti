@@ -1,6 +1,6 @@
-# Učiteljska referenčna rešitev – 22 Mini šolski dnevnik
+# Referenčna rešitev – 22 Mini šolski dnevnik
 
-# Namen: učiteljska orientacija pri razlagi ključnih gradnikov sklopa.
+# Namen: demonstracijska rešitev za razlago ključnih gradnikov sklopa.
 
 dnevnik = {
     "Ana": {"razred": 7, "matematika": 4, "anglescina": 5, "sport": 5},

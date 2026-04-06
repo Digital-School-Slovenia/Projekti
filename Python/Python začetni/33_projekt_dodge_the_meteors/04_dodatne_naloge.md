@@ -18,4 +18,4 @@ Dodaj power-up, ki izbriše vse meteorje.
 Vsakih 10 točk naj meteorji padajo hitreje.
 
 ### Naloga 6
-Dodaj 3 življenja namesto takojšnjega `game over`.
+Dodaj 3 življenja namesto takojšnjega konca igre.
