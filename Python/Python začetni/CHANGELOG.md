@@ -1,25 +1,9 @@
 # Changelog
 
-Vse pomembne spremembe v tem projektu bodo dokumentirane tukaj.
+Vse pomembnejše spremembe repozitorija se beležijo tukaj.
 
-Format *Changelog* temelji na [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
-Projekt uporablja [Semantic Versioning](https://semver.org/) za verzioniranje.
-
-> **Sekcije:**
->
-> - **Added** – nove stvari
-> - **Changed** – spremembe obstoječih
-> - **Fixed** – bugfixi
-> - **Removed** – odstranjeno (breaking)
-> - **Deprecated** – bo šlo ven, še ne danes
-> - **Security** – varnost (redko, a pomembno)
-
-
-
-## 0.0.0 - 20YY-MM-DD
-
-### Added/Changed/Fixed/Removed/Deprecated/Security
-
-- ...
-- ...
-
+## [repo-ready-1]
+- dodan Git-prijazen ovoj okoli obstoječega Markdown paketa,
+- dodani `docs/`, `templates/` in `scripts/`,
+- dodani osnovni repozitorijski dokumenti (`README`, `.gitignore`, `.editorconfig`),
+- dodan preverjevalnik strukture sklopov.
