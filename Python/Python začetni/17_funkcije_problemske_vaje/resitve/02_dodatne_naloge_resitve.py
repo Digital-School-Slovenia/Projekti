@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 17 Funkcije problemske vaje."""
+"""Rešitve dodatnih nalog – 17 – Ponovitvene vaje – funkcije in problemsko razmišljanje."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 def vecji(a, b):
     return a if a > b else b

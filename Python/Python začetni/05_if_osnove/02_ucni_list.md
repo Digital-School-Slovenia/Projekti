@@ -1,4 +1,4 @@
-# Učni list – 05 – Pogoji if – osnove odločanja
+# Učni list – 05 – Pogoji `if` – osnove odločanja
 
 Pri vseh nalogah uporabi vsaj en `if` in `else`. Namen ni samo dobiti rezultat, ampak vaditi odločanje v kodi.
 

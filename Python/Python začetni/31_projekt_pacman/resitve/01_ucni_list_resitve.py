@@ -1,6 +1,6 @@
-# Učiteljska referenčna rešitev – 31 Projekt Pac-Man
+"""Rešitve učnega lista – 31 – Projekt – Pac-Man labirint."""
 
-# Namen: učiteljska orientacija pri postopni gradnji projekta in razlagi glavnih mehanik igre.
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 import pygame
 import sys

@@ -6,7 +6,7 @@ import pygame
 
 # ============================================================
 # MINI WOLFENSTEIN / RAYCASTING
-# Učiteljska rešitev z obračanjem z miško
+# Rešitev z obračanjem z miško
 # ============================================================
 
 pygame.init()
@@ -16,7 +16,7 @@ pygame.init()
 # -----------------------------
 WIDTH, HEIGHT = 1000, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Mini Wolfenstein - učiteljska rešitev (miška)")
+pygame.display.set_caption("Mini Wolfenstein - obračanje z miško")
 clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 28)
 big_font = pygame.font.SysFont(None, 54)
@@ -42,18 +42,18 @@ BLUE = (80, 140, 220)
 # 2 = cilj / izhod
 # -----------------------------
 MAP_DATA = [
-    [1,1,1,1,1,1,1,1,1,1,1,1],
-    [1,0,0,0,0,0,1,0,0,0,0,1],
-    [1,0,1,1,1,0,1,0,1,1,0,1],
-    [1,0,1,0,0,0,0,0,0,1,0,1],
-    [1,0,1,0,1,1,1,1,0,1,0,1],
-    [1,0,0,0,0,0,1,0,0,1,0,1],
-    [1,0,1,1,1,0,1,0,1,1,0,1],
-    [1,0,1,0,0,0,0,0,0,0,0,1],
-    [1,0,1,0,1,1,1,1,1,1,0,1],
-    [1,0,0,0,0,0,0,0,0,0,2,1],
-    [1,0,1,1,1,1,1,1,1,0,0,1],
-    [1,1,1,1,1,1,1,1,1,1,1,1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+    [1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1],
+    [1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1],
+    [1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1],
+    [1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1],
+    [1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1],
+    [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1],
+    [1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
 
 MAP_ROWS = len(MAP_DATA)
@@ -83,7 +83,7 @@ won = False
 # -----------------------------
 # Raycasting nastavitve
 # -----------------------------
-FOV = math.pi / 3           # 60 stopinj
+FOV = math.pi / 3  # 60 stopinj
 NUM_RAYS = 220
 MAX_DEPTH = 900
 DELTA_ANGLE = FOV / NUM_RAYS
@@ -111,15 +111,12 @@ def get_map_cell(world_x, world_y):
     return MAP_DATA[row][col]
 
 
-
 def is_wall(world_x, world_y):
     return get_map_cell(world_x, world_y) == 1
 
 
-
 def is_exit(world_x, world_y):
     return get_map_cell(world_x, world_y) == 2
-
 
 
 def move_player(dx, dy):
@@ -133,7 +130,6 @@ def move_player(dx, dy):
         player_x = new_x
     if not is_wall(player_x, new_y):
         player_y = new_y
-
 
 
 def cast_single_ray(ray_angle):
@@ -180,7 +176,6 @@ def draw_3d_view():
         pygame.draw.rect(screen, wall_color, (x, y, SCALE + 1, wall_height))
 
 
-
 def draw_minimap():
     if not show_minimap:
         return
@@ -192,7 +187,12 @@ def draw_minimap():
 
     map_w = MAP_COLS * mini_tile
     map_h = MAP_ROWS * mini_tile
-    pygame.draw.rect(screen, (20, 20, 20), (offset_x - 6, offset_y - 6, map_w + 12, map_h + 12), border_radius=8)
+    pygame.draw.rect(
+        screen,
+        (20, 20, 20),
+        (offset_x - 6, offset_y - 6, map_w + 12, map_h + 12),
+        border_radius=8,
+    )
 
     for row in range(MAP_ROWS):
         for col in range(MAP_COLS):
@@ -218,13 +218,15 @@ def draw_minimap():
     pygame.draw.line(screen, YELLOW, (px, py), (lx, ly), 2)
 
 
-
 def draw_hud():
-    line1 = font.render("W/S = naprej/nazaj | A/D = rezervno obračanje | TAB = miška ON/OFF", True, WHITE)
+    line1 = font.render(
+        "W/S = naprej/nazaj | A/D = rezervno obračanje | TAB = miška ON/OFF",
+        True,
+        WHITE,
+    )
     line2 = font.render("M = minimapa | ESC = izhod", True, WHITE)
     screen.blit(line1, (15, HEIGHT - 58))
     screen.blit(line2, (15, HEIGHT - 30))
-
 
 
 def draw_win_screen():
@@ -239,7 +241,6 @@ def draw_win_screen():
     screen.blit(text2, (WIDTH // 2 - text2.get_width() // 2, HEIGHT // 2 + 15))
 
 
-
 def reset_game():
     global player_x, player_y, player_angle, won
     player_x = 1.5 * TILE_SIZE
@@ -247,7 +248,6 @@ def reset_game():
     player_angle = 0
     won = False
     pygame.mouse.get_rel()
-
 
 
 def main():

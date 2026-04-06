@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 34 Delavnica iger in priprava na zakljucek."""
+"""Rešitve domače naloge – 34 – Delavnica iger in priprava na zaključek."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 projekt = {
     "naslov": "Vesoljski skok",

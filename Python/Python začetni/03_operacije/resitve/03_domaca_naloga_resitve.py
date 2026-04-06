@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 03 Operacije."""
+"""Rešitve domače naloge – 03 – Osnovne operacije in računanje s programom."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 x = 25
 y = 6

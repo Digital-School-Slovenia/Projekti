@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 09 While delavnica."""
+"""Rešitve domače naloge – 09 – Zanka `while` – delavnica problemov in seštevalnikov."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 print("Naloga 1")
 kliki = [1, 1, 1, 1, 1]

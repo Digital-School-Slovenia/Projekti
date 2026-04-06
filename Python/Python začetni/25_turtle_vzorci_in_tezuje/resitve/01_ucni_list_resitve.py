@@ -1,5 +1,6 @@
-# Učiteljska referenčna rešitev – 25 Turtle vzorci in težje naloge
-# Namen: učiteljska orientacija pri razlagi ključnih gradnikov sklopa.
+"""Rešitve učnega lista – 25 – Turtle – zahtevnejši vzorci in problemsko risanje."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 import turtle
 

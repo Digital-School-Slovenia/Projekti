@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 03 Operacije."""
+"""Rešitve dodatnih nalog – 03 – Osnovne operacije in računanje s programom."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 a = 18
 b = 5

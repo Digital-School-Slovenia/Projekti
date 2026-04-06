@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 12 Seznami v praksi."""
+"""Rešitve dodatnih nalog – 12 – Seznami v praksi, `for` zanke in mini inventarji."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 nakupovalni_seznam = ["mleko", "kruh", "jabolka", "cokolada"]
 

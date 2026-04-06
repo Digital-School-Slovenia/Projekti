@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 24 Turtle uvod."""
+"""Rešitve dodatnih nalog – 24 – Turtle – uvod v risanje s funkcijami."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 import turtle
 

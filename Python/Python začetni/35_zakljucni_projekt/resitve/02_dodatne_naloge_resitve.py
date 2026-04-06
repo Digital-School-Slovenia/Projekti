@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 35 Zakljucni projekt."""
+"""Rešitve dodatnih nalog – 35 – Zaključni projekt."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 projekt = {
     "ime": "Lov na zvezde",

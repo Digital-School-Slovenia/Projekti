@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 11 Seznami osnove."""
+"""Rešitve domače naloge – 11 – Seznami – osnove in izpis z zankami."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 ucenci = ["Ana", "Bor", "Cene", "Dora"]
 print("Naloga 1")

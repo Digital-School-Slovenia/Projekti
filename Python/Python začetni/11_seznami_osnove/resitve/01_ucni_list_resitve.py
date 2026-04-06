@@ -1,4 +1,6 @@
-# Referenčni primer – 11 Seznami osnove
+"""Rešitve učnega lista – 11 – Seznami – osnove in izpis z zankami."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

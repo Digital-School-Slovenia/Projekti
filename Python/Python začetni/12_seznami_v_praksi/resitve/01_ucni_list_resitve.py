@@ -1,4 +1,6 @@
-# Referenčni primer – 12 Seznami v praksi
+"""Rešitve učnega lista – 12 – Seznami v praksi, `for` zanke in mini inventarji."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

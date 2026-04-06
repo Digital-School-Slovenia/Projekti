@@ -1,4 +1,6 @@
-# Referenčni primer – 05 If osnove
+"""Rešitve učnega lista – 05 – Pogoji `if` – osnove odločanja."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

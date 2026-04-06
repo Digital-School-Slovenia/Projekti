@@ -1,5 +1,6 @@
-# Učiteljska referenčna rešitev – 24 Turtle uvod
-# Namen: učiteljska orientacija pri razlagi ključnih gradnikov sklopa.
+"""Rešitve učnega lista – 24 – Turtle – uvod v risanje s funkcijami."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 import turtle
 

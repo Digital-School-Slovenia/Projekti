@@ -1,5 +1,6 @@
-# Referenčni primer – 01 Print, prvi program in delo v Thonnyju
-# Namen: čisto prvi stik s Pythonom in zaganjanjem kode.
+"""Rešitve učnega lista – 01 – Print, prvi program in delo v Thonnyju."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 print("Matej Mencin")
 print("Sirovi štruklji")

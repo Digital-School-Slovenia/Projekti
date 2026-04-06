@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 25 Turtle vzorci in tezuje."""
+"""Rešitve dodatnih nalog – 25 – Turtle – zahtevnejši vzorci in problemsko risanje."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 import turtle
 

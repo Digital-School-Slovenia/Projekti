@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 35 Zakljucni projekt."""
+"""Rešitve domače naloge – 35 – Zaključni projekt."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 projekt = {
     "vecja_napaka": "Trk se ni pravilno zaznal ob robu zaslona.",

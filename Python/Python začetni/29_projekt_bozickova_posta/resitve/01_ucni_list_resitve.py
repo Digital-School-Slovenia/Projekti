@@ -1,4 +1,6 @@
-# Učiteljska referenčna rešitev – 29 Projekt Božičkova pošta
+"""Rešitve učnega lista – 29 – Projekt – Božičkova pošta."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: učiteljska orientacija pri postopni gradnji projekta in razlagi glavnih mehanik igre.
 

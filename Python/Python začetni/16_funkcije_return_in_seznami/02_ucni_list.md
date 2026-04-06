@@ -1,4 +1,4 @@
-# Učni list – 16 – Funkcije – return, seznami in razdelitev problema
+# Učni list – 16 – Funkcije – `return`, seznami in razdelitev problema
 
 Danes funkcije vračajo sezname ali delajo nad seznami. Ne piši vsega v eni gmoti kode.
 

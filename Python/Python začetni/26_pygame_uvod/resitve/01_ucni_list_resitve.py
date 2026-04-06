@@ -1,5 +1,6 @@
-# Učiteljska referenčna rešitev – 26 Pygame uvod
-# Namen: pokaže minimalno strukturo Pygame programa z oknom, dogodki in osveževanjem zaslona.
+"""Rešitve učnega lista – 26 – Pygame – uvod, okno, risanje in premikanje."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 import pygame
 import sys

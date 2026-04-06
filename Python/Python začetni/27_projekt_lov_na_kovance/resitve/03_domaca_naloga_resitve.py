@@ -1,4 +1,6 @@
-# Rešitve domače naloge – 27 Projekt Lov na kovance
+"""Rešitve domače naloge – 27 – Projekt – Lov na kovance."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 import pygame
 import random

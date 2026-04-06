@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 29 Projekt Bozickova posta."""
+"""Rešitve dodatnih nalog – 29 – Projekt – Božičkova pošta."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 import random
 

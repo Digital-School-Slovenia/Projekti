@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 05 If osnove."""
+"""Rešitve domače naloge – 05 – Pogoji `if` – osnove odločanja."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 rezultat = 83
 
@@ -24,4 +26,4 @@ else:
     print(f"Vecje stevilo je {b}.")
 
 print("\nNaloga 4")
-print("Najtezji del je bil pravilno zapisati pogoj in zamik kode za if stavek.")
+print("Najtežji del je bil pravilno zapisati pogoj in zamik kode za if stavek.")

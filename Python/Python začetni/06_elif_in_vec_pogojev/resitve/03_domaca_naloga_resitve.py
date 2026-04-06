@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 06 Elif in vec pogojev."""
+"""Rešitve domače naloge – 06 – `elif`, `else` in več možnosti odločanja."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def del_dneva(ura):
     if ura < 6:

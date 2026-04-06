@@ -1,4 +1,6 @@
-# Referenčni primer – 19 Slovarji osnove
+"""Rešitve učnega lista – 19 – Slovarji – osnove."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

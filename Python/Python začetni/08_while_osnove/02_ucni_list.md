@@ -1,4 +1,4 @@
-# Učni list – 08 – Zanka while – osnove ponavljanja
+# Učni list – 08 – Zanka `while` – osnove ponavljanja
 
 Pri vsaki nalogi najprej razmisli: kdaj se zanka začne, kdaj se konča in kaj se v vsakem krogu spremeni.
 

@@ -1,5 +1,6 @@
-# Rešitve domače naloge – 19 Slovarji osnove
+"""Rešitve domače naloge – 19 – Slovarji – osnove."""
 
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def izpisi_profil(profil):
     for kljuc, vrednost in profil.items():

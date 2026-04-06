@@ -1,5 +1,6 @@
-# Referenčni primer – 03 Operacije
-# Kratek primer računanja s spremenljivkami.
+"""Rešitve učnega lista – 03 – Osnovne operacije in računanje s programom."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 stevilo_pic = 4
 cena_pice = 10.5
@@ -13,6 +14,3 @@ print(f"Moj pes ima: {pasja_leta} let.")
 denar = 100
 cena_cokolade = 2.5
 print(f"Kupim lahko: {denar // cena_cokolade} čokolad.")
-
-
-

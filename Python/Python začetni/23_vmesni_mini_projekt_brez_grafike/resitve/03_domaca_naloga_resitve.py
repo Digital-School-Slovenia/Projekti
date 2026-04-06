@@ -1,5 +1,8 @@
+"""Rešitve domače naloge – 23 – Vmesni mini projekt brez grafike."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
+
 # Ta program vodi preprost inventar avanturista.
-# Rešitve domače naloge – 23 Vmesni mini projekt brez grafike
 
 inventar = []
 

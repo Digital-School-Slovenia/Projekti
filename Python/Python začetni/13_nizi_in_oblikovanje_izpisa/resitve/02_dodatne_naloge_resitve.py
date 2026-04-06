@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 13 Nizi in oblikovanje izpisa."""
+"""Rešitve dodatnih nalog – 13 – Nizi in oblikovanje izpisa."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 beseda = "programiranje"
 

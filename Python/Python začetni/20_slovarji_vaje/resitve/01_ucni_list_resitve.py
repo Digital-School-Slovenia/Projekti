@@ -1,4 +1,6 @@
-# Referenčni primer – 20 Slovarji vaje
+"""Rešitve učnega lista – 20 – Slovarji – vaje, zanke in seznam slovarjev."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

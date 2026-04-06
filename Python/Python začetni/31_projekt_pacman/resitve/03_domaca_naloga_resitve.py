@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 31 Projekt Pacman."""
+"""Rešitve domače naloge – 31 – Projekt – Pac-Man labirint."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 nova_mapa = [
     "#########",

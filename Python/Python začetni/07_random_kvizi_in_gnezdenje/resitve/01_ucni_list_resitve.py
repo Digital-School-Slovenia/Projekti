@@ -1,5 +1,6 @@
-# Referenčni primer – 07 Random, kvizi in gnezdenje
-# Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
+"""Rešitve učnega lista – 07 – Random, mini kvizi in odločanje v praksi."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 from random import randint
 

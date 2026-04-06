@@ -1,4 +1,6 @@
-# Rešitve dodatnih nalog – 27 Projekt Lov na kovance
+"""Rešitve dodatnih nalog – 27 – Projekt – Lov na kovance."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 import pygame
 import random

@@ -1,5 +1,6 @@
-# Predloga – 34 Delavnica iger in priprava na zaključek
-# Uporabi jo samo kot osnovo za prvi prototip.
+"""Rešitve učnega lista – 34 – Delavnica iger in priprava na zaključek."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 import pygame
 import sys

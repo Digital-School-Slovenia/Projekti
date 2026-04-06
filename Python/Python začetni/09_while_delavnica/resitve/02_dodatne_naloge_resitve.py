@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 09 While delavnica."""
+"""Rešitve dodatnih nalog – 09 – Zanka `while` – delavnica problemov in seštevalnikov."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 print("Naloga 1")
 prihranki = [5, 4, 6, 3]

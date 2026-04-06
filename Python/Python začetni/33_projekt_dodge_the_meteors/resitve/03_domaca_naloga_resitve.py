@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 33 Projekt Dodge the Meteors."""
+"""Rešitve domače naloge – 33 – Projekt – Dodge the Meteors."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def nova_nadgradnja(stanje):
     stanje["dvojne_tocke"] = True

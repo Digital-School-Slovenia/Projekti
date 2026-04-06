@@ -1,5 +1,6 @@
-"""Resitve domace naloge - 18 Mesane vaje pred slovarji."""
+"""Rešitve domače naloge – 18 – Velika delavnica vaj – mešane naloge pred slovarji."""
 
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def stevilo_samoglasnikov(besedilo):
     samoglasniki = "aeiou"

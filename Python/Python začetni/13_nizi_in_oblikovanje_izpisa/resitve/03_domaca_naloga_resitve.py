@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 13 Nizi in oblikovanje izpisa."""
+"""Rešitve domače naloge – 13 – Nizi in oblikovanje izpisa."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 uporabnisko_ime = "  ana_novak  "
 ocisceno = uporabnisko_ime.strip()

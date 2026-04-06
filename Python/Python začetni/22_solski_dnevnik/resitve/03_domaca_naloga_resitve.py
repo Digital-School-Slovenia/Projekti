@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 22 Solski dnevnik."""
+"""Rešitve domače naloge – 22 – Slovarji v praksi – mini šolski dnevnik."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 dnevnik = {
     "Nina": {"ocene": {"matematika": 5, "slovenscina": 4}},

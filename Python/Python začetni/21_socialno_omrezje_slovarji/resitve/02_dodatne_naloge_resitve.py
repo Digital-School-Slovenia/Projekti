@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 21 Socialno omrezje in slovarji."""
+"""Rešitve dodatnih nalog – 21 – Slovarji v praksi – socialno omrežje."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 uporabniki = [
     {"ime": "ana", "geslo": "abc123", "sledilci": 120, "opis": "rada programira"},

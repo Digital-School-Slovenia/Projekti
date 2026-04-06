@@ -1,4 +1,6 @@
-# Rešitve domače naloge – 30 Projekt Dirkalna igra
+"""Rešitve domače naloge – 30 – Projekt – Dirkalna igra."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 import pygame
 import random

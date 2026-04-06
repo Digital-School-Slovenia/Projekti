@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 07 Random, kvizi in gnezdenje."""
+"""Rešitve dodatnih nalog – 07 – Random, mini kvizi in odločanje v praksi."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 import random
 

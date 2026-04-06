@@ -1,4 +1,4 @@
-# Učni list – 10 – Zanka for in range
+# Učni list – 10 – Zanka `for` in `range`
 
 Danes preklopimo na `for` zanke. Kjer se da, uporabi `range` z jasno začetno in končno vrednostjo.
 

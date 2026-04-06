@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 34 Delavnica iger in priprava na zakljucek."""
+"""Rešitve dodatnih nalog – 34 – Delavnica iger in priprava na zaključek."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 rezervna_ideja = {
     "naslov": "Lov na zaklad",

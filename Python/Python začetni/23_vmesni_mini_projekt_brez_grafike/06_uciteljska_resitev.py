@@ -34,7 +34,7 @@ def izpisi_inventar():
 
 
 def odstrani_predmet():
-    predmet = input("Kateri predmet zelis odstraniti? ").strip()
+    predmet = input("Kateri predmet želiš odstraniti? ").strip()
     if predmet in inventar:
         inventar.remove(predmet)
         print("Predmet je odstranjen.")

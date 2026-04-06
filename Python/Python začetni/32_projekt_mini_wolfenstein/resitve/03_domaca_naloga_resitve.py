@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 32 Projekt Mini Wolfenstein."""
+"""Rešitve domače naloge – 32 – Projekt – Mini Wolfenstein."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 nastavitve = {
     "sirina_okna": 900,

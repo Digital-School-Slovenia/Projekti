@@ -1,5 +1,6 @@
-# Referenčni primer – 02 Spremenljivke
-# Vir je prilagojen iz tvojega izvornega paketa.
+"""Rešitve učnega lista – 02 – Spremenljivke in poimenovanje podatkov."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Razlaga ...
 #cena = 10 	# integer, cela stevila
@@ -29,46 +30,3 @@ print(f"Pojem {pice_na_teden * 40} pic v šolskem letu")
 
 supermoc = "Prijaznost"
 print(f"Moja supermoč je, da sem {supermoc}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,6 @@
-# Učiteljska referenčna rešitev – 30 Projekt Dirkalna igra
-# Glavna rešitev je srednja, še vedno dosegljiva različica.
+"""Rešitve učnega lista – 30 – Projekt – Dirkalna igra."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 import pygame
 import random
@@ -100,10 +101,14 @@ while running:
 
             if obstacle["y"] > HEIGHT:
                 obstacle["y"] = random.randint(-220, -100)
-                obstacle["x"] = random.randint(ROAD_X, ROAD_X + ROAD_WIDTH - obstacle["w"])
+                obstacle["x"] = random.randint(
+                    ROAD_X, ROAD_X + ROAD_WIDTH - obstacle["w"]
+                )
                 score += 1
 
-            obstacle_rect = pygame.Rect(obstacle["x"], obstacle["y"], obstacle["w"], obstacle["h"])
+            obstacle_rect = pygame.Rect(
+                obstacle["x"], obstacle["y"], obstacle["w"], obstacle["h"]
+            )
             if player_rect.colliderect(obstacle_rect):
                 game_over = True
 
@@ -116,17 +121,21 @@ while running:
     pygame.draw.rect(screen, BLUE, (player_x, player_y, player_width, player_height))
 
     for obstacle in obstacles:
-        pygame.draw.rect(screen, RED, (obstacle["x"], obstacle["y"], obstacle["w"], obstacle["h"]))
+        pygame.draw.rect(
+            screen, RED, (obstacle["x"], obstacle["y"], obstacle["w"], obstacle["h"])
+        )
 
-    score_text = font.render(f"Tocke: {score}", True, WHITE)
-    speed_text = font.render(f"Hitrost: {base_obstacle_speed + score // 10}", True, WHITE)
+    score_text = font.render(f"Točke: {score}", True, WHITE)
+    speed_text = font.render(
+        f"Hitrost: {base_obstacle_speed + score // 10}", True, WHITE
+    )
     screen.blit(score_text, (20, 20))
     screen.blit(speed_text, (20, 55))
 
     if game_over:
         text1 = big_font.render("KONEC!", True, YELLOW)
         text2 = font.render("Pritisni R za ponovni zagon.", True, WHITE)
-        text3 = font.render(f"Koncne tocke: {score}", True, WHITE)
+        text3 = font.render(f"Končne točke: {score}", True, WHITE)
         screen.blit(text1, (WIDTH // 2 - text1.get_width() // 2, 240))
         screen.blit(text2, (WIDTH // 2 - text2.get_width() // 2, 320))
         screen.blit(text3, (WIDTH // 2 - text3.get_width() // 2, 360))

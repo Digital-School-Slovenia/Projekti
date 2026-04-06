@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 16 Funkcije, return in seznami."""
+"""Rešitve domače naloge – 16 – Funkcije – `return`, seznami in razdelitev problema."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def najcenejsi(cene):
     return min(cene)

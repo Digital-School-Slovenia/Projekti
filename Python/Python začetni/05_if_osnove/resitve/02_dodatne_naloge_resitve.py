@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 05 If osnove."""
+"""Rešitve dodatnih nalog – 05 – Pogoji `if` – osnove odločanja."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 def polnoleten(starost):
     if starost >= 18:

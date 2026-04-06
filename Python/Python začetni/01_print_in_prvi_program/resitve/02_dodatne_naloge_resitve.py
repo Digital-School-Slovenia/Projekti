@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 01 Print in prvi program."""
+"""Rešitve dodatnih nalog – 01 – Print, prvi program in delo v Thonnyju."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 ime = "Maja"
 priimek = "Novak"

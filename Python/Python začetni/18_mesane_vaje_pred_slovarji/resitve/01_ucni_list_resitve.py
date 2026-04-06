@@ -1,4 +1,6 @@
-# Referenčni primer – 18 Mešane vaje
+"""Rešitve učnega lista – 18 – Velika delavnica vaj – mešane naloge pred slovarji."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

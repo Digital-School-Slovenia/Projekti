@@ -1,4 +1,4 @@
-# Učni list – 09 – Zanka while – delavnica problemov in seštevalnikov
+# Učni list – 09 – Zanka `while` – delavnica problemov in seštevalnikov
 
 Današnje naloge so bolj problemske. Pred kodo si na hitro zapiši, katere spremenljivke potrebuješ.
 

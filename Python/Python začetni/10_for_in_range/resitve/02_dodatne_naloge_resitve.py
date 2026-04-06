@@ -1,5 +1,6 @@
-# Rešitve dodatnih nalog – 10 For in range
+"""Rešitve dodatnih nalog – 10 – Zanka `for` in `range`."""
 
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 def izpisi_od_1_do_10():
     for stevilo in range(1, 11):

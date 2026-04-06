@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 02 Spremenljivke."""
+"""Rešitve domače naloge – 02 – Spremenljivke in poimenovanje podatkov."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 ime = "Ana"
 starost = 14

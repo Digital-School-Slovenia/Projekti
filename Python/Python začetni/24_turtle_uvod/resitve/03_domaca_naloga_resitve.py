@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 24 Turtle uvod."""
+"""Rešitve domače naloge – 24 – Turtle – uvod v risanje s funkcijami."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 import turtle
 

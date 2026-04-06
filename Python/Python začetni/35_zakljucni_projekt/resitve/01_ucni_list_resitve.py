@@ -1,5 +1,6 @@
-# Predloga – 35 Zaključni projekt
-# Namen: čista osnova, ki jo učenec predela v svojo igro ali program.
+"""Rešitve učnega lista – 35 – Zaključni projekt."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 import pygame
 import sys

@@ -1,5 +1,6 @@
-# Rešitve dodatnih nalog – 19 Slovarji osnove
+"""Rešitve dodatnih nalog – 19 – Slovarji – osnove."""
 
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 def izpisi_kljuce(slovar):
     for kljuc in slovar:

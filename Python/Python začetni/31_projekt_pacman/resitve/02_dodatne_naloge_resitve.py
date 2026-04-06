@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 31 Projekt Pacman."""
+"""Rešitve dodatnih nalog – 31 – Projekt – Pac-Man labirint."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 import random
 

@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 11 Seznami osnove."""
+"""Rešitve dodatnih nalog – 11 – Seznami – osnove in izpis z zankami."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 predmeti = ["matematika", "slovenscina", "anglescina", "informatika"]
 

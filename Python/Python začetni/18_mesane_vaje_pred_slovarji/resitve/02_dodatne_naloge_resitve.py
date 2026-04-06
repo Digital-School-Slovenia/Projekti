@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 18 Mesane vaje pred slovarji."""
+"""Rešitve dodatnih nalog – 18 – Velika delavnica vaj – mešane naloge pred slovarji."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 def statistika(seznam):
     return min(seznam), max(seznam), sum(seznam) / len(seznam)

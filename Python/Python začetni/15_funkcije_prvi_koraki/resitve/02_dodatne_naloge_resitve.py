@@ -1,5 +1,6 @@
-# Rešitve dodatnih nalog – 15 Funkcije prvi koraki
+"""Rešitve dodatnih nalog – 15 – Funkcije – prvi koraki."""
 
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 def pozdrav(ime):
     print(f"Živjo, {ime}!")

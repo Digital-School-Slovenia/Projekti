@@ -1,4 +1,6 @@
-# Referenčni primer – 16 Funkcije, return in seznami
+"""Rešitve učnega lista – 16 – Funkcije – `return`, seznami in razdelitev problema."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

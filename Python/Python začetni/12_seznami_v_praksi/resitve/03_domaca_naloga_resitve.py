@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 12 Seznami v praksi."""
+"""Rešitve domače naloge – 12 – Seznami v praksi, `for` zanke in mini inventarji."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 naloge = ["domaca naloga", "ucenje", "sprehod", "vaja"]
 print("Naloga 1")

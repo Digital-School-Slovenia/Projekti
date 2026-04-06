@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 08 While osnove."""
+"""Rešitve dodatnih nalog – 08 – Zanka `while` – osnove ponavljanja."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 print("Naloga 1")
 stevec = 1

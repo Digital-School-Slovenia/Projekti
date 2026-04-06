@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 07 Random, kvizi in gnezdenje."""
+"""Rešitve domače naloge – 07 – Random, mini kvizi in odločanje v praksi."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 import random
 

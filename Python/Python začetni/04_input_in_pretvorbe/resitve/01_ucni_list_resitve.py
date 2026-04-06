@@ -1,5 +1,6 @@
-# Referenčni primer – 04 Input in pretvorbe
-# Pazi: input() vrne niz, zato je pri številih potrebna pretvorba.
+"""Rešitve učnega lista – 04 – Vnos uporabnika in pretvorba tipov."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 tvoje_ime = input("Vnesi tvoje ime: ")
 print(f"Živjo, {tvoje_ime}!")

@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 33 Projekt Dodge the Meteors."""
+"""Rešitve dodatnih nalog – 33 – Projekt – Dodge the Meteors."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 import random
 

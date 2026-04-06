@@ -1,4 +1,6 @@
-# Popravljene rešitve – 14 Debugging
+"""Rešitve dodatnih nalog – 14 – Debugging in branje napak."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 # 1) TypeError -> pretvorba v int
 starost = int(input("Koliko si star? "))

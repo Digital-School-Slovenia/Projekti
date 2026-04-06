@@ -1,4 +1,6 @@
-# Rešitve dodatnih nalog – 30 Projekt Dirkalna igra
+"""Rešitve dodatnih nalog – 30 – Projekt – Dirkalna igra."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 import pygame
 import random

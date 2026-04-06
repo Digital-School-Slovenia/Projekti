@@ -1,4 +1,6 @@
-# Učiteljska referenčna rešitev – 22 Mini šolski dnevnik
+"""Rešitve učnega lista – 22 – Slovarji v praksi – mini šolski dnevnik."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: učiteljska orientacija pri razlagi ključnih gradnikov sklopa.
 

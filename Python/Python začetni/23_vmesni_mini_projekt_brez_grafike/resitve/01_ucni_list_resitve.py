@@ -1,5 +1,6 @@
-# Učiteljska referenčna rešitev – 23 Vmesni mini projekt brez grafike
-# Inventar avanturista
+"""Rešitve učnega lista – 23 – Vmesni mini projekt brez grafike."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 inventar = []
 
@@ -34,7 +35,7 @@ def izpisi_inventar():
 
 
 def odstrani_predmet():
-    predmet = input("Kateri predmet zelis odstraniti? ").strip()
+    predmet = input("Kateri predmet želiš odstraniti? ").strip()
     if predmet in inventar:
         inventar.remove(predmet)
         print("Predmet je odstranjen.")

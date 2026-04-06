@@ -1,5 +1,6 @@
-# Učiteljska referenčna rešitev – 33 Projekt Dodge the Meteors
-# Namen: pokaže osnovno arkadno igro z izmikanjem, točkami in ponovnim zagonom.
+"""Rešitve učnega lista – 33 – Projekt – Dodge the Meteors."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 import pygame
 import random

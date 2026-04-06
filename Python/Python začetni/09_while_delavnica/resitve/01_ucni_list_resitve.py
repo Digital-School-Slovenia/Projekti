@@ -1,5 +1,6 @@
-# Referenčni primer – 09 While delavnica
-# Seštej cene petih izdelkov.
+"""Rešitve učnega lista – 09 – Zanka `while` – delavnica problemov in seštevalnikov."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 racun = 0.0
 st_izdelkov = 0

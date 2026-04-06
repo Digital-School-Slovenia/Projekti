@@ -1,4 +1,6 @@
-# Referenčni primer – 17 Funkcije problemske vaje
+"""Rešitve učnega lista – 17 – Ponovitvene vaje – funkcije in problemsko razmišljanje."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

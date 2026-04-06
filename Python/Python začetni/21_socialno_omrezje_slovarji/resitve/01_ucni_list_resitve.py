@@ -1,4 +1,6 @@
-# Učiteljska referenčna rešitev – 21 Socialno omrežje
+"""Rešitve učnega lista – 21 – Slovarji v praksi – socialno omrežje."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: učiteljska orientacija pri razlagi ključnih gradnikov sklopa.
 

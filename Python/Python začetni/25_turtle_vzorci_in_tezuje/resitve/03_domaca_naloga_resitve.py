@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 25 Turtle vzorci in tezuje."""
+"""Rešitve domače naloge – 25 – Turtle – zahtevnejši vzorci in problemsko risanje."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 import turtle
 

@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 14 Debugging in branje napak."""
+"""Rešitve domače naloge – 14 – Debugging in branje napak."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 print("Naloga 1")
 print("Napaka je v vrstici z if stavkom, vrsta napake pa je SyntaxError, ce manjka dvopicje.")

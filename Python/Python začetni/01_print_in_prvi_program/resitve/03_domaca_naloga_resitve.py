@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 01 Print in prvi program."""
+"""Rešitve domače naloge – 01 – Print, prvi program in delo v Thonnyju."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 ime = "Luka"
 razred = "1.a"

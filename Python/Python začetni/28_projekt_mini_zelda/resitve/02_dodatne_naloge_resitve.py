@@ -1,5 +1,6 @@
-# Nadgradnja – 28 Projekt Mini Zelda
-# To je zahtevnejša razširitev osnovne različice.
+"""Rešitve dodatnih nalog – 28 – Projekt – Mini Zelda."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 import pygame
 import random
@@ -9,7 +10,7 @@ pygame.init()
 
 WIDTH, HEIGHT = 960, 640
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Mini Zelda LEVEL 2 - učiteljska rešitev")
+pygame.display.set_caption("Mini Zelda LEVEL 2 - dodatne naloge")
 clock = pygame.time.Clock()
 
 font = pygame.font.SysFont(None, 32)
@@ -31,6 +32,7 @@ CHUNK_SIZE = 600
 PORTAL_SCORE = 12
 MAX_HP = 5
 
+
 def new_player():
     return {
         "x": 0.0,
@@ -44,6 +46,7 @@ def new_player():
         "invuln": 0,
     }
 
+
 player = new_player()
 collectibles = []
 enemies = []
@@ -54,6 +57,7 @@ generated_chunks = set()
 portal = {"x": -50, "y": -50, "size": 100, "active": False}
 attack_timer = 0
 attack_rect = pygame.Rect(0, 0, 0, 0)
+
 
 def reset_game():
     global player, collectibles, enemies, obstacles, hearts, generated_chunks, portal, attack_timer, attack_rect
@@ -67,18 +71,26 @@ def reset_game():
     attack_timer = 0
     attack_rect = pygame.Rect(0, 0, 0, 0)
 
+
 def world_to_screen(wx, wy, camera_x, camera_y):
     return int(wx - camera_x), int(wy - camera_y)
 
+
 def player_world_rect():
-    return pygame.Rect(int(player["x"]), int(player["y"]), player["size"], player["size"])
+    return pygame.Rect(
+        int(player["x"]), int(player["y"]), player["size"], player["size"]
+    )
+
 
 def collides_with_obstacles(test_rect):
     for obstacle in obstacles:
-        obstacle_rect = pygame.Rect(obstacle["x"], obstacle["y"], obstacle["size"], obstacle["size"])
+        obstacle_rect = pygame.Rect(
+            obstacle["x"], obstacle["y"], obstacle["size"], obstacle["size"]
+        )
         if test_rect.colliderect(obstacle_rect):
             return True
     return False
+
 
 def generate_chunk(chunk_x, chunk_y):
     if (chunk_x, chunk_y) in generated_chunks:
@@ -98,14 +110,16 @@ def generate_chunk(chunk_x, chunk_y):
         size = 35
         x = random.randint(base_x + 60, base_x + CHUNK_SIZE - 60)
         y = random.randint(base_y + 60, base_y + CHUNK_SIZE - 60)
-        enemies.append({
-            "x": float(x),
-            "y": float(y),
-            "size": size,
-            "speed": 1.4,
-            "hp": 2,
-            "cooldown": 0,
-        })
+        enemies.append(
+            {
+                "x": float(x),
+                "y": float(y),
+                "size": size,
+                "speed": 1.4,
+                "hp": 2,
+                "cooldown": 0,
+            }
+        )
 
     for _ in range(5):
         size = 60
@@ -126,6 +140,7 @@ def generate_chunk(chunk_x, chunk_y):
         y = random.randint(base_y + 80, base_y + CHUNK_SIZE - 80)
         hearts.append({"x": x, "y": y, "size": size})
 
+
 def ensure_chunks_around_player():
     chunk_x = int(player["x"] // CHUNK_SIZE)
     chunk_y = int(player["y"] // CHUNK_SIZE)
@@ -134,16 +149,22 @@ def ensure_chunks_around_player():
         for dx in range(-1, 2):
             generate_chunk(chunk_x + dx, chunk_y + dy)
 
+
 def move_player_with_collisions(dx, dy):
     if dx != 0:
-        test_rect = pygame.Rect(int(player["x"] + dx), int(player["y"]), player["size"], player["size"])
+        test_rect = pygame.Rect(
+            int(player["x"] + dx), int(player["y"]), player["size"], player["size"]
+        )
         if not collides_with_obstacles(test_rect):
             player["x"] += dx
 
     if dy != 0:
-        test_rect = pygame.Rect(int(player["x"]), int(player["y"] + dy), player["size"], player["size"])
+        test_rect = pygame.Rect(
+            int(player["x"]), int(player["y"] + dy), player["size"], player["size"]
+        )
         if not collides_with_obstacles(test_rect):
             player["y"] += dy
+
 
 def collect_items():
     p_rect = player_world_rect()
@@ -153,6 +174,7 @@ def collect_items():
         if p_rect.colliderect(item_rect):
             collectibles.remove(item)
             player["score"] += 1
+
 
 def collect_hearts():
     p_rect = player_world_rect()
@@ -164,9 +186,11 @@ def collect_hearts():
             if player["hp"] < MAX_HP:
                 player["hp"] += 1
 
+
 def update_portal():
     if player["score"] >= PORTAL_SCORE:
         portal["active"] = True
+
 
 def update_enemies():
     p_rect = player_world_rect()
@@ -188,22 +212,33 @@ def update_enemies():
             step_x = enemy["speed"] * dx / dist
             step_y = enemy["speed"] * dy / dist
 
-            test_rect_x = pygame.Rect(int(enemy["x"] + step_x), int(enemy["y"]), enemy["size"], enemy["size"])
+            test_rect_x = pygame.Rect(
+                int(enemy["x"] + step_x), int(enemy["y"]), enemy["size"], enemy["size"]
+            )
             if not collides_with_obstacles(test_rect_x):
                 enemy["x"] += step_x
 
-            test_rect_y = pygame.Rect(int(enemy["x"]), int(enemy["y"] + step_y), enemy["size"], enemy["size"])
+            test_rect_y = pygame.Rect(
+                int(enemy["x"]), int(enemy["y"] + step_y), enemy["size"], enemy["size"]
+            )
             if not collides_with_obstacles(test_rect_y):
                 enemy["y"] += step_y
 
         if enemy["cooldown"] > 0:
             enemy["cooldown"] -= 1
 
-        enemy_rect = pygame.Rect(int(enemy["x"]), int(enemy["y"]), enemy["size"], enemy["size"])
-        if enemy_rect.colliderect(p_rect) and enemy["cooldown"] == 0 and player["invuln"] == 0:
+        enemy_rect = pygame.Rect(
+            int(enemy["x"]), int(enemy["y"]), enemy["size"], enemy["size"]
+        )
+        if (
+            enemy_rect.colliderect(p_rect)
+            and enemy["cooldown"] == 0
+            and player["invuln"] == 0
+        ):
             player["hp"] -= 1
             player["invuln"] = 50
             enemy["cooldown"] = 45
+
 
 def start_attack():
     global attack_timer, attack_rect
@@ -215,39 +250,55 @@ def start_attack():
     ps = player["size"]
 
     if player["dir_x"] == 1:
-        attack_rect = pygame.Rect(int(px + ps), int(py + ps // 2 - size // 2), size + reach, size)
+        attack_rect = pygame.Rect(
+            int(px + ps), int(py + ps // 2 - size // 2), size + reach, size
+        )
     elif player["dir_x"] == -1:
-        attack_rect = pygame.Rect(int(px - size - reach), int(py + ps // 2 - size // 2), size + reach, size)
+        attack_rect = pygame.Rect(
+            int(px - size - reach), int(py + ps // 2 - size // 2), size + reach, size
+        )
     elif player["dir_y"] == 1:
-        attack_rect = pygame.Rect(int(px + ps // 2 - size // 2), int(py + ps), size, size + reach)
+        attack_rect = pygame.Rect(
+            int(px + ps // 2 - size // 2), int(py + ps), size, size + reach
+        )
     else:
-        attack_rect = pygame.Rect(int(px + ps // 2 - size // 2), int(py - size - reach), size, size + reach)
+        attack_rect = pygame.Rect(
+            int(px + ps // 2 - size // 2), int(py - size - reach), size, size + reach
+        )
 
     attack_timer = 8
 
     for enemy in enemies[:]:
-        enemy_rect = pygame.Rect(int(enemy["x"]), int(enemy["y"]), enemy["size"], enemy["size"])
+        enemy_rect = pygame.Rect(
+            int(enemy["x"]), int(enemy["y"]), enemy["size"], enemy["size"]
+        )
         if attack_rect.colliderect(enemy_rect):
             enemy["hp"] -= 1
             if enemy["hp"] <= 0:
                 enemies.remove(enemy)
 
+
 def portal_rect():
     return pygame.Rect(portal["x"], portal["y"], portal["size"], portal["size"])
+
 
 def check_victory():
     return portal["active"] and player_world_rect().colliderect(portal_rect())
 
+
 def draw_hud():
     score_text = font.render(f"Kovanci: {player['score']}/{PORTAL_SCORE}", True, WHITE)
     hp_text = font.render(f"HP: {player['hp']}", True, WHITE)
-    info_text = font.render("WASD / puščice = gibanje, SPACE = napad, R = restart", True, WHITE)
+    info_text = font.render(
+        "WASD / puščice = gibanje, SPACE = napad, R = restart", True, WHITE
+    )
     goal_text = font.render("Cilj: zberi kovance in se vrni v svetišče", True, WHITE)
 
     screen.blit(score_text, (20, 20))
     screen.blit(hp_text, (20, 55))
     screen.blit(info_text, (20, 90))
     screen.blit(goal_text, (20, 125))
+
 
 def draw_center_message(title, subtitle):
     title_surf = big_font.render(title, True, WHITE)
@@ -261,6 +312,7 @@ def draw_center_message(title, subtitle):
     screen.blit(overlay, (0, 0))
     screen.blit(title_surf, title_rect)
     screen.blit(subtitle_surf, subtitle_rect)
+
 
 running = True
 game_over = False
@@ -342,7 +394,9 @@ while running:
     shrine = portal_rect()
     shrine_sx, shrine_sy = world_to_screen(shrine.x, shrine.y, camera_x, camera_y)
     shrine_color = PURPLE if portal["active"] else GRAY
-    pygame.draw.rect(screen, shrine_color, (shrine_sx, shrine_sy, shrine.width, shrine.height), 4)
+    pygame.draw.rect(
+        screen, shrine_color, (shrine_sx, shrine_sy, shrine.width, shrine.height), 4
+    )
 
     for item in collectibles:
         sx, sy = world_to_screen(item["x"], item["y"], camera_x, camera_y)
@@ -358,13 +412,15 @@ while running:
 
     if attack_timer > 0:
         ax, ay = world_to_screen(attack_rect.x, attack_rect.y, camera_x, camera_y)
-        pygame.draw.rect(screen, WHITE, (ax, ay, attack_rect.width, attack_rect.height), 3)
+        pygame.draw.rect(
+            screen, WHITE, (ax, ay, attack_rect.width, attack_rect.height), 3
+        )
 
     player_rect = pygame.Rect(
         WIDTH // 2 - player["size"] // 2,
         HEIGHT // 2 - player["size"] // 2,
         player["size"],
-        player["size"]
+        player["size"],
     )
 
     if player["invuln"] == 0 or player["invuln"] % 10 < 5:

@@ -1,5 +1,6 @@
-# Rešitve domače naloge – 10 For in range
+"""Rešitve domače naloge – 10 – Zanka `for` in `range`."""
 
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def izpisi_od_1_do_10():
     for stevilo in range(1, 11):

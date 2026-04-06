@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 06 Elif in vec pogojev."""
+"""Rešitve dodatnih nalog – 06 – `elif`, `else` in več možnosti odločanja."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 def ocena_v_besedo(ocena):
     if ocena == 5:

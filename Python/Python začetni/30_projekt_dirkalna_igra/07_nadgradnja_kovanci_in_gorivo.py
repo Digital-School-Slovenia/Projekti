@@ -142,14 +142,20 @@ while running:
 
             if obstacle["y"] > HEIGHT:
                 obstacle["y"] = random.randint(-220, -100)
-                obstacle["x"] = random.randint(ROAD_X, ROAD_X + ROAD_WIDTH - obstacle["w"])
+                obstacle["x"] = random.randint(
+                    ROAD_X, ROAD_X + ROAD_WIDTH - obstacle["w"]
+                )
                 score += 1
 
-            obstacle_rect = pygame.Rect(obstacle["x"], obstacle["y"], obstacle["w"], obstacle["h"])
+            obstacle_rect = pygame.Rect(
+                obstacle["x"], obstacle["y"], obstacle["w"], obstacle["h"]
+            )
             if player_rect.colliderect(obstacle_rect):
                 lives -= 1
                 obstacle["y"] = random.randint(-220, -100)
-                obstacle["x"] = random.randint(ROAD_X, ROAD_X + ROAD_WIDTH - obstacle["w"])
+                obstacle["x"] = random.randint(
+                    ROAD_X, ROAD_X + ROAD_WIDTH - obstacle["w"]
+                )
 
                 if lives <= 0:
                     game_state = "game_over"
@@ -163,10 +169,14 @@ while running:
 
         if fuel_item["y"] > HEIGHT:
             fuel_item["y"] = random.randint(-700, -450)
-            fuel_item["x"] = random.randint(ROAD_X, ROAD_X + ROAD_WIDTH - fuel_item["w"])
+            fuel_item["x"] = random.randint(
+                ROAD_X, ROAD_X + ROAD_WIDTH - fuel_item["w"]
+            )
 
         coin_rect = pygame.Rect(coin["x"], coin["y"], coin["size"], coin["size"])
-        fuel_rect = pygame.Rect(fuel_item["x"], fuel_item["y"], fuel_item["w"], fuel_item["h"])
+        fuel_rect = pygame.Rect(
+            fuel_item["x"], fuel_item["y"], fuel_item["w"], fuel_item["h"]
+        )
 
         if player_rect.colliderect(coin_rect):
             coins += 1
@@ -179,7 +189,9 @@ while running:
             if fuel > 100:
                 fuel = 100
             fuel_item["y"] = random.randint(-700, -450)
-            fuel_item["x"] = random.randint(ROAD_X, ROAD_X + ROAD_WIDTH - fuel_item["w"])
+            fuel_item["x"] = random.randint(
+                ROAD_X, ROAD_X + ROAD_WIDTH - fuel_item["w"]
+            )
 
     screen.fill(GRASS)
     pygame.draw.rect(screen, ROAD, (ROAD_X, 0, ROAD_WIDTH, HEIGHT))
@@ -190,14 +202,24 @@ while running:
     pygame.draw.rect(screen, BLUE, (player_x, player_y, player_width, player_height))
 
     for obstacle in obstacles:
-        pygame.draw.rect(screen, RED, (obstacle["x"], obstacle["y"], obstacle["w"], obstacle["h"]))
+        pygame.draw.rect(
+            screen, RED, (obstacle["x"], obstacle["y"], obstacle["w"], obstacle["h"])
+        )
 
     if game_state != "start":
-        pygame.draw.ellipse(screen, YELLOW, (coin["x"], coin["y"], coin["size"], coin["size"]))
-        pygame.draw.rect(screen, GREEN, (fuel_item["x"], fuel_item["y"], fuel_item["w"], fuel_item["h"]))
+        pygame.draw.ellipse(
+            screen, YELLOW, (coin["x"], coin["y"], coin["size"], coin["size"])
+        )
+        pygame.draw.rect(
+            screen,
+            GREEN,
+            (fuel_item["x"], fuel_item["y"], fuel_item["w"], fuel_item["h"]),
+        )
 
-    score_text = font.render(f"Tocke: {score}", True, WHITE)
-    speed_text = font.render(f"Hitrost: {base_obstacle_speed + score // 10}", True, WHITE)
+    score_text = font.render(f"Točke: {score}", True, WHITE)
+    speed_text = font.render(
+        f"Hitrost: {base_obstacle_speed + score // 10}", True, WHITE
+    )
     lives_text = font.render(f"Zivljenja: {lives}", True, WHITE)
     coins_text = font.render(f"Kovanci: {coins}", True, WHITE)
     fuel_text = font.render(f"Gorivo: {int(fuel)}", True, WHITE)
@@ -219,7 +241,7 @@ while running:
     if game_state == "game_over":
         text1 = big_font.render("KONEC!", True, YELLOW)
         text2 = font.render("Pritisni R za novo igro", True, WHITE)
-        text3 = font.render(f"Tocke: {score}", True, WHITE)
+        text3 = font.render(f"Točke: {score}", True, WHITE)
         text4 = font.render(f"Kovanci: {coins}", True, WHITE)
         screen.blit(text1, (WIDTH // 2 - text1.get_width() // 2, 220))
         screen.blit(text2, (WIDTH // 2 - text2.get_width() // 2, 300))

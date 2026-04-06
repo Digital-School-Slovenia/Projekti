@@ -1,4 +1,6 @@
-# Učiteljska referenčna rešitev – 27 Projekt Lov na kovance
+"""Rešitve učnega lista – 27 – Projekt – Lov na kovance."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: učiteljska orientacija pri postopni gradnji projekta in razlagi glavnih mehanik igre.
 

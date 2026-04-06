@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 20 Slovarji vaje."""
+"""Rešitve dodatnih nalog – 20 – Slovarji – vaje, zanke in seznam slovarjev."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 profil = {"ime": "Ana", "tocke": 120, "rang": "zlati"}
 

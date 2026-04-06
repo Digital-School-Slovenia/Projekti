@@ -1,4 +1,6 @@
-# Referenčni primer – 13 Nizi in oblikovanje izpisa
+"""Rešitve učnega lista – 13 – Nizi in oblikovanje izpisa."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

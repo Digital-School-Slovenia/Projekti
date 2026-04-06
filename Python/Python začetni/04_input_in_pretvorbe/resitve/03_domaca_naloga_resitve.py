@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 04 Input in pretvorbe."""
+"""Rešitve domače naloge – 04 – Vnos uporabnika in pretvorba tipov."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def predstavi_osebo(ime_besedilo, starost_besedilo):
     starost = int(starost_besedilo)

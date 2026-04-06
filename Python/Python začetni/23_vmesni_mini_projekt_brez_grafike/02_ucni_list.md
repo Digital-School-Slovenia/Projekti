@@ -2,6 +2,8 @@
 
 Danes izdelaš mini projekt **Inventar avanturista**.
 
+## Cilj
+
 Program naj omogoča:
 - dodajanje predmeta,
 - izpis vseh predmetov,
@@ -97,7 +99,7 @@ Pod izpis dodaj:
 
 ```python
     elif izbira == "3":
-        predmet = input("Kateri predmet zelis odstraniti? ").strip()
+        predmet = input("Kateri predmet želiš odstraniti? ").strip()
         if predmet in inventar:
             inventar.remove(predmet)
             print("Predmet je odstranjen.")

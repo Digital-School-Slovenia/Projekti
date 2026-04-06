@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 22 Solski dnevnik."""
+"""Rešitve dodatnih nalog – 22 – Slovarji v praksi – mini šolski dnevnik."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 dnevnik = {
     "Ana": {"razred": "8.a", "ocene": {"matematika": 5, "anglescina": 4}},

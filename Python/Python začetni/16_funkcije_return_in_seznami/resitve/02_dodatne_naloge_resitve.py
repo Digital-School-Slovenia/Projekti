@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 16 Funkcije, return in seznami."""
+"""Rešitve dodatnih nalog – 16 – Funkcije – `return`, seznami in razdelitev problema."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 def najmanjsi(a, b, c):
     return min(a, b, c)

@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 29 Projekt Bozickova posta."""
+"""Rešitve domače naloge – 29 – Projekt – Božičkova pošta."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def nova_nadgradnja(stanje):
     stanje["magnet_za_dobra_pisma"] = True

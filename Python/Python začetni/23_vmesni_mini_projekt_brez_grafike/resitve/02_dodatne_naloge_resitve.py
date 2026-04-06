@@ -1,4 +1,6 @@
-# Rešitve dodatnih nalog – 23 Vmesni mini projekt brez grafike
+"""Rešitve dodatnih nalog – 23 – Vmesni mini projekt brez grafike."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 inventar = [
     {"ime": "meč", "tip": "orožje"},

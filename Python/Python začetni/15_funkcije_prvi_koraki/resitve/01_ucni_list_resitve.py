@@ -1,4 +1,6 @@
-# Referenčni primer – 15 Funkcije prvi koraki
+"""Rešitve učnega lista – 15 – Funkcije – prvi koraki."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

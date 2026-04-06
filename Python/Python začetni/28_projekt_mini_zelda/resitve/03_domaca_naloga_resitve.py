@@ -1,5 +1,6 @@
-"""Resitve domace naloge - 28 Projekt Mini Zelda."""
+"""Rešitve domače naloge – 28 – Projekt – Mini Zelda."""
 
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def dodaj_nadgradnjo(stanje):
     stanje["mana"] = 3

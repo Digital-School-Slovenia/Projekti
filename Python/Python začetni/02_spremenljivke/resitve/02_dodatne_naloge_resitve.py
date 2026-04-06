@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 02 Spremenljivke."""
+"""Rešitve dodatnih nalog – 02 – Spremenljivke in poimenovanje podatkov."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 cena_karte = 4.20
 stevilo_kart = 5

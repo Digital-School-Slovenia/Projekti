@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 08 While osnove."""
+"""Rešitve domače naloge – 08 – Zanka `while` – osnove ponavljanja."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 print("Naloga 1")
 korak = 0

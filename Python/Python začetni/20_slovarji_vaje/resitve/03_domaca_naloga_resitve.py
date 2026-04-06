@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 20 Slovarji vaje."""
+"""Rešitve domače naloge – 20 – Slovarji – vaje, zanke in seznam slovarjev."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def oceni_profil(profil):
     if profil["tocke"] >= 150:

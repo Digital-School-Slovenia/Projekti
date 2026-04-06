@@ -1,4 +1,6 @@
-# Referenčni primer – 06 Elif in več pogojev
+"""Rešitve učnega lista – 06 – `elif`, `else` in več možnosti odločanja."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 21 Socialno omrezje in slovarji."""
+"""Rešitve domače naloge – 21 – Slovarji v praksi – socialno omrežje."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 uporabniki = [
     {"ime": "nina", "geslo": "nina123", "sledilci": 45, "opis": "risem stripe"},

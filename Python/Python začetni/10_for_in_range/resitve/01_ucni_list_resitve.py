@@ -1,4 +1,6 @@
-# Referenčni primer – 10 For in range
+"""Rešitve učnega lista – 10 – Zanka `for` in `range`."""
+
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 # Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
 

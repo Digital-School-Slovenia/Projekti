@@ -1,5 +1,6 @@
-# Rešitve domače naloge – 15 Funkcije prvi koraki
+"""Rešitve domače naloge – 15 – Funkcije – prvi koraki."""
 
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def pozdrav(ime):
     return f"Hej, {ime}!"

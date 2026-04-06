@@ -1,13 +1,6 @@
-# Učiteljska referenčna rešitev – 28 Projekt Mini Zelda
+"""Rešitve učnega lista – 28 – Projekt – Mini Zelda."""
 
-"""Mini Zelda (Pygame) – učiteljska rešitev.
-
-Igra je namenjena vaji osnov:
-- delo s Pygame (zanka dogodkov, risanje, čas)
-- premikanje igralca in kamera (svetovne koordinate → zaslon)
-- generiranje sveta po "chunkih" okoli igralca
-- trki (kovanci, sovražniki) in preprost napad
-"""
+# Namen: glavna delovna rešitev za učni list tega sklopa.
 
 import pygame
 import random
@@ -18,7 +11,7 @@ pygame.init()
 # Nastavitve okna
 WIDTH, HEIGHT = 960, 640
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Mini Zelda - učiteljska rešitev")
+pygame.display.set_caption("Mini Zelda - glavna rešitev")
 clock = pygame.time.Clock()
 
 # Pisave za HUD in sporočila
@@ -38,6 +31,7 @@ DARK_BG = (35, 35, 45)
 # Velikost "chunka" sveta (svet je neskončen, generira se okoli igralca)
 CHUNK_SIZE = 600
 
+
 def new_player():
     """Ustvari začetno stanje igralca."""
     return {
@@ -52,6 +46,7 @@ def new_player():
         "invuln": 0,
     }
 
+
 # Globalno stanje igre
 player = new_player()
 collectibles = []
@@ -61,6 +56,7 @@ generated_chunks = set()
 # Napad: timer (v frame-ih) in trenutni pravokotnik dosega napada
 attack_timer = 0
 attack_rect = pygame.Rect(0, 0, 0, 0)
+
 
 def reset_game():
     """Ponastavi igro na začetno stanje."""
@@ -72,13 +68,18 @@ def reset_game():
     attack_timer = 0
     attack_rect = pygame.Rect(0, 0, 0, 0)
 
+
 def world_to_screen(wx, wy, camera_x, camera_y):
     """Pretvori svetovne koordinate v zaslonske (glede na kamero)."""
     return int(wx - camera_x), int(wy - camera_y)
 
+
 def player_world_rect():
     """Pravokotnik igralca v svetovnih koordinatah (za trke)."""
-    return pygame.Rect(int(player["x"]), int(player["y"]), player["size"], player["size"])
+    return pygame.Rect(
+        int(player["x"]), int(player["y"]), player["size"], player["size"]
+    )
+
 
 def generate_chunk(chunk_x, chunk_y):
     """Generira vsebino enega chunka (kovanci + sovražniki), če še ni generiran."""
@@ -101,14 +102,17 @@ def generate_chunk(chunk_x, chunk_y):
         size = 35
         x = random.randint(base_x + 60, base_x + CHUNK_SIZE - 60)
         y = random.randint(base_y + 60, base_y + CHUNK_SIZE - 60)
-        enemies.append({
-            "x": float(x),
-            "y": float(y),
-            "size": size,
-            "speed": 1.4,
-            "hp": 2,
-            "cooldown": 0,
-        })
+        enemies.append(
+            {
+                "x": float(x),
+                "y": float(y),
+                "size": size,
+                "speed": 1.4,
+                "hp": 2,
+                "cooldown": 0,
+            }
+        )
+
 
 def ensure_chunks_around_player():
     """Poskrbi, da so chunki v okolici igralca generirani (3x3 mreža)."""
@@ -119,6 +123,7 @@ def ensure_chunks_around_player():
         for dx in range(-1, 2):
             generate_chunk(chunk_x + dx, chunk_y + dy)
 
+
 def collect_items():
     """Pobere kovance, če igralec trči vanje."""
     p_rect = player_world_rect()
@@ -128,6 +133,7 @@ def collect_items():
         if p_rect.colliderect(item_rect):
             collectibles.remove(item)
             player["score"] += 1
+
 
 def update_enemies():
     """Premika sovražnike proti igralcu in ob trku zmanjša HP (z ohlajanjem)."""
@@ -157,11 +163,18 @@ def update_enemies():
             enemy["cooldown"] -= 1
 
         # Trk igralec–sovražnik
-        enemy_rect = pygame.Rect(int(enemy["x"]), int(enemy["y"]), enemy["size"], enemy["size"])
-        if enemy_rect.colliderect(p_rect) and enemy["cooldown"] == 0 and player["invuln"] == 0:
+        enemy_rect = pygame.Rect(
+            int(enemy["x"]), int(enemy["y"]), enemy["size"], enemy["size"]
+        )
+        if (
+            enemy_rect.colliderect(p_rect)
+            and enemy["cooldown"] == 0
+            and player["invuln"] == 0
+        ):
             player["hp"] -= 1
             player["invuln"] = 50
             enemy["cooldown"] = 45
+
 
 def start_attack():
     """Začne napad: nastavi attack_rect glede na smer in poškoduje sovražnike v dosegu."""
@@ -176,34 +189,48 @@ def start_attack():
 
     # Hitbox napada se postavi pred igralca glede na zadnjo smer gibanja
     if player["dir_x"] == 1:
-        attack_rect = pygame.Rect(int(px + ps), int(py + ps // 2 - size // 2), size + reach, size)
+        attack_rect = pygame.Rect(
+            int(px + ps), int(py + ps // 2 - size // 2), size + reach, size
+        )
     elif player["dir_x"] == -1:
-        attack_rect = pygame.Rect(int(px - size - reach), int(py + ps // 2 - size // 2), size + reach, size)
+        attack_rect = pygame.Rect(
+            int(px - size - reach), int(py + ps // 2 - size // 2), size + reach, size
+        )
     elif player["dir_y"] == 1:
-        attack_rect = pygame.Rect(int(px + ps // 2 - size // 2), int(py + ps), size, size + reach)
+        attack_rect = pygame.Rect(
+            int(px + ps // 2 - size // 2), int(py + ps), size, size + reach
+        )
     else:
-        attack_rect = pygame.Rect(int(px + ps // 2 - size // 2), int(py - size - reach), size, size + reach)
+        attack_rect = pygame.Rect(
+            int(px + ps // 2 - size // 2), int(py - size - reach), size, size + reach
+        )
 
     # Napad traja nekaj frame-ov (da se vidi bel okvir)
     attack_timer = 8
 
     # Zadeni vse sovražnike, ki so v hitboxu napada
     for enemy in enemies[:]:
-        enemy_rect = pygame.Rect(int(enemy["x"]), int(enemy["y"]), enemy["size"], enemy["size"])
+        enemy_rect = pygame.Rect(
+            int(enemy["x"]), int(enemy["y"]), enemy["size"], enemy["size"]
+        )
         if attack_rect.colliderect(enemy_rect):
             enemy["hp"] -= 1
             if enemy["hp"] <= 0:
                 enemies.remove(enemy)
 
+
 def draw_hud():
     """Izriše HUD (kovanci, HP, navodila)."""
     score_text = font.render(f"Kovanci: {player['score']}", True, WHITE)
     hp_text = font.render(f"HP: {player['hp']}", True, WHITE)
-    info_text = font.render("WASD / puščice = gibanje, SPACE = napad, R = restart", True, WHITE)
+    info_text = font.render(
+        "WASD / puščice = gibanje, SPACE = napad, R = restart", True, WHITE
+    )
 
     screen.blit(score_text, (20, 20))
     screen.blit(hp_text, (20, 55))
     screen.blit(info_text, (20, 90))
+
 
 def draw_center_message(title, subtitle):
     """Izriše prosojno prekrivno sporočilo na sredini zaslona."""
@@ -219,6 +246,7 @@ def draw_center_message(title, subtitle):
     screen.blit(overlay, (0, 0))
     screen.blit(title_surf, title_rect)
     screen.blit(subtitle_surf, subtitle_rect)
+
 
 running = True
 game_over = False
@@ -313,14 +341,16 @@ while running:
     # Vizualizacija napada (bel okvir), dokler attack_timer teče
     if attack_timer > 0:
         ax, ay = world_to_screen(attack_rect.x, attack_rect.y, camera_x, camera_y)
-        pygame.draw.rect(screen, WHITE, (ax, ay, attack_rect.width, attack_rect.height), 3)
+        pygame.draw.rect(
+            screen, WHITE, (ax, ay, attack_rect.width, attack_rect.height), 3
+        )
 
     # Igralec je vedno izrisan na sredini (ker kamera sledi igralcu)
     player_rect = pygame.Rect(
         WIDTH // 2 - player["size"] // 2,
         HEIGHT // 2 - player["size"] // 2,
         player["size"],
-        player["size"]
+        player["size"],
     )
 
     # Utripanje med invuln (vizualni feedback, da je neprebojen)

@@ -1,4 +1,6 @@
-"""Resitve domace naloge - 17 Funkcije problemske vaje."""
+"""Rešitve domače naloge – 17 – Ponovitvene vaje – funkcije in problemsko razmišljanje."""
+
+# Namen: rešitve domače naloge po vrstnem redu iz 05_domaca_naloga.md.
 
 def daljsi_niz(prvi, drugi):
     return prvi if len(prvi) >= len(drugi) else drugi

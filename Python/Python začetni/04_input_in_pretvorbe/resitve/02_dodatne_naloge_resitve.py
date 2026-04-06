@@ -1,4 +1,6 @@
-"""Resitve dodatnih nalog - 04 Input in pretvorbe."""
+"""Rešitve dodatnih nalog – 04 – Vnos uporabnika in pretvorba tipov."""
+
+# Namen: rešitve dodatnih nalog po vrstnem redu iz 04_dodatne_naloge.md.
 
 def starost_cez_pet_let(starost_besedilo):
     starost = int(starost_besedilo)
