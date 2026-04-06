@@ -127,7 +127,7 @@ Pod risanje Božička dodaj:
 Pod email loop dodaj:
 
 ```python
-        text = PISAVA.render(f"Točke: {stevilo_tock}   Življenj: {stevilo_zivljenj}", True, (255, 255, 255))
+        text = PISAVA.render(f"Točke: {stevilo_tock}   Življenja: {stevilo_zivljenj}", True, (255, 255, 255))
         ZASLON.blit(text, (10, 10))
 
         if stevilo_zivljenj <= 0:

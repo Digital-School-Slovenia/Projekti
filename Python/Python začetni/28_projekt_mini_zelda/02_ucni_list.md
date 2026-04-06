@@ -239,11 +239,11 @@ Pod logiko dodaj:
         ax, ay = world_to_screen(attack_rect.x, attack_rect.y, camera_x, camera_y)
         pygame.draw.rect(screen, WHITE, (ax, ay, attack_rect.width, attack_rect.height))
 
-    hud = font.render(f"HP: {player['hp']}   Score: {player['score']}", True, WHITE)
+    hud = font.render(f"HP: {player['hp']}   Točke: {player['score']}", True, WHITE)
     screen.blit(hud, (12, 12))
 
     if game_over:
-        over = font.render("GAME OVER", True, WHITE)
+        over = font.render("KONEC IGRE", True, WHITE)
         screen.blit(over, (WIDTH // 2 - 70, HEIGHT // 2))
 
     pygame.display.flip()
@@ -255,4 +255,4 @@ pygame.quit()
 
 - kamera sledi igralcu,
 - riše kovance, sovražnike in igralca,
-- izpiše `HP` in `score`.
+- izpiše `HP` in točke.

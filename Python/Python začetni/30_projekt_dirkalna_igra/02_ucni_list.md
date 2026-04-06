@@ -134,11 +134,11 @@ Na konec zanke dodaj:
     pygame.draw.rect(screen, BLUE, (player_x, player_y, player_width, player_height))
     pygame.draw.rect(screen, RED, (obstacle_x, obstacle_y, obstacle_width, obstacle_height))
 
-    score_text = font.render(f"Score: {score}", True, WHITE)
+    score_text = font.render(f"Točke: {score}", True, WHITE)
     screen.blit(score_text, (10, 10))
 
     if game_over:
-        over_text = big_font.render("GAME OVER", True, YELLOW)
+        over_text = big_font.render("KONEC IGRE", True, YELLOW)
         screen.blit(over_text, (WIDTH // 2 - 150, HEIGHT // 2 - 20))
 
     pygame.display.flip()

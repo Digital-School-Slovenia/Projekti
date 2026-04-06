@@ -149,7 +149,7 @@ Po premiku igralca dodaj:
 V draw del dodaj:
 
 ```python
-    text = font.render(f"Score: {score}", True, TEXT_COLOR)
+    text = font.render(f"Točke: {score}", True, TEXT_COLOR)
     screen.blit(text, (10, 10))
 ```
 

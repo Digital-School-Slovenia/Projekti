@@ -2,6 +2,10 @@
 
 Danes ne delaš še cele zaključne igre. Danes pripraviš tako dober načrt, da boš naslednjo uro lahko začel brez tavanja.
 
+## Cilj
+
+Pripravi dovolj jasen načrt projekta, da bo naslednja ura namenjena izdelavi in ne iskanju ideje.
+
 ## Naloga 1
 Izmisli si naslov svojega projekta.
 

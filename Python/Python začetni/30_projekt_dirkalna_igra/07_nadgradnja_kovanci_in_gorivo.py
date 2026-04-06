@@ -8,7 +8,7 @@ pygame.init()
 
 WIDTH, HEIGHT = 500, 700
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Dirkalna igra - LEVEL 3")
+pygame.display.set_caption("Dirkalna igra - nadgradnja s kovanci in gorivom")
 
 clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 36)
@@ -220,7 +220,7 @@ while running:
     speed_text = font.render(
         f"Hitrost: {base_obstacle_speed + score // 10}", True, WHITE
     )
-    lives_text = font.render(f"Zivljenja: {lives}", True, WHITE)
+    lives_text = font.render(f"Življenja: {lives}", True, WHITE)
     coins_text = font.render(f"Kovanci: {coins}", True, WHITE)
     fuel_text = font.render(f"Gorivo: {int(fuel)}", True, WHITE)
 
@@ -232,7 +232,7 @@ while running:
 
     if game_state == "start":
         text1 = big_font.render("DIRKALNA IGRA", True, YELLOW)
-        text2 = font.render("SPACE = zacetek igre", True, WHITE)
+        text2 = font.render("SPACE = začetek igre", True, WHITE)
         text3 = font.render("Levo/desno za premik", True, WHITE)
         screen.blit(text1, (WIDTH // 2 - text1.get_width() // 2, 220))
         screen.blit(text2, (WIDTH // 2 - text2.get_width() // 2, 310))

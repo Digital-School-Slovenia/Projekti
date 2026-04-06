@@ -1,4 +1,4 @@
-# Učiteljska referenčna rešitev – 30 Projekt Dirkalna igra
+# Referenčna rešitev – 30 Projekt Dirkalna igra
 # Glavna rešitev je srednja, še vedno dosegljiva različica.
 
 import pygame
@@ -9,7 +9,7 @@ pygame.init()
 
 WIDTH, HEIGHT = 500, 700
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Dirkalna igra - LEVEL 2")
+pygame.display.set_caption("Dirkalna igra - glavna rešitev")
 
 clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 36)

@@ -127,20 +127,20 @@ Pod logiko dodaj:
     for m in meteors:
         pygame.draw.rect(screen, (180, 120, 80), m)
 
-    text = font.render(f"Score: {score}", True, (255, 255, 255))
+    text = font.render(f"Točke: {score}", True, (255, 255, 255))
     screen.blit(text, (10, 10))
 
     pygame.display.update()
 ```
 
-## Korak 10: Dodaj game over zaslon
+## Korak 10: Dodaj zaslon za konec igre
 
 Pod zanko dodaj:
 
 ```python
 screen.fill((0, 0, 0))
-go1 = font.render("GAME OVER", True, (255, 80, 80))
-go2 = font.render(f"Final score: {score}", True, (255, 255, 255))
+go1 = font.render("KONEC IGRE", True, (255, 80, 80))
+go2 = font.render(f"Končne točke: {score}", True, (255, 255, 255))
 screen.blit(go1, (WIDTH//2 - go1.get_width()//2, HEIGHT//2 - 40))
 screen.blit(go2, (WIDTH//2 - go2.get_width()//2, HEIGHT//2 + 10))
 pygame.display.update()
