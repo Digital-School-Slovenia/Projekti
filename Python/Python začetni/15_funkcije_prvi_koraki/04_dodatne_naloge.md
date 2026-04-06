@@ -1,35 +1,62 @@
 # Dodatne naloge – 15 – Funkcije – prvi koraki
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
-- Napiši funkcijo `pozdrav(ime)`.
-- Napiši funkcijo `kvadrat(n)`.
-- Napiši funkcijo `v_sekunde(minute)`.
-- Napiši funkcijo `kratica(ime, priimek)`.
-- Napiši funkcijo `podvoji(stevilo)`.
-- Napiši funkcijo `je_polnoleten(starost)`.
-- Napiši funkcijo za izračun ploščine pravokotnika.
-- Napiši funkcijo za glasen izpis niza.
+### Naloga 1
+Napiši funkcijo `pozdrav(ime)`, ki izpiše pozdrav uporabniku.
 
-### Dodatne naloge
-- Napiši funkcijo `pozdrav_igralec(ime, level)`.
-- Napiši funkcijo, ki 3-krat izpiše isti stavek.
-- Napiši funkcijo za pretvorbo evrov v cente.
-- Naredi program z več klici iste funkcije.
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
 
-### Izziv
-- Naredi mini knjižnico petih svojih funkcij.
-- Primerjaj funkcijo, ki izpisuje, in funkcijo, ki vrača.
-- Naredi program, kjer se ena funkcija uporabi z različnimi podatki.
-- Zapiši za vsako funkcijo, katere parametre sprejme.
+### Naloga 2
+Napiši funkcijo `kvadrat(n)`, ki izpiše kvadrat števila.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
 
-Uporabljeni viri za ta sklop:
+### Naloga 3
+Napiši funkcijo `v_sekunde(minute)`, ki minute pretvori v sekunde.
 
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 4
+Napiši funkcijo `glasno(beseda)`, ki izpiše besedo z velikimi črkami.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši funkcijo `kratica(ime, priimek)`, ki izpiše začetnici osebe.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Napiši funkcijo `je_polnoleten(starost)`, ki izpiše ustrezno sporočilo.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši funkcijo za izračun ploščine pravokotnika.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 8
+_Ta naloga je malo težja._
+Napiši program, ki isto funkcijo pokliče vsaj trikrat z različnimi podatki.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši pet kratkih funkcij v isti datoteki in za vsako dopiši, kaj sprejme kot parameter.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 10
+_Ta naloga je težja._
+Napiši funkcijo, ki izpiše tri vrstice besedila na podlagi enega parametra.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+## Viri
 - `08/naloge.md`
-
-## Opomba za učitelja
-
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.

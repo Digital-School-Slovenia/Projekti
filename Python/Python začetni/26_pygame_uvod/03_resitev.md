@@ -1,12 +1,14 @@
-# Rešitev / učiteljske usmeritve – 26 – Pygame – uvod, okno, risanje in premikanje
+# Rešitev – 26 – Pygame – uvod, okno, risanje in premikanje
 
-## Kako vodiš to uro
+Tukaj je jedro rešitve za sklop **26 – Pygame – uvod, okno, risanje in premikanje**. Pokaži en kratek primer. Potem naj učenci delajo.
 
-- najprej okno, nato risanje, nato premikanje,
-- ne skači takoj v 'pravo igro',
-- po vsakem checkpointu naj vsi pokažejo, da program še dela.
+## Kaj pokaži najprej
 
-## Minimalna referenčna rešitev
+- Najprej okno, nato risanje, nato premikanje
+- Ne skači takoj v 'pravo igro'
+- Po vsakem kratek pregledu naj vsi pokažejo, da program še dela.
+
+## Primer rešitve
 
 ```python
 import pygame
@@ -40,13 +42,26 @@ while True:
     clock.tick(60)
 ```
 
-## Učiteljski checkpointi
+## Kaj mora do konca ure delovati
 
-1. Okno se odpre in zapre pravilno.
-2. Nekaj je dejansko narisano na zaslonu.
-3. Objekt se premika in ne uide z ekrana.
+- Okno se odpre in zapre pravilno.
+- Nekaj je dejansko narisano na zaslonu.
+- Objekt se premika in ne uide z ekrana.
 
-## Python datoteke v tej mapi
+## Hitri pregled med uro
+
+- Okno se odpre in zapre pravilno.
+- Nekaj je dejansko narisano na zaslonu.
+- Objekt se premika in ne uide z ekrana.
+
+## Tipične napake
+
+- Pozabljena dvopičja ali oklepaji.
+- Napačna zamaknitev kode.
+- Napačno ime spremenljivke ali funkcije.
+- Program ni pognan po zadnji spremembi.
+
+## Datoteke v tej mapi
 
 - `06_osnovna_struktura.py`
 - `07_premik_kvadrata.py`

@@ -1,21 +1,17 @@
 # Domača naloga – 08 – Zanka `while` – osnove ponavljanja
 
-## Obvezni minimum
+### Naloga 1
+Napiši program, ki s pomočjo zanke `while` izpiše števila od 1 do 10.
 
-- november 2025.
-- 🧮 Naloga 1: Štetje do 10
-- 🐶 Naloga 2: Pes, ki laja dokler ne dobi hrane
+**Namig:** Najprej zapiši, kdaj se zanka začne in kdaj se mora ustaviti.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši program, ki s pomočjo zanke `while` šteje nazaj od 10 do 1.
 
-- Program naj **ponavlja vprašanje**:
-- Vsakič, ko uporabnik vnese znesek, ga prištej privarčevanemu denarju.
+**Namig:** Najprej zapiši, kdaj se zanka začne in kdaj se mora ustaviti.
 
-## Kratka refleksija
+### Naloga 3
+Napiši program "Pes, ki laja dokler ne dobi hrane". Dokler odgovor ni `da`, naj program izpisuje stavek o lajanju.
 
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

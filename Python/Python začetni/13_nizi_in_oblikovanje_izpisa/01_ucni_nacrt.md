@@ -4,52 +4,42 @@
 
 - 1 srečanje = 2 uri
 
-## Bistvo sklopa
+## Kaj delamo
 
-nizi in oblikovanje izpisa – poudarek je na delu skozi naloge, kratkih checkpointih in sprotnem testiranju.
+Nizi in oblikovanje izpisa – delo skozi naloge, sprotno testiranje in čim manj prazne razlage.
 
-## Formalni učni cilji
+## Cilji
 
-- Učenec uporablja osnovne operacije nad nizi.
-- Učenec zna pripraviti lep in pregleden izpis.
-- Učenec uporablja `f-string` in osnovne metode nizov.
-- Učenec reši več kratkih praktičnih nalog z besedilom.
+- Uporablja osnovne operacije nad nizi
+- Zna pripraviti lep in pregleden izpis
+- Uporablja `f-string` in osnovne metode nizov
+- Reši več kratkih praktičnih nalog z besedilom
 
-## Merila uspeha do konca ure
+## Minimum do konca ure
 
-- delujoče jedro: Vprašaj za ime in izpiši dolžino imena.
+- delujoče jedro: Vprašaj za ime in izpiši dolžino imena
 - vsaj še ena pravilno rešena naloga iz glavnega bloka
 - učenec zna pokazati, kaj je popravil ali dodal
 
-## Predlagan potek ure
+## Naloge po nivojih
 
-- 10–15 min: hiter uvod in prvi mikro primer
-- 20–25 min: vodeno ogrevanje in prvi checkpoint
-- 45–55 min: glavni blok nalog
-- 20–25 min: diferenciacija – dodatne naloge in izziv
-- 5–10 min: zaključek, demonstracije, refleksija
+- Za vse: Vprašaj za ime in izpiši dolžino imena.
+- Za hitrejše: Preveri, ali se beseda začne z določeno črko.
+- Izziv: Naredi mini analizator gesla.
 
-## Diferenciacija
+## Učitelj pripravi
 
-- **Osnovna naloga:** Vprašaj za ime in izpiši dolžino imena.
-- **Dodatna naloga:** Preveri, ali se beseda začne z določeno črko.
-- **Izziv:** Naredi mini analizator gesla.
+- 02_ucni_list.md
+- 03_resitev.md
+- 04_dodatne_naloge.md
+- 05_domaca_naloga.md
+- 08_uciteljski_scenarij_ure.md
+- 06_referencni_primer.py
 
-## Vloga učitelja
-
-- učitelj ne vleče cele ure frontalno,
-- daje kratke checkpoint razlage,
-- usmerja z vprašanji,
-- odpira dodatne naloge za hitrejše učence.
-
-## Uporabljeni viri iz tvojega paketa
+## Viri iz tvojega paketa
 
 - `ta sklop je vsebinsko nov oziroma kombiniran iz več tem`
 
-## Izvedbena opomba
+## Opomba
 
-Ta verzija je namenoma zgrajena po logiki: manj prazne teorije, več tipkanja, več kratkih nalog, več sprotnih popravkov.
-
-## Dodatna učiteljska opora
-
-- glej tudi `08_uciteljski_scenarij_ure.md` za izvedbeni tempo, checkpoint vprašanja in tipične učiteljske posege.
+Pokaži minimum. Potem naj učenci čim prej začnejo delati.

@@ -1,62 +1,31 @@
 # Učni list – 13 – Nizi in oblikovanje izpisa
 
-## Danes delamo tako
+Danes je poudarek na nizih, indeksih, rezanju niza in lepem izpisu z uporabo f-nizov.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Ustvari niz `tecaj = "Python za ZGNL dijake"`. Izpiši prvi, drugi, zadnji in predzadnji znak.
 
-- Vprašaj za ime in izpiši dolžino imena.
-- Izpiši ime z velikimi in malimi črkami.
-- Uporabi `strip()` na vnosu.
+### Naloga 2
+Iz istega niza izpiši podniz od indeksa 1 do 5.
 
-## Glavni blok dela
+### Naloga 3
+Napiši program, ki uporabnika vpraša za ime in priimek ter izpiše pozdrav z uporabo f-niza.
 
-- Izpiši prvo in zadnjo črko besede.
-- Naredi vzdevek iz prvih treh črk imena.
-- Sestavi lep stavek z `f-string`.
-- Izpiši ime znotraj oklepajev, npr. `[Matej]`.
-- Naredi mini besedilno vizitko.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši program, ki prešteje dolžino vnesenega imena z uporabo `len()`.
 
-- Preveri, ali se beseda začne z določeno črko.
-- Preveri, ali se v nizu pojavi izbran znak.
-- Naredi mini ID kartico: ime, razred, najljubši predmet.
-- Preštej, kolikokrat se v nizu pojavi črka `a`.
+### Naloga 5
+Napiši program, ki vneseni stavek pretvori v velike črke, male črke in obliko `title()`.
 
-## Izziv
+### Naloga 6
+Napiši program, ki v vnesenem stavku poišče prvo pojavitev črke `a`.
 
-- Naredi mini analizator gesla.
-- Preštej samoglasnike v besedi.
-- Naredi lepo poravnano besedilno tabelo s tremi vrsticami.
-- Naredi program, ki iz dveh besed sestavi novo ime.
+### Naloga 7
+V nizu zamenjaj vse `+` znake z `-` znaki.
 
-## Checkpointi
-
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: Vprašaj za ime in izpiši dolžino imena.
-
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Izpiši ime z velikimi in malimi črkami.
-
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Preveri, ali se beseda začne z določeno črko.
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši program, ki iz imena in priimka sestavi kratico, npr. `Matej Mencin -> M.M.`

@@ -1,62 +1,37 @@
 # Učni list – 04 – Vnos uporabnika in pretvorba tipov
 
-## Danes delamo tako
+Pri vseh nalogah pazi, da `input()` vrne niz. Kjer računaš, uporabi `int()` ali `float()`.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši program, ki uporabnika vpraša za ime in ga pozdravi.
 
-- Izpiše tvoje ime.
-- Izpiše tvojo najljubšo hrano.
-- Izpiše nekaj čisto trapastega, npr. `"Banana je predsednik sveta"`.
+### Naloga 2
+Napiši program, ki uporabnika vpraša za starost in izračuna, koliko bo star čez 10 let.
 
-## Glavni blok dela
+### Naloga 3
+Napiši program, ki vpraša za najljubšo hrano in izpiše odziv v obliki stavka.
 
-- Izpiše tri vrstice: pozdrav svetu, pozdrav vesolju in pozdrav WC školjki.
-- Izpiše »HAHAHA 10-krat v eni vrstici.
-- Izpiše »čudno resnico« (npr. `"Zajci so v resnici vesoljski agenti"`).
-- Ustvari spremenljivki `ime` in `starost`. Izpiši: `"Moje ime je ___ in star sem ___ let."`
-- Ustvari spremenljivko `sendvici_na_dan`. Vanjo vpiši koliko sendvičev poješ na dan. Nato izračunaj koliko sendvičev poješ v enem letu in izpiši v stavku.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši program, ki vpraša za dve števili in izpiše njuno vsoto.
 
-- Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v stavku.
-- Izračunaj: če poješ 3 pice na teden, koliko pic poješ v celem šolskem letu (40 tednov)? Dodaj ustrezen izpis.
-- Dodaten smeh: ustvari spremenljivko `supermoc` in izpiši `"Moja supermoč je, da znam ___.“` (naj napišejo kaj zabavnega).
-- Izračunaj, koliko bo stalo 5 pic, če ena stane 8 €.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Izziv
+### Naloga 5
+Napiši program, ki vpraša za širino in višino pravokotnika ter izpiše ploščino.
 
-- Če imaš 100 €, koliko čokolad lahko kupiš, če ena stane 2,5 €?
-- Dodatna naloga: izračunaj, koliko »dni« si že živel (starost × 365).
-- Dodatna naloga: izračunaj, koliko ur si že prespal, če spiš 8 ur na dan.
-- Vprašaj uporabnika za njegovo ime in ga pozdravi.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Checkpointi
+### Naloga 6
+Napiši program, ki vpraša za ceno izdelka in količino ter izpiše skupni znesek.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: Izpiše tvoje ime.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Izpiše tvojo najljubšo hrano.
+### Naloga 7
+Uporabnika vprašaj za ime učitelja in izpiši zabaven stavek.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v stavku.
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši program, ki vpraša za leto rojstva in izračuna trenutno starost.

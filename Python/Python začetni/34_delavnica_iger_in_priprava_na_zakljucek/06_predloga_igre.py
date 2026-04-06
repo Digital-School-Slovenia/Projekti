@@ -1,25 +1,26 @@
 # Predloga – 34 Delavnica iger in priprava na zaključek
-# Namen: prazna, a uporabna osnova za mini Pygame projekt.
+# Uporabi jo samo kot osnovo za prvi prototip.
 
 import pygame
 import sys
 
 pygame.init()
+
 WIDTH, HEIGHT = 800, 500
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Moja igra")
+pygame.display.set_caption("Moj projekt")
 clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 36)
 
 player = pygame.Rect(100, 100, 50, 50)
 speed = 5
 score = 0
+running = True
 
-while True:
+while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            pygame.quit()
-            sys.exit()
+            running = False
 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
@@ -33,6 +34,12 @@ while True:
 
     screen.fill((25, 25, 40))
     pygame.draw.rect(screen, (220, 70, 70), player)
-    screen.blit(font.render(f"Score: {score}", True, (255, 255, 255)), (10, 10))
+
+    score_text = font.render(f"Score: {score}", True, (255, 255, 255))
+    screen.blit(score_text, (10, 10))
+
     pygame.display.flip()
     clock.tick(60)
+
+pygame.quit()
+sys.exit()

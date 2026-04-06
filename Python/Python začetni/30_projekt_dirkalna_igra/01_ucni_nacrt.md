@@ -4,52 +4,37 @@
 
 - 1 srečanje = 2 uri
 
-## Bistvo sklopa
+## Kaj naredimo v tej uri
 
-projekt – dirkalna igra – poudarek je na delu skozi naloge, kratkih checkpointih in sprotnem testiranju.
+Učenci izdelajo dirkalno igro v `pygame`:
 
-## Formalni učni cilji
+- avto se premika levo/desno,
+- po cesti padajo ovire,
+- ob trku je konec igre,
+- po možnosti dodajo score ali več ovir.
 
-- Učenec v dveh urah sestavi kompakten projekt »Projekt – Dirkalna igra«.
-- Učenec med delom pogosto zažene program in sproti preverja rezultat.
-- Učenec rešuje več krajših nalog in ne ostane pri eni sami.
-- Učenec projekt demonstrira od začetka do konca.
+## Do konca ure mora delovati
 
-## Merila uspeha do konca ure
+- avto,
+- cesta,
+- vsaj ena ovira,
+- trk,
+- `game over`.
 
-- projekt se zažene in ima jasno osnovno mehaniko
-- uporabnik lahko odigra ali preizkusi vsaj eno delujočo rundo
-- vidna je vsaj ena nadgradnja ali smiseln naslednji korak
+## Če ostane čas
 
-## Predlagan potek ure
+- score,
+- več ovir,
+- življenja,
+- kovanci,
+- gorivo.
 
-- 10–15 min: hiter uvod in prvi mikro primer
-- 20–25 min: vodeno ogrevanje in prvi checkpoint
-- 45–55 min: glavni blok nalog
-- 20–25 min: diferenciacija – dodatne naloge in izziv
-- 5–10 min: zaključek, demonstracije, refleksija
+## Učitelj pripravi
 
-## Diferenciacija
-
-- **Osnovna naloga:** Nariši travo, cesto in avto.
-- **Dodatna naloga:** Dodaj več ovir.
-- **Izziv:** Dodaj stanje `start`, `play`, `game_over`.
-
-## Vloga učitelja
-
-- učitelj ne vleče cele ure frontalno,
-- daje kratke checkpoint razlage,
-- usmerja z vprašanji,
-- odpira dodatne naloge za hitrejše učence.
-
-## Uporabljeni viri iz tvojega paketa
-
-- `19_dirkalna_igra_paket/ucni_list_dirkalna_igra_3_leveli.md`
-
-## Izvedbena opomba
-
-Ta verzija je namenoma zgrajena po logiki: manj prazne teorije, več tipkanja, več kratkih nalog, več sprotnih popravkov.
-
-## Dodatna učiteljska opora
-
-- glej tudi `08_uciteljski_scenarij_ure.md` za izvedbeni tempo, checkpoint vprašanja in tipične učiteljske posege.
+- `02_ucni_list.md`
+- `03_resitev.md`
+- `04_dodatne_naloge.md`
+- `05_domaca_naloga.md`
+- `06_uciteljska_resitev.py`
+- `07_nadgradnja_kovanci_in_gorivo.py`
+- `08_uciteljski_scenarij_ure.md`

@@ -1,21 +1,19 @@
 # Domača naloga – 10 – Zanka `for` in `range`
 
-## Obvezni minimum
+### Naloga 1
+Napiši program, ki z `for` zanko izpiše števila od 1 do 10.
 
-- Izpiši števila od 1 do 10 z `for`.
-- Izpiši soda števila do 20.
-- Izpiši od 10 do 1 nazaj.
+**Namig:** Najprej zapiši, kdaj se zanka začne in kdaj se mora ustaviti.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši program, ki z `for` zanko izpiše števila od 10 do 1.
 
-- Naredi pravokotnik iz zvezdic.
-- Izpiši samo liha števila med 1 in 30.
+**Namig:** Najprej zapiši, kdaj se zanka začne in kdaj se mora ustaviti.
 
-## Kratka refleksija
+### Naloga 3
+Napiši program "Ovčke", ki vpraša, koliko ovčk želi uporabnik prešteti, nato pa jih izpiše v stavkih.
 
-Ob oddaji dopiši še:
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

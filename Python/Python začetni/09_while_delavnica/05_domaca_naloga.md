@@ -1,21 +1,17 @@
 # Domača naloga – 09 – Zanka `while` – delavnica problemov in seštevalnikov
 
-## Obvezni minimum
+### Naloga 1
+Napiši program "Vsi po pet", ki uporabnika vpraša po petih cenah izdelkov in na koncu izpiše vsoto.
 
-- november 2025.
-- 🧮 Naloga 1: Štetje do 10
-- 🐶 Naloga 2: Pes, ki laja dokler ne dobi hrane
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši program "Konkurenca", ki najprej vpraša za število izdelkov, nato pa prebere cene vseh izdelkov in izpiše vsoto.
 
-- Program naj **ponavlja vprašanje**:
-- Vsakič, ko uporabnik vnese znesek, ga prištej privarčevanemu denarju.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Kratka refleksija
+### Naloga 3
+Napiši program "Top shop", ki sprašuje po cenah izdelkov toliko časa, dokler uporabnik ne vnese 0.
 
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

@@ -1,62 +1,171 @@
 # Učni list – 32 – Projekt – Mini Wolfenstein
 
-## Danes delamo tako
+## Cilj
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+Iz 2D mreže naredi lažni 3D pogled s pomočjo žarkov.
 
-## Minimalno delujoče jedro
+## Korak 1: Uvozi knjižnice in odpri okno
 
-- Ustvari mapo sveta in velikost okna.
-- Dodaj igralca z `x`, `y` in kotom.
-- Dodaj preverjanje stene.
-- Omogoči premikanje in obračanje.
+```python
+import pygame
+import math
+import sys
 
-## Glavni blok dela
+pygame.init()
 
-- Pošiljaj žarke.
-- Nariši navpične stolpce glede na razdaljo.
-- Dodaj minimapo.
-- Dodaj cilj oziroma izhod.
+WIDTH, HEIGHT = 1000, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Mini Wolfenstein")
+clock = pygame.time.Clock()
+```
 
-## Dodatne naloge za hitrejše
+## Korak 2: Dodaj barve
 
-- Dodaj zaslon ob zmagi.
-- Dodaj shading.
-- Dodaj več tipov sten.
-- Dodaj HUD.
+```python
+WHITE = (245, 245, 245)
+BLACK = (10, 10, 10)
+GRAY = (90, 90, 90)
+BLUE = (80, 140, 220)
+GREEN = (80, 200, 100)
+YELLOW = (230, 220, 90)
+```
 
-## Izziv
+## Korak 3: Dodaj mapo
 
-- Dodaj obračanje z miško.
-- Dodaj teksture.
-- Dodaj boljši občutek gibanja.
-- Dodaj svojo 3D nadgradnjo.
+```python
+MAP_DATA = [
+    [1,1,1,1,1,1,1,1],
+    [1,0,0,0,0,0,0,1],
+    [1,0,1,1,0,1,0,1],
+    [1,0,0,1,0,1,0,1],
+    [1,1,0,0,0,0,0,1],
+    [1,0,0,1,1,1,0,1],
+    [1,0,0,0,0,0,2,1],
+    [1,1,1,1,1,1,1,1],
+]
 
-## Checkpointi
+TILE_SIZE = 64
+MAP_ROWS = len(MAP_DATA)
+MAP_COLS = len(MAP_DATA[0])
+```
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: Ustvari mapo sveta in velikost okna.
+## Korak 4: Dodaj igralca
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Dodaj igralca z `x`, `y` in kotom.
+```python
+player_x = 1.5 * TILE_SIZE
+player_y = 1.5 * TILE_SIZE
+player_angle = 0
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Dodaj zaslon ob zmagi.
+MOVE_SPEED = 2.8
+ROT_SPEED = 0.04
+PLAYER_RADIUS = 10
+```
 
-## Pravilo te ure
+## Korak 5: Dodaj pomožni funkciji
 
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
+```python
+def get_map_cell(world_x, world_y):
+    col = int(world_x // TILE_SIZE)
+    row = int(world_y // TILE_SIZE)
 
-## Oddaja / exit ticket
+    if row < 0 or row >= MAP_ROWS or col < 0 or col >= MAP_COLS:
+        return 1
+    return MAP_DATA[row][col]
 
-Na koncu pokaži:
 
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+def is_wall(world_x, world_y):
+    return get_map_cell(world_x, world_y) == 1
+```
+
+## Korak 6: Dodaj minimapo
+
+```python
+def draw_map_topdown():
+    for row in range(MAP_ROWS):
+        for col in range(MAP_COLS):
+            value = MAP_DATA[row][col]
+            x = col * TILE_SIZE
+            y = row * TILE_SIZE
+
+            color = BLACK
+            if value == 1:
+                color = GRAY
+            elif value == 2:
+                color = GREEN
+
+            pygame.draw.rect(screen, color, (x, y, TILE_SIZE, TILE_SIZE))
+            pygame.draw.rect(screen, WHITE, (x, y, TILE_SIZE, TILE_SIZE), 1)
+
+    pygame.draw.circle(screen, YELLOW, (int(player_x), int(player_y)), PLAYER_RADIUS)
+    end_x = player_x + math.cos(player_angle) * 30
+    end_y = player_y + math.sin(player_angle) * 30
+    pygame.draw.line(screen, YELLOW, (player_x, player_y), (end_x, end_y), 3)
+```
+
+## Korak 7: Dodaj raycasting
+
+```python
+FOV = math.pi / 3
+NUM_RAYS = 240
+MAX_DEPTH = 800
+SCALE = WIDTH / NUM_RAYS
+
+
+def cast_rays():
+    start_angle = player_angle - FOV / 2
+
+    for ray in range(NUM_RAYS):
+        ray_angle = start_angle + (ray / NUM_RAYS) * FOV
+
+        for depth in range(1, MAX_DEPTH, 2):
+            target_x = player_x + math.cos(ray_angle) * depth
+            target_y = player_y + math.sin(ray_angle) * depth
+
+            if is_wall(target_x, target_y):
+                corrected_depth = depth * math.cos(player_angle - ray_angle)
+                wall_height = min(HEIGHT, 30000 / max(corrected_depth, 1))
+                shade = max(40, 255 - depth // 3)
+                color = (shade, shade, shade)
+                pygame.draw.rect(screen, color, (ray * SCALE, HEIGHT // 2 - wall_height // 2, SCALE + 1, wall_height))
+                break
+```
+
+## Korak 8: Dodaj glavno zanko
+
+```python
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+
+    keys = pygame.key.get_pressed()
+
+    if keys[pygame.K_a] or keys[pygame.K_LEFT]:
+        player_angle -= ROT_SPEED
+    if keys[pygame.K_d] or keys[pygame.K_RIGHT]:
+        player_angle += ROT_SPEED
+
+    move_step = 0
+    if keys[pygame.K_w] or keys[pygame.K_UP]:
+        move_step = MOVE_SPEED
+    if keys[pygame.K_s] or keys[pygame.K_DOWN]:
+        move_step = -MOVE_SPEED
+
+    next_x = player_x + math.cos(player_angle) * move_step
+    next_y = player_y + math.sin(player_angle) * move_step
+
+    if not is_wall(next_x, next_y):
+        player_x = next_x
+        player_y = next_y
+
+    screen.fill((20, 20, 30))
+    pygame.draw.rect(screen, (70, 120, 180), (0, 0, WIDTH, HEIGHT // 2))
+    pygame.draw.rect(screen, (50, 40, 30), (0, HEIGHT // 2, WIDTH, HEIGHT // 2))
+
+    cast_rays()
+    draw_map_topdown()
+
+    pygame.display.flip()
+    clock.tick(60)
+```

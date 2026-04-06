@@ -1,21 +1,17 @@
 # Domača naloga – 06 – `elif`, `else` in več možnosti odločanja
 
-## Obvezni minimum
+### Naloga 1
+Napiši program, ki vpraša, koliko mačk ima uporabnik. Program naj glede na število izpiše tri različne odzive.
 
-- ## Naloge
-- Napiši program, ki uporabnika vpraša za ime. Če je ime enako tvojemu imenu naj se izpiše »Legenda!« sicer pa »Nisi TVOJE_IME, a si vseeno kul!«
-- Napiši program, ki uporabnika vpraša, ali ima rad pico:
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši program, ki vpraša za temperaturo in glede na interval izpiše ustrezno priporočilo za vreme.
 
-- Napiši program, ki te vpraša koliko mačk imaš:
-- Če več kot 10 → `"Ti si uradno mačja oseba 🐱"`.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Kratka refleksija
+### Naloga 3
+Napiši program za ocenjevanje. Uporabnik vnese število točk, program pa izpiše oceno od 1 do 5.
 
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

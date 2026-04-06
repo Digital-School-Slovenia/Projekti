@@ -1,21 +1,17 @@
 # Domača naloga – 18 – Velika delavnica vaj – mešane naloge pred slovarji
 
-## Obvezni minimum
+### Naloga 1
+Napiši program, ki prebere 5 števil v seznam in nato izpiše najmanjše, največje in povprečje.
 
-- `int` → cela števila (`5`, `10`)
-- `float` → decimalna števila (`3.14`)
-- `str` → besedilo (`"Ana"`)
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši funkcijo `prestej_pozitivna(seznam)`, nato pa jo uporabi v programu, ki bere podatke od uporabnika.
 
-- koda je bolj pregledna
-- lažje popravljamo napake
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Kratka refleksija
+### Naloga 3
+Napiši program, ki iz vnesenega stavka izloči vse samoglasnike in izpiše nov niz.
 
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

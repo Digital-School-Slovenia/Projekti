@@ -1,21 +1,15 @@
 # Domača naloga – 13 – Nizi in oblikovanje izpisa
 
-## Obvezni minimum
+### Naloga 1
+Ustvari niz `tecaj = "Python za ZGNL dijake"`. Izpiši prvi, drugi, zadnji in predzadnji znak.
 
-- Vprašaj za ime in izpiši dolžino imena.
-- Izpiši ime z velikimi in malimi črkami.
-- Uporabi `strip()` na vnosu.
+### Naloga 2
+Iz istega niza izpiši podniz od indeksa 1 do 5.
 
-## Bonus / za hitrejše
+### Naloga 3
+Napiši program, ki uporabnika vpraša za ime in priimek ter izpiše pozdrav z uporabo f-niza.
 
-- Preveri, ali se beseda začne z določeno črko.
-- Preveri, ali se v nizu pojavi izbran znak.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

@@ -1,42 +1,57 @@
 # Dodatne naloge – 20 – Slovarji – vaje, zanke in seznam slovarjev
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Napiši program, ki za slovar profila izpiše vse podatke uporabnika.
 
-- 🟢 Naloga 1: Profil uporabnika
-- izpiše ime, starost in točke
-- vsak podatek v svojo vrstico.
-- 🟢 Naloga 2: Povečaj točke
-- poveča vrednost `"tocke"` za `kolicina`
-- vrne (uporabi `return`) posodobljen slovar
-- 🟢 Naloga 3: Preveri ključ
-- preveri, ali ključ obstaja v slovarju
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
-### Dodatne naloge
+### Naloga 2
+Napiši funkcijo `povecaj_tocke(profil, kolicina)`, ki poveča vrednost ključa `tocke`.
 
-- izpiše `"Ključ obstaja"` ali `"Ključa ni"`.
-- 🟡 Naloga 4: Ocena profila
-- glede na `"tocke"` izpiše:
-- ≥ 200 → `"Pro igralec 😎"`
-- 100–199 → `"Dober igralec 👍"`
-- < 100 → `"Začetnik 👶"`
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
-### Izziv
+### Naloga 3
+Napiši program, ki preveri, ali določen ključ obstaja v slovarju.
 
-- 🟡 Naloga 5: Izpis vseh podatkov
-- z zanko izpiše vse pare `ključ → vrednost` in sicer takole: `Ključ: {kljuc} ima vrednost: {vrednost}`. Uporabi zanko `for`.
-- 🟡 Naloga 6: Seznam profilov
-- izpiše ime in točke vsakega uporabnika.
-- 🟠 Naloga 7: Najboljši uporabnik
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Napiši program, ki iz slovarja izpiše vse pare `ključ -> vrednost`.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši program, ki glede na število točk izpiše kategorijo igralca.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Ustvari seznam slovarjev za več igralcev in izpiši ime ter točke vsakega.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši program, ki v seznamu slovarjev poišče igralca z največ točkami.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši funkcijo, ki za seznam profilov vrne samo tiste, ki imajo več kot 100 točk.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši mini tabelo rezultatov, kjer uporabnike urediš po številu točk.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+## Viri
 - `11_slovarji/#L01f9f1 VAJE #U2013 PYTHON SLOVARJI (DICT).md`
 - `11_slovarji/01_slovarji.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

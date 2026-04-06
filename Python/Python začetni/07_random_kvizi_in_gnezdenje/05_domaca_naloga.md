@@ -1,21 +1,17 @@
 # Domača naloga – 07 – Random, mini kvizi in odločanje v praksi
 
-## Obvezni minimum
+### Naloga 1
+Napiši program, ki uporabniku zastavi eno vprašanje iz poštevanke. Števili izžrebaj z `random.randint`.
 
-- Začetna naloga
-- Uporabnik dobi 4
-- Vsako vprašanje ima več možnih odgovorov (A, B, C, D)
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši mini kviz s štirimi vprašanji. Za vsak pravilen odgovor uporabnik dobi 1 točko.
 
-- Če je sončno → Obleci pulover 🧥
-- Če dežuje → Zavij se v odejo 🛋️
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Kratka refleksija
+### Naloga 3
+Napiši program `Vremenska odločitev`: uporabnik vnese temperaturo in vreme, program pa na podlagi obeh podatkov izpiše priporočilo.
 
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

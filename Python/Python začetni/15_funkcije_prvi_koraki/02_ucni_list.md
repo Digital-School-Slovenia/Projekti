@@ -1,62 +1,37 @@
 # Učni list – 15 – Funkcije – prvi koraki
 
-## Danes delamo tako
+Od te ure naprej želim, da pri nalogah jasno ločiš med definicijo funkcije, klicem funkcije in rezultatom.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši funkcijo `pozdrav(ime)`, ki vrne pozdrav v obliki `Hej, Matej!`.
 
-- Napiši funkcijo `pozdrav(ime)`.
-- Napiši funkcijo `kvadrat(n)`.
-- Napiši funkcijo `v_sekunde(minute)`.
+### Naloga 2
+Napiši funkcijo `kvadrat(n)`, ki vrne `n ** 2`.
 
-## Glavni blok dela
+### Naloga 3
+Napiši funkcijo `v_sekunde(minute)`, ki minute pretvori v sekunde. Če je število negativno, naj vrne sporočilo po tvoji izbiri.
 
-- Napiši funkcijo `kratica(ime, priimek)`.
-- Napiši funkcijo `podvoji(stevilo)`.
-- Napiši funkcijo `je_polnoleten(starost)`.
-- Napiši funkcijo za izračun ploščine pravokotnika.
-- Napiši funkcijo za glasen izpis niza.
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši funkcijo `kratica(ime, priimek)`, ki vrne kratico, npr. `M.M.`.
 
-- Napiši funkcijo `pozdrav_igralec(ime, level)`.
-- Napiši funkcijo, ki 3-krat izpiše isti stavek.
-- Napiši funkcijo za pretvorbo evrov v cente.
-- Naredi program z več klici iste funkcije.
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Izziv
+### Naloga 5
+Napiši funkcijo `je_polnoleten(starost)`, ki vrne `True` ali `False`.
 
-- Naredi mini knjižnico petih svojih funkcij.
-- Primerjaj funkcijo, ki izpisuje, in funkcijo, ki vrača.
-- Naredi program, kjer se ena funkcija uporabi z različnimi podatki.
-- Zapiši za vsako funkcijo, katere parametre sprejme.
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Checkpointi
+### Naloga 6
+Napiši funkcijo `vecje(a, b)`, ki vrne večje izmed dveh števil.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: Napiši funkcijo `pozdrav(ime)`.
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Napiši funkcijo `kvadrat(n)`.
+### Naloga 7
+Napiši funkcijo `opis_ucenca(ime, starost, kraj)`, ki vrne en lepo oblikovan stavek.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Napiši funkcijo `pozdrav_igralec(ime, level)`.
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši funkcijo `primerjaj(prvi, drugi)`, ki vrne večje izmed dveh seznamskih vsot.

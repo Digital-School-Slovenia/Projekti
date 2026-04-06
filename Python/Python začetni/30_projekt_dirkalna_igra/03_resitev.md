@@ -1,29 +1,40 @@
-# Rešitev / učiteljske usmeritve – 30 – Projekt – Dirkalna igra
+# Rešitev – 30 – Projekt – Dirkalna igra
 
-## Kako vodiš to uro
+## Kaj pokaži najprej
 
-- učenci morajo najprej normalno voziti po cesti,
-- ena ovira je dovolj za jedro,
-- vse ostalo so nadgradnje.
+Najprej mora biti jasna mehanika:
 
-## Minimalni referenčni okvir
+- cesta,
+- avto,
+- ovira,
+- trk.
+
+Score je bonus, ne jedro.
+
+## Ključni del rešitve
 
 ```python
-if keys[pygame.K_LEFT]:
-    player_x -= player_speed
-if keys[pygame.K_RIGHT]:
-    player_x += player_speed
-
-obstacle_y += obstacle_speed
+if obstacle_y > HEIGHT:
+    obstacle_y = -120
+    obstacle_x = random.randint(ROAD_X, ROAD_X + ROAD_WIDTH - obstacle_width)
+    score += 1
 ```
 
-## Učiteljski checkpointi
+in
 
-1. Avto se premika levo/desno.
-2. Ovira pada.
-3. Trk se zazna in igra reagira.
+```python
+if player_rect.colliderect(obstacle_rect):
+    game_over = True
+```
 
-## Python datoteke v tej mapi
+## Tipične napake
+
+- igralec gre iz ceste,
+- ovira se po respawnu pojavi izven ceste,
+- `score` se ne poveča,
+- `game_over` se izpiše, igra pa še vedno normalno teče.
+
+## Datoteke v tej mapi
 
 - `06_uciteljska_resitev.py`
 - `07_nadgradnja_kovanci_in_gorivo.py`

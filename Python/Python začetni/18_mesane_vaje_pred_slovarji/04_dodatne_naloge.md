@@ -1,42 +1,55 @@
 # Dodatne naloge – 18 – Velika delavnica vaj – mešane naloge pred slovarji
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Napiši program, ki vpraša za tri števila, jih shrani v seznam in izpiše njihovo vsoto.
 
-- `int` → cela števila (`5`, `10`)
-- `float` → decimalna števila (`3.14`)
-- `str` → besedilo (`"Ana"`)
-- `bool` → `True` ali `False`
-- dodajati elemente (`append`)
-- brisati elemente (`remove`)
-- dostopati do elementov z indeksom
-- uporabljati sezname v zankah
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
 
-### Dodatne naloge
+### Naloga 2
+Napiši funkcijo, ki za vneseno besedo vrne njeno dolžino.
 
-- koda je bolj pregledna
-- lažje popravljamo napake
-- kodo lahko večkrat uporabimo
-- združevati sezname, pogoje, zanke in funkcije
-- razdeliti problem na manjše dele
-- napisati program korak za korakom
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
 
-### Izziv
+### Naloga 3
+Napiši program, ki s pomočjo zanke `for` izpiše vse črke v nizu.
 
-- manjkajoči dvopičje `:`
-- napačni zamiki (indentacija)
-- napačen tip podatka
-- slovarji (`dict`)
-- delo z datotekami
+**Namig:** Premisli, ali potrebuješ `range(...)` ali sprehod po elementih seznama.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Napiši program, ki od uporabnika bere števila, dokler ne vnese 0, nato izpiše vsoto.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
 
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši program, ki za seznam števil izpiše samo tista, ki so večja od 10.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Napiši funkcijo `povprecje_treh(a, b, c)`, ki vrne povprečje treh števil.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši program, ki v seznam imen doda novo ime in nato izpiše vsa imena po vrsti.
+
+**Namig:** Premisli, ali potrebuješ `range(...)` ali sprehod po elementih seznama.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši mini besedilni program, ki uporablja `input`, `if`, zanko in vsaj eno funkcijo.
+
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši program, ki vsebuje eno logično napako, nato pa dopiši, kako si jo odkril in popravil.
+
+## Viri
 - `10_first/#L01f9e0 POVZETEK SNOVI #U2013 PYTHON (DO SEDAJ).md`
 - `10_first/01_naloga.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

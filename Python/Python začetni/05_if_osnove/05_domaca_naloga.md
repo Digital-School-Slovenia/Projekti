@@ -1,21 +1,19 @@
 # Domača naloga – 05 – Pogoji `if` – osnove odločanja
 
-## Obvezni minimum
+### Naloga 1
+Napiši program, ki uporabnika vpraša za ime. Če je ime enako tvojemu imenu, naj izpiše `Legenda!`, sicer pa naj izpiše drugačen odziv.
 
-- ## Naloge
-- Napiši program, ki uporabnika vpraša za ime. Če je ime enako tvojemu imenu naj se izpiše »Legenda!« sicer pa »Nisi TVOJE_IME, a si vseeno kul!«
-- Napiši program, ki uporabnika vpraša, ali ima rad pico:
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši program, ki uporabnika vpraša, ali ima rad pico. Če vpiše `da`, naj izpiše `Tudi jaz!`, sicer pa drugačen odgovor.
 
-- Napiši program, ki te vpraša koliko mačk imaš:
-- Če več kot 10 → `"Ti si uradno mačja oseba 🐱"`.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Kratka refleksija
+### Naloga 3
+Napiši program, ki vpraša za najljubšo barvo. Če je odgovor `modra`, naj izpiše `Super izbira!`, sicer pa drug komentar.
 
-Ob oddaji dopiši še:
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

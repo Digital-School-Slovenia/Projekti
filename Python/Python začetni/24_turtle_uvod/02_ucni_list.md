@@ -1,62 +1,37 @@
 # Učni list – 24 – Turtle – uvod v risanje s funkcijami
 
-## Danes delamo tako
+Pri vseh nalogah uporabi knjižnico `turtle` in vse risanje zapri v funkcije.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši funkcijo `naprej(dolzina)`, ki želvo premakne naprej brez risanja.
 
-- `t` je **želva**, ki riše
-- vse ukaze pišemo kot `t.ukaz()`
-- `"red"`, `"blue"`, `"green"`
+### Naloga 2
+Napiši funkcijo `zavoj_levo(kot, smer)`, ki zavije želvo v izbrano smer za podani kot.
 
-## Glavni blok dela
+### Naloga 3
+Napiši funkcijo `crta(dolzina)`, ki nariše ravno črto.
 
-- `"black"`, `"yellow"`, `"purple"`
-- pozabiš `import turtle`
-- pozabiš ustvariti želvo (`t = turtle.Turtle()`)
-- napišeš `forward(100)` namesto `t.forward(100)`
-- `t.forward()`
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši funkcijo `kvadrat(dolzina)`, ki nariše kvadrat z uporabo zanke `for`.
 
-- `t.left()` / `t.right()`
-- `t.color()`
-- `t.penup()` / `t.pendown()`
-- `for` zanka
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Izziv
+### Naloga 5
+Napiši funkcijo `pravokotnik(sirina, visina)`, ki nariše pravokotnik.
 
-- vse risanje naj bo v funkcijah
-- 🟢 Naloga 1: Premik naprej
-- premakne želvo naprej za `dolzina` (brez risanja!)
-- 🟢 Naloga 2: Zavoj
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Checkpointi
+### Naloga 6
+Napiši funkcijo `trikotnik(dolzina)`, ki nariše enakostranični trikotnik.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: `t` je **želva**, ki riše
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: vse ukaze pišemo kot `t.ukaz()`
+### Naloga 7
+Napiši funkcijo `hiska()`, ki nariše hišo iz kvadrata in trikotnika.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: `t.left()` / `t.right()`
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši funkcijo `barvni_kvadrat(dolzina, barva)` in jo večkrat uporabi.

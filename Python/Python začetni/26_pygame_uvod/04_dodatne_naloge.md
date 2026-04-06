@@ -1,37 +1,64 @@
 # Dodatne naloge – 26 – Pygame – uvod, okno, risanje in premikanje
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
-- Ustvari okno 600 × 400 ali 800 × 500.
-- Omogoči zapiranje okna z gumbom X.
-- Dodaj `screen.fill()` in preizkusi več barv.
-- Nariši pravokotnik ali krog.
-- Dodaj igralca kot `pygame.Rect`.
-- Premikaj igralca s puščicami.
-- Omeji igralca na zaslon.
-- Program naj teče pri 60 FPS.
+### Naloga 1
+Napiši program, ki odpre pygame okno velikosti 800 × 500.
 
-### Dodatne naloge
-- Nariši hišo, sonce in tla.
-- Dodaj še drugi objekt.
-- Dodaj hitrost v ločeni spremenljivki.
-- Dodaj izpis besedila.
+**Namig:** Nadgradnjo dodaj postopoma: najprej podatke pred glavno zanko, nato logiko v zanki in na koncu risanje.
 
-### Izziv
-- Naredi mini igro lovljenja.
-- Dodaj restart ali reset.
-- Dodaj preprosto točkovanje.
-- Dodaj premik v vse štiri smeri brez cukanja.
+### Naloga 2
+Dodaj pravilno zapiranje okna z gumbom X.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+**Namig:** Nadgradnjo dodaj postopoma: najprej podatke pred glavno zanko, nato logiko v zanki in na koncu risanje.
 
-Uporabljeni viri za ta sklop:
+### Naloga 3
+Pobarvaj ozadje z `screen.fill()`.
 
+**Namig:** Nadgradnjo dodaj postopoma: najprej podatke pred glavno zanko, nato logiko v zanki in na koncu risanje.
+
+### Naloga 4
+Nariši en pravokotnik in en krog.
+
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
+
+### Naloga 5
+_Ta naloga je malo težja._
+Dodaj igralca kot `pygame.Rect` in ga premikaj s puščicami.
+
+**Namig:** Nadgradnjo dodaj postopoma: najprej podatke pred glavno zanko, nato logiko v zanki in na koncu risanje.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Poskrbi, da igralec ne more zapustiti zaslona.
+
+**Namig:** Nadgradnjo dodaj postopoma: najprej podatke pred glavno zanko, nato logiko v zanki in na koncu risanje.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Dodaj hitrost v ločeni spremenljivki in jo preizkusi.
+
+**Namig:** Nadgradnjo dodaj postopoma: najprej podatke pred glavno zanko, nato logiko v zanki in na koncu risanje.
+
+### Naloga 8
+_Ta naloga je malo težja._
+Dodaj izpis kratkega besedila na zaslon.
+
+**Namig:** Nadgradnjo dodaj postopoma: najprej podatke pred glavno zanko, nato logiko v zanki in na koncu risanje.
+
+### Naloga 9
+_Ta naloga je težja._
+Naredi mini lovljenje: igralec se premika do cilja ali predmeta.
+
+**Namig:** Nadgradnjo dodaj postopoma: najprej podatke pred glavno zanko, nato logiko v zanki in na koncu risanje.
+
+### Naloga 10
+_Ta naloga je težja._
+Dodaj preprost rezultat ali števec točk.
+
+**Namig:** Nadgradnjo dodaj postopoma: najprej podatke pred glavno zanko, nato logiko v zanki in na koncu risanje.
+
+## Viri
 - `16_pygame/#L01f3ae Uvod v Pygame.md`
 - `16_pygame/01_za_ucence.md`
 - `16_pygame/osnovna_struktura.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.

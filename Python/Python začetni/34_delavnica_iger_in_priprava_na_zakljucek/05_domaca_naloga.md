@@ -1,21 +1,21 @@
-# Domača naloga – 34 – Velika delavnica vaj + priprava na zaključni projekt
+# Domača naloga – 34 – Delavnica iger in priprava na zaključek
 
-## Obvezni minimum
+### Naloga 1
+Dokončaj opis zaključnega projekta tako, da bo vseboval:
+- naslov,
+- opis,
+- cilj,
+- zmago ali uspeh,
+- poraz ali neuspeh,
+- 4 korake prve verzije.
 
-- [ ] dirkalna igra
-- [ ] pustolovska igra
-- [ ] igra pobiranja predmetov
+### Naloga 2
+Nariši ali dopolni skico projekta.
 
-## Bonus / za hitrejše
+### Naloga 3
+Če še nisi, ustvari začetno `.py` datoteko za svoj projekt.
 
-- zbrati 10 kovancev
-- priti do cilja
-
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Na vrh datoteke kot komentar napiši:
+- kaj je minimum,
+- kaj je prva nadgradnja.

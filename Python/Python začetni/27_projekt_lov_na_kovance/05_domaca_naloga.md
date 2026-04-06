@@ -1,21 +1,14 @@
 # Domača naloga – 27 – Projekt – Lov na kovance
 
-## Obvezni minimum
+### Naloga 1
+Projekt preimenuj po svoje in spremeni barve igre.
 
-- Odpri okno in nastavi FPS.
-- Dodaj ozadje.
-- Dodaj igralca kot `Rect` in ga nariši.
+### Naloga 2
+Dodaj vsaj eno svojo nadgradnjo, ki je danes še nisi naredil.
 
-## Bonus / za hitrejše
+### Naloga 3
+V komentar zapiši, kateri del kode skrbi za:
 
-- Dodaj več kovancev.
-- Dodaj časovnik.
-
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+- premikanje,
+- pobiranje kovancev,
+- izpis rezultata.

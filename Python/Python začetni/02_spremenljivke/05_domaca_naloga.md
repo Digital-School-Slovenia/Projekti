@@ -1,21 +1,13 @@
 # Domača naloga – 02 – Spremenljivke in poimenovanje podatkov
 
-## Obvezni minimum
+### Naloga 1
+Napiši program, ki ustvari spremenljivki `ime` in `starost`. Nato izpiši stavek: `Moje ime je ___ in star sem ___ let.`
 
-- Izpiše tvoje ime.
-- Izpiše tvojo najljubšo hrano.
-- Izpiše nekaj čisto trapastega, npr. `"Banana je predsednik sveta"`.
+### Naloga 2
+Ustvari spremenljivko `sendvici_na_dan`. Izračunaj, koliko sendvičev poješ v enem letu, in izpiši rezultat v stavku.
 
-## Bonus / za hitrejše
+### Naloga 3
+Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v kratkem stavku.
 
-- Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v stavku.
-- Izračunaj: če poješ 3 pice na teden, koliko pic poješ v celem šolskem letu (40 tednov)? Dodaj ustrezen izpis.
-
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

@@ -4,52 +4,42 @@
 
 - 1 srečanje = 2 uri
 
-## Bistvo sklopa
+## Kaj delamo
 
-velika delavnica vaj – mešane naloge pred slovarji – poudarek je na delu skozi naloge, kratkih checkpointih in sprotnem testiranju.
+Velika delavnica vaj – mešane naloge pred slovarji – delo skozi naloge, sprotno testiranje in čim manj prazne razlage.
 
-## Formalni učni cilji
+## Cilji
 
-- Učenec izdela delujoče jedro za sklop »Velika delavnica vaj – mešane naloge pred slovarji«.
-- Učenec med delom pogosto zažene program in sproti preverja rezultat.
-- Učenec rešuje več krajših nalog in ne ostane pri eni sami.
-- Učenec zna pokazati vsaj eno osnovno rešitev in eno nadgradnjo.
+- Sestavi delujoče jedro za sklop »Velika delavnica vaj – mešane naloge pred slovarji«
+- Med delom pogosto zažene program in preverja rezultat
+- Reši več krajših nalog in ne obstane pri eni sami
+- Zna pokazati osnovno rešitev in vsaj eno nadgradnjo
 
-## Merila uspeha do konca ure
+## Minimum do konca ure
 
 - delujoče jedro: `int` → cela števila (`5`, `10`)
 - vsaj še ena pravilno rešena naloga iz glavnega bloka
 - učenec zna pokazati, kaj je popravil ali dodal
 
-## Predlagan potek ure
+## Naloge po nivojih
 
-- 10–15 min: hiter uvod in prvi mikro primer
-- 20–25 min: vodeno ogrevanje in prvi checkpoint
-- 45–55 min: glavni blok nalog
-- 20–25 min: diferenciacija – dodatne naloge in izziv
-- 5–10 min: zaključek, demonstracije, refleksija
+- Za vse: `int` → cela števila (`5`, `10`)
+- Za hitrejše: koda je bolj pregledna
+- Izziv: manjkajoči dvopičje `:`
 
-## Diferenciacija
+## Učitelj pripravi
 
-- **Osnovna naloga:** `int` → cela števila (`5`, `10`)
-- **Dodatna naloga:** koda je bolj pregledna
-- **Izziv:** manjkajoči dvopičje `:`
+- 02_ucni_list.md
+- 03_resitev.md
+- 04_dodatne_naloge.md
+- 05_domaca_naloga.md
+- 08_uciteljski_scenarij_ure.md
+- 06_mesane_referencne_naloge.py
 
-## Vloga učitelja
-
-- učitelj ne vleče cele ure frontalno,
-- daje kratke checkpoint razlage,
-- usmerja z vprašanji,
-- odpira dodatne naloge za hitrejše učence.
-
-## Uporabljeni viri iz tvojega paketa
+## Viri iz tvojega paketa
 
 - `10_first/POVZETEK SNOVI – PYTHON (DO SEDAJ).md`
 
-## Izvedbena opomba
+## Opomba
 
-Ta verzija je namenoma zgrajena po logiki: manj prazne teorije, več tipkanja, več kratkih nalog, več sprotnih popravkov.
-
-## Dodatna učiteljska opora
-
-- glej tudi `08_uciteljski_scenarij_ure.md` za izvedbeni tempo, checkpoint vprašanja in tipične učiteljske posege.
+Pokaži minimum. Potem naj učenci čim prej začnejo delati.

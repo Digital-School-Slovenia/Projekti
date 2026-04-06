@@ -1,43 +1,48 @@
 # Dodatne naloge – 01 – Print, prvi program in delo v Thonnyju
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Napiši program, ki v treh vrsticah izpiše tvoje ime, najljubši predmet in najljubšo hrano.
 
-- Izpiše tvoje ime.
-- Izpiše tvojo najljubšo hrano.
-- Izpiše nekaj čisto trapastega, npr. `"Banana je predsednik sveta"`.
-- Izpiše tri vrstice: pozdrav svetu, pozdrav vesolju in pozdrav WC školjki.
-- Izpiše »HAHAHA 10-krat v eni vrstici.
-- Izpiše »čudno resnico« (npr. `"Zajci so v resnici vesoljski agenti"`).
-- Ustvari spremenljivki `ime` in `starost`. Izpiši: `"Moje ime je ___ in star sem ___ let."`
-- Ustvari spremenljivko `sendvici_na_dan`. Vanjo vpiši koliko sendvičev poješ na dan. Nato izračunaj koliko sendvičev poješ v enem letu in izpiši v stavku.
+### Naloga 2
+Napiši program, ki izpiše isti stavek petkrat.
 
-### Dodatne naloge
+### Naloga 3
+Ustvari spremenljivki `ime` in `starost` ter izpiši stavek o sebi.
 
-- Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v stavku.
-- Izračunaj: če poješ 3 pice na teden, koliko pic poješ v celem šolskem letu (40 tednov)? Dodaj ustrezen izpis.
-- Dodaten smeh: ustvari spremenljivko `supermoc` in izpiši `"Moja supermoč je, da znam ___.“` (naj napišejo kaj zabavnega).
-- Izračunaj, koliko bo stalo 5 pic, če ena stane 8 €.
-- Če imate 5 pic in 3 prijatelje, koliko pic dobi vsak?
-- Pretvori starost psa v pasja leta (1 leto = 7 pasjih let).
+**Namig:** Pomagaj si z `f"...{spremenljivka}..."`, da bo izpis lepši.
 
-### Izziv
+### Naloga 4
+Ustvari spremenljivko `smesna_misel` in jo izpiši v programu.
 
-- Če imaš 100 €, koliko čokolad lahko kupiš, če ena stane 2,5 €?
-- Dodatna naloga: izračunaj, koliko »dni« si že živel (starost × 365).
-- Dodatna naloga: izračunaj, koliko ur si že prespal, če spiš 8 ur na dan.
-- Vprašaj uporabnika za njegovo ime in ga pozdravi.
-- `"Kako ti je ime?" → "Živjo, Matej!"`
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši program, ki izpiše mini vizitko: ime, starost, kraj in hobi.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+**Namig:** Pomagaj si z `f"...{spremenljivka}..."`, da bo izpis lepši.
 
-Uporabljeni viri za ta sklop:
+### Naloga 6
+_Ta naloga je malo težja._
+Ustvari spremenljivko `sendvici_na_dan` in izračunaj, koliko sendvičev poješ v enem letu.
 
+**Namig:** Najprej rezultat shrani v spremenljivko, nato ga izpiši.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši program, ki izpiše tri trapaste stavke, vsak v svoji vrstici.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši program, ki iz spremenljivk sestavi zabaven opis osebe.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši program, ki izračuna, koliko ur prespiš v enem tednu, če spiš 8 ur na dan.
+
+**Namig:** Najprej rezultat shrani v spremenljivko, nato ga izpiši.
+
+## Viri
 - `01/naloge.md`
 - `01/00_izpisi.py`
 - `01/moj_prvi_program.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

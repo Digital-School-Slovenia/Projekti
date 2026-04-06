@@ -1,21 +1,24 @@
 # Domača naloga – 23 – Vmesni mini projekt brez grafike
 
-## Obvezni minimum
+### Naloga 1
+Prepiši ali dokončaj današnji mini projekt tako, da bo brez pomoči delovalo:
+- dodajanje,
+- izpis,
+- brisanje,
+- izhod.
 
-- Izberi temo: blagajna, inventar, dnevnik ocen, mini banka, kviz ali beležka opravil.
-- Program naj ima meni z vsaj 4 možnostmi.
-- Uporabi `input`, `if`, zanko, funkcije in seznam ali slovar.
+### Naloga 2
+Dodaj eno nadgradnjo po izbiri.
 
-## Bonus / za hitrejše
+Možnosti:
+- števec predmetov,
+- prepoved podvojenih predmetov,
+- brisanje po številki,
+- iskanje,
+- več funkcij.
 
-- Dodaj statistiko ali povprečje.
-- Dodaj iskanje po podatkih.
+### Naloga 3
+Na vrh datoteke zapiši z enim stavkom, kaj program dela.
 
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Na dno datoteke kot komentar zapiši, katera stvar ti je delala največ težav.

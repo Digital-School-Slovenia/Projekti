@@ -1,62 +1,130 @@
-# Učni list – 34 – Velika delavnica vaj + priprava na zaključni projekt
+# Učni list – 34 – Delavnica iger in priprava na zaključek
 
-## Danes delamo tako
+Danes ne delaš še cele zaključne igre. Danes pripraviš tako dober načrt, da boš naslednjo uro lahko začel brez tavanja.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloga 1
+Izmisli si naslov svojega projekta.
 
-## Minimalno delujoče jedro
+Zapiši:
+- naslov,
+- svoje ime,
+- datum.
 
-- [ ] dirkalna igra
-- [ ] pustolovska igra
-- [ ] igra pobiranja predmetov
-- [ ] labirint
+## Naloga 2
+V 2–4 stavkih opiši svojo idejo.
 
-## Glavni blok dela
+Začni tako:
 
-- [ ] strelska igra
-- [ ] platformska igra
-- [ ] miselna igra
-- [ ] drugo: _____________
+**Moj projekt je o tem, da ...**
 
-## Dodatne naloge za hitrejše
+## Naloga 3
+Določi vrsto projekta.
 
-- zbrati 10 kovancev
-- priti do cilja
-- premagati sovražnike
-- preživeti čim dlje
+Označi ali dopiši:
+- dirkalna igra,
+- pustolovska igra,
+- igra pobiranja predmetov,
+- labirint,
+- strelska igra,
+- platformska igra,
+- miselna igra,
+- besedilni program,
+- drugo.
 
-## Izziv
+## Naloga 4
+Zapiši cilj projekta.
 
-- tipka E za pobiranje
-- v vesolju
-- na cesti
-- v gozdu
+Vprašaj se:
+- Kaj mora uporabnik narediti?
+- Kdaj je uspešen?
 
-## Checkpointi
+Primeri:
+- zbrati 10 kovancev,
+- priti do cilja,
+- preživeti 30 sekund,
+- pravilno odgovoriti na 10 vprašanj.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: [ ] dirkalna igra
+## Naloga 5
+Opiši glavni lik ali glavni objekt programa.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: [ ] pustolovska igra
+Zapiši:
+- kako se premika,
+- kaj zna narediti,
+- kaj bo uporabnik z njim počel.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: zbrati 10 kovancev
+## Naloga 6
+Zapiši upravljanje.
 
-## Pravilo te ure
+Primer:
+- puščice za premikanje,
+- preslednica za skok,
+- tipka `E` za pobiranje,
+- tipke `1`, `2`, `3` za izbiro v meniju.
 
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
+## Naloga 7
+Opiši svet ali prostor projekta.
 
-## Oddaja / exit ticket
+Primeri:
+- v vesolju,
+- na cesti,
+- v labirintu,
+- v gozdu,
+- v učilnici,
+- v menijskem programu brez grafike.
 
-Na koncu pokaži:
+## Naloga 8
+Zapiši, kaj bo uporabnik pobiral, iskal, vnašal ali reševal.
 
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+## Naloga 9
+Zapiši ovire ali težave.
+
+Primeri:
+- sovražniki,
+- zidovi,
+- časovna omejitev,
+- napačni odgovori,
+- omejeno število življenj.
+
+## Naloga 10
+Zapiši, kdaj uporabnik zmaga ali uspešno konča projekt.
+
+## Naloga 11
+Zapiši, kdaj uporabnik izgubi ali program neuspešno konča rundo.
+
+## Naloga 12
+Odloči se, ali bo projekt imel:
+- točke,
+- življenja,
+- čas,
+- več stopenj,
+- bonus predmete.
+
+Za vsako stvar, ki jo označiš, napiši še, kako bo delovala.
+
+## Naloga 13
+Zapiši svojo **prvo preprosto verzijo projekta**.
+
+To je najpomembnejša naloga.
+
+Zapiši samo 4 korake:
+1. kaj narediš najprej,
+2. kaj dodaš potem,
+3. kaj pride tretje,
+4. kaj bo prva nadgradnja.
+
+## Naloga 14
+Nariši skico zaslona, mape ali menija.
+
+Označi:
+- igralca ali glavni element,
+- ovire,
+- predmete,
+- cilj,
+- rezultat ali točke.
+
+## Naloga 15
+Če ti ostane čas, odpri novo Python datoteko in pripravi osnovo projekta.
+
+Lahko uporabiš:
+- svojo prazno datoteko,
+- ali `06_predloga_igre.py`.

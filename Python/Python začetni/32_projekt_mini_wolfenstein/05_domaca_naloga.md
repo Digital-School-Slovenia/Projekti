@@ -1,21 +1,10 @@
 # Domača naloga – 32 – Projekt – Mini Wolfenstein
 
-## Obvezni minimum
+### Naloga 1
+Spremeni mapo in dodaj svojo postavitev labirinta.
 
-- Ustvari mapo sveta in velikost okna.
-- Dodaj igralca z `x`, `y` in kotom.
-- Dodaj preverjanje stene.
+### Naloga 2
+Dodaj eno nadgradnjo: miška, cilj, vrata ali ključ.
 
-## Bonus / za hitrejše
-
-- Dodaj zaslon ob zmagi.
-- Dodaj shading.
-
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 3
+V komentar zapiši, kateri del kode preverja, ali žarek zadene steno.

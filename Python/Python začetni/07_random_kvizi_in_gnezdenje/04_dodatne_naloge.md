@@ -1,43 +1,53 @@
 # Dodatne naloge – 07 – Random, mini kvizi in odločanje v praksi
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Napiši program, ki izpiše naključno število med 1 in 10.
 
-- Začetna naloga
-- Uporabnik dobi 4
-- Vsako vprašanje ima več možnih odgovorov (A, B, C, D)
-- Program preverja pravilne odgovore z `if/else` in šteje točke. Pravilni odgovor prinaša 1 točko.
-- Na koncu naj program izpiše rezultat.
-- Če je sončno → Pojdi na sladoled 🍦
-- Če dežuje → Vzemi dežnik ☔
-- Če je oblačno → Dan za sprehod brez sončnih očal 😎
+**Namig:** Najprej dodaj `import random`, nato uporabi `random.randint(...)` ali `random.choice(...)`.
 
-### Dodatne naloge
+### Naloga 2
+Napiši mini kviz z enim vprašanjem in preverjanjem odgovora.
 
-- Če je sončno → Obleci pulover 🧥
-- Če dežuje → Zavij se v odejo 🛋️
-- Če je oblačno → Malo je hladno, vzemi jopico 🧥
-- Uporabnik vpiše kraj (`"New York"`, `"Mars"`, `"Bananaland"`) in leto.
-- Če je leto manjše od 2024 → program izpiše “Ne moreš v preteklost!”.
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
 
-### Izziv
+### Naloga 3
+Napiši program, ki vrže virtualno kocko.
 
-- Če je leto ≥ 2024:
-- Če je kraj `"New York"` → “Teleport uspešen 🏙️”
-- Če je `"Mars"`:
-- Če je leto ≥ 2100 → “Dobrodošel na Marsu 🚀”
-- Sicer → “Mars še ni pripravljen.”
+### Naloga 4
+Napiši program, ki uporabniku zastavi dve vprašanji in na koncu izpiše, koliko odgovorov je bilo pravilnih.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
 
-Uporabljeni viri za ta sklop:
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši ugibanje števila med 1 in 5.
 
+### Naloga 6
+_Ta naloga je malo težja._
+Napiši program, ki izbere naključno žival ali predmet in ga izpiše.
+
+**Namig:** Najprej dodaj `import random`, nato uporabi `random.randint(...)` ali `random.choice(...)`.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši mini kviz, kjer se drugo vprašanje pokaže samo, če je prvo pravilno.
+
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši program, ki generira preprost matematični račun z naključnima številoma.
+
+**Namig:** Najprej dodaj `import random`, nato uporabi `random.randint(...)` ali `random.choice(...)`.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši mini igro kamen, škarje, papir proti računalniku.
+
+## Viri
 - `03/naloge.md`
 - `03/kviz.py`
 - `03/postevanka.py`
 - `03/vreme.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

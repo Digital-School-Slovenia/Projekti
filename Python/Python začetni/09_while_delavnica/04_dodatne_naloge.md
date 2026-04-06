@@ -1,42 +1,57 @@
 # Dodatne naloge – 09 – Zanka `while` – delavnica problemov in seštevalnikov
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Napiši program, ki s pomočjo zanke `while` varčuje do cilja 100 evrov.
 
-- november 2025.
-- 🧮 Naloga 1: Štetje do 10
-- 🐶 Naloga 2: Pes, ki laja dokler ne dobi hrane
-- Naloga 3 - Vsi po pet
-- Naloga 4 - Konkurenca
-- Naloga 5 - Top shop
-- 🪙 Naloga 6: *Varčevalni račun 3000* 💸
-- Na začetku nastavi:
+**Namig:** Ne pozabi spremeniti števca ali pogoja v zanki, sicer bo program tekel neskončno.
 
-### Dodatne naloge
+### Naloga 2
+Napiši program, ki uporabnika sprašuje po točkah igralca, dokler ne doseže 50 točk.
 
-- Program naj **ponavlja vprašanje**:
-- Vsakič, ko uporabnik vnese znesek, ga prištej privarčevanemu denarju.
-- Program naj izpiše trenutno stanje, na primer:
-- Ko uporabnik doseže ali preseže cilj, naj program izpiše:
-- Dodaj “**bonus sistem**” — če uporabnik vnese **več kot 10 €**, naj program doda **+1 € obresti**.
-- 🐉 Naloga 7 — *Bitka z zmajem 3000* 🗡️🔥
+**Namig:** Ne pozabi spremeniti števca ali pogoja v zanki, sicer bo program tekel neskončno.
 
-### Izziv
+### Naloga 3
+Napiši program, ki prešteva, kolikokrat moraš klikniti, da dosežeš 20 klikov.
 
-- Naloga:
-- Uporabi zanko `while`, ki se ponavlja, dokler imata **oba** še več kot 0 HP.
-- Vsak krog ti napadeš zmaja in mu povzročiš **naključno škodo med 5 in 10** (uporabi `random.randint(5,10)`).
-- Če zmaj **še ni mrtev**, se razjezi in ti povzroči **3 škode**.
-- Vsak krog naj program izpiše trenutno stanje:
+**Namig:** Ne pozabi spremeniti števca ali pogoja v zanki, sicer bo program tekel neskončno.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Napiši program, ki zbira vnose besed, dokler uporabnik ne napiše `konec`.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Ne pozabi spremeniti števca ali pogoja v zanki, sicer bo program tekel neskončno.
 
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši program za mini blagajno, ki sešteva cene izdelkov, dokler uporabnik ne vnese 0.
+
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Napiši program, ki beleži trening minute, dokler ne dosežeš 60 minut.
+
+**Namig:** Ne pozabi spremeniti števca ali pogoja v zanki, sicer bo program tekel neskončno.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši program, ki zahteva pravilno kodo za odklep in šteje število poskusov.
+
+**Namig:** Ne pozabi spremeniti števca ali pogoja v zanki, sicer bo program tekel neskončno.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši mini bitko z zmajem, kjer se HP zmanjšuje v zanki `while`.
+
+**Namig:** Ne pozabi spremeniti števca ali pogoja v zanki, sicer bo program tekel neskončno.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši program, ki varčuje do cilja in doda bonus 1 evro, če uporabnik vnese več kot 10 evrov.
+
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
+
+## Viri
 - `05/naloge.md`
 - `05/01_zanke.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

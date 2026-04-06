@@ -1,21 +1,19 @@
 # Domača naloga – 24 – Turtle – uvod v risanje s funkcijami
 
-## Obvezni minimum
+### Naloga 1
+Napiši funkcijo `naprej(dolzina)`, ki želvo premakne naprej brez risanja.
 
-- `t` je **želva**, ki riše
-- vse ukaze pišemo kot `t.ukaz()`
-- `"red"`, `"blue"`, `"green"`
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši funkcijo `zavoj_levo(kot, smer)`, ki zavije želvo v izbrano smer za podani kot.
 
-- `t.left()` / `t.right()`
-- `t.color()`
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Kratka refleksija
+### Naloga 3
+Napiši funkcijo `crta(dolzina)`, ki nariše ravno črto.
 
-Ob oddaji dopiši še:
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

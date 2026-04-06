@@ -1,42 +1,49 @@
 # Dodatne naloge – 05 – Pogoji `if` – osnove odločanja
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Napiši program, ki za vneseno starost izpiše, ali je oseba polnoletna.
 
-- ## Naloge
-- Napiši program, ki uporabnika vpraša za ime. Če je ime enako tvojemu imenu naj se izpiše »Legenda!« sicer pa »Nisi TVOJE_IME, a si vseeno kul!«
-- Napiši program, ki uporabnika vpraša, ali ima rad pico:
-- Če vpiše “da” → “Tudi jaz!”
-- Sicer → “Kako lahko živiš brez pice? 😱”
-- Vprašaj uporabnika za najljubšo barvo:
-- Če “modra” → “Super izbira!”
-- Sicer → “To je pa drzna izbira.”
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
 
-### Dodatne naloge
+### Naloga 2
+Napiši program, ki za vneseno temperaturo izpiše, ali je zunaj vroče.
 
-- Napiši program, ki te vpraša koliko mačk imaš:
-- Če več kot 10 → `"Ti si uradno mačja oseba 🐱"`.
-- Če 5-10 → `"Čisto normalno mačje življenje."`
-- Sicer → `"Nimaš veliko mačk"`
-- Napiši naslednji program: Uporabnik naj vpiše temperaturo (cela številka). Program naj izpiše sporočilo glede na temperaturo:
-- nad 30 °C → “Vročina! Kupi si sladoled 🍦”
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
 
-### Izziv
+### Naloga 3
+Napiši program, ki za vneseno oceno izpiše, ali je ocena pozitivna.
 
-- med 21 in 30 °C → “Prijetno vreme ☀️”
-- med 11 in 20 °C → “Obleci jopico 🧥”
-- 10 °C ali manj → “Mrzlo kot v Sibiriji 🥶”
-- Napiši program za ocenjevanje. Uporabnike vpiše število točk. Glede na število točk naj se izpiše naslednje:
-- 5 → “Odlično!” (90-100 točk)
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Napiši program, ki preveri, ali je število sodo.
 
-Uporabljeni viri za ta sklop:
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši program, ki preveri, ali ima uporabnik dovolj denarja za nakup izdelka.
 
+### Naloga 6
+_Ta naloga je malo težja._
+Napiši program, ki preveri, ali je vnesena beseda enaka `python`.
+
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši program, ki za vneseno geslo izpiše uspeh ali neuspeh prijave.
+
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši program, ki preveri, ali je število deljivo s 3 in izpiše ustrezno sporočilo.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši program, ki primerja dve števili in izpiše, katero je večje.
+
+## Viri
 - `02/naloge.md`
 - `02/01_osnovni_if.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

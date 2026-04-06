@@ -1,24 +1,46 @@
-# Rešitev / učiteljske usmeritve – 31 – Projekt – Pac-Man stil: labirint in zbiranje točk
+# Rešitev – 31 – Projekt – Pac-Man labirint
 
-## Kako vodiš to uro
+## Kaj pokaži najprej
 
-- glavna ideja je mreža,
-- ne pusti, da učenci izgubijo `(row, col)` proti `(x, y)`,
-- najprej zidovi in gibanje, šele nato sovražnik.
+Pokaži razliko med:
 
-## Ključni referenčni koncept
+- mrežo `(row, col)`,
+- zaslonom `(x, y)`.
+
+To je glavni koncept te ure.
+
+## Minimum, ki mora delovati
+
+- zidovi,
+- igralec,
+- premik po poljih,
+- pobiranje pik,
+- score.
+
+Sovražnik je bonus, če zmanjkuje časa.
+
+## Ključni del rešitve
+
+```python
+if maze[new_row][new_col] != "#":
+    player_row = new_row
+    player_col = new_col
+```
+
+in
 
 ```python
 x = col * CELL_SIZE
 y = row * CELL_SIZE
 ```
 
-## Učiteljski checkpointi
+## Tipične napake
 
-1. Labirint se izriše pravilno.
-2. Igralec se ne more premakniti skozi zid.
-3. Pika ali točka izgine, ko jo igralec pobere.
+- zamenjava `row/col` in `x/y`,
+- igralec gre skozi zid,
+- pika ostane vidna tudi po pobiranju,
+- sovražnik se premakne v zid.
 
-## Python datoteke v tej mapi
+## Datoteke v tej mapi
 
 - `06_uciteljska_resitev.py`

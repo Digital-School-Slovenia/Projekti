@@ -1,15 +1,17 @@
-# Rešitev / učiteljske usmeritve – 21 – Slovarji v praksi – socialno omrežje
+# Rešitev – 21 – Slovarji v praksi – socialno omrežje
 
-## Kako voditi to uro
+Tukaj je jedro rešitve za sklop **21 – Slovarji v praksi – socialno omrežje**. Pokaži en kratek primer. Potem naj učenci delajo.
 
-- ne razlagaj predolgo; daj jedro, potem pa naloge,
-- po 10–15 minutah naredi prvi checkpoint,
-- pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk,
-- pri hitrih učencih najprej odpri dodatne naloge, šele nato prosto nadgrajevanje.
+## Kaj pokaži najprej
 
-## Referenčni primeri iz tvojega izvornega paketa
+- Ne razlagaj predolgo; daj jedro, potem pa naloge
+- Po 10–15 minutah naredi prvi kratek pregled
+- Pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk
+- Hitrejše učence najprej usmeri na dodatne naloge, šele nato na prosto nadgrajevanje.
 
-### Izsek iz `01_slovarji.py`
+## Primer rešitve
+
+### Primer 1
 
 ```python
 # -- SEZNAM --
@@ -31,7 +33,7 @@ oseba_slovar = {
 }
 ```
 
-### Izsek iz `02_prva-.py`
+### Primer 2
 
 ```python
 seznam_uporabnikov = [
@@ -60,32 +62,26 @@ def izpisi_uporabnike(seznam_uporabnikov):
         print("------") # Malo vizuala, da se lažje loči uporabnike
 ```
 
+## Kaj mora do konca ure delovati
+
+- Učenec zaključi obvezno jedro sklopa in ga zna demonstrirati
+- Učenec zna povedati, kje v kodi je bilo treba kaj popraviti
+- Vsaj enkrat samostojno preizkusi svojo rešitev med delom.
+
+## Hitri pregled med uro
+
+- 🟢 Naloga 1: Uporabniški profil
+- Izpiše uporabniško ime uporabnika
+- Izpiše rezultat
+
 ## Tipične napake
 
-- manjkajoč `:` pri pogojih ali funkcijah,
-- napačna zamaknitev bloka kode,
-- pozabljena pretvorba `input()` v `int()` ali `float()`,
-- napačno ime spremenljivke,
-- učenec ne zažene programa po vsakem manjšem koraku.
+- Manjkajoč `:` pri pogojih ali funkcijah
+- Napačna zamaknitev bloka kode
+- Pozabljena pretvorba `input()` v `int()` ali `float()`
+- Napačno ime spremenljivke
+- Učenec ne zažene programa po vsakem manjšem koraku.
 
-## Minimalni kriterij uspeha
-
-- učenec zaključi obvezno jedro sklopa in ga zna demonstrirati,
-- učenec zna povedati, kje v kodi je bilo treba kaj popraviti,
-- vsaj enkrat samostojno uporabi testiranje med delom.
-
-## Učiteljski checkpointi
-
-1. 🟢 Naloga 1: Uporabniški profil
-2. izpiše uporabniško ime uporabnika
-3. izpiše rezultat
-
-## Kaj šteje kot dober minimum
-
-- delujoče jedro,
-- vsaj ena dodatna rešena naloga,
-- učenec zna povedati, kaj v kodi zares dela in kaj je popravil.
-
-## Python datoteke v tej mapi
+## Datoteke v tej mapi
 
 - `06_uciteljska_resitev.py`

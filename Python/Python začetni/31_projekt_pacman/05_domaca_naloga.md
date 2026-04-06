@@ -1,21 +1,10 @@
-# Domača naloga – 31 – Projekt – Pac-Man stil: labirint in zbiranje točk
+# Domača naloga – 31 – Projekt – Pac-Man labirint
 
-## Obvezni minimum
+### Naloga 1
+Spremeni mapo in dodaj svojo postavitev labirinta.
 
-- Zapiši mapo kot seznam vrstic.
-- Izračunaj velikost okna iz mreže.
-- Nariši zidove, prazna polja in točke.
+### Naloga 2
+Dodaj vsaj eno novo mehaniko.
 
-## Bonus / za hitrejše
-
-- Dodaj sovražnika.
-- Dodaj pogoje za zmago.
-
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 3
+V komentar zapiši, kateri del kode skrbi za pretvorbo mreže na zaslon.

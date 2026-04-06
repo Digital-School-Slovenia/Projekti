@@ -1,201 +1,75 @@
 # Učiteljski scenarij ure – 27 – Projekt – Lov na kovance
 
-## Namen te datoteke
+## Pred uro
 
-To je **izvedbeni scenarij** za učitelja. Namen ni, da uro vodiš kot robot, ampak da imaš pri roki:
+- odpri `02_ucni_list.md`,
+- odpri `06_uciteljska_resitev.py`,
+- pripravi delujoč minimum za hiter demo.
 
-- predlagan tempo,
-- checkpointe,
-- tipične napake,
-- hitre učiteljske posege,
-- trenutke, ko je smiselno pokazati primer ali odpreti referenčno `.py` datoteko.
+## Potek ure
 
-## Fokus ure v enem stavku
+### 0–10 min
 
-V tej uri naj učenci čim prej spravijo v pogon **minimalno delujoče jedro**, potem pa skozi veliko kratkih nalog širijo rešitev in sproti popravljajo napake.
+Pokaži končno igro v 10 sekundah.
 
-## Formalni fokus, ki ga držiš v glavi
+Povej samo to:
 
-- Učenec v dveh urah sestavi kompakten projekt »Projekt – Lov na kovance«.
-- Učenec med delom pogosto zažene program in sproti preverja rezultat.
-- Učenec rešuje več krajših nalog in ne ostane pri eni sami.
-- Učenec projekt demonstrira od začetka do konca.
+- danes delamo igro,
+- jedro je: premik + trk + score,
+- najprej minimum, potem bonusi.
 
-## Pred uro pripravi
+### 10–30 min
 
-- odpri mapo sklopa in preveri, da imaš pri roki `02_ucni_list.md`, `03_resitev.md` in ta scenarij,
-- pripravi vsaj en zelo kratek mikro-primer, ki ga lahko pokažeš v manj kot 2 minutah,
-- vnaprej odloči, kaj boš danes štel kot **minimum**, da učenci ne odjadrajo v kozmos,
-- pripravi 2–3 kratka vprašanja namesto dolgih razlag.
+Učenci naredijo:
 
-## Podporne datoteke v tej mapi
+- okno,
+- `clock`,
+- ozadje,
+- igralca,
+- premikanje.
 
-- `06_uciteljska_resitev.py`
+Če kdo stoji na mestu, mu ne rešuj celega projekta. Pomagaj mu le do prvega delujočega kvadrata.
 
-## Predlagan tempo ure (2 uri)
+### 30–60 min
 
-### 0–10 min: zagon brez filozofiranja
+Učenci dodajo:
 
-Kaj narediš:
+- kovance,
+- risanje kovancev,
+- pobiranje,
+- score.
 
-- zelo kratko poveš cilj ure,
-- pokažeš mikro-primer ali mini demonstracijo,
-- učencem daš prvo najmanjšo nalogo, da takoj začnejo tipkati.
+Tu se največkrat lomi:
 
-Kaj naj v tem delu naredijo učenci:
+- `coins.remove(...)`,
+- `colliderect`,
+- `score += 1`.
 
-- Odpri okno in nastavi FPS.
-- Dodaj ozadje.
+### 60–85 min
 
-Tvoje vprašanje skupini:
+Učenci dodajo:
 
-- »Kaj mora danes delovati že v prvih 10 minutah?«
-- »Kaj je najmanjši kos kode, ki ga lahko takoj zaženemo?«
+- zmago,
+- restart,
+- izpis navodil.
 
-### 10–25 min: vodeno ogrevanje
+Hitrejši naj gredo na dodatne naloge.
 
-Kaj narediš:
+### 85–110 min
 
-- hodiš med njimi,
-- popravljaš samo prve blokade,
-- ne rešuješ cele naloge namesto njih,
-- iščeš ponavljajoče se napake in jih razrešiš na hitro za celo skupino.
+Pregled delujočih verzij.
 
-V tem delu jih usmeri na:
+Vsak naj pokaže vsaj:
 
-- Dodaj igralca kot `Rect` in ga nariši.
-- Dodaj premikanje s tipkami.
+- premik,
+- pobiranje enega kovanca,
+- score.
 
-Mini checkpoint ob koncu tega dela:
+### 110–120 min
 
-- vsak pokaže vsaj eno stvar, ki deluje,
-- hitrejši že odpirajo glavni blok,
-- počasnejši še vedno lovijo minimum, brez panike.
+Zaključek.
 
-### 25–55 min: glavni del ure
+Povej, da je danes najpomembnejša stvar to:
 
-To je jedro. Tukaj jih ne zasuj z dodatno teorijo. Raje:
-
-- sprašuj, kaj želijo doseči,
-- preverjaj, ali testirajo sproti,
-- jih vračaj na naslednji majhen korak, ne na “naredi vse”.
-
-Glavni blok, ki ga potiskaj naprej:
-
-- Omeji gibanje igralca na zaslon.
-- Dodaj kovance.
-- Preveri trk med igralcem in kovanci.
-- Povečaj rezultat ob pobiranju.
-
-Dober učiteljski stavek v tem delu:
-
-- »Najprej naredi eno stvar, ki dela. Bonus naj počaka.«
-
-### 55–75 min: diferenciacija in širitev
-
-Zdaj loči skupino po ritmu:
-
-Za učence, ki potrebujejo stabilizacijo:
-
-- dokončajo jedro,
-- počistijo napake,
-- uredijo izpis, logiko ali strukturo,
-- pokažejo vsaj dve delujoči stvari.
-
-Za hitrejše učence odpri:
-
-- Dodaj več kovancev.
-- Dodaj časovnik.
-- Dodaj sovražnika.
-
-Če kdo res leti, odpri še izziv:
-
-- Dodaj meni ali zaslon za zmago.
-- Dodaj več stopenj.
-
-### 75–95 min: drugi checkpoint in kratki posegi
-
-Tu je dober trenutek za 2–4 minutni skupinski rez, če vidiš isto težavo pri več učencih.
-
-Namesto dolge razlage naredi eno od teh stvari:
-
-- pravilo projekta: najprej jedro, potem bonusi
-- vsakih 10–15 minut ustavi in preveri delujoče stanje
-- pomagaj z vprašanjem: kaj je najmanjša verzija, ki že deluje?
-
-Če je smiselno odpreti referenčno datoteko:
-
-- odpri jo samo za en majhen problem,
-- ne beri cele rešitve od vrha do dna,
-- pokaži 5–15 vrstic, nato jih vrni na njihove datoteke.
-
-Kdaj to narediš:
-
-- Ko se večina zatakne na istem mestu ali ko želiš na hitro pokazati delujoče jedro.
-
-### 95–110 min: zaključevanje izdelkov
-
-Učence usmeri, da:
-
-- popravijo zadnje očitne napake,
-- odstranijo kodo, ki ne dela nič koristnega,
-- znajo povedati, kaj deluje in kaj je naslednji korak.
-
-Merila, ki jih danes preverjaš:
-
-- projekt se zažene in ima jasno osnovno mehaniko
-- uporabnik lahko odigra ali preizkusi vsaj eno delujočo rundo
-- vidna je vsaj ena nadgradnja ali smiseln naslednji korak
-
-### 110–120 min: hitra demonstracija in izhod
-
-Vsak ali vsaka skupina pokaže:
-
-- eno stvar, ki deluje brez napake,
-- eno napako, ki jo je uspela odpraviti,
-- eno idejo za naslednjo nadgradnjo.
-
-Dober zaključni stavek:
-
-- »Danes me ne zanima popolnost. Zanima me, ali znaš pokazati delujoč korak naprej.«
-
-## Tipične napake pri tej uri
-
-- prehitro dodajajo bonuse, preden deluje jedro
-- preveč kode zlepijo skupaj brez testiranja
-- ne znajo izbrati minimalnega cilja
-
-## Hitri učiteljski posegi, ko se kdo zatakne
-
-- pravilo projekta: najprej jedro, potem bonusi
-- vsakih 10–15 minut ustavi in preveri delujoče stanje
-- pomagaj z vprašanjem: kaj je najmanjša verzija, ki že deluje?
-
-## Vprašanja, ki jih postavljaš namesto da sam rešuješ
-
-- Kaj je najmanjša stvar, ki mora že delovati? (Odpri okno in nastavi FPS.)
-- Kateri del glavnega bloka trenutno gradiš? (Omeji gibanje igralca na zaslon.)
-- Kaj si nazadnje spremenil, preden je program prenehal delovati?
-- Ali že imaš delujoče jedro, preden odpiraš bonuse?
-
-## Kdaj učenca zavestno ustaviš
-
-Učenca ustaviš, ko:
-
-- odpre bonus, preden ima delujoče jedro,
-- 10 minut ponavlja isti napačen poskus brez testiranja,
-- piše preveč kode naenkrat brez vmesnega zagona,
-- sam ne zna povedati, kaj naj bi trenutni del kode sploh naredil.
-
-## Kdaj ga pustiš pri miru
-
-Učenca pustiš delati, ko:
-
-- napreduje v malih korakih,
-- pogosto zažene program,
-- zna povedati, kaj testira,
-- si sam beleži ali razlaga, kaj trenutno ne dela.
-
-## Opomba za učitelja
-
-Ta scenarij ni mišljen kot oklep. Če skupina lepo teče, ga skrajšaj. Če gori, ga uporabi kot gasilski načrt. Glavno pravilo ostaja isto: **učenci naj čim več tipkajo, ti pa jih usmerjaš z majhnimi, pametnimi posegi.**
+- igra je v resnici zanka,
+- v zanki se stalno dogaja: dogodki → logika → risanje.

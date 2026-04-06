@@ -1,36 +1,35 @@
 # Dodatne naloge – 27 – Projekt – Lov na kovance
 
-## Razširjena banka nalog
+### Naloga 1
+Dodaj še najmanj pet novih kovancev na različnih mestih.
 
-### Osnovne naloge
-- Odpri okno in nastavi FPS.
-- Dodaj ozadje.
-- Dodaj igralca kot `Rect` in ga nariši.
-- Dodaj premikanje s tipkami.
-- Omeji gibanje igralca na zaslon.
-- Dodaj kovance.
-- Preveri trk med igralcem in kovanci.
-- Povečaj rezultat ob pobiranju.
+**Namig:** Dodajaj jih v isti seznam `coins`.
 
-### Dodatne naloge
-- Dodaj več kovancev.
-- Dodaj časovnik.
-- Dodaj sovražnika.
-- Dodaj restart.
+### Naloga 2
+Dodaj časovnik, ki odšteva od 30 do 0.
 
-### Izziv
-- Dodaj meni ali zaslon za zmago.
-- Dodaj več stopenj.
-- Dodaj zvočni ali vizualni feedback.
-- Dodaj kombinacijo kovanci + nevarnost.
+**Namig:** Poglej `pygame.time.get_ticks()`.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 3
+Dodaj sovražnika, ki se premika levo in desno.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Tudi sovražnika najprej shrani kot `pygame.Rect`.
 
-- `17_pygame/U#U010dna ura #U2013 Lov na kovance.md`
-- `17_pygame/Kon#U010dna re#U0161itev - Lov na kovance.md`
+### Naloga 4
+Če se igralec dotakne sovražnika, izgubi točko ali se igra konča.
 
-## Opomba za učitelja
+**Namig:** Uporabi `player.colliderect(enemy)`.
 
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.
+### Naloga 5
+Dodaj zaslon za začetek igre z naslovom in navodilom `SPACE za začetek`.
+
+### Naloga 6
+Kovance ob vsakem novem zagonu postavi na naključna mesta.
+
+**Namig:** Uporabi `random.randint(...)`.
+
+### Naloga 7
+Dodaj dve stopnji: v drugi naj bo več kovancev ali hitrejši sovražnik.
+
+### Naloga 8
+Dodaj zvočni ali barvni odziv, ko igralec pobere kovanec.

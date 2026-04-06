@@ -1,62 +1,37 @@
-# Učni list – 05 – Pogoji `if` – osnove odločanja
+# Učni list – 05 – Pogoji if – osnove odločanja
 
-## Danes delamo tako
+Pri vseh nalogah uporabi vsaj en `if` in `else`. Namen ni samo dobiti rezultat, ampak vaditi odločanje v kodi.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši program, ki uporabnika vpraša za ime. Če je ime enako tvojemu imenu, naj izpiše `Legenda!`, sicer pa naj izpiše drugačen odziv.
 
-- ## Naloge
-- Napiši program, ki uporabnika vpraša za ime. Če je ime enako tvojemu imenu naj se izpiše »Legenda!« sicer pa »Nisi TVOJE_IME, a si vseeno kul!«
-- Napiši program, ki uporabnika vpraša, ali ima rad pico:
+### Naloga 2
+Napiši program, ki uporabnika vpraša, ali ima rad pico. Če vpiše `da`, naj izpiše `Tudi jaz!`, sicer pa drugačen odgovor.
 
-## Glavni blok dela
+### Naloga 3
+Napiši program, ki vpraša za najljubšo barvo. Če je odgovor `modra`, naj izpiše `Super izbira!`, sicer pa drug komentar.
 
-- Če vpiše “da” → “Tudi jaz!”
-- Sicer → “Kako lahko živiš brez pice? 😱”
-- Vprašaj uporabnika za najljubšo barvo:
-- Če “modra” → “Super izbira!”
-- Sicer → “To je pa drzna izbira.”
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši program, ki vpraša za število točk in izpiše, ali je učenec opravil ali ne.
 
-- Napiši program, ki te vpraša koliko mačk imaš:
-- Če več kot 10 → `"Ti si uradno mačja oseba 🐱"`.
-- Če 5-10 → `"Čisto normalno mačje življenje."`
-- Sicer → `"Nimaš veliko mačk"`
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Izziv
+### Naloga 5
+Napiši program, ki vpraša za temperaturo in izpiše, ali je vroče ali ni vroče.
 
-- med 21 in 30 °C → “Prijetno vreme ☀️”
-- med 11 in 20 °C → “Obleci jopico 🧥”
-- 10 °C ali manj → “Mrzlo kot v Sibiriji 🥶”
-- Napiši program za ocenjevanje. Uporabnike vpiše število točk. Glede na število točk naj se izpiše naslednje:
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Checkpointi
+### Naloga 6
+Napiši program, ki vpraša za starost in izpiše, ali je uporabnik polnoleten.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: ## Naloge
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Napiši program, ki uporabnika vpraša za ime. Če je ime enako tvojemu imenu naj se izpiše »Legenda!« sicer pa »Nisi TVOJE_IME, a si vseeno kul!«
+### Naloga 7
+Vprašaj za geslo in preveri, ali je enako vnaprej določeni vrednosti.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Napiši program, ki te vpraša koliko mačk imaš:
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši program, ki vpraša za dve števili in izpiše, katero je večje.

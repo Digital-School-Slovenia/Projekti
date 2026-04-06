@@ -1,15 +1,15 @@
-# Rešitev / učiteljske usmeritve – 18 – Velika delavnica vaj – mešane naloge pred slovarji
+# Rešitev – 18 – Velika delavnica vaj – mešane naloge pred slovarji
 
-## Kako voditi to uro
+Tukaj je jedro rešitve za sklop **18 – Velika delavnica vaj – mešane naloge pred slovarji**. Pokaži en kratek primer. Potem naj učenci delajo.
 
-- ne razlagaj predolgo; daj jedro, potem pa naloge,
-- po 10–15 minutah naredi prvi checkpoint,
-- pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk,
-- pri hitrih učencih najprej odpri dodatne naloge, šele nato prosto nadgrajevanje.
+## Kaj pokaži najprej
 
-## Referenčni primeri iz tvojega izvornega paketa
+- Ne razlagaj predolgo; daj jedro, potem pa naloge
+- Po 10–15 minutah naredi prvi kratek pregled
+- Pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk
+- Hitrejše učence najprej usmeri na dodatne naloge, šele nato na prosto nadgrajevanje.
 
-### Izsek iz `01_naloga.py`
+## Primer rešitve
 
 ```python
 def pozdrav_uporabnik(uporabnisko_ime):
@@ -24,7 +24,6 @@ def pozdrav_uporabnik(uporabnisko_ime):
     # Preverimo ali je ime krajse od 4 znakov.
     if len(uporabnisko_ime) < 4:
         print("Uporabniško ime je krajše od 4 znakov")
-
 
 def status_uporabnika(st_sledilcev):
     
@@ -47,32 +46,26 @@ def izpisi_objave(objave):
     print(f"St. objav: {st_objav}")
 ```
 
+## Kaj mora do konca ure delovati
+
+- Učenec zaključi obvezno jedro sklopa in ga zna demonstrirati
+- Učenec zna povedati, kje v kodi je bilo treba kaj popraviti
+- Vsaj enkrat samostojno preizkusi svojo rešitev med delom.
+
+## Hitri pregled med uro
+
+- `int` → cela števila (`5`, `10`)
+- `float` → decimalna števila (`3.14`)
+- Koda je bolj pregledna
+
 ## Tipične napake
 
-- manjkajoč `:` pri pogojih ali funkcijah,
-- napačna zamaknitev bloka kode,
-- pozabljena pretvorba `input()` v `int()` ali `float()`,
-- napačno ime spremenljivke,
-- učenec ne zažene programa po vsakem manjšem koraku.
+- Manjkajoč `:` pri pogojih ali funkcijah
+- Napačna zamaknitev bloka kode
+- Pozabljena pretvorba `input()` v `int()` ali `float()`
+- Napačno ime spremenljivke
+- Učenec ne zažene programa po vsakem manjšem koraku.
 
-## Minimalni kriterij uspeha
-
-- učenec zaključi obvezno jedro sklopa in ga zna demonstrirati,
-- učenec zna povedati, kje v kodi je bilo treba kaj popraviti,
-- vsaj enkrat samostojno uporabi testiranje med delom.
-
-## Učiteljski checkpointi
-
-1. `int` → cela števila (`5`, `10`)
-2. `float` → decimalna števila (`3.14`)
-3. koda je bolj pregledna
-
-## Kaj šteje kot dober minimum
-
-- delujoče jedro,
-- vsaj ena dodatna rešena naloga,
-- učenec zna povedati, kaj v kodi zares dela in kaj je popravil.
-
-## Python datoteke v tej mapi
+## Datoteke v tej mapi
 
 - `06_mesane_referencne_naloge.py`

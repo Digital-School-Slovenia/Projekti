@@ -1,41 +1,41 @@
-# Dodatne naloge – 34 – Velika delavnica vaj + priprava na zaključni projekt
+# Dodatne naloge – 34 – Delavnica iger in priprava na zaključek
 
-## Razširjena banka nalog
+### Naloga 1
+Napiši še drugo rezervno idejo za projekt.
 
-### Osnovne naloge
+### Naloga 2
+Za svojo glavno idejo zapiši, kaj je **minimum**, kaj pa **bonus**.
 
-- [ ] dirkalna igra
-- [ ] pustolovska igra
-- [ ] igra pobiranja predmetov
-- [ ] labirint
-- [ ] strelska igra
-- [ ] platformska igra
-- [ ] miselna igra
-- [ ] drugo: _____________
+### Naloga 3
+Napiši seznam funkcij ali glavnih blokov kode, ki jih boš verjetno potreboval.
 
-### Dodatne naloge
+**Namig:** Primer: `premikanje_igralca()`, `preveri_trk()`, `izpisi_tocke()`.
 
-- zbrati 10 kovancev
-- priti do cilja
-- premagati sovražnike
-- preživeti čim dlje
-- puščice za premikanje
-- preslednica za skok
+### Naloga 4
+Za svoj projekt napiši seznam spremenljivk, ki jih boš verjetno uporabljal.
 
-### Izziv
+Primer:
+- `score`,
+- `player_x`,
+- `player_y`,
+- `speed`,
+- `lives`.
 
-- tipka E za pobiranje
-- v vesolju
-- na cesti
-- v gozdu
-- v labirintu
+### Naloga 5
+Če delaš igro, nariši še drugo, bolj natančno skico zaslona.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 6
+Če delaš besedilni program, nariši meni in napiši vse izbire.
 
-Uporabljeni viri za ta sklop:
+### Naloga 7
+Odpri novo `.py` datoteko in napiši samo osnovo programa.
 
-- `19_dirkalna_igra_paket/delovni_list_ideja_za_igro.md`
+**Namig:** Začni s praznim oknom ali praznim menijem. Ne piši še cele igre.
 
-## Opomba za učitelja
+### Naloga 8
+Zapiši tri stvari, ki jih namerno **ne boš** dodal v prvi verziji.
 
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.
+To je dobra naloga. Reši te pred megalomanijo.
+
+### Naloga 9
+Pripravi 30-sekundno razlago projekta, kot da ga predstavljaš sošolcu.

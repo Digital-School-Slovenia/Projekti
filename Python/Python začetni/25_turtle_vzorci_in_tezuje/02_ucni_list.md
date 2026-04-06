@@ -1,60 +1,37 @@
 # Učni list – 25 – Turtle – zahtevnejši vzorci in problemsko risanje
 
-## Danes delamo tako
+Današnje turtle naloge so težje. Cilj ni le narisati eno obliko, ampak graditi vzorce in kombinirati funkcije.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši funkcijo `vec_kvadratov(zacetna_dolzina)`, ki nariše tri kvadrate, vsak večji od prejšnjega.
 
-- Nariši hiško iz kvadrata in strehe.
-- Nariši tri vedno večje kvadrate.
-- Nariši barvni kvadrat.
+### Naloga 2
+Napiši funkcijo `zvezda(dolzina)`, ki nariše zvezdo s petimi kraki.
 
-## Glavni blok dela
+### Naloga 3
+Napiši funkcijo `spirala(zacetna_dolzina)`, ki nariše spiralo, pri kateri se dolžina črte povečuje.
 
-- Nariši rožo iz krogov ali lokov.
-- Nariši sonce.
-- Nariši geometrijski vzorec.
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši funkcijo `vzorec()`, ki uporabi vsaj dve že napisani funkciji in ustvari ponavljajoč se vzorec.
 
-- Nariši spiralo.
-- Nariši mandalo iz ponavljajočih oblik.
-- Nariši vrsto hišk ali dreves.
-- Nariši začetnico svojega imena.
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Izziv
+### Naloga 5
+Napiši funkcijo `roza(velikost)`, ki nariše rožo s krogi ali loki.
 
-- Naredi sliko, ki uporablja vsaj 5 funkcij.
-- Dodaj parametre: velikost, barva, ponovitve.
-- Nariši cel prizor, ne samo en lik.
-- Sestavi svojo “turtle galerijo” treh risb.
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Checkpointi
+### Naloga 6
+Napiši funkcijo `sonce(polmer)`, ki nariše krog in okoli njega žarke.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: Nariši hiško iz kvadrata in strehe.
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Nariši tri vedno večje kvadrate.
+### Naloga 7
+Napiši funkcijo `snezinka(dolzina)`, ki nariše simetričen vzorec.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Nariši spiralo.
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Ustvari svojo funkcijo `moja_kompozicija()`, ki nariše večbarvni motiv z vsaj tremi že narejenimi funkcijami.

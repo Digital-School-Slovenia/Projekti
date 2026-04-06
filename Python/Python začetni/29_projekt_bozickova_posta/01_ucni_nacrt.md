@@ -4,52 +4,31 @@
 
 - 1 srečanje = 2 uri
 
-## Bistvo sklopa
+## Kaj naredimo v tej uri
 
-projekt – božičkova pošta – poudarek je na delu skozi naloge, kratkih checkpointih in sprotnem testiranju.
+Učenci izdelajo igro, kjer Božiček lovi dobre emaile, se izogiba spamu in izgublja življenja.
 
-## Formalni učni cilji
+## Do konca ure mora delovati
 
-- Učenec v dveh urah sestavi kompakten projekt »Projekt – Božičkova pošta«.
-- Učenec med delom pogosto zažene program in sproti preverja rezultat.
-- Učenec rešuje več krajših nalog in ne ostane pri eni sami.
-- Učenec projekt demonstrira od začetka do konca.
+- okno,
+- Božiček se premika levo/desno,
+- z vrha padajo predmeti,
+- dober email doda točko,
+- spam odvzame življenje,
+- igra se konča, ko zmanjka življenj.
 
-## Merila uspeha do konca ure
+## Če ostane čas
 
-- projekt se zažene in ima jasno osnovno mehaniko
-- uporabnik lahko odigra ali preizkusi vsaj eno delujočo rundo
-- vidna je vsaj ena nadgradnja ali smiseln naslednji korak
+- piškotki,
+- Krampusova pošta,
+- combo sistem,
+- naraščajoča težavnost.
 
-## Predlagan potek ure
+## Učitelj pripravi
 
-- 10–15 min: hiter uvod in prvi mikro primer
-- 20–25 min: vodeno ogrevanje in prvi checkpoint
-- 45–55 min: glavni blok nalog
-- 20–25 min: diferenciacija – dodatne naloge in izziv
-- 5–10 min: zaključek, demonstracije, refleksija
-
-## Diferenciacija
-
-- **Osnovna naloga:** 🧱 KORAK 1 — Odpri okno
-- **Dodatna naloga:** Uporabi **seznam**, v katerem shranjuješ emaile
-- **Izziv:** Dober email → **+1 točka**
-
-## Vloga učitelja
-
-- učitelj ne vleče cele ure frontalno,
-- daje kratke checkpoint razlage,
-- usmerja z vprašanji,
-- odpira dodatne naloge za hitrejše učence.
-
-## Uporabljeni viri iz tvojega paketa
-
-- `09_last/BOŽIČKOVA POŠTA.md`
-
-## Izvedbena opomba
-
-Ta verzija je namenoma zgrajena po logiki: manj prazne teorije, več tipkanja, več kratkih nalog, več sprotnih popravkov.
-
-## Dodatna učiteljska opora
-
-- glej tudi `08_uciteljski_scenarij_ure.md` za izvedbeni tempo, checkpoint vprašanja in tipične učiteljske posege.
+- `02_ucni_list.md`
+- `03_resitev.md`
+- `04_dodatne_naloge.md`
+- `05_domaca_naloga.md`
+- `06_uciteljska_resitev.py`
+- `08_uciteljski_scenarij_ure.md`

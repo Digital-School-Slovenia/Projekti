@@ -1,15 +1,17 @@
-# Rešitev / učiteljske usmeritve – 07 – Random, mini kvizi in odločanje v praksi
+# Rešitev – 07 – Random, mini kvizi in odločanje v praksi
 
-## Kako voditi to uro
+Tukaj je jedro rešitve za sklop **07 – Random, mini kvizi in odločanje v praksi**. Pokaži en kratek primer. Potem naj učenci delajo.
 
-- ne razlagaj predolgo; daj jedro, potem pa naloge,
-- po 10–15 minutah naredi prvi checkpoint,
-- pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk,
-- pri hitrih učencih najprej odpri dodatne naloge, šele nato prosto nadgrajevanje.
+## Kaj pokaži najprej
 
-## Referenčni primeri iz tvojega izvornega paketa
+- Ne razlagaj predolgo; daj jedro, potem pa naloge
+- Po 10–15 minutah naredi prvi kratek pregled
+- Pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk
+- Hitrejše učence najprej usmeri na dodatne naloge, šele nato na prosto nadgrajevanje.
 
-### Izsek iz `kviz.py`
+## Primer rešitve
+
+### Primer 1
 
 ```python
 # Definiramo tocke
@@ -42,15 +44,12 @@ match odgovor:
     case _:
         pass
 
-
-
-
 # Na koncu izpisite rezultat
 print("------")
 print(f"Na kvizu si zbral toliko točk: {tocke}")
 ```
 
-### Izsek iz `postevanka.py`
+### Primer 2
 
 ```python
 # Iz knjiznice random dodamo funkcijo randint
@@ -74,32 +73,26 @@ else:
     print(f"Žal si se zmotil pravilno je {rezultat}.")
 ```
 
+## Kaj mora do konca ure delovati
+
+- Učenec zaključi obvezno jedro sklopa in ga zna demonstrirati
+- Učenec zna povedati, kje v kodi je bilo treba kaj popraviti
+- Vsaj enkrat samostojno preizkusi svojo rešitev med delom.
+
+## Hitri pregled med uro
+
+- Začetna naloga
+- Uporabnik dobi 4
+- Če je sončno → Obleci pulover 🧥
+
 ## Tipične napake
 
-- manjkajoč `:` pri pogojih ali funkcijah,
-- napačna zamaknitev bloka kode,
-- pozabljena pretvorba `input()` v `int()` ali `float()`,
-- napačno ime spremenljivke,
-- učenec ne zažene programa po vsakem manjšem koraku.
+- Manjkajoč `:` pri pogojih ali funkcijah
+- Napačna zamaknitev bloka kode
+- Pozabljena pretvorba `input()` v `int()` ali `float()`
+- Napačno ime spremenljivke
+- Učenec ne zažene programa po vsakem manjšem koraku.
 
-## Minimalni kriterij uspeha
-
-- učenec zaključi obvezno jedro sklopa in ga zna demonstrirati,
-- učenec zna povedati, kje v kodi je bilo treba kaj popraviti,
-- vsaj enkrat samostojno uporabi testiranje med delom.
-
-## Učiteljski checkpointi
-
-1. Začetna naloga
-2. Uporabnik dobi 4
-3. Če je sončno → Obleci pulover 🧥
-
-## Kaj šteje kot dober minimum
-
-- delujoče jedro,
-- vsaj ena dodatna rešena naloga,
-- učenec zna povedati, kaj v kodi zares dela in kaj je popravil.
-
-## Python datoteke v tej mapi
+## Datoteke v tej mapi
 
 - `06_referencni_primer.py`

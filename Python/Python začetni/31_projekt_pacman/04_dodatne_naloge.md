@@ -1,37 +1,19 @@
-# Dodatne naloge – 31 – Projekt – Pac-Man stil: labirint in zbiranje točk
+# Dodatne naloge – 31 – Projekt – Pac-Man labirint
 
-## Razširjena banka nalog
+### Naloga 1
+Dodaj več sovražnikov.
 
-### Osnovne naloge
-- Zapiši mapo kot seznam vrstic.
-- Izračunaj velikost okna iz mreže.
-- Nariši zidove, prazna polja in točke.
-- Poišči začetni položaj igralca.
-- Premikaj igralca po mreži.
-- Prepreči gibanje skozi zidove.
-- Ob pobiranju odstrani piko.
-- Dodaj števec točk.
+### Naloga 2
+Dodaj tipko `R` za ponovni zagon igre.
 
-### Dodatne naloge
-- Dodaj sovražnika.
-- Dodaj pogoje za zmago.
-- Dodaj več map.
-- Dodaj vrata ali ključe.
+### Naloga 3
+Dodaj več različnih map.
 
-### Izziv
-- Dodaj bolj pametnega sovražnika.
-- Dodaj različne tipe sten.
-- Dodaj posebne predmete.
-- Naredi svoj labirint.
+### Naloga 4
+Naredi, da sovražnik ne hodi čisto naključno, ampak lovi igralca.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 5
+Dodaj posebne točke, ki za nekaj sekund zamrznejo sovražnika.
 
-Uporabljeni viri za ta sklop:
-
-- `20_pacman/pacman_labirint_ucni_list.md`
-- `20_pacman/pacman_labirint_ucni_list_resitev.md`
-- `20_pacman/pacman.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.
+### Naloga 6
+Dodaj začetni meni.

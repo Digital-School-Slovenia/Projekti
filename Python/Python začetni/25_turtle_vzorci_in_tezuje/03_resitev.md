@@ -1,38 +1,59 @@
-# Rešitev / učiteljske usmeritve – 25 – Turtle – zahtevnejši vzorci in problemsko risanje
+# Rešitev – 25 – Turtle – zahtevnejši vzorci in problemsko risanje
 
-## Kako voditi to uro
+Tukaj je jedro rešitve za sklop **25 – Turtle – zahtevnejši vzorci in problemsko risanje**. Pokaži en kratek primer. Potem naj učenci delajo.
 
-- ne razlagaj predolgo; daj jedro, potem pa naloge,
-- po 10–15 minutah naredi prvi checkpoint,
-- pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk,
-- pri hitrih učencih najprej odpri dodatne naloge, šele nato prosto nadgrajevanje.
+## Kaj pokaži najprej
+
+- Ne razlagaj predolgo; daj jedro, potem pa naloge
+- Po 10–15 minutah naredi prvi kratek pregled
+- Pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk
+- Hitrejše učence najprej usmeri na dodatne naloge, šele nato na prosto nadgrajevanje.
+
+## Primer rešitve
+
+```python
+import turtle
+
+zaslon = turtle.Screen()
+zaslon.title("Turtle – vzorci")
+t = turtle.Turtle()
+t.speed(0)
+
+for i in range(60):
+    t.forward(5 + i * 3)
+    t.left(91)
+
+t.penup()
+t.goto(-180, -120)
+t.pendown()
+
+for _ in range(36):
+    t.circle(80)
+    t.left(10)
+
+turtle.done()
+```
+
+## Kaj mora do konca ure delovati
+
+- Učenec zaključi obvezno jedro sklopa in ga zna demonstrirati
+- Učenec zna povedati, kje v kodi je bilo treba kaj popraviti
+- Vsaj enkrat samostojno preizkusi svojo rešitev med delom.
+
+## Hitri pregled med uro
+
+- Nariši hiško iz kvadrata in strehe.
+- Nariši tri vedno večje kvadrate.
+- Nariši spiralo.
 
 ## Tipične napake
 
-- manjkajoč `:` pri pogojih ali funkcijah,
-- napačna zamaknitev bloka kode,
-- pozabljena pretvorba `input()` v `int()` ali `float()`,
-- napačno ime spremenljivke,
-- učenec ne zažene programa po vsakem manjšem koraku.
+- Manjkajoč `:` pri pogojih ali funkcijah
+- Napačna zamaknitev bloka kode
+- Pozabljena pretvorba `input()` v `int()` ali `float()`
+- Napačno ime spremenljivke
+- Učenec ne zažene programa po vsakem manjšem koraku.
 
-## Minimalni kriterij uspeha
-
-- učenec zaključi obvezno jedro sklopa in ga zna demonstrirati,
-- učenec zna povedati, kje v kodi je bilo treba kaj popraviti,
-- vsaj enkrat samostojno uporabi testiranje med delom.
-
-## Učiteljski checkpointi
-
-1. Nariši hiško iz kvadrata in strehe.
-2. Nariši tri vedno večje kvadrate.
-3. Nariši spiralo.
-
-## Kaj šteje kot dober minimum
-
-- delujoče jedro,
-- vsaj ena dodatna rešena naloga,
-- učenec zna povedati, kaj v kodi zares dela in kaj je popravil.
-
-## Python datoteke v tej mapi
+## Datoteke v tej mapi
 
 - `06_uciteljska_resitev.py`

@@ -1,34 +1,16 @@
-# Dodatne naloge – 35 – Zaključni projekt z jasnimi kriteriji
+# Dodatne naloge – 35 – Zaključni projekt
 
-## Razširjena banka nalog
+### Naloga 1
+Dodaj eno novo mehaniko ali funkcijo.
 
-### Osnovne naloge
-- Izdelaj svojo igro ali tekstovni program.
-- Program mora imeti jasen cilj, uporabniški tok in zaključek.
-- Uporabi vsaj 3 večje sklope znanja.
-- Pripravi 2-minutno predstavitev.
-- Demonstriraj projekt v živo.
-- Povej, katera nadgradnja je tvoja lastna ideja.
+### Naloga 2
+Projekt naredi bolj robusten: restart, jasen konec ali boljši uporabniški tok.
 
-### Dodatne naloge
-- Dodaj eno ali dve pametni nadgradnji.
-- Počisti kodo in imena spremenljivk.
-- Dodaj meni, HUD ali statistiko.
-- Pripravi mini checklisto testiranja.
+### Naloga 3
+Počisti imena spremenljivk in komentarje.
 
-### Izziv
-- Projekt naj bo robusten: restart, jasen konec, brez očitnih bugov.
-- Dodaj dve samostojni nadgradnji.
-- V predstavitvi razloži tudi, kaj bi naredil v naslednji verziji.
-- Pripravi projekt tako, da ga lahko brez razlage uporablja sošolec.
+### Naloga 4
+Dodaj meni, HUD, statistiko ali lepši izpis.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
-
-Uporabljeni viri za ta sklop:
-
-- `kriteriji zaključnega projekta iz programa`
-- `učiteljske usmeritve v5`
-
-## Opomba za učitelja
-
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.
+### Naloga 5
+Pripravi projekt tako, da ga lahko brez razlage uporabi sošolec.

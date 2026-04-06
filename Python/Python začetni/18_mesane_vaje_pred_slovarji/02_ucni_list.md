@@ -1,62 +1,33 @@
 # Učni list – 18 – Velika delavnica vaj – mešane naloge pred slovarji
 
-## Danes delamo tako
+Danes so naloge namenoma mešane. V eni nalogi boš moral povezati `input`, pogoje, zanke, sezname in funkcije.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši program, ki prebere 5 števil v seznam in nato izpiše najmanjše, največje in povprečje.
 
-- `int` → cela števila (`5`, `10`)
-- `float` → decimalna števila (`3.14`)
-- `str` → besedilo (`"Ana"`)
+### Naloga 2
+Napiši funkcijo `prestej_pozitivna(seznam)`, nato pa jo uporabi v programu, ki bere podatke od uporabnika.
 
-## Glavni blok dela
+### Naloga 3
+Napiši program, ki iz vnesenega stavka izloči vse samoglasnike in izpiše nov niz.
 
-- `bool` → `True` ali `False`
-- dodajati elemente (`append`)
-- brisati elemente (`remove`)
-- dostopati do elementov z indeksom
-- uporabljati sezname v zankah
+### Naloga 4
+Napiši program, ki simulira preprosto blagajno: uporabnik dodaja cene, program pa sproti računa vsoto.
 
-## Dodatne naloge za hitrejše
+### Naloga 5
+Napiši funkcijo `je_palindrom(niz)`, ki preveri, ali se niz enako bere z leve in desne.
 
-- koda je bolj pregledna
-- lažje popravljamo napake
-- kodo lahko večkrat uporabimo
-- združevati sezname, pogoje, zanke in funkcije
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Izziv
+### Naloga 6
+Napiši program, ki za seznam besed izdela nov seznam besed, daljših od 6 znakov.
 
-- manjkajoči dvopičje `:`
-- napačni zamiki (indentacija)
-- napačen tip podatka
-- slovarji (`dict`)
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-## Checkpointi
+### Naloga 7
+Napiši program, ki iz danega seznama števil izdela seznam kvadratov vseh lihih števil.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: `int` → cela števila (`5`, `10`)
-
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: `float` → decimalna števila (`3.14`)
-
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: koda je bolj pregledna
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši mini besedilni meni z vsaj tremi funkcijami, ki delajo nad istim seznamom podatkov.

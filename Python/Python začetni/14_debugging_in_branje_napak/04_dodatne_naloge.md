@@ -1,35 +1,56 @@
 # Dodatne naloge – 14 – Debugging in branje napak
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
-- Popravi program z manjkajočim dvopičjem pri `if`.
-- Popravi program z napačno zamaknjenim blokom.
-- Popravi program, ki sešteva niz in število brez pretvorbe.
-- Popravi `NameError`, kjer je ime spremenljivke napačno.
-- Popravi `IndexError`, kjer program bere element izven seznama.
-- Popravi `while` zanko, ki se nikoli ne ustavi.
-- Pri vsakem primeru zapiši, kaj je bilo narobe.
-- Za vsaj en primer uporabi `print()` debugging.
+### Naloga 1
+Popravi program, v katerem manjka dvopičje za `if` stavkom.
 
-### Dodatne naloge
-- Primerjaj `SyntaxError` in `TypeError`.
-- Namerno pokvari delujoč program in ga nato popravi.
-- Dodaj `print()` preverjanje v program, ki vrača čuden rezultat.
-- Poišči logično napako v programu, ki sicer teče.
+**Namig:** Najprej preberi zadnjo vrstico napake, nato poišči vrstico v kodi, kjer se težava zgodi.
 
-### Izziv
-- Pripravi 3 pokvarjene programe za sošolca.
-- Naredi mini checklisto za debugging.
-- Napiši program, ki deluje, a daje napačen rezultat, in razloži popravek.
-- Izboljšaj pokvarjen program brez pomoči učitelja.
+### Naloga 2
+Popravi program, ki ima napačno zamaknjen blok kode.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+**Namig:** Najprej preberi zadnjo vrstico napake, nato poišči vrstico v kodi, kjer se težava zgodi.
 
-Uporabljeni viri za ta sklop:
+### Naloga 3
+Popravi program, ki sešteva niz in število brez pretvorbe.
 
+**Namig:** Najprej preberi zadnjo vrstico napake, nato poišči vrstico v kodi, kjer se težava zgodi.
+
+### Naloga 4
+Popravi program, ki uporablja napačno ime spremenljivke.
+
+**Namig:** Najprej preberi zadnjo vrstico napake, nato poišči vrstico v kodi, kjer se težava zgodi.
+
+### Naloga 5
+_Ta naloga je malo težja._
+Popravi program, ki bere element izven meja seznama.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Popravi `while` zanko, ki se nikoli ne ustavi.
+
+**Namig:** Ne pozabi spremeniti števca ali pogoja v zanki, sicer bo program tekel neskončno.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Za en primer uporabi `print()` debugging in opiši, kaj si ugotovil.
+
+**Namig:** Najprej preberi zadnjo vrstico napake, nato poišči vrstico v kodi, kjer se težava zgodi.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši tri namerno pokvarjene programe za sošolca in dopiši, katera napaka je v vsakem.
+
+**Namig:** Najprej preberi zadnjo vrstico napake, nato poišči vrstico v kodi, kjer se težava zgodi.
+
+### Naloga 9
+_Ta naloga je težja._
+Sestavi mini checklisto: kaj naj učenec preveri, ko program ne dela.
+
+**Namig:** Najprej preberi zadnjo vrstico napake, nato poišči vrstico v kodi, kjer se težava zgodi.
+
+## Viri
 - `ta sklop je bil namensko dodan in ročno dopolnjen za program`
-
-## Opomba za učitelja
-
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.

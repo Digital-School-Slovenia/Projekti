@@ -1,25 +1,41 @@
-# Rešitev / učiteljske usmeritve – 33 – Projekt – Dodge the Meteors
+# Rešitev – 33 – Projekt – Dodge the Meteors
 
-## Kako vodiš to uro
+## Kaj pokaži najprej
 
-- hitro do igralca, hitro do meteorjev, hitro do trka,
-- točke in težavnost sta šele po delujočem jedru,
-- seznam meteorjev naj učenci res razumejo.
+Jedro je zelo jasno:
 
-## Minimalni referenčni okvir
+- ladja,
+- meteorji,
+- trk.
+
+Score je lep, ampak ni glavni problem.
+
+## Ključni del rešitve
 
 ```python
-SPAWN_EVENT = pygame.USEREVENT + 1
-pygame.time.set_timer(SPAWN_EVENT, 700)
-meteors = []
+if event.type == SPAWN_EVENT:
+    mw = random.randint(25, 60)
+    mh = random.randint(25, 60)
+    mx = random.randint(0, WIDTH - mw)
+    my = -mh
+    meteors.append(pygame.Rect(mx, my, mw, mh))
 ```
 
-## Učiteljski checkpointi
+in
 
-1. Ladja se premika.
-2. Meteorji nastajajo in padajo.
-3. Trk zaključi igro ali spremeni stanje.
+```python
+for m in meteors:
+    if player.colliderect(m):
+        running = False
+```
 
-## Python datoteke v tej mapi
+## Tipične napake
+
+- meteorji se ne odstranjujejo,
+- `SPAWN_EVENT` ni nastavljen,
+- ladja gre iz zaslona,
+- `score` raste prehitro ali nikoli.
+
+## Datoteke v tej mapi
 
 - `06_uciteljska_resitev.py`

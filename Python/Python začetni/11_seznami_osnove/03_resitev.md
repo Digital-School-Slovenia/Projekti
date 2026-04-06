@@ -1,15 +1,15 @@
-# Rešitev / učiteljske usmeritve – 11 – Seznami – osnove in izpis z zankami
+# Rešitev – 11 – Seznami – osnove in izpis z zankami
 
-## Kako voditi to uro
+Tukaj je jedro rešitve za sklop **11 – Seznami – osnove in izpis z zankami**. Pokaži en kratek primer. Potem naj učenci delajo.
 
-- ne razlagaj predolgo; daj jedro, potem pa naloge,
-- po 10–15 minutah naredi prvi checkpoint,
-- pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk,
-- pri hitrih učencih najprej odpri dodatne naloge, šele nato prosto nadgrajevanje.
+## Kaj pokaži najprej
 
-## Referenčni primeri iz tvojega izvornega paketa
+- Ne razlagaj predolgo; daj jedro, potem pa naloge
+- Po 10–15 minutah naredi prvi kratek pregled
+- Pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk
+- Hitrejše učence najprej usmeri na dodatne naloge, šele nato na prosto nadgrajevanje.
 
-### Izsek iz `00_seznamiu.py`
+## Primer rešitve
 
 ```python
 # POMOC ZA 4. NALOGO
@@ -24,7 +24,6 @@ for i in range(5):
     playlist.append(pesem) # APPEND APPEND!!!!
     
 # IZPISEMO PESMI V SEZNAMU. TO PA ZE ZNATE :)
-
 
 # POMOC ZA 5. NALOGO
 # -------
@@ -69,32 +68,26 @@ while True:
 # NAPIŠEŠ KODO PO WHILE ZANKI ...
 ```
 
+## Kaj mora do konca ure delovati
+
+- Učenec zaključi obvezno jedro sklopa in ga zna demonstrirati
+- Učenec zna povedati, kje v kodi je bilo treba kaj popraviti
+- Vsaj enkrat samostojno preizkusi svojo rešitev med delom.
+
+## Hitri pregled med uro
+
+- November 2025.
+- **Naloga 1: "Seznam meni, kaj si danes jedel?"**
+- "🔴 1 – profesor je znova razočaran"
+
 ## Tipične napake
 
-- manjkajoč `:` pri pogojih ali funkcijah,
-- napačna zamaknitev bloka kode,
-- pozabljena pretvorba `input()` v `int()` ali `float()`,
-- napačno ime spremenljivke,
-- učenec ne zažene programa po vsakem manjšem koraku.
+- Manjkajoč `:` pri pogojih ali funkcijah
+- Napačna zamaknitev bloka kode
+- Pozabljena pretvorba `input()` v `int()` ali `float()`
+- Napačno ime spremenljivke
+- Učenec ne zažene programa po vsakem manjšem koraku.
 
-## Minimalni kriterij uspeha
-
-- učenec zaključi obvezno jedro sklopa in ga zna demonstrirati,
-- učenec zna povedati, kje v kodi je bilo treba kaj popraviti,
-- vsaj enkrat samostojno uporabi testiranje med delom.
-
-## Učiteljski checkpointi
-
-1. november 2025.
-2. **Naloga 1: “Seznam meni, kaj si danes jedel?”**
-3. “🔴 1 – profesor je znova razočaran”
-
-## Kaj šteje kot dober minimum
-
-- delujoče jedro,
-- vsaj ena dodatna rešena naloga,
-- učenec zna povedati, kaj v kodi zares dela in kaj je popravil.
-
-## Python datoteke v tej mapi
+## Datoteke v tej mapi
 
 - `06_referencni_primer.py`

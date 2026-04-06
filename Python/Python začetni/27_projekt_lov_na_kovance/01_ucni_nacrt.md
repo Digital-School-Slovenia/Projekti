@@ -4,52 +4,36 @@
 
 - 1 srečanje = 2 uri
 
-## Bistvo sklopa
+## Kaj naredimo v tej uri
 
-projekt – lov na kovance – poudarek je na delu skozi naloge, kratkih checkpointih in sprotnem testiranju.
+Učenci izdelajo preprosto igro v `pygame`, kjer se igralec premika po zaslonu, pobira kovance, vidi rezultat in po zmagi lahko začne znova.
 
-## Formalni učni cilji
+## Do konca ure mora delovati
 
-- Učenec v dveh urah sestavi kompakten projekt »Projekt – Lov na kovance«.
-- Učenec med delom pogosto zažene program in sproti preverja rezultat.
-- Učenec rešuje več krajših nalog in ne ostane pri eni sami.
-- Učenec projekt demonstrira od začetka do konca.
+- odpre se okno,
+- igralec se premika,
+- kovanci so vidni,
+- ob dotiku kovanci izginejo,
+- rezultat se povečuje,
+- ob pobranih vseh kovancih se izpiše zmaga.
 
-## Merila uspeha do konca ure
+## Če ostane čas
 
-- projekt se zažene in ima jasno osnovno mehaniko
-- uporabnik lahko odigra ali preizkusi vsaj eno delujočo rundo
-- vidna je vsaj ena nadgradnja ali smiseln naslednji korak
+- restart na tipko `R`,
+- časovnik,
+- sovražnik,
+- več kovancev,
+- začetni meni.
 
-## Predlagan potek ure
+## Učitelj pripravi
 
-- 10–15 min: hiter uvod in prvi mikro primer
-- 20–25 min: vodeno ogrevanje in prvi checkpoint
-- 45–55 min: glavni blok nalog
-- 20–25 min: diferenciacija – dodatne naloge in izziv
-- 5–10 min: zaključek, demonstracije, refleksija
+- `02_ucni_list.md`
+- `03_resitev.md`
+- `04_dodatne_naloge.md`
+- `05_domaca_naloga.md`
+- `06_uciteljska_resitev.py`
+- `08_uciteljski_scenarij_ure.md`
 
-## Diferenciacija
+## Opomba za učitelja
 
-- **Osnovna naloga:** Odpri okno in nastavi FPS.
-- **Dodatna naloga:** Dodaj več kovancev.
-- **Izziv:** Dodaj meni ali zaslon za zmago.
-
-## Vloga učitelja
-
-- učitelj ne vleče cele ure frontalno,
-- daje kratke checkpoint razlage,
-- usmerja z vprašanji,
-- odpira dodatne naloge za hitrejše učence.
-
-## Uporabljeni viri iz tvojega paketa
-
-- `17_pygame/Učna ura – Lov na kovance.md`
-
-## Izvedbena opomba
-
-Ta verzija je namenoma zgrajena po logiki: manj prazne teorije, več tipkanja, več kratkih nalog, več sprotnih popravkov.
-
-## Dodatna učiteljska opora
-
-- glej tudi `08_uciteljski_scenarij_ure.md` za izvedbeni tempo, checkpoint vprašanja in tipične učiteljske posege.
+Ne razlagaj predolgo. Pokaži končni minimum v 10 sekundah, potem naj začnejo delati.

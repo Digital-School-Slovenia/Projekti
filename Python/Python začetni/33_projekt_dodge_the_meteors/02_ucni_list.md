@@ -1,62 +1,148 @@
 # Učni list – 33 – Projekt – Dodge the Meteors
 
-## Danes delamo tako
+## Cilj
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+Premikaj ladjo levo/desno in se izogibaj meteorjem. Vsaka sekunda preživetja naj prinese točko.
 
-## Minimalno delujoče jedro
+## Korak 1: Začetna datoteka
 
-- Ustvari ladjo kot `Rect`.
-- Dodaj premikanje levo/desno.
-- Nastavi timer za spawn meteorjev.
-- Meteorje dodajaj v seznam.
+Ustvari `dodge_the_meteors.py` in vanjo prilepi:
 
-## Glavni blok dela
+```python
+import pygame
+import sys
+import random
 
-- Premikaj meteorje navzdol.
-- Odstrani meteorje, ki zapustijo zaslon.
-- Preveri trk med ladjo in meteorjem.
-- Dodaj `GAME OVER`.
+pygame.init()
 
-## Dodatne naloge za hitrejše
+WIDTH, HEIGHT = 800, 500
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Dodge the Meteors")
+clock = pygame.time.Clock()
+font = pygame.font.SysFont(None, 36)
+```
 
-- Dodaj točke preživetja.
-- Dodaj različne velikosti ali hitrosti meteorjev.
-- Dodaj restart.
-- Povečuj težavnost skozi čas.
+## Korak 2: Dodaj ladjo
 
-## Izziv
+```python
+player_w, player_h = 60, 30
+player = pygame.Rect(WIDTH // 2 - player_w // 2, HEIGHT - 60, player_w, player_h)
+player_speed = 7
+```
 
-- Dodaj bonus ščit ali power-up.
-- Dodaj več tipov nevarnosti.
-- Dodaj končno statistiko.
-- Dodaj lep začetni zaslon.
+## Korak 3: Dodaj meteorje in timer
 
-## Checkpointi
+```python
+meteors = []
+meteor_speed_min = 4
+meteor_speed_max = 8
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: Ustvari ladjo kot `Rect`.
+SPAWN_EVENT = pygame.USEREVENT + 1
+pygame.time.set_timer(SPAWN_EVENT, 600)
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Dodaj premikanje levo/desno.
+score = 0
+frame_count = 0
+```
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Dodaj točke preživetja.
+## Korak 4: Dodaj glavno zanko
 
-## Pravilo te ure
+```python
+running = True
+while running:
+    clock.tick(60)
 
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+```
 
-## Oddaja / exit ticket
+## Korak 5: Dodaj spawn meteorjev
 
-Na koncu pokaži:
+V event loop dodaj:
 
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+```python
+        if event.type == SPAWN_EVENT:
+            mw = random.randint(25, 60)
+            mh = random.randint(25, 60)
+            mx = random.randint(0, WIDTH - mw)
+            my = -mh
+            meteors.append(pygame.Rect(mx, my, mw, mh))
+```
+
+## Korak 6: Dodaj premikanje ladje
+
+Pod event loop dodaj:
+
+```python
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        player.x -= player_speed
+    if keys[pygame.K_RIGHT]:
+        player.x += player_speed
+
+    if player.left < 0:
+        player.left = 0
+    if player.right > WIDTH:
+        player.right = WIDTH
+```
+
+## Korak 7: Dodaj posodobitev meteorjev in score
+
+Pod premikanje igralca dodaj:
+
+```python
+    for m in meteors:
+        m.y += random.randint(meteor_speed_min, meteor_speed_max)
+
+    meteors = [m for m in meteors if m.top < HEIGHT + 50]
+
+    frame_count += 1
+    if frame_count >= 60:
+        score += 1
+        frame_count = 0
+```
+
+## Korak 8: Dodaj trk
+
+Pod score dodaj:
+
+```python
+    for m in meteors:
+        if player.colliderect(m):
+            running = False
+```
+
+## Korak 9: Dodaj risanje
+
+Pod logiko dodaj:
+
+```python
+    screen.fill((10, 10, 30))
+
+    pygame.draw.rect(screen, (50, 200, 255), player)
+
+    for m in meteors:
+        pygame.draw.rect(screen, (180, 120, 80), m)
+
+    text = font.render(f"Score: {score}", True, (255, 255, 255))
+    screen.blit(text, (10, 10))
+
+    pygame.display.update()
+```
+
+## Korak 10: Dodaj game over zaslon
+
+Pod zanko dodaj:
+
+```python
+screen.fill((0, 0, 0))
+go1 = font.render("GAME OVER", True, (255, 80, 80))
+go2 = font.render(f"Final score: {score}", True, (255, 255, 255))
+screen.blit(go1, (WIDTH//2 - go1.get_width()//2, HEIGHT//2 - 40))
+screen.blit(go2, (WIDTH//2 - go2.get_width()//2, HEIGHT//2 + 10))
+pygame.display.update()
+
+pygame.time.delay(2000)
+pygame.quit()
+```

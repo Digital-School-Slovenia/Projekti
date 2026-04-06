@@ -1,60 +1,72 @@
-# Učni list – 35 – Zaključni projekt z jasnimi kriteriji
+# Učni list – 35 – Zaključni projekt
 
-## Danes delamo tako
+## Cilj
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+Naredi svoj program ali igro. Projekt naj bo dovolj majhen, da ga v dveh urah lahko dokončaš in pokažeš.
 
-## Minimalno delujoče jedro
+## Korak 1: Izberi eno jasno idejo
 
-- Izdelaj svojo igro ali tekstovni program.
-- Program mora imeti jasen cilj, uporabniški tok in zaključek.
-- Uporabi vsaj 3 večje sklope znanja.
-- Pripravi 2-minutno predstavitev.
+Zapiši:
 
-## Glavni blok dela
+- naslov projekta,
+- kaj projekt dela,
+- kaj mora delovati že v osnovni verziji,
+- kdaj je projekt končan.
 
-- Demonstriraj projekt v živo.
-- Povej, katera nadgradnja je tvoja lastna ideja.
+## Korak 2: Zapiši minimalni plan
 
-## Dodatne naloge za hitrejše
+Zapiši 4 do 6 najmanjših korakov. Na primer:
 
-- Dodaj eno ali dve pametni nadgradnji.
-- Počisti kodo in imena spremenljivk.
-- Dodaj meni, HUD ali statistiko.
-- Pripravi mini checklisto testiranja.
+```text
+1. odpre se okno / zažene se program
+2. deluje glavni objekt ali glavni meni
+3. deluje ena glavna mehanika
+4. program se ne sesuje pri osnovni uporabi
+5. izpiše rezultat ali konec igre
+```
 
-## Izziv
+## Korak 3: Ustvari začetno datoteko
 
-- Projekt naj bo robusten: restart, jasen konec, brez očitnih bugov.
-- Dodaj dve samostojni nadgradnji.
-- V predstavitvi razloži tudi, kaj bi naredil v naslednji verziji.
-- Pripravi projekt tako, da ga lahko brez razlage uporablja sošolec.
+Če delaš besedilni program, začni z:
 
-## Checkpointi
+```python
+def main():
+    pass
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: Izdelaj svojo igro ali tekstovni program.
+if __name__ == "__main__":
+    main()
+```
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Program mora imeti jasen cilj, uporabniški tok in zaključek.
+Če delaš `pygame` projekt, začni z ogrodjem iz svojih prejšnjih projektov.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Dodaj eno ali dve pametni nadgradnji.
+## Korak 4: Naredi delujoče jedro
 
-## Pravilo te ure
+Najprej naredi tisto, brez česar projekt nima smisla. Na primer:
 
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
+- premik igralca,
+- vnos podatkov,
+- osnovni izračun,
+- seznam opravil,
+- pobiranje predmetov,
+- osnovni trk.
 
-## Oddaja / exit ticket
+## Korak 5: Dodaj eno ali dve nadgradnji
 
-Na koncu pokaži:
+Ko jedro deluje, dodaj nadgradnje. Primeri:
 
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+- score,
+- življenja,
+- meni,
+- lepši izpis,
+- dodatni nivo,
+- validacija vnosa,
+- restart.
+
+## Korak 6: Pripravi kratko predstavitev
+
+Na koncu moraš znati povedati:
+
+- kaj projekt dela,
+- kateri del je jedro,
+- katera nadgradnja je tvoja,
+- kaj bi dodal v naslednji verziji.

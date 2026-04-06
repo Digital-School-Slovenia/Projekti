@@ -1,21 +1,19 @@
 # Domača naloga – 19 – Slovarji – osnove
 
-## Obvezni minimum
+### Naloga 1
+Podan je slovar `profil = {"ime": "Ana", "starost": 12, "tocke": 150}`. Napiši funkcijo `izpisi_profil(profil)`, ki izpiše vse podatke.
 
-- razume, kaj je **slovar (dictionary)**
-- zna ustvariti slovar
-- zna dostopati do vrednosti s pomočjo ključa
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši funkcijo `povecaj_tocke(profil, kolicina)`, ki poveča število točk in vrne posodobljen slovar.
 
-- igralec: ime → točke
-- Kako shranimo **ime + starost**?
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Kratka refleksija
+### Naloga 3
+Napiši funkcijo `preveri_kljuc(profil, kljuc)`, ki preveri, ali ključ obstaja v slovarju.
 
-Ob oddaji dopiši še:
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

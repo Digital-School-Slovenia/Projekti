@@ -1,42 +1,57 @@
 # Dodatne naloge – 11 – Seznami – osnove in izpis z zankami
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Ustvari seznam petih najljubših jedi in jih izpiši eno po eno.
 
-- november 2025.
-- **Naloga 1: “Seznam meni, kaj si danes jedel?”**
-- 😂 **Naloga 2: “Seznam mojih dobrih navad in čudnih navad”**
-- 😂 **Naloga 3: “Seznam psov v pasjem vrtcu” 🐶**
-- 🏗️ Naloga 4: **“Playlist generator 3000” 🎵**
-- 😂 **Naloga 5: “Seznam ocenjen po krutem profesorju”**
-- “🟢 5 – profesor je presrečen”
-- “🟡 3 – profesor je nevtralen”
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
 
-### Dodatne naloge
+### Naloga 2
+Ustvari seznam ocen in izpiši prvo ter zadnjo oceno.
 
-- “🔴 1 – profesor je znova razočaran”
-- 😂 **Naloga 6: “Fitnes trener” 🏋️‍♂️**
-- Če je 0 → “🤨 Nisi se niti premaknil!”
-- Če <10 → “💪 Začetek je dober!”
-- Če ≥10 → “🔥 Zverina!”
-- **Naloga 7: “Filter psov z dolgimi imeni” 🐕**
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
 
-### Izziv
+### Naloga 3
+Ustvari seznam imen in z zanko `for` izpiši vsako ime v svoji vrstici.
 
-- 🏗️ **Naloga 9: “Trgovina 3000 – verzija LIST” 🛒**
-- Ustvari prazen seznam:
-- V zanki `while True` vprašaj:
-- Če uporabnik napiše `"konec"` → prekini.
-- Drugače dodaj izdelek v seznam.
+**Namig:** Premisli, ali potrebuješ `range(...)` ali sprehod po elementih seznama.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Ustvari seznam števil in izpiši njihovo vsoto.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
 
+### Naloga 5
+_Ta naloga je malo težja._
+V seznam dodaj nov element z `append()` in ga nato izpiši.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Iz seznama odstrani en element in izpiši posodobljen seznam.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Preštej, koliko elementov ima seznam z `len()`.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 8
+_Ta naloga je težja._
+Ustvari seznam desetih števil in izpiši samo soda.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši program, ki v seznamu poišče največje število.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+## Viri
 - `07/naloge.md`
 - `07/00_seznamiu.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

@@ -4,53 +4,39 @@
 
 - 1 srečanje = 2 uri
 
-## Bistvo sklopa
+## Kaj naredimo v tej uri
 
-projekt – mini zelda – poudarek je na delu skozi naloge, kratkih checkpointih in sprotnem testiranju.
+Učenci izdelajo preprosto top-down igro v slogu Zelda:
 
-## Formalni učni cilji
+- igralec se premika po svetu,
+- kamera mu sledi,
+- pobira kovance,
+- sovražniki ga lovijo,
+- igralec lahko napade.
 
-- Učenec v dveh urah sestavi kompakten projekt »Projekt – Mini Zelda«.
-- Učenec med delom pogosto zažene program in sproti preverja rezultat.
-- Učenec rešuje več krajših nalog in ne ostane pri eni sami.
-- Učenec projekt demonstrira od začetka do konca.
+## Do konca ure mora delovati
 
-## Merila uspeha do konca ure
+- gibanje igralca,
+- kamera,
+- vsaj nekaj kovancev,
+- vsaj en sovražnik,
+- score ali HP,
+- osnovni napad ali trk s sovražnikom.
 
-- projekt se zažene in ima jasno osnovno mehaniko
-- uporabnik lahko odigra ali preizkusi vsaj eno delujočo rundo
-- vidna je vsaj ena nadgradnja ali smiseln naslednji korak
+## Če ostane čas
 
-## Predlagan potek ure
+- srca,
+- ovire,
+- portal ali cilj,
+- restart,
+- večja mapa.
 
-- 10–15 min: hiter uvod in prvi mikro primer
-- 20–25 min: vodeno ogrevanje in prvi checkpoint
-- 45–55 min: glavni blok nalog
-- 20–25 min: diferenciacija – dodatne naloge in izziv
-- 5–10 min: zaključek, demonstracije, refleksija
+## Učitelj pripravi
 
-## Diferenciacija
-
-- **Osnovna naloga:** Ustvari okno, barve in osnovno strukturo igre.
-- **Dodatna naloga:** Dodaj ovire in kolizije.
-- **Izziv:** Dodaj skoraj neskončen svet s chunk generiranjem.
-
-## Vloga učitelja
-
-- učitelj ne vleče cele ure frontalno,
-- daje kratke checkpoint razlage,
-- usmerja z vprašanji,
-- odpira dodatne naloge za hitrejše učence.
-
-## Uporabljeni viri iz tvojega paketa
-
-- `18_pygame/navodila_level1.md`
-- `18_pygame/navodila_level2.md`
-
-## Izvedbena opomba
-
-Ta verzija je namenoma zgrajena po logiki: manj prazne teorije, več tipkanja, več kratkih nalog, več sprotnih popravkov.
-
-## Dodatna učiteljska opora
-
-- glej tudi `08_uciteljski_scenarij_ure.md` za izvedbeni tempo, checkpoint vprašanja in tipične učiteljske posege.
+- `02_ucni_list.md`
+- `03_resitev.md`
+- `04_dodatne_naloge.md`
+- `05_domaca_naloga.md`
+- `06_uciteljska_resitev.py`
+- `07_nadgradnja.py`
+- `08_uciteljski_scenarij_ure.md`

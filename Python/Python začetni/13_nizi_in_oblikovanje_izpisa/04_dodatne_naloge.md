@@ -1,35 +1,52 @@
 # Dodatne naloge – 13 – Nizi in oblikovanje izpisa
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
-- Vprašaj za ime in izpiši dolžino imena.
-- Izpiši ime z velikimi in malimi črkami.
-- Uporabi `strip()` na vnosu.
-- Izpiši prvo in zadnjo črko besede.
-- Naredi vzdevek iz prvih treh črk imena.
-- Sestavi lep stavek z `f-string`.
-- Izpiši ime znotraj oklepajev, npr. `[Matej]`.
-- Naredi mini besedilno vizitko.
+### Naloga 1
+Napiši program, ki vpraša za ime in izpiše dolžino imena.
 
-### Dodatne naloge
-- Preveri, ali se beseda začne z določeno črko.
-- Preveri, ali se v nizu pojavi izbran znak.
-- Naredi mini ID kartico: ime, razred, najljubši predmet.
-- Preštej, kolikokrat se v nizu pojavi črka `a`.
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
 
-### Izziv
-- Naredi mini analizator gesla.
-- Preštej samoglasnike v besedi.
-- Naredi lepo poravnano besedilno tabelo s tremi vrsticami.
-- Naredi program, ki iz dveh besed sestavi novo ime.
+### Naloga 2
+Napiši program, ki izpiše prvo in zadnjo črko vnesene besede.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
 
-Uporabljeni viri za ta sklop:
+### Naloga 3
+Napiši program, ki izpiše ime z velikimi in malimi črkami.
 
+### Naloga 4
+Napiši program, ki iz podatkov `ime`, `razred` in `hobi` sestavi lepo oblikovan stavek z `f-string`.
+
+**Namig:** Pomagaj si z `f"...{spremenljivka}..."`, da bo izpis lepši.
+
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši program, ki preveri, ali se beseda začne z določeno črko.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Napiši program, ki prešteje, kolikokrat se v nizu pojavi črka `a`.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši program, ki iz dveh besed sestavi vzdevek.
+
+### Naloga 8
+_Ta naloga je malo težja._
+Napiši program, ki z `strip()` odstrani odvečne presledke na začetku in koncu vnosa.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši mini analizator gesla, ki preveri dolžino in prisotnost številke.
+
+### Naloga 10
+_Ta naloga je težja._
+Napiši program, ki prešteje samoglasnike v besedi.
+
+### Naloga 11
+_Ta naloga je težja._
+Napiši program, ki izpiše tri stolpce podatkov lepo poravnano z uporabo oblikovanja izpisa.
+
+## Viri
 - `ta sklop je bil namensko dodan in ročno dopolnjen za program`
-
-## Opomba za učitelja
-
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.

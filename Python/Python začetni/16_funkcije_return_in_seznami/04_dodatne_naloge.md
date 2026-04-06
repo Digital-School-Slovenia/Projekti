@@ -1,42 +1,57 @@
 # Dodatne naloge – 16 – Funkcije – `return`, seznami in razdelitev problema
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Napiši funkcijo `dvojno(n)`, ki vrne podvojeno vrednost.
 
-- 🟢 lažje
-- 🟡 srednje
-- 🔴 zahtevnejše
-- 🟢 Naloga 1: Uporabniško ime
-- sprejme uporabniško ime
-- izpiše pozdrav v obliki:
-- če je ime krajše od 4 znakov, naj izpiše opozorilo
-- 🟢 Naloga 2: Število sledilcev
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
 
-### Dodatne naloge
+### Naloga 2
+Napiši funkcijo `vecje(a, b)`, ki vrne večje izmed dveh števil.
 
-- sprejme število sledilcev
-- glede na število izpiše:
-- več kot 1000 → "Influencer 😎"
-- 100–1000 → "Aktiven uporabnik 👍"
-- manj kot 100 → "Začetnik 👶"
-- 🟡 Naloga 3: Objave
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
 
-### Izziv
+### Naloga 3
+Napiši funkcijo `prva_crka(beseda)`, ki vrne prvo črko niza.
 
-- izpiše vse objave
-- izpiše število objav
-- 🟡 Naloga 4: Lajki na objavah
-- izpiše vse vrednosti
-- izpiše povprečno število lajkov
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Napiši funkcijo `vsota_seznama(sez)`, ki vrne vsoto vseh števil v seznamu.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
 
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši funkcijo `povprecje(sez)`, ki vrne povprečje števil v seznamu.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Napiši funkcijo `stej_sode(sez)`, ki vrne število sodih elementov.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši funkcijo `najdaljsa_beseda(sez)`, ki vrne najdaljši niz v seznamu.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši program, kjer ena funkcija pripravi seznam, druga pa iz njega izračuna rezultat.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši funkcijo `filtriraj_pozitivna(sez)`, ki vrne nov seznam samo s pozitivnimi števili.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+## Viri
 - `08/naloge.md`
 - `10_first/#L01f501 PONOVITVENE VAJE #U2013 PYTHON (FUNKCIJE).md`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

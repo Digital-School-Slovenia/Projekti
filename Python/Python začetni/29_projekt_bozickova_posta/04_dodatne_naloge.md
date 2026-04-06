@@ -1,44 +1,21 @@
 # Dodatne naloge – 29 – Projekt – Božičkova pošta
 
-## Razširjena banka nalog
+### Naloga 1
+Dodaj piškotek, ki vrne +1 življenje.
 
-### Osnovne naloge
+**Namig:** Dodaj nov `type`, npr. `cookie`.
 
-- 🧱 KORAK 1 — Odpri okno
-- Ustvari okno velikosti **800 × 500**
-- Omogoči zapiranje okna z gumbom ❌
-- 🧑‍🎄 KORAK 2 — Nariši Božička
-- Nariši Božička kot **rdeč pravokotnik**
-- ⬅️➡️ KORAK 3 — Premikanje Božička
-- Premikaj Božička z **levo in desno puščico**
-- 📩 KORAK 4 — Padajoči emaili
+### Naloga 2
+Dodaj Krampusov email, ki odvzame 2 življenji.
 
-### Dodatne naloge
+### Naloga 3
+Dodaj combo sistem: če ujameš 3 dobre emaile zapored, dobiš +5 bonus točk.
 
-- Uporabi **seznam**, v katerem shranjuješ emaile
-- Občasno ustvari nov email, ki pade z vrha
-- 🔥 KORAK 5 — Posodabljanje emailov
-- Spreminjaj koordinate za emaile
-- 💥 KORAK 6 — Lovljenje emailov
-- Zaznaj trk med Božičkom in emailom
+### Naloga 4
+Dodaj emoji razpoloženja glede na število življenj.
 
-### Izziv
+### Naloga 5
+Naredi, da so predmeti pri večjem rezultatu hitrejši.
 
-- Dober email → **+1 točka**
-- Spam → **−1 življenje**
-- 💥 KORAK 7 — Informacije o življenju
-- Dodaj informacije o življenju
-- ☠️ KORAK 8 — Konec igre
-
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
-
-Uporabljeni viri za ta sklop:
-
-- `09_last/#L01f3ae BO#U017dI#U010cKOVA PO#U0160TA.md`
-- `09_last/moija_prva_igra.py`
-- `09_last/santa_game.py`
-- `09_last/igra_full.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.
+### Naloga 6
+Dodaj tipko `G`, ki vklopi goljufijo in da 99 življenj.

@@ -1,62 +1,145 @@
 # Učni list – 29 – Projekt – Božičkova pošta
 
-## Danes delamo tako
+## Cilj
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+Pomagaj Božičku ujeti dobre emaile in se izogniti spamu.
 
-## Minimalno delujoče jedro
+## Korak 1: Odpri okno
 
-- 🧱 KORAK 1 — Odpri okno
-- Ustvari okno velikosti **800 × 500**
-- Omogoči zapiranje okna z gumbom ❌
-- 🧑‍🎄 KORAK 2 — Nariši Božička
+Ustvari datoteko `bozickova_posta.py` in vanjo prilepi:
 
-## Glavni blok dela
+```python
+import pygame
+from random import randint
 
-- Nariši Božička kot **rdeč pravokotnik**
-- ⬅️➡️ KORAK 3 — Premikanje Božička
-- Premikaj Božička z **levo in desno puščico**
-- 📩 KORAK 4 — Padajoči emaili
+SIRINA_ZASLONA = 800
+VISINA_ZASLONA = 500
 
-## Dodatne naloge za hitrejše
+def main():
+    pygame.init()
+    pygame.display.set_caption("Božičkova pošta")
 
-- Uporabi **seznam**, v katerem shranjuješ emaile
-- Občasno ustvari nov email, ki pade z vrha
-- 🔥 KORAK 5 — Posodabljanje emailov
-- Spreminjaj koordinate za emaile
+    ZASLON = pygame.display.set_mode((SIRINA_ZASLONA, VISINA_ZASLONA))
+    URA = pygame.time.Clock()
+    PISAVA = pygame.font.SysFont(None, 32)
+```
 
-## Izziv
+## Korak 2: Dodaj Božička
 
-- Dober email → **+1 točka**
-- Spam → **−1 življenje**
-- 💥 KORAK 7 — Informacije o življenju
-- Dodaj informacije o življenju
+Pod nastavitve zaslona dodaj:
 
-## Checkpointi
+```python
+    santa_x = SIRINA_ZASLONA // 2
+    santa_y = VISINA_ZASLONA - 60
+    santa_w = 50
+    santa_h = 40
+```
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: 🧱 KORAK 1 — Odpri okno
+V glavni zanki bomo iz tega naredili `Rect`.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Ustvari okno velikosti **800 × 500**
+## Korak 3: Dodaj začetne sezname in števce
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Uporabi **seznam**, v katerem shranjuješ emaile
+Pod Božička dodaj:
 
-## Pravilo te ure
+```python
+    emails = []
+    stevilo_tock = 0
+    stevilo_zivljenj = 3
+```
 
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
+## Korak 4: Dodaj glavno zanko
 
-## Oddaja / exit ticket
+Pod začetne podatke dodaj:
 
-Na koncu pokaži:
+```python
+    nadaljuj_igro = True
+    while nadaljuj_igro:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                nadaljuj_igro = False
+```
 
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+## Korak 5: Dodaj premikanje Božička
+
+V glavni zanki dodaj:
+
+```python
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_LEFT]:
+            santa_x -= 6
+        if keys[pygame.K_RIGHT]:
+            santa_x += 6
+
+        santa_x = max(0, min(SIRINA_ZASLONA - santa_w, santa_x))
+```
+
+## Korak 6: Dodaj nove emaile
+
+V glavni zanki, po premikanju, dodaj:
+
+```python
+        if randint(1, 25) == 1:
+            email = {
+                "x": randint(0, 770),
+                "y": -30,
+                "speed": randint(3, 6),
+                "type": "spam" if randint(1, 4) == 1 else "good"
+            }
+            emails.append(email)
+```
+
+## Korak 7: Dodaj risanje Božička
+
+V zanki dodaj draw del:
+
+```python
+        ZASLON.fill((100, 100, 100))
+
+        santa_rect = pygame.Rect(santa_x, santa_y, santa_w, santa_h)
+        pygame.draw.rect(ZASLON, (220, 40, 40), santa_rect)
+```
+
+## Korak 8: Posodobi in nariši emaile
+
+Pod risanje Božička dodaj:
+
+```python
+        for email in emails[:]:
+            email["y"] += email["speed"]
+            rect = pygame.Rect(email["x"], email["y"], 20, 20)
+
+            if rect.colliderect(santa_rect):
+                if email["type"] == "good":
+                    stevilo_tock += 1
+                else:
+                    stevilo_zivljenj -= 1
+                emails.remove(email)
+                continue
+
+            color = (0, 200, 100) if email["type"] == "good" else (255, 120, 0)
+            pygame.draw.rect(ZASLON, color, rect)
+```
+
+## Korak 9: Dodaj HUD in konec igre
+
+Pod email loop dodaj:
+
+```python
+        text = PISAVA.render(f"Točke: {stevilo_tock}   Življenj: {stevilo_zivljenj}", True, (255, 255, 255))
+        ZASLON.blit(text, (10, 10))
+
+        if stevilo_zivljenj <= 0:
+            nadaljuj_igro = False
+
+        pygame.display.flip()
+        URA.tick(60)
+
+    pygame.quit()
+
+main()
+```
+
+### Kaj dela ta del?
+
+- izpiše točke in življenja,
+- konča igro, ko zmanjka življenj.

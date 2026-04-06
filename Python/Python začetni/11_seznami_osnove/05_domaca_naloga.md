@@ -1,21 +1,19 @@
 # Domača naloga – 11 – Seznami – osnove in izpis z zankami
 
-## Obvezni minimum
+### Naloga 1
+Ustvari seznam treh jedi, ki si jih danes jedel. Nato jih izpiši eno pod drugo.
 
-- november 2025.
-- **Naloga 1: “Seznam meni, kaj si danes jedel?”**
-- 😂 **Naloga 2: “Seznam mojih dobrih navad in čudnih navad”**
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-## Bonus / za hitrejše
+### Naloga 2
+Ustvari seznam svojih dobrih navad in jih izpiši z zanko `for`.
 
-- “🔴 1 – profesor je znova razočaran”
-- 😂 **Naloga 6: “Fitnes trener” 🏋️‍♂️**
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-## Kratka refleksija
+### Naloga 3
+Podan je seznam psov `psi = ["Rex", "Luna", "Turbo", "Fifi"]`. Izpiši stavek `Pes ___ potrebuje priboljšek.` za vsakega psa.
 
-Ob oddaji dopiši še:
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

@@ -1,21 +1,19 @@
 # Domača naloga – 12 – Seznami v praksi, `for` zanke in mini inventarji
 
-## Obvezni minimum
+### Naloga 1
+Ustvari prazno listo `playlist = []`. Nato petkrat vprašaj za najljubšo pesem in jo dodaj v seznam.
 
-- november 2025.
-- **Naloga 1: “Seznam meni, kaj si danes jedel?”**
-- 😂 **Naloga 2: “Seznam mojih dobrih navad in čudnih navad”**
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši program, ki ustvari mini nakupovalni seznam. Uporabnik vnese 5 izdelkov, program pa jih na koncu izpiše.
 
-- “🔴 1 – profesor je znova razočaran”
-- 😂 **Naloga 6: “Fitnes trener” 🏋️‍♂️**
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-## Kratka refleksija
+### Naloga 3
+Napiši program "Fitnes trener". Za seznam ponovitev izpiši, ali je rezultat slab, dober ali odličen.
 
-Ob oddaji dopiši še:
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

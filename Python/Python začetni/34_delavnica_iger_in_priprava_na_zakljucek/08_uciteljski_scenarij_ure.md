@@ -1,201 +1,105 @@
-# Učiteljski scenarij ure – 34 – Velika delavnica vaj + priprava na zaključni projekt
+# Učiteljski scenarij ure – 34 – Delavnica iger in priprava na zaključek
 
-## Namen te datoteke
+## Pred uro
 
-To je **izvedbeni scenarij** za učitelja. Namen ni, da uro vodiš kot robot, ampak da imaš pri roki:
-
-- predlagan tempo,
-- checkpointe,
-- tipične napake,
-- hitre učiteljske posege,
-- trenutke, ko je smiselno pokazati primer ali odpreti referenčno `.py` datoteko.
-
-## Fokus ure v enem stavku
-
-V tej uri naj učenci čim prej spravijo v pogon **minimalno delujoče jedro**, potem pa skozi veliko kratkih nalog širijo rešitev in sproti popravljajo napake.
-
-## Formalni fokus, ki ga držiš v glavi
-
-- Učenec v dveh urah sestavi kompakten projekt »Velika delavnica vaj + priprava na zaključni projekt«.
-- Učenec med delom pogosto zažene program in sproti preverja rezultat.
-- Učenec rešuje več krajših nalog in ne ostane pri eni sami.
-- Učenec projekt demonstrira od začetka do konca.
-
-## Pred uro pripravi
-
-- odpri mapo sklopa in preveri, da imaš pri roki `02_ucni_list.md`, `03_resitev.md` in ta scenarij,
-- pripravi vsaj en zelo kratek mikro-primer, ki ga lahko pokažeš v manj kot 2 minutah,
-- vnaprej odloči, kaj boš danes štel kot **minimum**, da učenci ne odjadrajo v kozmos,
-- pripravi 2–3 kratka vprašanja namesto dolgih razlag.
-
-## Podporne datoteke v tej mapi
-
+Odpri:
+- `02_ucni_list.md`
+- `03_resitev.md`
 - `06_predloga_igre.py`
 
-## Predlagan tempo ure (2 uri)
+Pripravi 2 primera:
+- en primer prevelike ideje,
+- en primer dovolj majhne in izvedljive ideje.
 
-### 0–10 min: zagon brez filozofiranja
+## Kaj danes dela razred
 
-Kaj narediš:
+Danes ne gradijo še cele igre. Danes pripravijo načrt, ki je dovolj dober za začetek zaključnega projekta.
 
-- zelo kratko poveš cilj ure,
-- pokažeš mikro-primer ali mini demonstracijo,
-- učencem daš prvo najmanjšo nalogo, da takoj začnejo tipkati.
+## Potek ure
 
-Kaj naj v tem delu naredijo učenci:
+### 0–15 min
 
-- [ ] dirkalna igra
-- [ ] pustolovska igra
+- Povej cilj ure.
+- Pokaži razliko med preveliko in izvedljivo idejo.
+- Povej pravilo: **najprej minimum, šele potem bonusi**.
 
-Tvoje vprašanje skupini:
+### 15–35 min
 
-- »Kaj mora danes delovati že v prvih 10 minutah?«
-- »Kaj je najmanjši kos kode, ki ga lahko takoj zaženemo?«
+Učenci rešujejo naloge 1–6.
 
-### 10–25 min: vodeno ogrevanje
+Hodi med njimi in jih ustavljaj pri prevelikih idejah.
+Če nekdo reče: "Naredil bom Minecraft + GTA + Half-Life", ga vrni na planet Zemlja.
 
-Kaj narediš:
+### 35–60 min
 
-- hodiš med njimi,
-- popravljaš samo prve blokade,
-- ne rešuješ cele naloge namesto njih,
-- iščeš ponavljajoče se napake in jih razrešiš na hitro za celo skupino.
+Učenci rešujejo naloge 7–12.
 
-V tem delu jih usmeri na:
+Tukaj morajo postati konkretni:
+- cilj,
+- upravljanje,
+- ovire,
+- zmaga,
+- poraz.
 
-- [ ] igra pobiranja predmetov
-- [ ] labirint
+Če učenec tega ne zna povedati na glas, projekt še ni dovolj jasen.
 
-Mini checkpoint ob koncu tega dela:
+### 60–85 min
 
-- vsak pokaže vsaj eno stvar, ki deluje,
-- hitrejši že odpirajo glavni blok,
-- počasnejši še vedno lovijo minimum, brez panike.
+Nalogi 13 in 14 sta najpomembnejši.
 
-### 25–55 min: glavni del ure
+Pazi, da pri 4 korakih prve verzije ne pišejo bonusov, ampak res osnovo.
 
-To je jedro. Tukaj jih ne zasuj z dodatno teorijo. Raje:
+Dober primer:
+1. igralec se premika,
+2. pobere predmet,
+3. točke se povečajo,
+4. dodam eno oviro.
 
-- sprašuj, kaj želijo doseči,
-- preverjaj, ali testirajo sproti,
-- jih vračaj na naslednji majhen korak, ne na “naredi vse”.
+Slab primer:
+1. animacije,
+2. trgovina,
+3. boss,
+4. multiplayer.
 
-Glavni blok, ki ga potiskaj naprej:
+### 85–105 min
 
-- [ ] strelska igra
-- [ ] platformska igra
-- [ ] miselna igra
-- [ ] drugo: _____________
+Hitrejši odprejo `.py` datoteko in začnejo prvi prototip.
+Počasnejši dokončajo načrt.
 
-Dober učiteljski stavek v tem delu:
+### 105–120 min
 
-- »Najprej naredi eno stvar, ki dela. Bonus naj počaka.«
+Vsak učenec mora na koncu pokazati:
+- naslov,
+- cilj,
+- minimum,
+- prve 4 korake,
+- skico ali začetno datoteko.
 
-### 55–75 min: diferenciacija in širitev
+## Tipične napake
 
-Zdaj loči skupino po ritmu:
+- ideja je prevelika,
+- ni jasnega minimuma,
+- učenec še ni nič zapisal, samo govori,
+- načrt nima vrstnega reda,
+- učenec hoče bonuse pred jedrom.
 
-Za učence, ki potrebujejo stabilizacijo:
+## Ko se kdo zatakne
 
-- dokončajo jedro,
-- počistijo napake,
-- uredijo izpis, logiko ali strukturo,
-- pokažejo vsaj dve delujoči stvari.
+Vprašaj:
+- Kaj je najmanjša stvar, ki mora delovati?
+- Kaj bo uporabnik naredil v prvi minuti uporabe?
+- Kaj lahko iz projekta mirno odrežeš stran?
+- Kaj boš pokazal na koncu, če ti zmanjka časa?
 
-Za hitrejše učence odpri:
+## Kdaj ustaviš učenca
 
-- zbrati 10 kovancev
-- priti do cilja
-- premagati sovražnike
+- ko projekt raste v vse smeri,
+- ko ne zna povedati cilja,
+- ko nima zapisanih prvih korakov,
+- ko odpira kodo brez ideje, kaj bo sploh delal.
 
-Če kdo res leti, odpri še izziv:
+## Kdaj ga pustiš delati
 
-- tipka E za pobiranje
-- v vesolju
-
-### 75–95 min: drugi checkpoint in kratki posegi
-
-Tu je dober trenutek za 2–4 minutni skupinski rez, če vidiš isto težavo pri več učencih.
-
-Namesto dolge razlage naredi eno od teh stvari:
-
-- prisili jih v 3-minutni zapis: kaj mora delovati do konca ure
-- ustavi pretirano širjenje projekta
-- naj imajo eno jasno demonstracijo brez klikanja po kaosu
-
-Če je smiselno odpreti referenčno datoteko:
-
-- odpri jo samo za en majhen problem,
-- ne beri cele rešitve od vrha do dna,
-- pokaži 5–15 vrstic, nato jih vrni na njihove datoteke.
-
-Kdaj to narediš:
-
-- Ko se večina zatakne na istem mestu ali ko želiš na hitro pokazati delujoče jedro.
-
-### 95–110 min: zaključevanje izdelkov
-
-Učence usmeri, da:
-
-- popravijo zadnje očitne napake,
-- odstranijo kodo, ki ne dela nič koristnega,
-- znajo povedati, kaj deluje in kaj je naslednji korak.
-
-Merila, ki jih danes preverjaš:
-
-- projekt se zažene in ima jasno osnovno mehaniko
-- uporabnik lahko odigra ali preizkusi vsaj eno delujočo rundo
-- vidna je vsaj ena nadgradnja ali smiseln naslednji korak
-
-### 110–120 min: hitra demonstracija in izhod
-
-Vsak ali vsaka skupina pokaže:
-
-- eno stvar, ki deluje brez napake,
-- eno napako, ki jo je uspela odpraviti,
-- eno idejo za naslednjo nadgradnjo.
-
-Dober zaključni stavek:
-
-- »Danes me ne zanima popolnost. Zanima me, ali znaš pokazati delujoč korak naprej.«
-
-## Tipične napake pri tej uri
-
-- ambicioznost ubije izvedbo
-- ni jasnega MVP-ja
-- prepozno začnejo testirati
-
-## Hitri učiteljski posegi, ko se kdo zatakne
-
-- prisili jih v 3-minutni zapis: kaj mora delovati do konca ure
-- ustavi pretirano širjenje projekta
-- naj imajo eno jasno demonstracijo brez klikanja po kaosu
-
-## Vprašanja, ki jih postavljaš namesto da sam rešuješ
-
-- Kaj je najmanjša stvar, ki mora že delovati? ([ ] dirkalna igra)
-- Kateri del glavnega bloka trenutno gradiš? ([ ] strelska igra)
-- Kaj si nazadnje spremenil, preden je program prenehal delovati?
-- Ali že imaš delujoče jedro, preden odpiraš bonuse?
-
-## Kdaj učenca zavestno ustaviš
-
-Učenca ustaviš, ko:
-
-- odpre bonus, preden ima delujoče jedro,
-- 10 minut ponavlja isti napačen poskus brez testiranja,
-- piše preveč kode naenkrat brez vmesnega zagona,
-- sam ne zna povedati, kaj naj bi trenutni del kode sploh naredil.
-
-## Kdaj ga pustiš pri miru
-
-Učenca pustiš delati, ko:
-
-- napreduje v malih korakih,
-- pogosto zažene program,
-- zna povedati, kaj testira,
-- si sam beleži ali razlaga, kaj trenutno ne dela.
-
-## Opomba za učitelja
-
-Ta scenarij ni mišljen kot oklep. Če skupina lepo teče, ga skrajšaj. Če gori, ga uporabi kot gasilski načrt. Glavno pravilo ostaja isto: **učenci naj čim več tipkajo, ti pa jih usmerjaš z majhnimi, pametnimi posegi.**
+- ko ima jasen minimum,
+- ko zna razložiti vrstni red dela,
+- ko je pripravljen začeti prvi prototip.

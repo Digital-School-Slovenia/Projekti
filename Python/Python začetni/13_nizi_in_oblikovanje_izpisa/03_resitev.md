@@ -1,13 +1,17 @@
-# Rešitev / učiteljske usmeritve – 13 – Nizi in oblikovanje izpisa
+# Rešitev – 13 – Nizi in oblikovanje izpisa
 
-## Kako voditi to uro
+Tukaj je jedro rešitve za sklop **13 – Nizi in oblikovanje izpisa**. Pokaži en kratek primer. Potem naj učenci delajo.
 
-- ne razlagaj predolgo; daj jedro, potem pa naloge,
-- po 10–15 minutah naredi prvi checkpoint,
-- pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk,
-- pri hitrih učencih najprej odpri dodatne naloge, šele nato prosto nadgrajevanje.
+## Kaj pokaži najprej
 
-# Referenčni primeri
+- Ne razlagaj predolgo; daj jedro, potem pa naloge
+- Po 10–15 minutah naredi prvi kratek pregled
+- Pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk
+- Hitrejše učence najprej usmeri na dodatne naloge, šele nato na prosto nadgrajevanje.
+
+## Primer rešitve
+
+### Primer 1
 
 ```python
 ime = input("Ime: ")
@@ -21,6 +25,8 @@ print(f"Dolžina celega imena: {len(polno)}")
 print(f"Velike črke: {polno.upper()}")
 ```
 
+### Primer 2
+
 ```python
 izdelek = "Knjiga"
 cena = 12.5
@@ -32,32 +38,26 @@ print(f"{izdelek:<15}{kolicina:>5}{cena:>10.2f}")
 print(f"{'SKUPAJ':<20}{skupaj:>10.2f}")
 ```
 
+## Kaj mora do konca ure delovati
+
+- Učenec zaključi obvezno jedro sklopa in ga zna demonstrirati
+- Učenec zna povedati, kje v kodi je bilo treba kaj popraviti
+- Vsaj enkrat samostojno preizkusi svojo rešitev med delom.
+
+## Hitri pregled med uro
+
+- Vprašaj za ime in izpiši dolžino imena.
+- Izpiši ime z velikimi in malimi črkami.
+- Preveri, ali se beseda začne z določeno črko.
+
 ## Tipične napake
 
-- manjkajoč `:` pri pogojih ali funkcijah,
-- napačna zamaknitev bloka kode,
-- pozabljena pretvorba `input()` v `int()` ali `float()`,
-- napačno ime spremenljivke,
-- učenec ne zažene programa po vsakem manjšem koraku.
+- Manjkajoč `:` pri pogojih ali funkcijah
+- Napačna zamaknitev bloka kode
+- Pozabljena pretvorba `input()` v `int()` ali `float()`
+- Napačno ime spremenljivke
+- Učenec ne zažene programa po vsakem manjšem koraku.
 
-## Minimalni kriterij uspeha
-
-- učenec zaključi obvezno jedro sklopa in ga zna demonstrirati,
-- učenec zna povedati, kje v kodi je bilo treba kaj popraviti,
-- vsaj enkrat samostojno uporabi testiranje med delom.
-
-## Učiteljski checkpointi
-
-1. Vprašaj za ime in izpiši dolžino imena.
-2. Izpiši ime z velikimi in malimi črkami.
-3. Preveri, ali se beseda začne z določeno črko.
-
-## Kaj šteje kot dober minimum
-
-- delujoče jedro,
-- vsaj ena dodatna rešena naloga,
-- učenec zna povedati, kaj v kodi zares dela in kaj je popravil.
-
-## Python datoteke v tej mapi
+## Datoteke v tej mapi
 
 - `06_referencni_primer.py`

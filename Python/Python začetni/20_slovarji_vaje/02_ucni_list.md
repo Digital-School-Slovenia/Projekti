@@ -1,62 +1,37 @@
 # Učni list – 20 – Slovarji – vaje, zanke in seznam slovarjev
 
-## Danes delamo tako
+Danes slovarje povezujemo z zankami in seznami slovarjev.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši funkcijo `oceni_profil(profil)`, ki glede na število točk izpiše komentar o igralcu.
 
-- 🟢 Naloga 1: Profil uporabnika
-- izpiše ime, starost in točke
-- vsak podatek v svojo vrstico.
+### Naloga 2
+Napiši funkcijo `izpisi_slovar(slovar)`, ki z zanko izpiše vse pare ključ–vrednost.
 
-## Glavni blok dela
+### Naloga 3
+Podan je seznam uporabnikov. Napiši funkcijo `izpisi_uporabnike(uporabniki)`, ki izpiše ime in točke vsakega uporabnika.
 
-- 🟢 Naloga 2: Povečaj točke
-- poveča vrednost `"tocke"` za `kolicina`
-- vrne (uporabi `return`) posodobljen slovar
-- 🟢 Naloga 3: Preveri ključ
-- preveri, ali ključ obstaja v slovarju
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši funkcijo `najboljsi_uporabnik(uporabniki)`, ki vrne ime uporabnika z največ točkami.
 
-- izpiše `"Ključ obstaja"` ali `"Ključa ni"`.
-- 🟡 Naloga 4: Ocena profila
-- glede na `"tocke"` izpiše:
-- ≥ 200 → `"Pro igralec 😎"`
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Izziv
+### Naloga 5
+Napiši funkcijo `bonus_tocke(uporabniki, bonus)`, ki vsem uporabnikom poveča točke za podano vrednost.
 
-- 🟡 Naloga 5: Izpis vseh podatkov
-- z zanko izpiše vse pare `ključ → vrednost` in sicer takole: `Ključ: {kljuc} ima vrednost: {vrednost}`. Uporabi zanko `for`.
-- 🟡 Naloga 6: Seznam profilov
-- izpiše ime in točke vsakega uporabnika.
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Checkpointi
+### Naloga 6
+Napiši funkcijo `filtriraj_uporabnike(uporabniki, meja)`, ki vrne samo uporabnike z več kot `meja` točkami.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: 🟢 Naloga 1: Profil uporabnika
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: izpiše ime, starost in točke
+### Naloga 7
+Napiši funkcijo `povprecne_tocke(uporabniki)`.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: izpiše `"Ključ obstaja"` ali `"Ključa ni"`.
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši funkcijo `razvrsti_po_tockah(uporabniki)`, ki vrne uporabnike od najboljšega do najslabšega.

@@ -1,42 +1,57 @@
 # Dodatne naloge – 04 – Vnos uporabnika in pretvorba tipov
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Napiši program, ki uporabnika vpraša za ime in ga pozdravi.
 
-- Izpiše tvoje ime.
-- Izpiše tvojo najljubšo hrano.
-- Izpiše nekaj čisto trapastega, npr. `"Banana je predsednik sveta"`.
-- Izpiše tri vrstice: pozdrav svetu, pozdrav vesolju in pozdrav WC školjki.
-- Izpiše »HAHAHA 10-krat v eni vrstici.
-- Izpiše »čudno resnico« (npr. `"Zajci so v resnici vesoljski agenti"`).
-- Ustvari spremenljivki `ime` in `starost`. Izpiši: `"Moje ime je ___ in star sem ___ let."`
-- Ustvari spremenljivko `sendvici_na_dan`. Vanjo vpiši koliko sendvičev poješ na dan. Nato izračunaj koliko sendvičev poješ v enem letu in izpiši v stavku.
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
 
-### Dodatne naloge
+### Naloga 2
+Napiši program, ki vpraša za starost in izpiše, koliko boš star čez 5 let.
 
-- Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v stavku.
-- Izračunaj: če poješ 3 pice na teden, koliko pic poješ v celem šolskem letu (40 tednov)? Dodaj ustrezen izpis.
-- Dodaten smeh: ustvari spremenljivko `supermoc` in izpiši `"Moja supermoč je, da znam ___.“` (naj napišejo kaj zabavnega).
-- Izračunaj, koliko bo stalo 5 pic, če ena stane 8 €.
-- Če imate 5 pic in 3 prijatelje, koliko pic dobi vsak?
-- Pretvori starost psa v pasja leta (1 leto = 7 pasjih let).
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
 
-### Izziv
+### Naloga 3
+Napiši program, ki vpraša za dve števili in izpiše njuno vsoto.
 
-- Če imaš 100 €, koliko čokolad lahko kupiš, če ena stane 2,5 €?
-- Dodatna naloga: izračunaj, koliko »dni« si že živel (starost × 365).
-- Dodatna naloga: izračunaj, koliko ur si že prespal, če spiš 8 ur na dan.
-- Vprašaj uporabnika za njegovo ime in ga pozdravi.
-- `"Kako ti je ime?" → "Živjo, Matej!"`
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Napiši program, ki vpraša za število minut in jih pretvori v sekunde.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
 
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši program, ki vpraša za dolžino in širino pravokotnika ter izračuna ploščino.
+
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Napiši program, ki vpraša za ceno izdelka in količino ter izpiše končni znesek.
+
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši program, ki vpraša za temperaturo v stopinjah Celzija in jo samo izpiše v lepem stavku.
+
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši program, ki vpraša za rojstno leto in izračuna približno starost.
+
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši program, ki vpraša za tri ocene in izpiše njihovo povprečje.
+
+**Namig:** Uporabi `input()`. Če pričakuješ število, vnos pretvori z `int()` ali `float()`.
+
+## Viri
 - `01/naloge.md`
 - `01/03_vnosi.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

@@ -1,41 +1,56 @@
 # Dodatne naloge – 22 – Slovarji v praksi – mini šolski dnevnik
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Ustvari slovar za enega učenca z imenom, razredom in vsaj tremi predmeti.
 
-- zunanji slovar: **ime učenca → podatki**
-- notranji slovar: **razred + predmeti**
-- vsak učenec ima **vsaj 10 predmetov**
-- ta slovar je izhodišče za vse naloge.
-- 🟢 Naloga 1: Izpis podatkov
-- izpiše ime učenca
-- izpiše razred
-- izpiše vse predmete in ocene
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
-### Dodatne naloge
+### Naloga 2
+Izpiši vse predmete in ocene iz slovarja učenca.
 
-- uporabi `for kljuc in ucenec:`
-- 🟢 Naloga 2: Izpis ene ocene
-- preveri, ali predmet obstaja
-- če obstaja, izpiše oceno
-- sicer izpiše opozorilo
-- 🟢 Naloga 3: Spremeni oceno
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
-### Izziv
+### Naloga 3
+Napiši program, ki za izbran predmet izpiše oceno.
 
-- spremeni oceno pri izbranem predmetu
-- izpiše, da je bila ocena popravljena
-- 🟡 Naloga 4: Povprečje ocen
-- izračuna povprečje ocen
-- upošteva samo predmete (ne ime, ne razred)
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Napiši program, ki spremeni oceno pri enem predmetu.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši program, ki izračuna povprečje ocen učenca.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Ustvari zunanji slovar z dvema učencema in izpiši podatke za oba.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši program, ki preveri, ali določen predmet obstaja v dnevniku.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši funkcijo, ki doda nov predmet in oceno v dnevnik učenca.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši mini dnevnik z menijem: izpis, spremeni oceno, povprečje, konec.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+## Viri
 - `13_slovarji/VAJE - #U0160OLSKI DNEVNIK.md`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

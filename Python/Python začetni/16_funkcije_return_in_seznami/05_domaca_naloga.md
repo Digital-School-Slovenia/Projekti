@@ -1,21 +1,19 @@
 # Domača naloga – 16 – Funkcije – `return`, seznami in razdelitev problema
 
-## Obvezni minimum
+### Naloga 1
+Napiši funkcijo `najcenejsi(cene)`, ki vrne najnižjo vrednost v seznamu.
 
-- 🟢 lažje
-- 🟡 srednje
-- 🔴 zahtevnejše
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši funkcijo `odrasli(leta)`, ki za podani seznam vrne samo starosti 18 ali več.
 
-- sprejme število sledilcev
-- glede na število izpiše:
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Kratka refleksija
+### Naloga 3
+Napiši funkcijo `povisi(ocene, koliko)`, ki vrne nov seznam ocen, povišanih za dano vrednost, pri čemer nobena ocena ne sme preseči 10.
 
-Ob oddaji dopiši še:
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

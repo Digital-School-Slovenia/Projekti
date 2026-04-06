@@ -4,52 +4,43 @@
 
 - 1 srečanje = 2 uri
 
-## Bistvo sklopa
+## Kaj delamo
 
-debugging in branje napak – poudarek je na delu skozi naloge, kratkih checkpointih in sprotnem testiranju.
+Debugging in branje napak – delo skozi naloge, sprotno testiranje in čim manj prazne razlage.
 
-## Formalni učni cilji
+## Cilji
 
-- Učenec iz tracebacka prebere vrstico napake in vrsto napake.
-- Učenec razlikuje med sintaktično, tipno in logično napako.
-- Učenec uporablja `print()` debugging kot osnovno orodje.
-- Učenec napake popravlja sistematično in ne na slepo.
+- Iz tracebacka prebere vrstico napake in vrsto napake
+- Razlikuje med sintaktično, tipno in logično napako
+- Uporablja `print()` debugging kot osnovno orodje
+- Napake popravlja sistematično in ne na slepo
 
-## Merila uspeha do konca ure
+## Minimum do konca ure
 
-- delujoče jedro: Popravi program z manjkajočim dvopičjem pri `if`.
+- delujoče jedro: Popravi program z manjkajočim dvopičjem pri `if`
 - vsaj še ena pravilno rešena naloga iz glavnega bloka
 - učenec zna pokazati, kaj je popravil ali dodal
 
-## Predlagan potek ure
+## Naloge po nivojih
 
-- 10–15 min: hiter uvod in prvi mikro primer
-- 20–25 min: vodeno ogrevanje in prvi checkpoint
-- 45–55 min: glavni blok nalog
-- 20–25 min: diferenciacija – dodatne naloge in izziv
-- 5–10 min: zaključek, demonstracije, refleksija
+- Za vse: Popravi program z manjkajočim dvopičjem pri `if`.
+- Za hitrejše: Primerjaj `SyntaxError` in `TypeError`.
+- Izziv: Pripravi 3 pokvarjene programe za sošolca.
 
-## Diferenciacija
+## Učitelj pripravi
 
-- **Osnovna naloga:** Popravi program z manjkajočim dvopičjem pri `if`.
-- **Dodatna naloga:** Primerjaj `SyntaxError` in `TypeError`.
-- **Izziv:** Pripravi 3 pokvarjene programe za sošolca.
+- 02_ucni_list.md
+- 03_resitev.md
+- 04_dodatne_naloge.md
+- 05_domaca_naloga.md
+- 08_uciteljski_scenarij_ure.md
+- 06_pokvarjeni_programi.py
+- 07_popravljene_resitve.py
 
-## Vloga učitelja
-
-- učitelj ne vleče cele ure frontalno,
-- daje kratke checkpoint razlage,
-- usmerja z vprašanji,
-- odpira dodatne naloge za hitrejše učence.
-
-## Uporabljeni viri iz tvojega paketa
+## Viri iz tvojega paketa
 
 - `12_slovarji_nadaljevanje/VAJE – SOCIALNO OMREŽJE`
 
-## Izvedbena opomba
+## Opomba
 
-Ta verzija je namenoma zgrajena po logiki: manj prazne teorije, več tipkanja, več kratkih nalog, več sprotnih popravkov.
-
-## Dodatna učiteljska opora
-
-- glej tudi `08_uciteljski_scenarij_ure.md` za izvedbeni tempo, checkpoint vprašanja in tipične učiteljske posege.
+Pokaži minimum. Potem naj učenci čim prej začnejo delati.

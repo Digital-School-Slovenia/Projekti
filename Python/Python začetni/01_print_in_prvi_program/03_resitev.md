@@ -1,15 +1,17 @@
-# Rešitev / učiteljske usmeritve – 01 – Print, prvi program in delo v Thonnyju
+# Rešitev – 01 – Print, prvi program in delo v Thonnyju
 
-## Kako voditi to uro
+Tukaj je jedro rešitve za sklop **01 – Print, prvi program in delo v Thonnyju**. Pokaži en kratek primer. Potem naj učenci delajo.
 
-- ne razlagaj predolgo; daj jedro, potem pa naloge,
-- po 10–15 minutah naredi prvi checkpoint,
-- pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk,
-- pri hitrih učencih najprej odpri dodatne naloge, šele nato prosto nadgrajevanje.
+## Kaj pokaži najprej
 
-## Referenčni primeri iz tvojega izvornega paketa
+- Ne razlagaj predolgo; daj jedro, potem pa naloge
+- Po 10–15 minutah naredi prvi kratek pregled
+- Pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk
+- Hitrejše učence najprej usmeri na dodatne naloge, šele nato na prosto nadgrajevanje.
 
-### Izsek iz `00_izpisi.py`
+## Primer rešitve
+
+### Primer 1
 
 ```python
 print("Matej Mencin")
@@ -20,7 +22,7 @@ print("HAHAHA " * 10)
 print("Gnoj je Zlato (Srečko Kosovel)")
 ```
 
-### Izsek iz `moj_prvi_program.py`
+### Primer 2
 
 ```python
 # 1. UVOD V PYTHON
@@ -30,32 +32,26 @@ Datum srecanja: 2. oktober 2025
 '''
 ```
 
+## Kaj mora do konca ure delovati
+
+- Učenec zaključi obvezno jedro sklopa in ga zna demonstrirati
+- Učenec zna povedati, kje v kodi je bilo treba kaj popraviti
+- Vsaj enkrat samostojno preizkusi svojo rešitev med delom.
+
+## Hitri pregled med uro
+
+- Izpiše tvoje ime.
+- Izpiše tvojo najljubšo hrano.
+- Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v stavku.
+
 ## Tipične napake
 
-- manjkajoč `:` pri pogojih ali funkcijah,
-- napačna zamaknitev bloka kode,
-- pozabljena pretvorba `input()` v `int()` ali `float()`,
-- napačno ime spremenljivke,
-- učenec ne zažene programa po vsakem manjšem koraku.
+- Manjkajoč `:` pri pogojih ali funkcijah
+- Napačna zamaknitev bloka kode
+- Pozabljena pretvorba `input()` v `int()` ali `float()`
+- Napačno ime spremenljivke
+- Učenec ne zažene programa po vsakem manjšem koraku.
 
-## Minimalni kriterij uspeha
-
-- učenec zaključi obvezno jedro sklopa in ga zna demonstrirati,
-- učenec zna povedati, kje v kodi je bilo treba kaj popraviti,
-- vsaj enkrat samostojno uporabi testiranje med delom.
-
-## Učiteljski checkpointi
-
-1. Izpiše tvoje ime.
-2. Izpiše tvojo najljubšo hrano.
-3. Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v stavku.
-
-## Kaj šteje kot dober minimum
-
-- delujoče jedro,
-- vsaj ena dodatna rešena naloga,
-- učenec zna povedati, kaj v kodi zares dela in kaj je popravil.
-
-## Python datoteke v tej mapi
+## Datoteke v tej mapi
 
 - `06_referencni_primer.py`

@@ -1,21 +1,19 @@
 # Domača naloga – 22 – Slovarji v praksi – mini šolski dnevnik
 
-## Obvezni minimum
+### Naloga 1
+Podan je slovar `dnevnik`. Napiši funkcijo `izpisi_ucenca(ucenec)`, ki izpiše ime, razred ter vse predmete in ocene.
 
-- zunanji slovar: **ime učenca → podatki**
-- notranji slovar: **razred + predmeti**
-- vsak učenec ima **vsaj 10 predmetov**
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši funkcijo `izpisi_oceno(ucenec, predmet)`, ki za podani predmet izpiše oceno ali opozorilo, če predmeta ni.
 
-- uporabi `for kljuc in ucenec:`
-- 🟢 Naloga 2: Izpis ene ocene
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Kratka refleksija
+### Naloga 3
+Napiši funkcijo `popravi_oceno(ucenec, predmet, nova_ocena)`, ki spremeni oceno.
 
-Ob oddaji dopiši še:
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

@@ -1,38 +1,63 @@
-# Rešitev / učiteljske usmeritve – 24 – Turtle – uvod v risanje s funkcijami
+# Rešitev – 24 – Turtle – uvod v risanje s funkcijami
 
-## Kako voditi to uro
+Tukaj je jedro rešitve za sklop **24 – Turtle – uvod v risanje s funkcijami**. Pokaži en kratek primer. Potem naj učenci delajo.
 
-- ne razlagaj predolgo; daj jedro, potem pa naloge,
-- po 10–15 minutah naredi prvi checkpoint,
-- pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk,
-- pri hitrih učencih najprej odpri dodatne naloge, šele nato prosto nadgrajevanje.
+## Kaj pokaži najprej
+
+- Ne razlagaj predolgo; daj jedro, potem pa naloge
+- Po 10–15 minutah naredi prvi kratek pregled
+- Pri napaki naj učenec najprej prebere traceback ali opazuje vrednosti spremenljivk
+- Hitrejše učence najprej usmeri na dodatne naloge, šele nato na prosto nadgrajevanje.
+
+## Primer rešitve
+
+```python
+import turtle
+
+zaslon = turtle.Screen()
+zaslon.title("Turtle – uvod")
+t = turtle.Turtle()
+t.speed(6)
+
+def kvadrat(stranica):
+    for _ in range(4):
+        t.forward(stranica)
+        t.right(90)
+
+def trikotnik(stranica):
+    for _ in range(3):
+        t.forward(stranica)
+        t.left(120)
+
+kvadrat(80)
+t.penup()
+t.goto(140, 0)
+t.pendown()
+trikotnik(100)
+
+turtle.done()
+```
+
+## Kaj mora do konca ure delovati
+
+- Učenec zaključi obvezno jedro sklopa in ga zna demonstrirati
+- Učenec zna povedati, kje v kodi je bilo treba kaj popraviti
+- Vsaj enkrat samostojno preizkusi svojo rešitev med delom.
+
+## Hitri pregled med uro
+
+- `t` je **želva**, ki riše
+- Vse ukaze pišemo kot `t.ukaz()`
+- `t.left()` / `t.right()`
 
 ## Tipične napake
 
-- manjkajoč `:` pri pogojih ali funkcijah,
-- napačna zamaknitev bloka kode,
-- pozabljena pretvorba `input()` v `int()` ali `float()`,
-- napačno ime spremenljivke,
-- učenec ne zažene programa po vsakem manjšem koraku.
+- Manjkajoč `:` pri pogojih ali funkcijah
+- Napačna zamaknitev bloka kode
+- Pozabljena pretvorba `input()` v `int()` ali `float()`
+- Napačno ime spremenljivke
+- Učenec ne zažene programa po vsakem manjšem koraku.
 
-## Minimalni kriterij uspeha
-
-- učenec zaključi obvezno jedro sklopa in ga zna demonstrirati,
-- učenec zna povedati, kje v kodi je bilo treba kaj popraviti,
-- vsaj enkrat samostojno uporabi testiranje med delom.
-
-## Učiteljski checkpointi
-
-1. `t` je **želva**, ki riše
-2. vse ukaze pišemo kot `t.ukaz()`
-3. `t.left()` / `t.right()`
-
-## Kaj šteje kot dober minimum
-
-- delujoče jedro,
-- vsaj ena dodatna rešena naloga,
-- učenec zna povedati, kaj v kodi zares dela in kaj je popravil.
-
-## Python datoteke v tej mapi
+## Datoteke v tej mapi
 
 - `06_uciteljska_resitev.py`

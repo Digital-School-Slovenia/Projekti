@@ -1,55 +1,95 @@
-# Rešitev / učiteljske usmeritve – 23 – Vmesni mini projekt brez grafike
+# Rešitev – 23 – Vmesni mini projekt brez grafike
 
-## Kako vodiš to uro
+Danes je cilj jasen: do konca ure mora delovati **Inventar avanturista**.
 
-- ne prodajaj 15 različnih idej; naj vsak učenec hitro izbere eno,
-- v prvih 20–30 minutah mora nastati minimalno delujoče jedro,
-- vsak naslednji kos je nadgradnja, ne nova smer projekta,
-- učitelj naj bolj sprašuje kot razlaga.
+## Kaj pokaži najprej
 
-## Referenčno ogrodje
+Pokaži samo to:
+- seznam `inventar = []`,
+- funkcijo za meni,
+- glavno zanko,
+- eno delujočo možnost.
+
+Ne kažeš petih nadgradenj na začetku. Najprej jedro.
+
+## Jedro rešitve
 
 ```python
 def izpisi_meni():
-    print("1 - dodaj")
-    print("2 - odstrani")
-    print("3 - pokaži")
-    print("4 - konec")
+    print("\n--- INVENTAR AVANTURISTA ---")
+    print("1 - dodaj predmet")
+    print("2 - pokaži inventar")
+    print("3 - odstrani predmet")
+    print("0 - konec")
 
-podatki = []
+inventar = []
 
 while True:
     izpisi_meni()
     izbira = input("Izbira: ").strip()
 
     if izbira == "1":
-        vrednost = input("Dodaj: ").strip()
-        if vrednost:
-            podatki.append(vrednost)
+        predmet = input("Vnesi predmet: ").strip()
+        if predmet != "":
+            inventar.append(predmet)
+            print("Predmet je dodan.")
+        else:
+            print("Prazen vnos ni dovoljen.")
+
     elif izbira == "2":
-        vrednost = input("Odstrani: ").strip()
-        if vrednost in podatki:
-            podatki.remove(vrednost)
+        print("\n--- INVENTAR ---")
+        if len(inventar) == 0:
+            print("Inventar je prazen.")
+        else:
+            for i, predmet in enumerate(inventar, start=1):
+                print(f"{i}. {predmet}")
+
     elif izbira == "3":
-        print(podatki)
-    elif izbira == "4":
+        predmet = input("Kateri predmet zelis odstraniti? ").strip()
+        if predmet in inventar:
+            inventar.remove(predmet)
+            print("Predmet je odstranjen.")
+        else:
+            print("Tega predmeta ni v inventarju.")
+
+    elif izbira == "0":
+        print("Konec programa.")
         break
+
     else:
         print("Neveljavna izbira.")
 ```
 
-## Učiteljski checkpointi
+## Kaj mora do konca ure delovati
 
-1. Program se zažene in pokaže meni.
-2. Ena možnost v meniju že res deluje.
-3. Učenec zna pokazati cel uporabniški tok od začetka do konca.
+- Program se zažene brez napake.
+- Meni se izpiše večkrat.
+- Uporabnik lahko doda predmet.
+- Uporabnik lahko vidi inventar.
+- Uporabnik lahko odstrani predmet.
+- Program se zna zaključiti.
 
-## Kaj šteje kot dober minimum
+## Kaj pokaži hitrejšim
 
-- program ima jasno temo,
-- uporabnik lahko nekaj doda, vidi in zaključi program,
-- koda ni ena sama neskončna gmota brez vsaj osnovne strukture.
+- funkcije `dodaj_predmet()`, `izpisi_inventar()`, `odstrani_predmet()`,
+- zaščito pred podvojenimi vnosi,
+- seznam slovarjev, npr. `{"ime": "mec", "tip": "orozje"}`.
 
-## Python datoteke v tej mapi
+## Tipične napake
+
+- `elif` je napačno zamaknjen,
+- učenec piše `inventar.remove()` brez argumenta,
+- uporablja `==` namesto `=` pri dodelitvi,
+- pozabi `.strip()`,
+- testira samo srečen primer in ne preveri praznega inventarja.
+
+## Hitri pregled med uro
+
+Preveri samo to:
+- Ali ima učenec datoteko, ki se zažene?
+- Ali ena možnost že deluje?
+- Ali zna učenec pokazati cel tok: dodaj → pokaži → odstrani?
+
+## Datoteke v tej mapi
 
 - `06_uciteljska_resitev.py`

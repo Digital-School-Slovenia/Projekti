@@ -1,46 +1,57 @@
 # Učiteljska referenčna rešitev – 23 Vmesni mini projekt brez grafike
-# Mini upravljalnik nalog (to-do).
+# Inventar avanturista
 
-naloge = []
+inventar = []
 
 
 def izpisi_meni():
-    print("\n--- TO-DO ---")
-    print("1 - dodaj nalogo")
-    print("2 - izpiši naloge")
-    print("3 - označi kot opravljeno")
-    print("4 - izbriši nalogo")
+    print("\n--- INVENTAR AVANTURISTA ---")
+    print("1 - dodaj predmet")
+    print("2 - pokaži inventar")
+    print("3 - odstrani predmet")
     print("0 - konec")
 
 
-def izpisi_naloge():
-    if not naloge:
-        print("Seznam je prazen.")
+def dodaj_predmet():
+    predmet = input("Vnesi predmet: ").strip()
+    if predmet == "":
+        print("Prazen vnos ni dovoljen.")
         return
-    for i, naloga in enumerate(naloge, start=1):
-        status = "✅" if naloga["opravljeno"] else "⬜"
-        print(f"{i}. {status} {naloga['besedilo']}")
+    inventar.append(predmet)
+    print("Predmet je dodan.")
+
+
+def izpisi_inventar():
+    print("\n--- INVENTAR ---")
+    if len(inventar) == 0:
+        print("Inventar je prazen.")
+        return
+
+    for i, predmet in enumerate(inventar, start=1):
+        print(f"{i}. {predmet}")
+
+    print(f"Skupaj predmetov: {len(inventar)}")
+
+
+def odstrani_predmet():
+    predmet = input("Kateri predmet zelis odstraniti? ").strip()
+    if predmet in inventar:
+        inventar.remove(predmet)
+        print("Predmet je odstranjen.")
+    else:
+        print("Tega predmeta ni v inventarju.")
 
 
 while True:
     izpisi_meni()
-    izbira = input("Izbira: ")
+    izbira = input("Izbira: ").strip()
 
     if izbira == "1":
-        besedilo = input("Vnesi nalogo: ")
-        naloge.append({"besedilo": besedilo, "opravljeno": False})
+        dodaj_predmet()
     elif izbira == "2":
-        izpisi_naloge()
+        izpisi_inventar()
     elif izbira == "3":
-        izpisi_naloge()
-        indeks = int(input("Katera naloga je opravljena? ")) - 1
-        if 0 <= indeks < len(naloge):
-            naloge[indeks]["opravljeno"] = True
-    elif izbira == "4":
-        izpisi_naloge()
-        indeks = int(input("Katero nalogo izbrišem? ")) - 1
-        if 0 <= indeks < len(naloge):
-            naloge.pop(indeks)
+        odstrani_predmet()
     elif izbira == "0":
         print("Konec programa.")
         break

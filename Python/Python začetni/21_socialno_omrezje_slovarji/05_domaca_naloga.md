@@ -1,21 +1,19 @@
 # Domača naloga – 21 – Slovarji v praksi – socialno omrežje
 
-## Obvezni minimum
+### Naloga 1
+Podan je seznam uporabnikov. Napiši funkcijo `izpisi_profil(uporabnik)`, ki izpiše uporabniško ime in število sledilcev.
 
-- 🟢 Naloga 1: Uporabniški profil
-- izpiše uporabniško ime uporabnika
-- izpiše število sledilcev
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši funkcijo `preveri_geslo(uporabnik, vpisano_geslo)`, ki izpiše, ali je prijava uspešna.
 
-- izpiše rezultat
-- 🟡 Naloga 4: Več uporabnikov
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Kratka refleksija
+### Naloga 3
+Napiši funkcijo `preveri_ali_obstaja_kljuc(uporabnik, iskani_kljuc)`, ki preveri, ali slovar vsebuje določeni ključ.
 
-Ob oddaji dopiši še:
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

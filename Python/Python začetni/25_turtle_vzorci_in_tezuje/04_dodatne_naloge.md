@@ -1,34 +1,63 @@
 # Dodatne naloge – 25 – Turtle – zahtevnejši vzorci in problemsko risanje
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
-- Nariši hiško iz kvadrata in strehe.
-- Nariši tri vedno večje kvadrate.
-- Nariši barvni kvadrat.
-- Nariši rožo iz krogov ali lokov.
-- Nariši sonce.
-- Nariši geometrijski vzorec.
+### Naloga 1
+Nariši hiško iz kvadrata in strehe.
 
-### Dodatne naloge
-- Nariši spiralo.
-- Nariši mandalo iz ponavljajočih oblik.
-- Nariši vrsto hišk ali dreves.
-- Nariši začetnico svojega imena.
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
 
-### Izziv
-- Naredi sliko, ki uporablja vsaj 5 funkcij.
-- Dodaj parametre: velikost, barva, ponovitve.
-- Nariši cel prizor, ne samo en lik.
-- Sestavi svojo “turtle galerijo” treh risb.
+### Naloga 2
+Nariši tri vedno večje kvadrate enega v drugem.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
 
-Uporabljeni viri za ta sklop:
+### Naloga 3
+Nariši sonce z osrednjim krogom in žarki.
 
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
+
+### Naloga 4
+Nariši rožo iz več ponovljenih krogov ali lokov.
+
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
+
+### Naloga 5
+_Ta naloga je malo težja._
+Nariši spiralo, kjer se dolžina poteze postopoma povečuje.
+
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Nariši geometrijski vzorec s ponavljanjem ene oblike.
+
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši funkcijo `drevo(velikost)`, ki nariše preprosto drevo.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 8
+_Ta naloga je malo težja._
+Nariši začetnico svojega imena z želvo.
+
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
+
+### Naloga 9
+_Ta naloga je težja._
+Sestavi cel prizor, ki vsebuje vsaj tri različne funkcije za risanje.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 10
+_Ta naloga je težja._
+Naredi mini galerijo treh risb, kjer ima vsaka drugačne barve in velikosti.
+
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
+
+## Viri
 - `14_turtle/#L01f422 TURTLE #U2013 VAJE S FUNKCIJAMI.md`
 - `15_turtle/#L01f422 TURTLE #U2013 VAJE S FUNKCIJAMI_V2.zip`
-
-## Opomba za učitelja
-
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.

@@ -1,31 +1,36 @@
-# Rešitev / učiteljske usmeritve – 35 – Zaključni projekt z jasnimi kriteriji
+# Rešitev – 35 – Zaključni projekt
 
-## Kako vodiš to uro
+## Kaj pokaži najprej
 
-- najprej oceni, ali projekt dela,
-- šele nato glej lepoto kode in število bonusov,
-- učenec mora znati projekt tudi pokazati, ne samo odpreti datoteko.
+Najprej preveri tri stvari:
 
-## Kriteriji v kratki obliki
+1. Ali se projekt zažene?
+2. Ali ima jasno jedro?
+3. Ali ga učenec zna pokazati?
 
-### Obvezni minimum
-- program se zažene,
-- ima jasno jedro,
-- uporablja vsaj 3 pomembne sklope znanja,
-- učenec ga zna demonstrirati.
+## Kaj šteje kot dobra rešitev
 
-### Za višji nivo
-- ena ali več smiselnih nadgradenj,
-- preglednejša koda,
-- manj očitnih napak,
-- jasna predstavitev.
+Dobra rešitev ni nujno največja. Dobra rešitev je taka, da:
 
-## Učiteljski checkpointi
+- dela,
+- je razumljiva,
+- ima jasno glavno mehaniko,
+- ni samo kup nedokončanih bonusov.
 
-1. Projekt se zažene brez panike.
-2. Učenec zna pokazati, kaj je osnovno jedro.
-3. Učenec zna pojasniti vsaj eno svojo nadgradnjo.
+## Minimum, ki ga sprejmi
 
-## Python datoteke v tej mapi
+- delujoč program,
+- vsaj 3 uporabljeni sklopi znanja,
+- ena samostojna ideja ali nadgradnja,
+- kratka predstavitev.
+
+## Tipične napake
+
+- ideja je preširoka,
+- učenec porabi 40 minut za kozmetiko,
+- projekt nima konca,
+- zadnjih 10 minut prvič testira celoto.
+
+## Datoteke v tej mapi
 
 - `06_predloga_zakljucni_projekt.py`

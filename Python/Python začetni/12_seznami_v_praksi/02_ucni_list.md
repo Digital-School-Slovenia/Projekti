@@ -1,62 +1,35 @@
-# Učni list – 12 – Seznami v praksi, `for` zanke in mini inventarji
+# Učni list – 12 – Seznami v praksi, for zanke in mini inventarji
 
-## Danes delamo tako
+Danes seznami niso več samo za izpis. Uporabi jih za shranjevanje, dodajanje in pregled podatkov.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Ustvari prazno listo `playlist = []`. Nato petkrat vprašaj za najljubšo pesem in jo dodaj v seznam.
 
-- november 2025.
-- **Naloga 1: “Seznam meni, kaj si danes jedel?”**
-- 😂 **Naloga 2: “Seznam mojih dobrih navad in čudnih navad”**
+### Naloga 2
+Napiši program, ki ustvari mini nakupovalni seznam. Uporabnik vnese 5 izdelkov, program pa jih na koncu izpiše.
 
-## Glavni blok dela
+### Naloga 3
+Napiši program "Fitnes trener". Za seznam ponovitev izpiši, ali je rezultat slab, dober ali odličen.
 
-- 😂 **Naloga 3: “Seznam psov v pasjem vrtcu” 🐶**
-- 🏗️ Naloga 4: **“Playlist generator 3000” 🎵**
-- 😂 **Naloga 5: “Seznam ocenjen po krutem profesorju”**
-- “🟢 5 – profesor je presrečen”
-- “🟡 3 – profesor je nevtralen”
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši program, ki izpiše samo pse z dolgimi imeni iz danega seznama.
 
-- “🔴 1 – profesor je znova razočaran”
-- 😂 **Naloga 6: “Fitnes trener” 🏋️‍♂️**
-- Če je 0 → “🤨 Nisi se niti premaknil!”
-- Če <10 → “💪 Začetek je dober!”
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-## Izziv
+### Naloga 5
+Napiši program "Trgovina 3000 – verzija LIST", kjer uporabnik dodaja izdelke v košarico, dokler ne napiše `konec`.
 
-- 🏗️ **Naloga 9: “Trgovina 3000 – verzija LIST” 🛒**
-- Ustvari prazen seznam:
-- V zanki `while True` vprašaj:
-- Če uporabnik napiše `"konec"` → prekini.
+### Naloga 6
+Napiši program, ki iz seznama besed ustvari nov seznam vseh besed v velikih črkah.
 
-## Checkpointi
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: november 2025.
+### Naloga 7
+Omogoči, da uporabnik en izdelek iz košarice tudi izbriše.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: **Naloga 1: “Seznam meni, kaj si danes jedel?”**
-
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: “🔴 1 – profesor je znova razočaran”
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši program, ki brez uporabe `sort()` uredi kratek seznam števil.

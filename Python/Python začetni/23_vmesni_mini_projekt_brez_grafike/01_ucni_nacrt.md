@@ -4,53 +4,50 @@
 
 - 1 srečanje = 2 uri
 
-## Bistvo sklopa
+## Kaj delamo
 
-vmesni mini projekt brez grafike – poudarek je na delu skozi naloge, kratkih checkpointih in sprotnem testiranju.
+Danes vsi naredijo isti mini projekt brez grafike: **Inventar avanturista**.
 
-## Formalni učni cilji
+Program je besedilni. Uporabnik lahko dodaja predmete, pogleda inventar, odstrani predmet in zaključi program.
 
-- Učenec v dveh urah sestavi kompakten projekt »Vmesni mini projekt brez grafike«.
-- Učenec med delom pogosto zažene program in sproti preverja rezultat.
-- Učenec rešuje več krajših nalog in ne ostane pri eni sami.
-- Učenec projekt demonstrira od začetka do konca.
+## Cilji
 
-## Merila uspeha do konca ure
+- Učenec sestavi delujoč program z menijem.
+- Učenec uporabi `while`, `if`, seznam in vsaj eno funkcijo.
+- Učenec program sproti preizkuša in popravlja.
+- Učenec zna na koncu pokazati delujočo osnovno verzijo programa.
 
-- projekt se zažene in ima jasno osnovno mehaniko
-- uporabnik lahko odigra ali preizkusi vsaj eno delujočo rundo
-- vidna je vsaj ena nadgradnja ali smiseln naslednji korak
+## Minimum do konca ure
 
-## Predlagan potek ure
+Do konca ure mora delovati:
+- meni,
+- dodajanje predmeta,
+- izpis inventarja,
+- brisanje predmeta,
+- izhod iz programa.
 
-- 10–15 min: hiter uvod in prvi mikro primer
-- 20–25 min: vodeno ogrevanje in prvi checkpoint
-- 45–55 min: glavni blok nalog
-- 20–25 min: diferenciacija – dodatne naloge in izziv
-- 5–10 min: zaključek, demonstracije, refleksija
+## Nadgradnje za hitrejše
 
-## Diferenciacija
+- števec predmetov,
+- preverjanje podvojenih predmetov,
+- razdelitev v več funkcij,
+- inventar kot seznam slovarjev,
+- oznaka vrste predmeta (orožje, hrana, napoj, ključ).
 
-- **Osnovna naloga:** Izberi temo: blagajna, inventar, dnevnik ocen, mini banka, kviz ali beležka opravil.
-- **Dodatna naloga:** Dodaj statistiko ali povprečje.
-- **Izziv:** Uporabi seznam slovarjev ali slovar slovarjev.
+## Učitelj pripravi
 
-## Vloga učitelja
+- `02_ucni_list.md`
+- `03_resitev.md`
+- `04_dodatne_naloge.md`
+- `05_domaca_naloga.md`
+- `06_uciteljska_resitev.py`
+- `08_uciteljski_scenarij_ure.md`
 
-- učitelj ne vleče cele ure frontalno,
-- daje kratke checkpoint razlage,
-- usmerja z vprašanji,
-- odpira dodatne naloge za hitrejše učence.
+## Viri iz izvornega paketa
 
-## Uporabljeni viri iz tvojega paketa
-
-- `07/naloge.md`
+- `07/naloge.md` – inventar in košarica
 - `12_slovarji_nadaljevanje/VAJE – SOCIALNO OMREŽJE`
 
-## Izvedbena opomba
+## Opomba
 
-Ta verzija je namenoma zgrajena po logiki: manj prazne teorije, več tipkanja, več kratkih nalog, več sprotnih popravkov.
-
-## Dodatna učiteljska opora
-
-- glej tudi `08_uciteljski_scenarij_ure.md` za izvedbeni tempo, checkpoint vprašanja in tipične učiteljske posege.
+To ni ura za pet različnih idej. Najprej vsi sestavijo isto delujoče jedro. Nadgradnje pridejo šele potem.

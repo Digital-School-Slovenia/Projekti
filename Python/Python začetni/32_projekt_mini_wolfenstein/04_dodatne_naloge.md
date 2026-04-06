@@ -1,37 +1,19 @@
 # Dodatne naloge – 32 – Projekt – Mini Wolfenstein
 
-## Razširjena banka nalog
+### Naloga 1
+Dodaj cilj oziroma izhod iz labirinta.
 
-### Osnovne naloge
-- Ustvari mapo sveta in velikost okna.
-- Dodaj igralca z `x`, `y` in kotom.
-- Dodaj preverjanje stene.
-- Omogoči premikanje in obračanje.
-- Pošiljaj žarke.
-- Nariši navpične stolpce glede na razdaljo.
-- Dodaj minimapo.
-- Dodaj cilj oziroma izhod.
+### Naloga 2
+Dodaj minimapo, ki jo lahko vklopiš ali izklopiš s tipko.
 
-### Dodatne naloge
-- Dodaj zaslon ob zmagi.
-- Dodaj shading.
-- Dodaj več tipov sten.
-- Dodaj HUD.
+### Naloga 3
+Dodaj obračanje z miško.
 
-### Izziv
-- Dodaj obračanje z miško.
-- Dodaj teksture.
-- Dodaj boljši občutek gibanja.
-- Dodaj svojo 3D nadgradnjo.
+### Naloga 4
+Dodaj več tipov sten z različnimi barvami.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 5
+Dodaj vrata in ključ.
 
-Uporabljeni viri za ta sklop:
-
-- `21_wolfenstein/mini_wolfenstein_paket_koraki (1).md`
-- `21_wolfenstein/mini_wolfenstein_natancna_vstavitev_in_miska.md`
-- `21_wolfenstein/mini_wolfenstein_uciteljska_resitev.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.
+### Naloga 6
+Dodaj sovražnika ali predmet, ki ga lahko pobereš.

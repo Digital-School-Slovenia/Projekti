@@ -1,62 +1,37 @@
 # Učni list – 21 – Slovarji v praksi – socialno omrežje
 
-## Danes delamo tako
+Danes delaš na eni večji temi: mini socialno omrežje. Naloge rešuj po vrsti, ker se lepo nadgrajujejo.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Podan je seznam uporabnikov. Napiši funkcijo `izpisi_profil(uporabnik)`, ki izpiše uporabniško ime in število sledilcev.
 
-- 🟢 Naloga 1: Uporabniški profil
-- izpiše uporabniško ime uporabnika
-- izpiše število sledilcev
+### Naloga 2
+Napiši funkcijo `preveri_geslo(uporabnik, vpisano_geslo)`, ki izpiše, ali je prijava uspešna.
 
-## Glavni blok dela
+### Naloga 3
+Napiši funkcijo `preveri_ali_obstaja_kljuc(uporabnik, iskani_kljuc)`, ki preveri, ali slovar vsebuje določeni ključ.
 
-- 🟢 Naloga 2: Preveri geslo
-- preveri, ali se `vnos` ujema z geslom v slovarju
-- izpiše `"Prijava uspešna ✅"` ali `"Napačno geslo ❌"`
-- 🟢 Naloga 3: Ali slovar vsebuje ključ?
-- preveri, ali ključ obstaja v slovarju uporabnika
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši funkcijo `izpisi_uporabnike(seznam_uporabnikov)`, ki izpiše vse uporabnike in njihove sledilce.
 
-- izpiše rezultat
-- 🟡 Naloga 4: Več uporabnikov
-- izpiše naj ime in sledilce vsakega uporabnika, vsako v svoji vrstici.
-- 🟡 Naloga 5: Prijava uporabnika
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Izziv
+### Naloga 5
+Napiši funkcijo `prijava(seznam_uporabnikov, vpisano_uime, vpisano_ugeslo)`.
 
-- izpiše:
-- `"Dobrodošel, ime!"`
-- ali `"Napačno ime ali geslo"`
-- 🟠 Naloga 6: Dodaj novega uporabnika
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Checkpointi
+### Naloga 6
+Napiši funkcijo `registracija(uporabniki, nov_uime, nov_ugeslo)`, ki doda novega uporabnika, če ime še ne obstaja.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: 🟢 Naloga 1: Uporabniški profil
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: izpiše uporabniško ime uporabnika
+### Naloga 7
+Napiši funkcijo `najbolj_priljubljen(uporabniki)`, ki vrne uporabnika z največ sledilci.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: izpiše rezultat
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Dodaj funkcijo `dodaj_sledilca(uporabniki, uime)`, ki poveča število sledilcev izbranemu uporabniku.

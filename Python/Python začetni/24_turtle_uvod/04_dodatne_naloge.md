@@ -1,42 +1,57 @@
 # Dodatne naloge – 24 – Turtle – uvod v risanje s funkcijami
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Napiši program, ki z želvo nariše ravno črto dolžine 100.
 
-- `t` je **želva**, ki riše
-- vse ukaze pišemo kot `t.ukaz()`
-- `"red"`, `"blue"`, `"green"`
-- `"black"`, `"yellow"`, `"purple"`
-- pozabiš `import turtle`
-- pozabiš ustvariti želvo (`t = turtle.Turtle()`)
-- napišeš `forward(100)` namesto `t.forward(100)`
-- `t.forward()`
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
 
-### Dodatne naloge
+### Naloga 2
+Napiši program, ki nariše kvadrat.
 
-- `t.left()` / `t.right()`
-- `t.color()`
-- `t.penup()` / `t.pendown()`
-- `for` zanka
-- uporabi knjižnico `turtle`
-- predpostavi, da že obstaja želva `t`
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
 
-### Izziv
+### Naloga 3
+Napiši program, ki nariše trikotnik.
 
-- vse risanje naj bo v funkcijah
-- 🟢 Naloga 1: Premik naprej
-- premakne želvo naprej za `dolzina` (brez risanja!)
-- 🟢 Naloga 2: Zavoj
-- zavije želvo za podano smer in za podan kot.
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Napiši funkcijo `kvadrat(dolzina)`, ki nariše kvadrat dane velikosti.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
 
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši funkcijo `premik_brez_crte(x, y)`, ki želvo premakne na nov položaj brez risanja.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Nariši dva kvadrata različnih barv.
+
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši funkcijo `poligon(strani, dolzina)` in jo preizkusi na petkotniku.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši program, ki s pomočjo zanke nariše zvezdasti vzorec.
+
+**Namig:** Pripravi osnovo z `import turtle`, `t = turtle.Turtle()` in `screen = turtle.Screen()`.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši program, kjer vse risanje poteka skozi funkcije, ne neposredno v glavnem delu.
+
+**Namig:** Začni z `def ime_funkcije(...):` in premisli, katere podatke bo funkcija sprejela kot parametre.
+
+## Viri
 - `14_turtle/#L01f422 TURTLE #U2013 HITRA NAVODILA (CHEAT-SHEET).md`
 - `14_turtle/#L01f422 TURTLE #U2013 VAJE S FUNKCIJAMI.md`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

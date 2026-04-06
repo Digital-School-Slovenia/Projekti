@@ -1,21 +1,13 @@
 # Domača naloga – 14 – Debugging in branje napak
 
-## Obvezni minimum
+### Naloga 1
+Zaženi pokvarjeni program in preberi izpis napake. Nato zapiši, v kateri vrstici je napaka in katere vrste je.
 
-- Popravi program z manjkajočim dvopičjem pri `if`.
-- Popravi program z napačno zamaknjenim blokom.
-- Popravi program, ki sešteva niz in število brez pretvorbe.
+### Naloga 2
+Popravi program, kjer je težava z zamikom kode (`IndentationError`).
 
-## Bonus / za hitrejše
+### Naloga 3
+Popravi program, kjer je narobe napisano ime spremenljivke (`NameError`).
 
-- Primerjaj `SyntaxError` in `TypeError`.
-- Namerno pokvari delujoč program in ga nato popravi.
-
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

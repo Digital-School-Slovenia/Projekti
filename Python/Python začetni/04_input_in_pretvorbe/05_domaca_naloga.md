@@ -1,21 +1,19 @@
 # Domača naloga – 04 – Vnos uporabnika in pretvorba tipov
 
-## Obvezni minimum
+### Naloga 1
+Napiši program, ki uporabnika vpraša za ime in ga pozdravi.
 
-- Izpiše tvoje ime.
-- Izpiše tvojo najljubšo hrano.
-- Izpiše nekaj čisto trapastega, npr. `"Banana je predsednik sveta"`.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Bonus / za hitrejše
+### Naloga 2
+Napiši program, ki uporabnika vpraša za starost in izračuna, koliko bo star čez 10 let.
 
-- Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v stavku.
-- Izračunaj: če poješ 3 pice na teden, koliko pic poješ v celem šolskem letu (40 tednov)? Dodaj ustrezen izpis.
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-## Kratka refleksija
+### Naloga 3
+Napiši program, ki vpraša za najljubšo hrano in izpiše odziv v obliki stavka.
 
-Ob oddaji dopiši še:
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

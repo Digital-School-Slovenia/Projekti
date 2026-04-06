@@ -1,35 +1,51 @@
 # Dodatne naloge – 23 – Vmesni mini projekt brez grafike
 
-## Razširjena banka nalog
+### Naloga 1
+Dodaj izpis števila vseh predmetov v inventarju.
 
-### Osnovne naloge
-- Izberi temo: blagajna, inventar, dnevnik ocen, mini banka, kviz ali beležka opravil.
-- Program naj ima meni z vsaj 4 možnostmi.
-- Uporabi `input`, `if`, zanko, funkcije in seznam ali slovar.
-- Podatki naj se po spremembi znova pregledno izpišejo.
-- Dodaj možnost konca programa.
-- Dodaj preverjanje napačnega vnosa.
-- Pripravi minimalno delujoče jedro že v prvih 30 minutah.
-- Na koncu pokaži cel potek uporabe od začetka do konca.
+**Namig:** Uporabi `len(inventar)`.
 
-### Dodatne naloge
-- Dodaj statistiko ali povprečje.
-- Dodaj iskanje po podatkih.
-- Dodaj brisanje ali urejanje podatka.
-- Dodaj lepo oblikovan naslov ali poročilo.
+### Naloga 2
+Poskrbi, da se isti predmet ne more dodati dvakrat.
 
-### Izziv
-- Uporabi seznam slovarjev ali slovar slovarjev.
-- Program razbij na 5 ali več funkcij.
-- Dodaj dve lastni nadgradnji.
-- Napiši kratko tehnično razlago svojega projekta.
+**Namig:** Pred `append()` preveri `if predmet in inventar:`.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 3
+Namesto iskanja po imenu omogoči brisanje po številki.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Uporabnik lahko vnese številko, ti pa jo pretvoriš z `int()`.
 
-- `sestavljeno iz dosedanjih nalog in projektnega pristopa learning by doing`
+### Naloga 4
+Razbij program na več funkcij: `dodaj_predmet()`, `izpisi_inventar()`, `odstrani_predmet()`.
 
-## Opomba za učitelja
+### Naloga 5
+Predmete shrani kot slovarje, npr. ime + tip predmeta.
 
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.
+**Namig:** Primer slovarja: `{"ime": "mec", "tip": "orozje"}`.
+
+### Naloga 6
+Dodaj iskanje predmeta.
+
+Primer:
+- uporabnik vnese del imena,
+- program izpiše vse zadetke.
+
+### Naloga 7
+Dodaj začetne podatke, da inventar ni vedno prazen.
+
+Primer:
+```python
+inventar = ["mec", "kljuc", "jabolko"]
+```
+
+### Naloga 8
+Dodaj možnost `4 - pocisti inventar`, ki izbriše vse predmete.
+
+**Namig:** Uporabi `inventar.clear()`.
+
+### Naloga 9
+Dodaj lepši izpis, na primer:
+
+```python
+print(f"V inventarju je {len(inventar)} predmetov.")
+```

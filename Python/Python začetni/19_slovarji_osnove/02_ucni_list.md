@@ -1,62 +1,37 @@
 # Učni list – 19 – Slovarji – osnove
 
-## Danes delamo tako
+Danes uvajamo slovarje. Za vsako nalogo pazi, kje je ključ in kje vrednost.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Podan je slovar `profil = {"ime": "Ana", "starost": 12, "tocke": 150}`. Napiši funkcijo `izpisi_profil(profil)`, ki izpiše vse podatke.
 
-- razume, kaj je **slovar (dictionary)**
-- zna ustvariti slovar
-- zna dostopati do vrednosti s pomočjo ključa
+### Naloga 2
+Napiši funkcijo `povecaj_tocke(profil, kolicina)`, ki poveča število točk in vrne posodobljen slovar.
 
-## Glavni blok dela
+### Naloga 3
+Napiši funkcijo `preveri_kljuc(profil, kljuc)`, ki preveri, ali ključ obstaja v slovarju.
 
-- zna dodajati in spreminjati vrednosti v slovarju
-- zna uporabljati slovar v funkciji
-- razume razliko med **seznamom** in **slovarjem**
-- telefon: ime → telefonska številka
-- profil: uporabniško ime → število sledilcev
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši program, ki v slovar `profil` doda nov ključ `najljubsi_predmet`.
 
-- igralec: ime → točke
-- Kako shranimo **ime + starost**?
-- Kako shranimo **ime igralca + točke**?
-- Zakaj dva ločena seznama nista vedno dobra ideja?
+**Namig:** Najprej naredi en majhen slovar, nato šele dodajaj nove ključe ali pogoje.
 
-## Izziv
+### Naloga 5
+Napiši program, ki spremeni vrednost enega obstoječega ključa v slovarju.
 
-- ==dostopamo z **ključem**, ne z indeksom==
-- seznam → dostop z indeksom (`[0]`)
-- slovar → dostop s ključem (`["ime"]`)
-- **spreminjamo**
+**Namig:** Najprej naredi en majhen slovar, nato šele dodajaj nove ključe ali pogoje.
 
-## Checkpointi
+### Naloga 6
+Napiši program, ki varno prebere vrednost iz slovarja in izpiše opozorilo, če ključa ni.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: razume, kaj je **slovar (dictionary)**
+**Namig:** Najprej naredi en majhen slovar, nato šele dodajaj nove ključe ali pogoje.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: zna ustvariti slovar
+### Naloga 7
+Napiši funkcijo `izbrisi_kljuc(slovar, kljuc)`.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: igralec: ime → točke
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši funkcijo, ki vrne seznam vseh ključev iz podanega slovarja.

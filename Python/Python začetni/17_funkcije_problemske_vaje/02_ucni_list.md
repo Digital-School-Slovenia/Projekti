@@ -1,62 +1,37 @@
 # Učni list – 17 – Ponovitvene vaje – funkcije in problemsko razmišljanje
 
-## Danes delamo tako
+To je ura za resne funkcijske vaje. Rešuj naloge postopno in vsako funkcijo sproti testiraj z več primeri.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši funkcijo `vsota_sodih(seznam)`, ki vrne vsoto vseh sodih števil v seznamu.
 
-- 🟢 lažje
-- 🟡 srednje
-- 🔴 zahtevnejše
+### Naloga 2
+Napiši funkcijo `stej_crko(niz, crka)`, ki vrne, kolikokrat se pojavi določena črka.
 
-## Glavni blok dela
+### Naloga 3
+Napiši funkcijo `uredi_ime(ime, priimek)`, ki vrne ime v obliki `PRIIMEK, Ime`.
 
-- 🟢 Naloga 1: Uporabniško ime
-- sprejme uporabniško ime
-- izpiše pozdrav v obliki:
-- če je ime krajše od 4 znakov, naj izpiše opozorilo
-- 🟢 Naloga 2: Število sledilcev
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Napiši funkcijo `primerjaj(prvi, drugi)`, ki primerja dva enako dolga seznama števil in vrne, v koliko mestih je prvi večji od drugega.
 
-- sprejme število sledilcev
-- glede na število izpiše:
-- več kot 1000 → "Influencer 😎"
-- 100–1000 → "Aktiven uporabnik 👍"
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Izziv
+### Naloga 5
+Napiši funkcijo `povprecje_brez_nicel(seznam)`, ki izračuna povprečje samo neničelnih vrednosti.
 
-- izpiše vse objave
-- izpiše število objav
-- 🟡 Naloga 4: Lajki na objavah
-- izpiše vse vrednosti
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-## Checkpointi
+### Naloga 6
+Napiši funkcijo `najdaljsa_beseda(seznam)`, ki vrne najdaljšo besedo.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: 🟢 lažje
+**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: 🟡 srednje
+### Naloga 7
+Napiši funkcijo `filtriraj_po_dolzini(besede, meja)`.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: sprejme število sledilcev
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši funkcijo `stisni(seznam)`, ki iz zaporednih enakih elementov naredi pare `(element, koliko_krat)`.

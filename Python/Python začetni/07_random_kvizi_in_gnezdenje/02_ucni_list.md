@@ -1,62 +1,29 @@
 # Učni list – 07 – Random, mini kvizi in odločanje v praksi
 
-## Danes delamo tako
+Danes povežemo pogoje, `random` in večstopenjsko logiko.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši program, ki uporabniku zastavi eno vprašanje iz poštevanke. Števili izžrebaj z `random.randint`.
 
-- Začetna naloga
-- Uporabnik dobi 4
-- Vsako vprašanje ima več možnih odgovorov (A, B, C, D)
+### Naloga 2
+Napiši mini kviz s štirimi vprašanji. Za vsak pravilen odgovor uporabnik dobi 1 točko.
 
-## Glavni blok dela
+### Naloga 3
+Napiši program `Vremenska odločitev`: uporabnik vnese temperaturo in vreme, program pa na podlagi obeh podatkov izpiše priporočilo.
 
-- Program preverja pravilne odgovore z `if/else` in šteje točke. Pravilni odgovor prinaša 1 točko.
-- Na koncu naj program izpiše rezultat.
-- Če je sončno → Pojdi na sladoled 🍦
-- Če dežuje → Vzemi dežnik ☔
-- Če je oblačno → Dan za sprehod brez sončnih očal 😎
+### Naloga 4
+Napiši program `Teleport v prihodnost`: uporabnik vnese kraj in leto, program pa glede na kombinacijo izpiše rezultat teleportacije.
 
-## Dodatne naloge za hitrejše
+### Naloga 5
+Napiši program, ki izžreba število od 1 do 10. Če uporabnik ugane pravilno, naj izpiše čestitko.
 
-- Če je sončno → Obleci pulover 🧥
-- Če dežuje → Zavij se v odejo 🛋️
-- Če je oblačno → Malo je hladno, vzemi jopico 🧥
-- Uporabnik vpiše kraj (`"New York"`, `"Mars"`, `"Bananaland"`) in leto.
+### Naloga 6
+Napiši program, ki izžreba črko A, B, C ali D in jo izpiše kot "naključni odgovor kviza".
 
-## Izziv
+### Naloga 7
+Kvizu dodaj končni komentar glede na dosežene točke.
 
-- Če je leto ≥ 2024:
-- Če je kraj `"New York"` → “Teleport uspešen 🏙️”
-- Če je `"Mars"`:
-- Če je leto ≥ 2100 → “Dobrodošel na Marsu 🚀”
-
-## Checkpointi
-
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: Začetna naloga
-
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Uporabnik dobi 4
-
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Če je sončno → Obleci pulover 🧥
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši program, ki izvede tri kroge ugibanja števil in na koncu izpiše skupni rezultat.

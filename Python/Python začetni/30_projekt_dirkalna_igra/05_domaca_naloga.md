@@ -1,21 +1,10 @@
 # Domača naloga – 30 – Projekt – Dirkalna igra
 
-## Obvezni minimum
+### Naloga 1
+Spremeni barve igre in videz avtomobila.
 
-- Nariši travo, cesto in avto.
-- Dodaj premik avta levo/desno.
-- Dodaj oviro, ki pada proti igralcu.
+### Naloga 2
+Dodaj vsaj eno novo mehaniko: kovance, gorivo ali življenja.
 
-## Bonus / za hitrejše
-
-- Dodaj več ovir.
-- Dodaj življenja ali gorivo.
-
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 3
+V komentar zapiši, kateri del kode skrbi za trk.

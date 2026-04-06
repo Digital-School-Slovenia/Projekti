@@ -1,33 +1,55 @@
-# Rešitev / učiteljske usmeritve – 27 – Projekt – Lov na kovance
+# Rešitev – 27 – Projekt – Lov na kovance
 
-## Kako vodiš to uro
+## Kaj pokaži najprej
 
-- jedro mora hitro zaživeti: okno, igralec, premik,
-- kovanci pridejo takoj za tem,
-- rezultat in restart sta zadnja koraka, ne prva.
+Najprej pokaži minimum:
 
-## Minimalno jedro
+1. okno,
+2. igralec,
+3. premikanje,
+4. kovanci,
+5. score.
+
+Zmaga in restart sta zadnja koraka.
+
+## Če zmanjkuje časa
+
+Do konca ure naj obvezno deluje:
+
+- premik igralca,
+- vsaj 4 kovanci,
+- pobiranje kovancev,
+- izpis rezultata.
+
+Če to deluje, je jedro narejeno.
+
+## Ključni del rešitve
 
 ```python
-player = pygame.Rect(400, 400, 50, 50)
-speed = 5
-coins = [pygame.Rect(120, 120, 20, 20), pygame.Rect(300, 200, 20, 20)]
-score = 0
+for coin in coins[:]:
+    if player.colliderect(coin):
+        coins.remove(coin)
+        score += 1
 ```
 
-## Učiteljski checkpointi
-
-1. Rdeč kvadrat se premika.
-2. Ob dotiku kovanca ta izgine ali se rezultat spremeni.
-3. Učenec zna demonstrirati vsaj eno uspešno rundo pobiranja.
+To je srce projekta. Če ta del ne dela, igra ni več "lov na kovance", ampak samo sprehajanje kvadrata.
 
 ## Tipične napake
 
-- pozabljeno brisanje zaslona (`fill`),
-- objekt se nariše, a se ne posodablja,
-- trk se preverja nad napačnim objektom,
-- rezultat se resetira v napačnem delu zanke.
+- `fill` manjka, zato ostajajo sledi.
+- Učenec riše kovance, ne preveri pa trka.
+- `coins.remove(...)` dela na napačnem seznamu.
+- `score = 0` je po nesreči v glavni zanki in se stalno resetira.
+- `game_won` se nikoli ne nastavi na `True`.
 
-## Python datoteke v tej mapi
+## Datoteke v tej mapi
 
-- `06_uciteljska_resitev.py`
+- `06_uciteljska_resitev.py` – celotna delujoča rešitev.
+
+## Kaj preveri med uro
+
+- se igralec premika,
+- ostaja v oknu,
+- vsaj en kovanec izgine ob dotiku,
+- rezultat raste,
+- učenec zna pokazati, kje se preverja trk.

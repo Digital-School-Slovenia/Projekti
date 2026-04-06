@@ -1,62 +1,37 @@
 # Učni list – 11 – Seznami – osnove in izpis z zankami
 
-## Danes delamo tako
+Pri vseh nalogah uporabi seznam in zanko `for`. Cilj je, da se navadiš brati in izpisovati elemente seznama.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Ustvari seznam treh jedi, ki si jih danes jedel. Nato jih izpiši eno pod drugo.
 
-- november 2025.
-- **Naloga 1: “Seznam meni, kaj si danes jedel?”**
-- 😂 **Naloga 2: “Seznam mojih dobrih navad in čudnih navad”**
+### Naloga 2
+Ustvari seznam svojih dobrih navad in jih izpiši z zanko `for`.
 
-## Glavni blok dela
+### Naloga 3
+Podan je seznam psov `psi = ["Rex", "Luna", "Turbo", "Fifi"]`. Izpiši stavek `Pes ___ potrebuje priboljšek.` za vsakega psa.
 
-- 😂 **Naloga 3: “Seznam psov v pasjem vrtcu” 🐶**
-- 🏗️ Naloga 4: **“Playlist generator 3000” 🎵**
-- 😂 **Naloga 5: “Seznam ocenjen po krutem profesorju”**
-- “🟢 5 – profesor je presrečen”
-- “🟡 3 – profesor je nevtralen”
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-## Dodatne naloge za hitrejše
+### Naloga 4
+Ustvari seznam števil in izpiši vsako število skupaj z njegovim kvadratom.
 
-- “🔴 1 – profesor je znova razočaran”
-- 😂 **Naloga 6: “Fitnes trener” 🏋️‍♂️**
-- Če je 0 → “🤨 Nisi se niti premaknil!”
-- Če <10 → “💪 Začetek je dober!”
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-## Izziv
+### Naloga 5
+Ustvari seznam ocen `[5, 3, 1, 4, 2, 5]` in za vsako oceno izpiši ustrezen komentar.
 
-- 🏗️ **Naloga 9: “Trgovina 3000 – verzija LIST” 🛒**
-- Ustvari prazen seznam:
-- V zanki `while True` vprašaj:
-- Če uporabnik napiše `"konec"` → prekini.
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-## Checkpointi
+### Naloga 6
+Ustvari seznam predmetov v torbi in izpiši, kaj imaš s seboj.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: november 2025.
+**Namig:** Najprej pripravi majhen testni seznam in rezultat sproti preverjaj z `print()`.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: **Naloga 1: “Seznam meni, kaj si danes jedel?”**
+### Naloga 7
+Izpiši samo tiste elemente, ki so daljši od 5 znakov.
 
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: “🔴 1 – profesor je znova razočaran”
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši program, ki v seznamu poišče največje število brez uporabe funkcije `max`.

@@ -1,27 +1,41 @@
-# Rešitev / učiteljske usmeritve – 32 – Projekt – Mini Wolfenstein
+# Rešitev – 32 – Projekt – Mini Wolfenstein
 
-## Kako vodiš to uro
+## Kaj pokaži najprej
 
-- najprej 2D logika, potem lažni 3D,
-- učenci morajo razumeti mapo in stene, ne samo gledati stolpce,
-- minimapa je zelo koristna pri razlagi.
+Ne začni s teorijo raycastinga za 20 minut. Najprej pokaži:
 
-## Ključni referenčni koncept
+- 2D mapo,
+- igralca,
+- premik,
+- potem žarke,
+- potem 3D stolpce.
+
+## Minimum, ki mora delovati
+
+- igralec se ne zaletava skozi zid,
+- minimapa je pravilna,
+- vsaj osnovni 3D pogled deluje.
+
+## Ključni del rešitve
 
 ```python
-def is_wall(world_x, world_y):
-    col = int(world_x // TILE_SIZE)
-    row = int(world_y // TILE_SIZE)
-    return MAP_DATA[row][col] == 1
+target_x = player_x + math.cos(ray_angle) * depth
+target_y = player_y + math.sin(ray_angle) * depth
+
+if is_wall(target_x, target_y):
+    corrected_depth = depth * math.cos(player_angle - ray_angle)
 ```
 
-## Učiteljski checkpointi
+To je srce projekta.
 
-1. Igralec se premika po mapi.
-2. Stene delujejo kot ovira.
-3. Na zaslonu se izriše osnovni 3D pogled.
+## Tipične napake
 
-## Python datoteke v tej mapi
+- brez `corrected_depth` je slika čudno ukrivljena,
+- igralec gre skozi zid,
+- žarki nikoli ne zadenejo stene,
+- minimapa in 3D pogled si ne ustrezata.
+
+## Datoteke v tej mapi
 
 - `06_uciteljska_resitev.py`
 - `07_resitev_z_misko.py`

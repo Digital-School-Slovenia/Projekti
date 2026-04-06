@@ -1,62 +1,29 @@
 # Učni list – 03 – Osnovne operacije in računanje s programom
 
-## Danes delamo tako
+Danes vadimo računanje s programom. Rezultat naj bo vedno tudi izpisan, ne samo shranjen v spremenljivki.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši program, ki izračuna, koliko stane 5 pic, če ena stane 8 €.
 
-- Izpiše tvoje ime.
-- Izpiše tvojo najljubšo hrano.
-- Izpiše nekaj čisto trapastega, npr. `"Banana je predsednik sveta"`.
+### Naloga 2
+Napiši program, ki izračuna, koliko pic dobi vsak, če imaš 5 pic in 3 prijatelje.
 
-## Glavni blok dela
+### Naloga 3
+Napiši program, ki pretvori starost psa v pasja leta. Uporabi pravilo: 1 leto = 7 pasjih let.
 
-- Izpiše tri vrstice: pozdrav svetu, pozdrav vesolju in pozdrav WC školjki.
-- Izpiše »HAHAHA 10-krat v eni vrstici.
-- Izpiše »čudno resnico« (npr. `"Zajci so v resnici vesoljski agenti"`).
-- Ustvari spremenljivki `ime` in `starost`. Izpiši: `"Moje ime je ___ in star sem ___ let."`
-- Ustvari spremenljivko `sendvici_na_dan`. Vanjo vpiši koliko sendvičev poješ na dan. Nato izračunaj koliko sendvičev poješ v enem letu in izpiši v stavku.
+### Naloga 4
+Napiši program, ki izračuna, koliko čokolad lahko kupiš za 100 €, če ena stane 2,5 €.
 
-## Dodatne naloge za hitrejše
+### Naloga 5
+Napiši program, ki za podano starost izračuna približno število dni življenja.
 
-- Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v stavku.
-- Izračunaj: če poješ 3 pice na teden, koliko pic poješ v celem šolskem letu (40 tednov)? Dodaj ustrezen izpis.
-- Dodaten smeh: ustvari spremenljivko `supermoc` in izpiši `"Moja supermoč je, da znam ___.“` (naj napišejo kaj zabavnega).
-- Izračunaj, koliko bo stalo 5 pic, če ena stane 8 €.
+### Naloga 6
+Napiši program, ki za podano starost izračuna približno število prespanih ur, če spiš 8 ur na dan.
 
-## Izziv
+### Naloga 7
+Izračunaj ostanek pri deljenju 17 z 5 in razloži, kaj pomeni operator `%`.
 
-- Če imaš 100 €, koliko čokolad lahko kupiš, če ena stane 2,5 €?
-- Dodatna naloga: izračunaj, koliko »dni« si že živel (starost × 365).
-- Dodatna naloga: izračunaj, koliko ur si že prespal, če spiš 8 ur na dan.
-- Vprašaj uporabnika za njegovo ime in ga pozdravi.
-
-## Checkpointi
-
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: Izpiše tvoje ime.
-
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Izpiše tvojo najljubšo hrano.
-
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v stavku.
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši program, ki izračuna obseg in ploščino pravokotnika iz podane širine in višine.

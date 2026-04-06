@@ -1,62 +1,35 @@
-# Učni list – 06 – `elif`, `else` in več možnosti odločanja
+# Učni list – 06 – elif, else in več možnosti odločanja
 
-## Danes delamo tako
+Danes je poudarek na več možnostih. Kjer je smiselno, uporabi `if` + `elif` + `else`.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši program, ki vpraša, koliko mačk ima uporabnik. Program naj glede na število izpiše tri različne odzive.
 
-- ## Naloge
-- Napiši program, ki uporabnika vpraša za ime. Če je ime enako tvojemu imenu naj se izpiše »Legenda!« sicer pa »Nisi TVOJE_IME, a si vseeno kul!«
-- Napiši program, ki uporabnika vpraša, ali ima rad pico:
+### Naloga 2
+Napiši program, ki vpraša za temperaturo in glede na interval izpiše ustrezno priporočilo za vreme.
 
-## Glavni blok dela
+### Naloga 3
+Napiši program za ocenjevanje. Uporabnik vnese število točk, program pa izpiše oceno od 1 do 5.
 
-- Če vpiše “da” → “Tudi jaz!”
-- Sicer → “Kako lahko živiš brez pice? 😱”
-- Vprašaj uporabnika za najljubšo barvo:
-- Če “modra” → “Super izbira!”
-- Sicer → “To je pa drzna izbira.”
+### Naloga 4
+Napiši program, ki vpraša za mesec rojstva in izpiše letni čas.
 
-## Dodatne naloge za hitrejše
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-- Napiši program, ki te vpraša koliko mačk imaš:
-- Če več kot 10 → `"Ti si uradno mačja oseba 🐱"`.
-- Če 5-10 → `"Čisto normalno mačje življenje."`
-- Sicer → `"Nimaš veliko mačk"`
+### Naloga 5
+Napiši program, ki vpraša za uro v dnevu in izpiše: jutro, dopoldne, popoldne ali večer.
 
-## Izziv
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-- med 21 in 30 °C → “Prijetno vreme ☀️”
-- med 11 in 20 °C → “Obleci jopico 🧥”
-- 10 °C ali manj → “Mrzlo kot v Sibiriji 🥶”
-- Napiši program za ocenjevanje. Uporabnike vpiše število točk. Glede na število točk naj se izpiše naslednje:
+### Naloga 6
+Napiši program, ki vpraša za oceno od 1 do 5 in izpiše ustrezen komentar.
 
-## Checkpointi
+**Namig:** Pomagaj si z `input()` in sproti preveri, kaj program res prebere.
 
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: ## Naloge
+### Naloga 7
+Napiši program, ki glede na višino nakupa določi popust.
 
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: Napiši program, ki uporabnika vpraša za ime. Če je ime enako tvojemu imenu naj se izpiše »Legenda!« sicer pa »Nisi TVOJE_IME, a si vseeno kul!«
-
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Napiši program, ki te vpraša koliko mačk imaš:
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši program, ki glede na tri dolžine odloči, ali lahko nastane trikotnik.

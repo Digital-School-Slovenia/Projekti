@@ -1,56 +1,59 @@
-# 34 – Velika delavnica vaj + priprava na zaključni projekt
+# 34 – Delavnica iger in priprava na zaključek
 
 ## Trajanje
 
 - 1 srečanje = 2 uri
 
-## Bistvo sklopa
+## Kaj delamo
 
-velika delavnica vaj + priprava na zaključni projekt – poudarek je na delu skozi naloge, kratkih checkpointih in sprotnem testiranju.
+To je pripravljalna ura za zaključni projekt.
 
-## Formalni učni cilji
+Danes učenec:
+- izbere idejo,
+- jo zmanjša na izvedljiv obseg,
+- določi minimum,
+- zapiše ključne korake,
+- po možnosti začne prvi prototip.
 
-- Učenec v dveh urah sestavi kompakten projekt »Velika delavnica vaj + priprava na zaključni projekt«.
-- Učenec med delom pogosto zažene program in sproti preverja rezultat.
-- Učenec rešuje več krajših nalog in ne ostane pri eni sami.
-- Učenec projekt demonstrira od začetka do konca.
+## Cilji
 
-## Merila uspeha do konca ure
+- Učenec zna jasno opisati svojo idejo.
+- Učenec loči med osnovnim jedrom in bonusi.
+- Učenec zna zapisati, kaj mora narediti najprej.
+- Učenec pripravi načrt, po katerem lahko naslednjo uro res začne delati.
 
-- projekt se zažene in ima jasno osnovno mehaniko
-- uporabnik lahko odigra ali preizkusi vsaj eno delujočo rundo
-- vidna je vsaj ena nadgradnja ali smiseln naslednji korak
+## Minimum do konca ure
 
-## Predlagan potek ure
+Do konca ure mora imeti učenec:
+- naslov projekta,
+- kratek opis,
+- cilj projekta,
+- seznam glavnih elementov,
+- pogoje za zmago ali uspeh,
+- seznam prvih 3–5 korakov,
+- po možnosti začetno datoteko ali prototip.
 
-- 10–15 min: hiter uvod in prvi mikro primer
-- 20–25 min: vodeno ogrevanje in prvi checkpoint
-- 45–55 min: glavni blok nalog
-- 20–25 min: diferenciacija – dodatne naloge in izziv
-- 5–10 min: zaključek, demonstracije, refleksija
+## Nadgradnje za hitrejše
 
-## Diferenciacija
+- osnutek zaslona ali mape,
+- seznam funkcij,
+- začetna Pygame datoteka,
+- prvi delujoč prototip premikanja ali izpisa.
 
-- **Osnovna naloga:** [ ] dirkalna igra
-- **Dodatna naloga:** zbrati 10 kovancev
-- **Izziv:** tipka E za pobiranje
+## Učitelj pripravi
 
-## Vloga učitelja
+- `02_ucni_list.md`
+- `03_resitev.md`
+- `04_dodatne_naloge.md`
+- `05_domaca_naloga.md`
+- `06_predloga_igre.py`
+- `08_uciteljski_scenarij_ure.md`
 
-- učitelj ne vleče cele ure frontalno,
-- daje kratke checkpoint razlage,
-- usmerja z vprašanji,
-- odpira dodatne naloge za hitrejše učence.
-
-## Uporabljeni viri iz tvojega paketa
+## Viri iz izvornega paketa
 
 - `19_dirkalna_igra_paket/delovni_list_ideja_za_igro.md`
 - `10_first/POVZETEK SNOVI – PYTHON (DO SEDAJ).md`
 
-## Izvedbena opomba
+## Opomba
 
-Ta verzija je namenoma zgrajena po logiki: manj prazne teorije, več tipkanja, več kratkih nalog, več sprotnih popravkov.
-
-## Dodatna učiteljska opora
-
-- glej tudi `08_uciteljski_scenarij_ure.md` za izvedbeni tempo, checkpoint vprašanja in tipične učiteljske posege.
+Največja nevarnost te ure je prevelika ideja. Tvoja naloga ni navijati za epski projekt, ampak ga dovolj zmanjšati, da bo izvedljiv.

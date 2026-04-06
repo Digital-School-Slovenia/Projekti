@@ -1,38 +1,27 @@
 # Dodatne naloge – 28 – Projekt – Mini Zelda
 
-## Razširjena banka nalog
+### Naloga 1
+Dodaj ovire, skozi katere igralec ne more iti.
 
-### Osnovne naloge
-- Ustvari okno, barve in osnovno strukturo igre.
-- Dodaj igralca z `x`, `y`, `hp` in `score`.
-- Dodaj funkcijo `world_to_screen` ali podoben pristop.
-- Dodaj zbirateljske predmete.
-- Dodaj sovražnike.
-- Dodaj napad ali kontaktno škodo.
-- Dodaj kamero ali premik po večjem svetu.
-- Dodaj restart ali konec igre.
+**Namig:** Ovire shrani v seznam in preverjaj trk z `pygame.Rect`.
 
-### Dodatne naloge
-- Dodaj ovire in kolizije.
-- Dodaj srčke za zdravljenje.
-- Dodaj portal ali svetišče.
-- Dodaj HUD.
+### Naloga 2
+Dodaj srca, ki igralcu vrnejo `1 HP`.
 
-### Izziv
-- Dodaj skoraj neskončen svet s chunk generiranjem.
-- Dodaj dve lastni nadgradnji.
-- Dodaj stanje zmage in game over.
-- Dodaj prepričljiv “Zelda” občutek z malo grafike in več mehanike.
+### Naloga 3
+Dodaj portal ali svetišče, ki se odklene pri določenem `score`.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Dodaj restart igre na tipko `R`.
 
-Uporabljeni viri za ta sklop:
+### Naloga 5
+Dodaj več različnih sovražnikov: počasnega in hitrega.
 
-- `18_pygame/navodila_level1.md`
-- `18_pygame/navodila_level2.md`
-- `18_pygame/level1.py`
-- `18_pygame/level2.py`
+### Naloga 6
+Dodaj napis `ZMAGA`, ko igralec doseže cilj.
 
-## Opomba za učitelja
+### Naloga 7
+Dodaj skoraj neskončen svet ali generiranje chunkov.
 
-Ta datoteka je v v5 namenoma zastavljena kot velika banka nalog. Ideja je jasna: čim več tipkanja, testiranja in sprotnih popravkov.
+### Naloga 8
+Napad zamenjaj s puščico ali izstrelkom.

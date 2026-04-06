@@ -1,42 +1,57 @@
 # Dodatne naloge – 12 – Seznami v praksi, `for` zanke in mini inventarji
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Napiši program za mini nakupovalni seznam, v katerega dodaš vsaj pet izdelkov.
 
-- november 2025.
-- **Naloga 1: “Seznam meni, kaj si danes jedel?”**
-- 😂 **Naloga 2: “Seznam mojih dobrih navad in čudnih navad”**
-- 😂 **Naloga 3: “Seznam psov v pasjem vrtcu” 🐶**
-- 🏗️ Naloga 4: **“Playlist generator 3000” 🎵**
-- 😂 **Naloga 5: “Seznam ocenjen po krutem profesorju”**
-- “🟢 5 – profesor je presrečen”
-- “🟡 3 – profesor je nevtralen”
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
 
-### Dodatne naloge
+### Naloga 2
+Napiši program, ki iz seznama opravil izpiše vse naloge po vrsti.
 
-- “🔴 1 – profesor je znova razočaran”
-- 😂 **Naloga 6: “Fitnes trener” 🏋️‍♂️**
-- Če je 0 → “🤨 Nisi se niti premaknil!”
-- Če <10 → “💪 Začetek je dober!”
-- Če ≥10 → “🔥 Zverina!”
-- **Naloga 7: “Filter psov z dolgimi imeni” 🐕**
+**Namig:** Premisli, ali potrebuješ `range(...)` ali sprehod po elementih seznama.
 
-### Izziv
+### Naloga 3
+Napiši program, ki v seznamu filmov izpiše samo tiste z imenom, daljšim od 5 znakov.
 
-- 🏗️ **Naloga 9: “Trgovina 3000 – verzija LIST” 🛒**
-- Ustvari prazen seznam:
-- V zanki `while True` vprašaj:
-- Če uporabnik napiše `"konec"` → prekini.
-- Drugače dodaj izdelek v seznam.
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+Napiši program, ki iz seznama ocen izračuna povprečje.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
 
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši program, ki v seznam doda nove izdelke, dokler uporabnik ne vnese `konec`.
+
+**Namig:** Uporabi `input()` za branje podatka uporabnika.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Napiši program, ki prešteje, kolikokrat se v seznamu pojavi določena vrednost.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši program, ki iz seznama odstrani vse prazne nize.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 8
+_Ta naloga je težja._
+Napiši mini inventar, ki omogoča dodajanje, izpis in brisanje izdelkov.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+### Naloga 9
+_Ta naloga je težja._
+Napiši program, ki združi dva seznama in izpiše vse elemente.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+## Viri
 - `07/naloge.md`
 - `07/00_seznamiu.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

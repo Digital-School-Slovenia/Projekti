@@ -1,21 +1,15 @@
 # Domača naloga – 26 – Pygame – uvod, okno, risanje in premikanje
 
-## Obvezni minimum
+### Naloga 1
+Napiši program, ki ustvari okno velikosti `600 × 400` in naslov `Moja prva igra`.
 
-- Ustvari okno 600 × 400 ali 800 × 500.
-- Omogoči zapiranje okna z gumbom X.
-- Dodaj `screen.fill()` in preizkusi več barv.
+### Naloga 2
+V isti program dodaj `screen.fill((0, 0, 100))` in preveri, kako se spremeni ozadje.
 
-## Bonus / za hitrejše
+### Naloga 3
+Napiši program, ki nariše en pravokotnik z uporabo `pygame.draw.rect(...)`.
 
-- Nariši hišo, sonce in tla.
-- Dodaj še drugi objekt.
+**Namig:** Program preverjaj po korakih: najprej okno, nato objekt in šele potem premikanje ali trke.
 
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+### Naloga 4
+Z enim ali dvema stavkoma zapiši, pri kateri nalogi si se ustavil in kako si težavo rešil ali bi jo še rešil.

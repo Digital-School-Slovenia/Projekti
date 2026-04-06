@@ -1,62 +1,29 @@
-# Učni list – 08 – Zanka `while` – osnove ponavljanja
+# Učni list – 08 – Zanka while – osnove ponavljanja
 
-## Danes delamo tako
+Pri vsaki nalogi najprej razmisli: kdaj se zanka začne, kdaj se konča in kaj se v vsakem krogu spremeni.
 
-- najprej naredi minimalno delujoče jedro,
-- nato rešuj serijo kratkih nalog,
-- po vsaki spremembi program zaženi,
-- ko jedro deluje, odpri dodatne naloge in izziv.
+## Naloge
 
-## Minimalno delujoče jedro
+### Naloga 1
+Napiši program, ki s pomočjo zanke `while` izpiše števila od 1 do 10.
 
-- november 2025.
-- 🧮 Naloga 1: Štetje do 10
-- 🐶 Naloga 2: Pes, ki laja dokler ne dobi hrane
+### Naloga 2
+Napiši program, ki s pomočjo zanke `while` šteje nazaj od 10 do 1.
 
-## Glavni blok dela
+### Naloga 3
+Napiši program "Pes, ki laja dokler ne dobi hrane". Dokler odgovor ni `da`, naj program izpisuje stavek o lajanju.
 
-- Naloga 3 - Vsi po pet
-- Naloga 4 - Konkurenca
-- Naloga 5 - Top shop
-- 🪙 Naloga 6: *Varčevalni račun 3000* 💸
-- Na začetku nastavi:
+### Naloga 4
+Napiši program, ki od uporabnika zahteva geslo tako dolgo, dokler ne vnese pravilnega gesla.
 
-## Dodatne naloge za hitrejše
+### Naloga 5
+Napiši program, ki sešteva števila, dokler uporabnik ne vnese 0.
 
-- Program naj **ponavlja vprašanje**:
-- Vsakič, ko uporabnik vnese znesek, ga prištej privarčevanemu denarju.
-- Program naj izpiše trenutno stanje, na primer:
-- Ko uporabnik doseže ali preseže cilj, naj program izpiše:
+### Naloga 6
+Napiši program, ki prosi za ime tako dolgo, dokler uporabnik ne vnese nepraznega niza.
 
-## Izziv
+### Naloga 7
+Napiši program, ki sproti izpisuje, kolikokrat je uporabnik že poskusil.
 
-- Naloga:
-- Uporabi zanko `while`, ki se ponavlja, dokler imata **oba** še več kot 0 HP.
-- Vsak krog ti napadeš zmaja in mu povzročiš **naključno škodo med 5 in 10** (uporabi `random.randint(5,10)`).
-- Če zmaj **še ni mrtev**, se razjezi in ti povzroči **3 škode**.
-
-## Checkpointi
-
-### Checkpoint 1
-- Pokaži, da deluje vsaj prvi korak: november 2025.
-
-### Checkpoint 2
-- Pokaži še eno nalogo iz glavnega bloka: 🧮 Naloga 1: Štetje do 10
-
-### Checkpoint 3
-- Pokaži nadgradnjo, bonus ali popravljeno napako: Program naj **ponavlja vprašanje**:
-
-## Pravilo te ure
-
-- ne čakaj, da bo koda “popolna”, najprej naj bo delujoča,
-- ne rešuj samo ene naloge dve uri,
-- učitelja uporabljaj kot usmerjevalca, ne kot tipkalni servis,
-- če si hitrejši, odpri dodatne naloge brez vprašanja.
-
-## Oddaja / exit ticket
-
-Na koncu pokaži:
-
-1. kaj dela brez napake,
-2. katera naloga ti je vzela največ časa,
-3. katera nadgradnja bi bila naslednji logični korak.
+### Naloga 8
+Napiši program, ki s pomočjo `while` izračuna potenco brez uporabe operatorja `**`.

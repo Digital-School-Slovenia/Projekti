@@ -1,43 +1,58 @@
 # Dodatne naloge – 19 – Slovarji – osnove
 
-## Razširjena banka nalog
+Rešuj po vrsti. Kjer obstaneš, uporabi namig in nalogo razbij na manjše korake.
 
-### Osnovne naloge
+### Naloga 1
+Ustvari slovar `ucenec` s ključi `ime`, `starost` in `razred` ter ga izpiši.
 
-- razume, kaj je **slovar (dictionary)**
-- zna ustvariti slovar
-- zna dostopati do vrednosti s pomočjo ključa
-- zna dodajati in spreminjati vrednosti v slovarju
-- zna uporabljati slovar v funkciji
-- razume razliko med **seznamom** in **slovarjem**
-- telefon: ime → telefonska številka
-- profil: uporabniško ime → število sledilcev
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
-### Dodatne naloge
+### Naloga 2
+Iz slovarja `ucenec` izpiši samo ime in starost.
 
-- igralec: ime → točke
-- Kako shranimo **ime + starost**?
-- Kako shranimo **ime igralca + točke**?
-- Zakaj dva ločena seznama nista vedno dobra ideja?
-- `"ime"` → ključ
-- `"Ana"` → vrednost
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
-### Izziv
+### Naloga 3
+V slovar dodaj nov ključ `hobi` in ga nato izpiši.
 
-- ==dostopamo z **ključem**, ne z indeksom==
-- seznam → dostop z indeksom (`[0]`)
-- slovar → dostop s ključem (`["ime"]`)
-- **spreminjamo**
-- **razširjamo**
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
-## Naloge, vzete ali povzete iz tvojega izvornega paketa
+### Naloga 4
+V slovarju spremeni vrednost pri ključu `razred`.
 
-Uporabljeni viri za ta sklop:
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
 
+### Naloga 5
+_Ta naloga je malo težja._
+Napiši program, ki preveri, ali slovar vsebuje določen ključ.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+### Naloga 6
+_Ta naloga je malo težja._
+Napiši program, ki izpiše vse ključe v slovarju.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+### Naloga 7
+_Ta naloga je malo težja._
+Napiši program, ki izpiše vse vrednosti v slovarju.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+### Naloga 8
+_Ta naloga je težja._
+Ustvari slovar `igralec` in napiši funkcijo, ki poveča njegove točke.
+
+**Namig:** Slovar ustvariš z zavitimi oklepaji, npr. `{"ime": "Ana"}`. Do vrednosti dostopaš s ključem.
+
+### Naloga 9
+_Ta naloga je težja._
+Primerjaj isti podatek zapisan v seznamu in v slovarju ter napiši, kdaj je slovar boljša izbira.
+
+**Namig:** Seznam ustvariš z oglatimi oklepaji, npr. `sez = [1, 2, 3]`.
+
+## Viri
 - `11_slovarji/#L01f4d8 Slovarji (dict).md`
 - `11_slovarji/#L01f9f1 VAJE #U2013 PYTHON SLOVARJI (DICT).md`
 - `11_slovarji/01_slovarji.py`
-
-## Opomba za učitelja
-
-Ta datoteka je v v4 namenoma bolj polna. Ideja ni ena naloga za vse, ampak dovolj velika banka, da lahko razred dela po tempu.

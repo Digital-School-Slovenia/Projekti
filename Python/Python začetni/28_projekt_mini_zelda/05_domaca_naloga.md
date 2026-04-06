@@ -1,21 +1,19 @@
 # Domača naloga – 28 – Projekt – Mini Zelda
 
-## Obvezni minimum
+### Naloga 1
+Dodaj eno novo nadgradnjo, ki je danes nisi naredil.
 
-- Ustvari okno, barve in osnovno strukturo igre.
-- Dodaj igralca z `x`, `y`, `hp` in `score`.
-- Dodaj funkcijo `world_to_screen` ali podoben pristop.
+### Naloga 2
+V komentar zapiši, kateri del kode skrbi za:
 
-## Bonus / za hitrejše
+- kamero,
+- pobiranje kovancev,
+- napad.
 
-- Dodaj ovire in kolizije.
-- Dodaj srčke za zdravljenje.
+### Naloga 3
+Pripravi 4-vrstični opis svoje igre:
 
-## Kratka refleksija
-
-Ob oddaji dopiši še:
-
-- kaj ti je delovalo takoj,
-- kje si se ustavil ali zmotil,
-- kaj si popravil sam,
-- katero nalogo bi še rad nadgradil.
+- kaj je cilj,
+- kdo je igralec,
+- kdo je sovražnik,
+- kdaj je zmaga ali poraz.
