@@ -10,7 +10,7 @@
 
 
 ime = "Manca"
-starost = 28
+starost = 56
 print(f"Moje ime je {ime} in stara sem {starost} let.")
 
 
