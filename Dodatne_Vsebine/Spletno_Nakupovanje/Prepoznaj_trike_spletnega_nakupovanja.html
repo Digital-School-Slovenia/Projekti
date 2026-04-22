@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digitalni Detektiv 🔍</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d1a;
+    --card: #141428;
+    --card2: #1a1a35;
+    --accent: #ff4d6d;
+    --yellow: #ffd60a;
+    --green: #06d6a0;
+    --blue: #118ab2;
+    --purple: #9b5de5;
+    --text: #f0f0ff;
+    --muted: #8888aa;
+    --found: #06d6a0;
+    --found-bg: rgba(6, 214, 160, 0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Stars background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 30% 60%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 70% 25%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 85% 75%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 50% 90%, rgba(255,255,255,0.25) 0%, transparent 100%),
+      radial-gradient(1px 1px at 20% 40%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 65% 55%, rgba(255,255,255,0.15) 0%, transparent 100%),
+      radial-gradient(2px 2px at 45% 10%, rgba(255,255,200,0.4) 0%, transparent 100%),
+      radial-gradient(2px 2px at 90% 45%, rgba(255,255,200,0.3) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    position: relative;
+    text-align: center;
+    padding: 40px 20px 30px;
+    z-index: 1;
+  }
+
+  .logo {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    background: linear-gradient(135deg, var(--yellow), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 1px;
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(255,214,10,0.4)); }
+    50% { filter: drop-shadow(0 0 20px rgba(255,77,109,0.6)); }
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+
+  /* ===== SCORE BAR ===== */
+  .score-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(13,13,26,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,214,10,0.15);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .score-info {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    color: var(--yellow);
+  }
+
+  .progress-wrap {
+    flex: 1;
+    max-width: 300px;
+    height: 10px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--yellow), var(--accent));
+    border-radius: 99px;
+    transition: width 0.5s cubic-bezier(.34,1.56,.64,1);
+    width: 0%;
+  }
+
+  .score-badge {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, var(--yellow), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ===== INSTRUCTIONS ===== */
+  .instructions {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .instruction-box {
+    background: linear-gradient(135deg, rgba(155,93,229,0.15), rgba(17,138,178,0.15));
+    border: 1px solid rgba(155,93,229,0.3);
+    border-radius: 20px;
+    padding: 20px 24px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+
+  .instruction-box strong {
+    color: var(--yellow);
+    font-size: 1.1rem;
+  }
+
+  /* ===== SECTIONS ===== */
+  .section {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .section-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    flex-shrink: 0;
+  }
+
+  .section-icon.game { background: linear-gradient(135deg, #9b5de5, #4361ee); }
+  .section-icon.influencer { background: linear-gradient(135deg, #f72585, #ff9f1c); }
+  .section-icon.ethics { background: linear-gradient(135deg, #06d6a0, #118ab2); }
+
+  .section-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.6rem;
+    color: var(--text);
+  }
+
+  .section-desc {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* ===== FAKE ELEMENT CARD ===== */
+  .fake-card {
+    background: var(--card);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .fake-card:hover:not(.revealed) {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    border-color: rgba(255,214,10,0.3);
+  }
+
+  .fake-card.revealed {
+    border-color: var(--found);
+    background: linear-gradient(135deg, var(--card), rgba(6,214,160,0.05));
+    cursor: default;
+  }
+
+  .fake-card.wrong-guess {
+    animation: shake 0.4s ease;
+    border-color: var(--accent) !important;
+  }
+
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    75% { transform: translateX(8px); }
+  }
+
+  .card-inner {
+    padding: 22px 24px;
+  }
+
+  /* ===== GAME SCENE - fake app store ===== */
+  .app-mockup {
+    background: linear-gradient(180deg, #1c1c3a 0%, #0f0f22 100%);
+    border-radius: 16px;
+    padding: 18px;
+    font-size: 0.9rem;
+  }
+
+  .app-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .app-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #9b5de5, #4361ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+  }
+
+  .app-name { font-weight: 800; font-size: 1rem; }
+  .app-rating { color: var(--yellow); font-size: 0.8rem; margin-top: 2px; }
+
+  .btn-install {
+    display: inline-block;
+    background: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-left: auto;
+    pointer-events: none;
+  }
+
+  /* currency display */
+  .currency-box {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 14px 0;
+  }
+
+  .currency-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 10px 16px;
+    text-align: center;
+    flex: 1;
+    min-width: 80px;
+  }
+
+  .currency-amount {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.3rem;
+    color: var(--yellow);
+  }
+
+  .currency-price {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* loot box */
+  .lootbox-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: rgba(155,93,229,0.1);
+    border: 1px solid rgba(155,93,229,0.25);
+    border-radius: 14px;
+    padding: 14px;
+    margin-top: 14px;
+  }
+
+  .lootbox-icon { font-size: 2rem; }
+
+  .lootbox-info { flex: 1; }
+  .lootbox-title { font-weight: 800; font-size: 0.95rem; }
+  .lootbox-sub { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+
+  .btn-buy {
+    background: linear-gradient(135deg, var(--accent), #ff7c8e);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  /* timer urgency */
+  .urgency-banner {
+    background: linear-gradient(135deg, rgba(255,77,109,0.2), rgba(255,150,20,0.2));
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+  }
+
+  .timer-display {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.4rem;
+    color: var(--accent);
+    min-width: 70px;
+    text-align: center;
+    animation: timer-blink 1s ease infinite;
+  }
+
+  @keyframes timer-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+
+  .urgency-text { font-size: 0.85rem; font-weight: 700; }
+  .urgency-sub { font-size: 0.75rem; color: var(--muted); }
+
+  /* viewers badge */
+  .viewers-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,77,109,0.15);
+    border: 1px solid rgba(255,77,109,0.3);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-top: 10px;
+    animation: fadein 0.5s ease;
+  }
+
+  .dot-pulse {
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: dot-pulse 1.2s ease infinite;
+  }
+
+  @keyframes dot-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+
+  /* subscription trap */
+  .sub-card {
+    background: linear-gradient(135deg, rgba(17,138,178,0.15), rgba(67,97,238,0.1));
+    border: 1px solid rgba(17,138,178,0.3);
+    border-radius: 14px;
+    padding: 18px;
+    margin-top: 14px;
+  }
+
+  .sub-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.15rem;
+    color: var(--blue);
+    margin-bottom: 10px;
+  }
+
+  .sub-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.88rem;
+  }
+
+  .sub-free { color: var(--green); font-weight: 700; }
+  .sub-fine-print {
+    font-size: 0.72rem;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  /* ===== INFLUENCER SECTION ===== */
+  .influencer-post {
+    background: var(--card2);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+  }
+
+  .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+
+  .avatar.pink { background: linear-gradient(135deg, #f72585, #ff9f1c); }
+  .avatar.blue { background: linear-gradient(135deg, #118ab2, #06d6a0); }
+  .avatar.purple { background: linear-gradient(135deg, #9b5de5, #f72585); }
+
+  .post-username { font-weight: 800; font-size: 0.95rem; }
+  .post-follow { font-size: 0.75rem; color: var(--muted); }
+
+  .post-image-placeholder {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+
+  .post-caption {
+    padding: 14px 18px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+
+  .post-caption .username { color: var(--text); font-weight: 700; }
+  .hashtag { color: var(--blue); }
+  .ad-tag { color: var(--yellow); font-weight: 700; }
+  .hidden-ad { color: #555; font-size: 0.75rem; }
+
+  .post-actions {
+    padding: 10px 18px 16px;
+    display: flex;
+    gap: 18px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .brand-compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+  .brand-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .brand-logo { font-size: 2rem; margin-bottom: 8px; }
+  .brand-name { font-weight: 800; font-size: 0.9rem; margin-bottom: 6px; }
+  .brand-price { font-family: 'Fredoka One', cursive; font-size: 1.3rem; }
+  .brand-price.expensive { color: var(--accent); }
+  .brand-price.cheap { color: var(--green); }
+  .brand-tag { font-size: 0.72rem; color: var(--muted); margin-top: 4px; }
+
+  /* ===== ETHICS SECTION ===== */
+  .product-card-cheap {
+    background: linear-gradient(135deg, rgba(255,77,109,0.08), rgba(255,150,20,0.05));
+    border: 1px solid rgba(255,77,109,0.2);
+    border-radius: 14px;
+    padding: 18px;
+  }
+
+  .product-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .product-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    flex-shrink: 0;
+  }
+
+  .product-title { font-weight: 800; font-size: 0.95rem; margin-bottom: 4px; }
+  .product-price-big { font-family: 'Fredoka One', cursive; font-size: 2rem; color: var(--accent); }
+  .product-reviews { font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
+
+  .product-stats {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .stat-chip {
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  .fast-fashion-chain {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .chain-step {
+    flex: 1;
+    text-align: center;
+    padding: 10px 6px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    font-size: 0.72rem;
+    color: var(--muted);
+    position: relative;
+  }
+
+  .chain-step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 0.9rem;
+    z-index: 2;
+  }
+
+  .chain-step .step-icon { font-size: 1.2rem; display: block; margin-bottom: 4px; }
+
+  /* local shop */
+  .local-vs {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 12px;
+    align-items: center;
+    margin-top: 14px;
+  }
+
+  .local-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 14px;
+    text-align: center;
+    font-size: 0.82rem;
+  }
+
+  .local-box.local-good { border-color: rgba(6,214,160,0.3); background: rgba(6,214,160,0.05); }
+  .local-box .box-icon { font-size: 1.8rem; margin-bottom: 6px; }
+  .local-box .box-name { font-weight: 800; font-size: 0.88rem; margin-bottom: 6px; }
+  .local-box .box-fact { color: var(--muted); line-height: 1.4; }
+
+  .vs-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--card2);
+    border: 2px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+
+  /* ===== FAKE ELEMENT LABEL ===== */
+  .fake-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,77,109,0.15);
+    border: 1px solid rgba(255,77,109,0.3);
+    color: var(--accent);
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+  }
+
+  .card-top-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .card-question {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text);
+    flex: 1;
+  }
+
+  /* ===== FOUND OVERLAY ===== */
+  .found-overlay {
+    display: none;
+    background: linear-gradient(135deg, rgba(6,214,160,0.1), rgba(6,214,160,0.05));
+    border-top: 1px solid rgba(6,214,160,0.2);
+    padding: 16px 24px;
+    animation: slide-in 0.4s cubic-bezier(.34,1.56,.64,1);
+  }
+
+  @keyframes slide-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .found-overlay.visible { display: block; }
+
+  .found-title {
+    color: var(--green);
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .found-explanation {
+    font-size: 0.88rem;
+    color: #aaa;
+    line-height: 1.6;
+  }
+
+  .found-explanation strong { color: var(--text); }
+
+  /* click hint */
+  .click-hint {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 12px;
+    font-style: italic;
+  }
+
+  .click-hint-icon {
+    width: 24px;
+    height: 24px;
+    border: 1.5px solid var(--muted);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    animation: bounce-hint 2s ease infinite;
+  }
+
+  @keyframes bounce-hint {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+
+  /* ===== COMPLETION SCREEN ===== */
+  #completion {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(13,13,26,0.96);
+    backdrop-filter: blur(12px);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    animation: fadein 0.5s ease;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  #completion.show { display: flex; }
+
+  .completion-emoji { font-size: 5rem; margin-bottom: 20px; animation: spin-in 0.8s cubic-bezier(.34,1.56,.64,1); }
+
+  @keyframes spin-in {
+    from { transform: scale(0) rotate(-180deg); opacity: 0; }
+    to { transform: scale(1) rotate(0deg); opacity: 1; }
+  }
+
+  .completion-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, var(--yellow), var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 14px;
+  }
+
+  .completion-msg {
+    max-width: 500px;
+    color: #aaa;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  .btn-restart {
+    background: linear-gradient(135deg, var(--yellow), var(--accent));
+    color: #0d0d1a;
+    border: none;
+    border-radius: 14px;
+    padding: 14px 36px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn-restart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(255,214,10,0.3);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 600px) {
+    .brand-compare { grid-template-columns: 1fr; }
+    .local-vs { grid-template-columns: 1fr; }
+    .vs-circle { transform: rotate(90deg); margin: 0 auto; }
+    .fast-fashion-chain { flex-wrap: wrap; }
+    .chain-step:not(:last-child)::after { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🔍 Digitalni Detektiv</div>
+  <div class="subtitle">Najdi vse zvijače, ki jih podjetja skrivajo pred tabo!</div>
+</header>
+
+<div class="score-bar">
+  <div class="score-info">🎯 Najdeno: <span id="found-count">0</span> / <span id="total-count">0</span></div>
+  <div class="progress-wrap">
+    <div class="progress-fill" id="progress-fill"></div>
+  </div>
+  <div class="score-badge" id="score-badge">0 XP</div>
+</div>
+
+<div class="instructions">
+  <div class="instruction-box">
+    <strong>Kako igrati?</strong><br>
+    Na tej strani se skriva <strong>zvijača</strong> v vsaki kartici. Klikni na element, za katerega misliš, da je laž, manipulacija ali zavajanje — in razkrij skrivnost! 🕵️
+  </div>
+</div>
+
+<!-- ===== SEKCIJA 1: IGRE ===== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon game">🎮</div>
+    <div>
+      <div class="section-title">Psihologija brezplačnih iger</div>
+      <div class="section-desc">Zakaj te igre pravzaprav niso zastonj?</div>
+    </div>
+  </div>
+
+  <!-- CARD 1: Valuta v igri -->
+  <div class="fake-card" id="card-1" data-points="20">
+    <div class="card-inner">
+      <div class="card-top-row">
+        <div class="card-question">🪙 Poglej ponudbo za nakup valute. Kaj je tukaj čudno?</div>
+        <div class="fake-label">🔍 Klikni na zvijačo</div>
+      </div>
+      <div class="app-mockup" id="fake-1">
+        <div class="app-header">
+          <div class="app-icon">⚔️</div>
+          <div>
+            <div class="app-name">DragonQuest Heroes</div>
+            <div class="app-rating">⭐⭐⭐⭐⭐ · Brezplačno</div>
+          </div>
+          <button class="btn-install">NAMESTI</button>
+        </div>
+        <div style="font-weight:700; margin-bottom:10px; font-size:0.88rem; color:var(--muted);">Kupite DRAGONITE KRISTALE 💎</div>
+        <div class="currency-box">
+          <div class="currency-item">
+            <div class="currency-amount">100 💎</div>
+            <div class="currency-price">0,99 €</div>
+          </div>
+          <div class="currency-item">
+            <div class="currency-amount">600 💎</div>
+            <div class="currency-price">4,99 €</div>
+          </div>
+          <div class="currency-item">
+            <div class="currency-amount">1.500 💎</div>
+            <div class="currency-price">9,99 €</div>
+          </div>
+          <div class="currency-item" style="border-color:rgba(255,214,10,0.4); background:rgba(255,214,10,0.07);">
+            <div class="currency-amount">4.200 💎</div>
+            <div class="currency-price">19,99 €</div>
+            <div style="font-size:0.7rem; color:var(--yellow); font-weight:700;">BEST VALUE!</div>
+          </div>
+        </div>
+        <div class="click-hint"><div class="click-hint-icon">👆</div>Klikni na del, ki te zavaja</div>
+      </div>
+    </div>
+    <div class="found-overlay" id="explain-1">
+      <div class="found-title">✅ Odlično odkrije! Virtualna valuta = skrita cena</div>
+      <div class="found-explanation">
+        Igre namesto evrov uporabljajo <strong>izmišljeno valuto</strong> (kristali, žetoni, Robuxi…), da 
+        <strong>pozabiš, koliko pravzaprav plačuješ</strong>. 100 kristali za 0,99 € zveni malo — 
+        ampak ko kupiš orožje za 850 kristali, to pomeni <strong>~8,50 €</strong> za digitalni predmet! 
+        Tvoji možgani "računajo" v kristalih, ne v evrih.
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2: Loot box -->
+  <div class="fake-card" id="card-2" data-points="25">
+    <div class="card-inner">
+      <div class="card-top-row">
+        <div class="card-question">📦 Kaj je problematično pri tej "skrinjici s presenečenjem"?</div>
+        <div class="fake-label">🔍 Klikni na zvijačo</div>
+      </div>
+      <div class="app-mockup" id="fake-2">
+        <div style="font-weight:800; font-size:0.95rem; margin-bottom:12px;">🏆 Posebna sezona — Collector's Box</div>
+        <div class="lootbox-row" style="cursor:pointer;">
+          <div class="lootbox-icon">🎁</div>
+          <div class="lootbox-info">
+            <div class="lootbox-title">Epska skrinjica</div>
+            <div class="lootbox-sub">Vsebuje NAKLJUČNO izbrano kožo, orožje ali opremo</div>
+            <div style="font-size:0.75rem; color:#666; margin-top:4px;">Verjetnost legendarne kože: 0,3%</div>
+          </div>
+          <button class="btn-buy">Kupi · 500 💎</button>
+        </div>
+        <div style="font-size:0.75rem; color:#555; margin-top:10px; text-align:center;">
+          *Vsebina skrinjice je naključna. Povprečno za legendarno kožo potrebuješ 50–300 skrinjic.
+        </div>
+        <div class="click-hint"><div class="click-hint-icon">👆</div>Klikni na del, ki te zavaja</div>
+      </div>
+    </div>
+    <div class="found-overlay" id="explain-2">
+      <div class="found-title">✅ Točno! Loot boxi = igranje na srečo za otroke</div>
+      <div class="found-explanation">
+        Plačaš pravi denar za <strong>naključno vsebino</strong> — prav kot pri ruletki ali loteriji. 
+        Verjetnost za legendarni predmet je pogosto manj kot <strong>1%</strong>. To pomeni, da bi moral 
+        povprečno kupiti <strong>100+ skrinjic</strong> (= 50 € ali več!), da ga dobiš. 
+        Nekatere države so loot boxe <strong>prepovedane</strong> kot obliko hazardiranja.
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3: Naročnina -->
+  <div class="fake-card" id="card-3" data-points="20">
+    <div class="card-inner">
+      <div class="card-top-row">
+        <div class="card-question">💳 Ali je ta "brezplačni preizkus" res brezplačen?</div>
+        <div class="fake-label">🔍 Klikni na zvijačo</div>
+      </div>
+      <div class="app-mockup" id="fake-3">
+        <div class="sub-card">
+          <div class="sub-title">⚡ GamePass Premium</div>
+          <div class="sub-row">
+            <span>Prvih 7 dni</span>
+            <span class="sub-free">BREZPLAČNO ✓</span>
+          </div>
+          <div class="sub-row">
+            <span>Potem vsak mesec</span>
+            <span style="color:var(--accent); font-weight:700;">9,99 €</span>
+          </div>
+          <div class="sub-row">
+            <span>Odpoved kadar koli</span>
+            <span style="color:var(--muted);">✓</span>
+          </div>
+          <button style="width:100%; margin-top:12px; background:linear-gradient(135deg,#06d6a0,#118ab2); color:white; border:none; border-radius:12px; padding:12px; font-weight:800; font-family:'Nunito',sans-serif; font-size:0.95rem; cursor:pointer; pointer-events:none;">
+            Začni brezplačni preizkus →
+          </button>
+          <div class="sub-fine-print">
+            *Z nadaljevanjem se strinjate s samodejnim obnovitvijo naročnine. Brezplačno obdobje se začne takoj. 
+            Po izteku preizkusa bo zaračunan znesek 9,99 €/mes. z vašega shranjenega plačilnega sredstva. 
+            Za odpoved obiščite nastavitve računa vsaj 24 ur pred podaljšanjem.
+          </div>
+        </div>
+        <div class="click-hint"><div class="click-hint-icon">👆</div>Klikni na del, ki te zavaja</div>
+      </div>
+    </div>
+    <div class="found-overlay" id="explain-3">
+      <div class="found-title">✅ Super! Naročniška past — subscription trap</div>
+      <div class="found-explanation">
+        Drobni tisk na dnu je <strong>nameroma napisan malo in nejasno</strong>. 
+        Po 7 dneh se naročnina <strong>samodejno podaljša</strong> in starši pogosto sploh ne opazijo 
+        novega stroška. Trick: za "brezplačni" preizkus moraš vnesti plačilne podatke — kar pomeni, 
+        da bo denar odšel <strong>samodejno</strong> brez ponovnega potrjevanja.
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4: Lažna nujnost -->
+  <div class="fake-card" id="card-4" data-points="20">
+    <div class="card-inner">
+      <div class="card-top-row">
+        <div class="card-question">⏰ Zakaj te ta ponudba želi prisilit, da se hitreje odločiš?</div>
+        <div class="fake-label">🔍 Klikni na zvijačo</div>
+      </div>
+      <div class="app-mockup" id="fake-4">
+        <div style="font-weight:800; margin-bottom:12px;">🔥 Dnevna ponudba — samo danes!</div>
+        <div class="urgency-banner" style="cursor:pointer;">
+          <div>
+            <div class="urgency-text">⚡ Posebna ponudba poteče čez:</div>
+            <div class="urgency-sub">Ne zamudi svojega prihranka!</div>
+          </div>
+          <div class="timer-display" id="fake-timer">04:37</div>
+        </div>
+        <div class="viewers-badge" style="cursor:pointer;">
+          <div class="dot-pulse"></div>
+          🔴 To si ogleduje še 47 oseb!
+        </div>
+        <div style="margin-top:14px; display:flex; gap:10px; align-items:center;">
+          <div style="text-decoration:line-through; color:var(--muted); font-size:0.9rem;">9,99 €</div>
+          <div style="font-family:'Fredoka One',cursive; font-size:1.5rem; color:var(--yellow);">2,99 €</div>
+          <div style="background:var(--accent); color:white; border-radius:8px; padding:3px 10px; font-size:0.75rem; font-weight:800;">-70%</div>
+        </div>
+        <div class="click-hint"><div class="click-hint-icon">👆</div>Klikni na del, ki te zavaja</div>
+      </div>
+    </div>
+    <div class="found-overlay" id="explain-4">
+      <div class="found-title">✅ Pravilno! Umetna nujnost = FOMO manipulacija</div>
+      <div class="found-explanation">
+        Odštevalnik in "47 oseb gleda" sta <strong>psihološki triki</strong> — ustvarjajo <strong>strah pred zamudo</strong> (FOMO). 
+        Resnica: odštevalnik se pogosto <strong>ponastavi vsak dan</strong>, in nobena "47 oseb" v resnici ne gleda iste stvari v istem trenutku. 
+        Igre in spletne trgovine te hočejo spraviti v stanje <strong>panike, da ne razmišljaš</strong> preden klikneš.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SEKCIJA 2: VPLIVNEŽI ===== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon influencer">📱</div>
+    <div>
+      <div class="section-title">Prikrito oglaševanje vplivnežev</div>
+      <div class="section-desc">Ali tvoji najljubši YouTuberji res verjamejo v to, kar promovirajo?</div>
+    </div>
+  </div>
+
+  <!-- CARD 5: Prikrit oglas -->
+  <div class="fake-card" id="card-5" data-points="20">
+    <div class="card-inner">
+      <div class="card-top-row">
+        <div class="card-question">👀 Poišči zakrit oglas v tej objavi!</div>
+        <div class="fake-label">🔍 Klikni na zvijačo</div>
+      </div>
+      <div class="influencer-post" id="fake-5">
+        <div class="post-header">
+          <div class="avatar pink">🌟</div>
+          <div>
+            <div class="post-username">@zara_lifestyle</div>
+            <div class="post-follow">1,2 M sledilcev · Lifestyle & Gaming</div>
+          </div>
+        </div>
+        <div class="post-image-placeholder" style="background:linear-gradient(135deg,#1a1a35,#2d1b69);">
+          🎒✨
+        </div>
+        <div class="post-caption">
+          <span class="username">@zara_lifestyle</span> Guys, MORAAAATE videti ta nahrbtnik — 
+          absolutno sem zaljubljena! Je tako udoben in slog je na drugi ravni 🔥 
+          Kupila sem ga na <strong>SportStyle.si</strong> in iskreno, ne bi se vrnila po ničemer drugem. 
+          Koda za 10% popusta: <strong>ZARA10</strong> 💕<br><br>
+          <span class="hidden-ad" id="fake-5-ad">#ad </span><span class="hashtag">#lifestyle #nahrbtnik #shopping #fit #outfitcheck</span>
+        </div>
+        <div class="post-actions">
+          <span>❤️ 48.291</span>
+          <span>💬 1.204</span>
+          <span>↗️ Deli</span>
+        </div>
+        <div class="click-hint"><div class="click-hint-icon">👆</div>Klikni na del, ki te zavaja</div>
+      </div>
+    </div>
+    <div class="found-overlay" id="explain-5">
+      <div class="found-title">✅ Super oko! Skriti #ad oglas</div>
+      <div class="found-explanation">
+        Oznaka <strong>#ad</strong> je namerno napisana <strong>drobno in sivo</strong> med množico hashtagov — 
+        večina sledilcev je ne opazi. Po slovenskem in EU zakonu mora biti vsak plačani oglas 
+        <strong>jasno in vidno označen</strong> na začetku objave. Priporočilo "iskreno sem zaljubljena" 
+        zveni pristno, a vplivnežica je za objavo <strong>dobila plačilo ali brezplačen nahrbtnik</strong>.
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 6: Blagovna znamka vs vrednost -->
+  <div class="fake-card" id="card-6" data-points="25">
+    <div class="card-inner">
+      <div class="card-top-row">
+        <div class="card-question">👟 Zakaj je razlika v ceni med temi dvema supergama tako velika?</div>
+        <div class="fake-label">🔍 Klikni na zvijačo</div>
+      </div>
+      <div id="fake-6">
+        <div class="brand-compare">
+          <div class="brand-box" style="border-color:rgba(255,77,109,0.3); cursor:pointer;">
+            <div class="brand-logo">👟</div>
+            <div class="brand-name">HypeKick X Pro</div>
+            <div style="font-size:0.78rem; color:var(--muted); margin-bottom:8px;">Promovirajo: 5 YouTuberjev</div>
+            <div class="brand-price expensive">189 €</div>
+            <div class="brand-tag">Material: enako kot cenejše<br>Logotip: velik in znan</div>
+          </div>
+          <div class="brand-box" style="border-color:rgba(6,214,160,0.2);">
+            <div class="brand-logo">👟</div>
+            <div class="brand-name">BasicRun Pro</div>
+            <div style="font-size:0.78rem; color:var(--muted); margin-bottom:8px;">Brez vplivnežev</div>
+            <div class="brand-price cheap">39 €</div>
+            <div class="brand-tag">Material: podoben<br>Logotip: neznan</div>
+          </div>
+        </div>
+        <div class="click-hint"><div class="click-hint-icon">👆</div>Klikni na del, ki te zavaja</div>
+      </div>
+    </div>
+    <div class="found-overlay" id="explain-6">
+      <div class="found-title">✅ Natanko to! Plačaš za logotip, ne za kakovost</div>
+      <div class="found-explanation">
+        Draga znamka plača <strong>milijone za marketing</strong> (vplivneže, oglase, sponzorstva) — 
+        in te stroške <strong>prenesejo na ceno izdelka</strong>. Materialna in fizična kakovost 
+        superge je pogosto <strong>skoraj enaka</strong> cenejši različici. 
+        Ko kupiš drago znamko, v veliki meri plačaš za to, <strong>da si videti "cool"</strong> — 
+        kar je natanko tisto, kar oglaševanje hoče, da misliš.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SEKCIJA 3: ETIKA ===== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon ethics">🌍</div>
+    <div>
+      <div class="section-title">Hitra moda &amp; trajnost</div>
+      <div class="section-desc">Ko je cena prenizka, jo nekdo drug plača namesto tebe</div>
+    </div>
+  </div>
+
+  <!-- CARD 7: Hitra moda -->
+  <div class="fake-card" id="card-7" data-points="25">
+    <div class="card-inner">
+      <div class="card-top-row">
+        <div class="card-question">🫣 Zakaj majica za 2,50 € v resnici ni poceni?</div>
+        <div class="fake-label">🔍 Klikni na zvijačo</div>
+      </div>
+      <div id="fake-7">
+        <div class="product-card-cheap" id="fake-7-inner" style="cursor:pointer;">
+          <div class="product-top">
+            <div class="product-img">👕</div>
+            <div>
+              <div class="product-title">Trendy Summer Crop Top — Nova kolekcija</div>
+              <div class="product-price-big">2,50 €</div>
+              <div style="font-size:0.78rem; color:var(--muted); margin-top:2px; text-decoration:line-through;">9,99 €</div>
+              <div class="product-reviews">⭐⭐⭐⭐ · 12.847 ocen · 🚚 Brezplačna dostava</div>
+            </div>
+          </div>
+          <div class="product-stats">
+            <div class="stat-chip">📦 Zaloga: 9.999+</div>
+            <div class="stat-chip">🌍 Pošiljamo iz: Bangladeš</div>
+            <div class="stat-chip">⚡ Nov dizajn vsak teden</div>
+          </div>
+          <div class="fast-fashion-chain">
+            <div class="chain-step"><span class="step-icon">🧵</span>Delavec<br>0,05 €</div>
+            <div class="chain-step"><span class="step-icon">🏭</span>Tovarna<br>0,40 €</div>
+            <div class="chain-step"><span class="step-icon">✈️</span>Transport<br>0,30 €</div>
+            <div class="chain-step"><span class="step-icon">📱</span>Platforma<br>1,00 €</div>
+            <div class="chain-step"><span class="step-icon">🛒</span>Ti plačaš<br>2,50 €</div>
+          </div>
+        </div>
+        <div class="click-hint"><div class="click-hint-icon">👆</div>Klikni na del, ki te zavaja</div>
+      </div>
+    </div>
+    <div class="found-overlay" id="explain-7">
+      <div class="found-title">✅ Odlično! Nizka cena ima visoko skrito ceno</div>
+      <div class="found-explanation">
+        Ko majica stane 2,50 €, delavec v tovarni dobi <strong>samo ~0,05 €</strong>. 
+        To pomeni <strong>otroško ali prisilno delo</strong> in nevarne delovne pogoje. 
+        Poleg tega hitra moda ustvari <strong>ogromne količine odpadkov</strong> — 
+        ker so oblačila namenoma narejena slabo, jih vržeš stran po eni sezoni. 
+        Reka Ganges in podobne so zelo onesnažene od barvil modne industrije.
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 8: Lokalni vs. kitajska platforma -->
+  <div class="fake-card" id="card-8" data-points="25">
+    <div class="card-inner">
+      <div class="card-top-row">
+        <div class="card-question">🏪 Kdaj je drožji lokalni izdelek dejansko boljša izbira?</div>
+        <div class="fake-label">🔍 Klikni na zvijačo</div>
+      </div>
+      <div id="fake-8">
+        <div class="local-vs">
+          <div class="local-box" id="fake-8-inner" style="cursor:pointer;">
+            <div class="box-icon">🌐</div>
+            <div class="box-name">Kitajska platforma</div>
+            <div style="font-family:'Fredoka One',cursive; font-size:1.4rem; color:var(--green); margin:8px 0;">3,99 €</div>
+            <div class="box-fact">Čas dostave: 3–6 tednov<br>Kakovost: neznana<br>Denar gre: v tujino<br>CO₂: letalo iz Azije</div>
+          </div>
+          <div class="vs-circle">VS</div>
+          <div class="local-box local-good" style="cursor:pointer;" id="fake-8-local">
+            <div class="box-icon">🏘️</div>
+            <div class="box-name">Lokalni ustvarjalec</div>
+            <div style="font-family:'Fredoka One',cursive; font-size:1.4rem; color:var(--accent); margin:8px 0;">18 €</div>
+            <div class="box-fact">Dostava: 1–2 dni<br>Kakovost: preverjena<br>Denar ostane: v skupnosti<br>CO₂: minimalen</div>
+          </div>
+        </div>
+        <div class="click-hint"><div class="click-hint-icon">👆</div>Klikni na polje, ki te zavaja</div>
+      </div>
+    </div>
+    <div class="found-overlay" id="explain-8">
+      <div class="found-title">✅ Res je! Poceni cena je zavajajoča</div>
+      <div class="found-explanation">
+        Nizka cena se zdi privlačna, ampak <strong>skriti stroški</strong> so: čakanje tedne na dostavo, 
+        slabša kakovost, visok ogljični odtis (letalo iz Azije), in denar gre stran iz tvoje skupnosti. 
+        Ko kupiš pri <strong>lokalnem ustvarjalcu</strong>, podpiraš soseske delavce, dobiš boljši 
+        produkt in zmanjšaš onesnaževanje. Cena ni edino merilo vrednosti!
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Completion screen -->
+<div id="completion">
+  <div class="completion-emoji">🏆</div>
+  <div class="completion-title">Si pravi Digitalni Detektiv!</div>
+  <div class="completion-msg">
+    Odkril si vse <strong>manipulativne trike</strong>, ki jih podjetja skrivajo v oglasih, igrah in aplikacijah.<br><br>
+    Zdaj ko poznaš te zvijače, jih boš lažje prepoznal v resničnem življenju — in se odločal 
+    <strong>bolj premišljeno</strong>! 🧠
+  </div>
+  <button class="btn-restart" onclick="restartGame()">🔄 Igraj znova</button>
+</div>
+
+<script>
+  const TOTAL = 8;
+  let found = 0;
+  let score = 0;
+
+  // Count elements
+  document.getElementById('total-count').textContent = TOTAL;
+
+  // Map fake element IDs to their parent card
+  const fakeToCard = {
+    'fake-1': 'card-1',
+    'fake-2': 'card-2',
+    'fake-3': 'card-3',
+    'fake-4': 'card-4',
+    'fake-5': 'card-5',
+    'fake-5-ad': 'card-5',
+    'fake-6': 'card-6',
+    'fake-7-inner': 'card-7',
+    'fake-8-inner': 'card-8',
+    'fake-8-local': 'card-8',
+  };
+
+  // Animated timer for card 4
+  let timerVal = 4 * 60 + 37;
+  function updateTimer() {
+    const m = Math.floor(timerVal / 60);
+    const s = timerVal % 60;
+    const el = document.getElementById('fake-timer');
+    if (el) el.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    timerVal--;
+    if (timerVal < 0) timerVal = 4 * 60 + 37;
+  }
+  setInterval(updateTimer, 1000);
+
+  // Generic click handler
+  document.body.addEventListener('click', function(e) {
+    // find closest element with a data-id
+    let el = e.target;
+    // traverse up to find a clickable fake element
+    while (el && el !== document.body) {
+      const id = el.id;
+      if (id && fakeToCard[id]) {
+        handleFakeClick(id, fakeToCard[id]);
+        return;
+      }
+      // Also handle card clicks
+      if (el.classList.contains('fake-card') && !el.classList.contains('revealed')) {
+        // find the fake element inside and trigger it
+        const cardId = el.id;
+        const fakeId = Object.keys(fakeToCard).find(k => fakeToCard[k] === cardId);
+        if (fakeId) {
+          handleFakeClick(fakeId, cardId);
+          return;
+        }
+      }
+      el = el.parentElement;
+    }
+  });
+
+  function handleFakeClick(fakeId, cardId) {
+    const card = document.getElementById(cardId);
+    if (!card || card.classList.contains('revealed')) return;
+
+    const points = parseInt(card.dataset.points) || 20;
+    card.classList.add('revealed');
+
+    const overlay = document.getElementById('explain-' + cardId.replace('card-',''));
+    if (overlay) overlay.classList.add('visible');
+
+    // remove click hint
+    const hint = card.querySelector('.click-hint');
+    if (hint) hint.style.display = 'none';
+
+    found++;
+    score += points;
+
+    document.getElementById('found-count').textContent = found;
+    document.getElementById('score-badge').textContent = score + ' XP';
+
+    const progress = (found / TOTAL) * 100;
+    document.getElementById('progress-fill').style.width = progress + '%';
+
+    // pop-in animation for card
+    card.style.transition = 'transform 0.3s cubic-bezier(.34,1.56,.64,1)';
+    card.style.transform = 'scale(1.01)';
+    setTimeout(() => { card.style.transform = ''; }, 300);
+
+    if (found === TOTAL) {
+      setTimeout(() => {
+        document.getElementById('completion').classList.add('show');
+      }, 800);
+    }
+  }
+
+  function restartGame() {
+    found = 0;
+    score = 0;
+    document.getElementById('found-count').textContent = 0;
+    document.getElementById('score-badge').textContent = '0 XP';
+    document.getElementById('progress-fill').style.width = '0%';
+    document.getElementById('completion').classList.remove('show');
+
+    document.querySelectorAll('.fake-card').forEach(card => {
+      card.classList.remove('revealed', 'wrong-guess');
+    });
+    document.querySelectorAll('.found-overlay').forEach(o => {
+      o.classList.remove('visible');
+    });
+    document.querySelectorAll('.click-hint').forEach(h => {
+      h.style.display = '';
+    });
+  }
+</script>
+</body>
+</html>
