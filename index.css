@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500&display=swap");
 
 h1 {
-  color:#010775;
+  color:#01004E;
   flex-grow: 1;      /* To raztegne naslov čez ves razpoložljiv prostor */
   text-align: center; /* Centrira besedilo znotraj tega prostora */
   margin: 0;
@@ -29,7 +29,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #19027d;
+  background-color: #01004E;
   color: white;
 }
 
