@@ -44,10 +44,40 @@
             min-height: 100%;
             margin: 0 auto -50px;
         }
+    
+        header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-image: url('ozadje_4.png'); /* tvoja modra slika */
+                background-size: cover;
+                color: white;
+                padding: 10px 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1000;
+                height: 80px;
+            }
+
+            .header-logo {
+                height: 50px;
+            }
+
+            /* To je nujno, da vsebina ne skoči pod pasico */
+            body {
+                padding-top: 100px;
+            }
+    
     </style>
 </head>
 
 <body>
+    <header>
+        <h1 style="margin:0; font-size: 1.6rem;">Zaključni projekti Digital School</h1>
+        <img src="ds_logo.png" alt="Logo" class="header-logo">
+    </header>
 
     <h1 class="my-4">Zaključni projekti Digital School</h1>
     <div class="content">
