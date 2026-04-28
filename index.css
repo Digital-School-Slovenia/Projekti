@@ -7,6 +7,8 @@ h1 {
   flex-grow: 1;      /* To raztegne naslov čez ves razpoložljiv prostor */
   text-align: center; /* Centrira besedilo znotraj tega prostora */
   margin: 0;
+  white-space: nowrap; /* Prepreči prelom v novo vrstico */
+  font-size: 1.4rem;    /* Malenkost zmanjšaj, če je naslov še vedno predolg za zaslon */
 }
 
 body {
