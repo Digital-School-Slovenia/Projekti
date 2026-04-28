@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #544648;
+    padding-top: 50px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #8b4513; /* barva piškota */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.95); /* efekt ob kliku */
+}
+
+button:hover {
+    background-color: #a0522d;
+}
+
+.shop {
+    margin-top: 20px;
+}
+
+
+h1:hover {
+    transform: scale(0.80); /* efekt ob kliku */
+}
+
+p:hover {
+    transform: scale(0.80); /* efekt ob kliku */
+}
+
+#piškot:active {
+    transform: scale(0.70); /* efekt ob kliku */
+}
