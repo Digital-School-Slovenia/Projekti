@@ -4,6 +4,9 @@
 
 h1 {
   color:#010775;
+  flex-grow: 1;      /* To raztegne naslov čez ves razpoložljiv prostor */
+  text-align: center; /* Centrira besedilo znotraj tega prostora */
+  margin: 0;
 }
 
 body {
