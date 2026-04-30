@@ -17,6 +17,7 @@ body {
   max-width: 50em !important;
 /*  background-color: red;*/
   padding: 0 2em;
+  font-family: "Inter";
 }
 
 html,
