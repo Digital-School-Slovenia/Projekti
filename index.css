@@ -31,6 +31,8 @@ header {
     top: 10px;          /* Razmik od vrha */
     left: 10px;         /* Razmik od leve strani - tukaj nastavljaš "levo" */
     z-index: 1000;      /* Poskrbi, da je logotip vedno na vrhu */
+    height: auto;
+    width: auto;
 }
 
 footer {
