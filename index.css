@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant&family=Source+Code+Pro:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Symbols:wght@100..900&display=swap');
 
 h1 {
   color:#01004E;
@@ -34,11 +35,11 @@ footer {
 }
 
 h1 {
-  font-family: "Source Code Pro", monospace !important;
+  font-family: "Inter", monospace !important;
 }
 
 .title {
-  font-family: "Signika", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   font-size: 1.5rem;
 }
 
@@ -80,5 +81,5 @@ li.parent:hover {
   font-size: 1.5rem;
 }
 .naslovProjekta, .naslovSkupine {
-  font-family: "Source Code Pro", monospace !important;
+  font-family: "Inter", monospace !important;
 } 
