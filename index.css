@@ -84,4 +84,8 @@ li.parent:hover {
 }
 .naslovProjekta, .naslovSkupine {
   font-family: "Inter", monospace !important;
-} 
+}
+
+h3 {
+  font-size: 1;
+}
