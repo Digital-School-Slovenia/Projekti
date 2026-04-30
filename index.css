@@ -89,3 +89,7 @@ li.parent:hover {
 h3 {
   font-size: 1;
 }
+
+.header-logo {
+  height: 50px;
+}
