@@ -33,6 +33,10 @@ header {
     z-index: 1000;      /* Poskrbi, da je logotip vedno na vrhu */
 }
 
+.header-logo {
+    width: 60px;       /* Tukaj določiš poljubno širino (npr. 50px, 60px ali 80px) */
+    height: auto;      /* To ohrani pravilno razmerje slike, da se ne popači */
+    display: block;    /* Odpravi morebitne čudne razmike pod sliko */
 
 footer {
   position: fixed;
@@ -96,8 +100,4 @@ li.parent:hover {
 
 h3 {
   font-size: 1;
-}
-
-.header-logo {
-  height: 50px;
 }
