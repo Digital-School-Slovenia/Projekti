@@ -33,10 +33,6 @@ header {
     z-index: 1000;      /* Poskrbi, da je logotip vedno na vrhu */
 }
 
-.header-logo {
-    width: 50px;        /* Prilagodi velikost logotipa po želji */
-    height: auto;
-}
 
 footer {
   position: fixed;
