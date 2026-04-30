@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    position: absolute; /* To postavi logotip neodvisno od ostalega besedila */
+    position: fixed; /* To postavi logotip neodvisno od ostalega besedila */
     top: 10px;          /* Razmik od vrha */
     left: 10px;         /* Razmik od leve strani - tukaj nastavljaš "levo" */
     z-index: 1000;      /* Poskrbi, da je logotip vedno na vrhu */
