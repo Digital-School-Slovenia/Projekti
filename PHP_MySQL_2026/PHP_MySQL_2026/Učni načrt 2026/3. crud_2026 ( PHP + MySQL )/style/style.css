@@ -1,0 +1,254 @@
+/* =========================
+   RESET + OSNOVA
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   NAV
+========================= */
+nav {
+    margin-bottom: 20px;
+}
+
+nav button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav button:hover {
+    background-color: #27ae60;
+}
+
+/* =========================
+   TABLE (INDEX)
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+th {
+    text-align: left;
+    padding: 14px;
+    font-size: 15px;
+}
+
+td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f7ff;
+    transition: 0.2s;
+}
+
+/* =========================
+   BUTTONI
+========================= */
+button {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.editButton {
+    background-color: #f39c12;
+    color: white;
+}
+
+.editButton:hover {
+    background-color: #e67e22;
+}
+
+.deleteButton {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b;
+}
+
+.profileButton {
+    background-color: #3498db;
+    color: white;
+}
+
+.profileButton:hover {
+    background-color: #2980b9;
+}
+
+/* =========================
+   CONTAINER (PROFILE + FORME)
+========================= */
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.container h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+/* =========================
+   PROFILE (ROW)
+========================= */
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* =========================
+   LINK BUTTONI (PROFILE)
+========================= */
+.container a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    transition: 0.2s;
+}
+
+.container a[href*="edit"] {
+    background-color: #f39c12;
+}
+
+.container a[href*="edit"]:hover {
+    background-color: #e67e22;
+}
+
+.container a[href*="delete"] {
+    background-color: #e74c3c;
+}
+
+.container a[href*="delete"]:hover {
+    background-color: #c0392b;
+}
+
+/* =========================
+   HR
+========================= */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+/* =========================
+   FORM (ADD.PHP)
+========================= */
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* LABEL */
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* INPUT */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+}
+
+form input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* SUBMIT */
+form input[type="submit"] {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form {
+        padding: 15px;
+    }
+}

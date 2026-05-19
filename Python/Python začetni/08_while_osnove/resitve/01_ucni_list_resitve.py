@@ -1,9 +1,0 @@
-"""Rešitve učnega lista – 08 – Zanka `while` – osnove ponavljanja."""
-
-# Namen: glavna delovna rešitev za učni list tega sklopa.
-
-# Namen: kratek referenčni primer za razlago glavne ideje tega sklopa.
-
-while input("Ali je pes dobil hrano? ").lower() != "da":
-    print("🐶 WOOF! Daj mi jesti!")
-print("🐶 Končno! *munch munch* 😋")
