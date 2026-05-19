@@ -1,0 +1,69 @@
+body {
+background-color: aliceblue;
+}
+img {
+	height: 300px;
+	width: 400px;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #006777;
+  
+}
+
+.nav ul li {
+  float: left;
+}
+
+.nav ul li a {
+  display: block;
+  color: #d6faff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.nav ul li a:hover {
+  background-color: #111111;
+}
+#grid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas:
+	'nav nav'
+	'h1 h1'
+	'opis1 opis1'
+	'h5 h5'
+	'list slika1';
+	}
+.nav {
+	grid-area: nav;
+}
+#h1 {
+	grid-area: h1;
+}
+#opis1 {
+	grid-area: opis1;
+
+}
+#h5 {
+	grid-area: h5;
+}
+#list {
+	grid-area: list;
+}
+#slika1 {
+	grid-area: slika1;
+	margin-bottom: 99px;
+	margin-right: 240px;
+}
+h1 {
+	color: midnightblue;
+}
+p {
+	  font-family: monospace;
+}

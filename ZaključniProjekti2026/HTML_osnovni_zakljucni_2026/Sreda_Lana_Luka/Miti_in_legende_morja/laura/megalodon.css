@@ -1,0 +1,42 @@
+
+body {
+	background-color:aliceblue;
+  
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: steelblue;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: #d6faff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 2px solid darkslateblue; 
+}
