@@ -1,0 +1,182 @@
+body{
+ background-color: skyblue;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:skyblue;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: lightskyblue;
+}
+#grid {
+  
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+'Vidri Vodnidrsalec Raci Pijavke' 
+'Vidrislika Vodnidrsalecslika Racislika Pijavkeslika'  
+'Krap caplja Kacjipastir Žaba'
+'Krapslika capljaslika Kacjipastirslika Žabaslika'
+
+  
+
+  ;
+
+  margin-bottom: 40px;
+}
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.Vidri {
+  grid-area:Vidri;
+
+}
+.Vodnidrsalec {
+  grid-area:Vodnidrsalec;
+
+}
+
+.Raci {
+  grid-area:Raci;
+
+}
+
+.Pijavke{
+  grid-area:Pijavke;
+
+}
+
+.Krap {
+  grid-area:Krap;
+
+}
+
+.caplja {
+  grid-area:caplja;
+
+}
+.Kacjipastir {
+  grid-area:Kacjipastir;
+
+}
+.Žaba {
+  grid-area:Žaba;
+
+}
+.Vidrislika {
+  grid-area:Vidrislika;
+
+}
+.Vodnidrsalecslika {
+  grid-area:Vodnidrsalecslika;
+
+}
+
+.Racislika {
+  grid-area:Racislika;
+
+}
+
+.Pijavkeslika{
+  grid-area:Pijavkeslika;
+
+}
+
+.Krapslika {
+  grid-area:Krapslika;
+
+}
+
+.capljaslika {
+  grid-area:capljaslika;
+
+}
+.Kacjipastirslika {
+  grid-area:Kacjipastirslika;
+
+}
+.Žabaslika {
+  grid-area:Žabaslika;
+
+}
+#grid{
+  border: solid 5px lightblue;
+  background-color:steelblue;
+}
+#mokrišca{
+  background-color: lightskyblue;
+}
+
+#grid2{
+  border: solid 5px lightblue;
+  background-color:steelblue;
+}
+#grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+
+'Krap caplja Kacjipastir Žaba'
+'Krapslika capljaslika Kacjipastirslika Žabaslika'
+}
+#Krap{
+ margin-left: 60px;
+}
+#Krapslika{
+ margin-left: 20px;
+}
+#Vidri{
+ margin-left: 60px;
+}
+#Vidrislika{
+ margin-left: 20px;
+}
+
+  button {
+  border: lined thick;
+  color: wite;
+  padding: 5px 5px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: blue;
+  width: 300px;
+    height: 120px;
+    font-size: 20px;
+    margin: 20px;
+    transition: .2s linear;
+    border: 5px double rgba(163, 26, 26, 0.6);
+    border-radius: 10px;
+    font: 700 1.5em/ 1.25 ubuntu, sans-serif;
+    
+}
+button:hover {
+    background-color: rgba(35, 152, 13, 0.6);
+}
+button:hover {
+    transform: translateY(5px);
+}

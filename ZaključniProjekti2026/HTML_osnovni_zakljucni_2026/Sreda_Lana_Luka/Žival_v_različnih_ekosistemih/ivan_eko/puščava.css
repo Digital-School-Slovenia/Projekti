@@ -1,0 +1,121 @@
+#grid{
+	display: grid;
+    grid-template-columns:1fr  1fr;
+    grid-template-rows: 60px 1fr  1fr;
+    grid-template-areas: 
+    "navigacija navigacija"
+    "opis  znacilnosti"
+    "nastanek  živa-bitja";
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: sandybrown;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #CC6600;
+
+}
+ul {
+  position: sticky;
+  top: 0;
+}
+#navigacija {
+    grid-area: navigacija;
+    float: left;
+}
+body{
+    background-color:sandybrown;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    color: lightyellow;
+   
+    text-align: center;
+}
+#opis{
+  background-color:  #EDD093;
+}
+#znacilnosti{
+  background-color: #C4953B;
+}
+h3{
+  padding: 10px;
+}
+#puscavava{
+  padding: 16px;
+}
+hr{
+  color: brown;
+}
+#namib{
+  padding: 16px;
+}
+#nastanek{
+  background-color: #C4953B;
+  grid-area: nastanek;
+}
+#lol{
+  padding: 16px;
+
+}
+#živa-bitja{
+  background-color: #EDD093;
+}
+.button1 {
+  border: lined thick;
+  color: wite;
+  padding: 5px 5px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: sandybrown;
+  width: 300px;
+    height: 60px;
+    font-size: 20px;
+    margin: 20px;
+    transition: .2s linear;
+    border: 5px double rgba(163, 26, 26, 0.6);
+    border-radius: 10px;
+    font: 700 1.5em/ 1.25 ubuntu, sans-serif;
+
+}
+.button1:hover {
+    background-color: rgba(235, 152, 153, 0.6);
+}
+.button1:hover {
+    transform: translateY(5px);
+}
+
+#lol2{
+  text-align: center;
+}
+#borderimg {
+  border: 10px solid transparent; /* Required for border-image */
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+#lolololololol{
+  padding: 16px;
+}

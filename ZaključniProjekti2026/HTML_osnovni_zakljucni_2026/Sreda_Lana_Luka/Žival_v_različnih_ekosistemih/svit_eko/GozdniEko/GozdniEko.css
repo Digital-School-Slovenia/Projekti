@@ -1,0 +1,170 @@
+
+
+
+
+
+.gozd	{
+			align-items: center;
+			text-align: center;
+			align-content: center;
+			justify-content: center;
+			text-decoration-color: white;
+			color: white;
+
+
+
+		}
+
+body {
+
+		background-image: url(slike/gozdarstvo.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+		text-color: white;
+
+}
+
+
+
+h1  {		
+		color: white;
+    text-shadow: 2px 2px 4px #00FF00;
+		text-align: center;
+		color: white;
+		padding: 20px;
+
+}
+
+
+
+p   { 
+		
+    text-shadow: 2px 2px 4px #000000;
+		color: white;
+
+ }
+
+
+h2  {
+		
+    text-shadow: 2px 2px 4px #000000;
+		color: white;
+
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00FF00;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #66FF66;
+}
+
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+#grid {
+	display: grid;
+	text-align: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	'prva opis1 slika2';
+}
+
+#slike {
+	
+	display: flex;
+	align-items: center;
+
+}
+h3	{
+
+  text-shadow: 2px 2px 4px #CCFFCC;
+	color: white;
+}
+
+
+
+.sesalci {
+  background-color: #66FF66; 
+  color: white;               
+  padding: 12px 24px;         
+  border: none;            
+  border-radius: 8px;        
+  font-size: 16px;           
+  font-weight: bold;         
+  cursor: pointer;            
+  transition: 0.3s;           
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.plazilci {
+  background-color: #66FF66; 
+  color: white;               
+  padding: 12px 24px;        
+  border: none;               
+  border-radius: 8px;         
+  font-size: 16px;            
+  font-weight: bold;          
+  cursor: pointer;          
+  transition: 0.3s;          
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+.ptice {
+  background-color: #66FF66; 
+  color: white;               
+  padding: 12px 24px;         
+  border: none;               
+  border-radius: 8px;         
+  font-size: 16px;            
+  font-weight: bold;         
+  cursor: pointer;            
+  transition: 0.3s;           
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#prva, #opis1, #slika2 {
+    display: flex;         
+    flex-direction: column; 
+    align-items: center;   
+    gap: 10px;           
+    padding: 20px;
+}
+
+
+#grid img {
+    display: block;
+    margin-bottom: 10px;  
+}
