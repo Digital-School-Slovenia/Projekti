@@ -26,17 +26,24 @@ body {
 
 #meni{
 	width: 100%;
-	display: flex;
-	justify-content: center;
 	background-color: #b5bbda;
 	height: 50px;
 	margin-bottom: 20px;
 }
 
+#meni ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
 #meni a {
 	color: darkblue;
 	text-decoration: none;
-	align-self: center;
 	padding: 16px 16px;
 	font-weight: bolder;
 }
