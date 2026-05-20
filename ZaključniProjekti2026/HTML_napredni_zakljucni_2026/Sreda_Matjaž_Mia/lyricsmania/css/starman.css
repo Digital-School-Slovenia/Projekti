@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Honk:MORF@15&family=Italianno&family=Macondo&family=Mountains+of+Christmas:wght@400;700&family=Rye&display=swap');
+
+
+body{
+    font-size: x-large;
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: peachpuff;
+}
+
+img{
+    width: 15%;
+    border-radius: 67px;
+}
+h1{
+     text-align: center;
+}
+
+h3{
+     text-align: center;
+}
+
+.highlight {
+    font-size: xx-large;
+}

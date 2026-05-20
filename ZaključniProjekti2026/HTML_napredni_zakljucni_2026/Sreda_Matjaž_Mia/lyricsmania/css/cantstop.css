@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Honk:MORF@15&family=Italianno&family=Mountains+of+Christmas:wght@400;700&family=Rye&display=swap');
+
+
+
+h3{
+    text-align: center;
+     color: rgb(112, 1, 1);
+}
+
+h1{
+    text-align: center;
+    color: rgb(112, 1, 1);
+}
+
+img{
+    align-self: auto;
+    width: 15%;
+    border-radius: 67px;
+}
+
+body{
+    font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(24, 8, 1);
+  font-size: x-large;
+}
+
+.highlight {
+    font-size: xx-large;
+}

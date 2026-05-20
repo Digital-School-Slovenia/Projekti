@@ -1,0 +1,43 @@
+ body {
+ 	margin: 0;
+ 	background-color: s;
+}
+
+header {
+	background-color: darkblue;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+section{
+	padding: 20px;
+	margin: 10px;
+	background-color: white;
+	border-radius: 15px;
+}
+
+h2{
+	color: red;
+}
+
+.sven{
+	height: 250px;
+	width: auto;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+.1sven{
+	height: 250px;
+	width: auto;
+	border-radius: 10px;
+}
+
+.2sven{
+	height: 250px;
+	width: auto;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+

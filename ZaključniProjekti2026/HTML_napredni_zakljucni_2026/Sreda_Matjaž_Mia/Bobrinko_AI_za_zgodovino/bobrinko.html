@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>BOBRINKO.AI</title>
+</head>
+<body style="font-family: Arial; text-align:center; background:#0f172a; color:white; padding:40px;">
+
+    <h1>🤖 BOBRINKO.AI</h1>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/American_Beaver.jpg"
+         width="250" style="border-radius:20px;">
+
+    <p>Vprašaj karkoli!</p>
+
+    <input type="text" id="question" placeholder="Vprašaj karkoli..."
+           style="padding:10px; width:60%;">
+    <button onclick="getAnswer()" style="padding:10px;">Vprašaj</button>
+
+    <h2 id="answer" style="margin-top:30px; color:#38bdf8;"></h2>
+
+    <script>
+        async function getAnswer() {
+            let q = document.getElementById("question").value;
+            let answerBox = document.getElementById("answer");
+
+            answerBox.innerHTML = "⏳ Razmišljam...";
+
+            try {
+                let response = await fetch("https://api.openai.com/v1/chat/completions", {
+                    method: "POST",
+                    headers: {
+                        "Authorization": "Bearer TUKAJ_TVOJ_API_KLJUC",
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        model: "gpt-4o-mini",
+                        messages: [
+                            { role: "system", content: "Ti si BOBRINKO.AI, prijazen AI bober 🦫." },
+                            { role: "user", content: q }
+                        ]
+                    })
+                });
+
+                let data = await response.json();
+                answerBox.innerHTML = "👉 " + data.choices[0].message.content;
+
+            } catch (error) {
+                answerBox.innerHTML = "❌ Napaka (verjetno nimaš API ključa)";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+ 	margin: 0;
+ 	background-color: s;
+}
+
+header {
+	background-color: darkblue;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+section{
+	padding: 20px;
+	margin: 10px;
+	background-color: white;
+	border-radius: 15px;
+}
+
+h2{
+	color: red;
+}
+

@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+
+header {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+.Liam2 {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.Liam21 {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.Liam22 {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+    position: sticky;
+    bottom: 5px;
+    right: 10px;
+}
+
+@keyframes vesela-animacija {
+    0%, 100% {
+        transform: translateX(-10px) rotate(-15deg);
+    }
+    50% {
+        transform: translateX(10px) rotate(15deg);
+    }
+}
+
+.Liam21:hover {
+    animation: vesela-animacija 1.5s infinite;
+}

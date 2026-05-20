@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+
+header {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+h2 {
+    color: darkred;
+}
+
+.Liam1 {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.Liam12 {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.Liam13 {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+    position: sticky;
+    bottom: 5px;
+    right: 10px;
+}
+
+@keyframes vesela-animacija {
+    0%, 100% {
+        transform: translateX(-10px) rotate(-15deg);
+    }
+    50% {
+        transform: translateX(10px) rotate(15deg);
+    }
+}
+
+.Liam12:hover {
+    animation: vesela-animacija 1.5s infinite;
+}
+
+
+
+
+
+
+
+
+
+#telo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    border-radius: 200px 200px 20px 20px;
+    border: 5px solid;
+}
+
+.barva {
+    background-color: #3305a8;
+}
+
+.oko {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: red;
+}
+
+#oko {
+    transform: translate(-50%, -110%);
+}
+
+.notranjost-ocesa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+#notranjost-ocesa {
+    transform: translate(-60px, -86px);
+}
+
+.noga {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 200px;
+    border-radius: 20px;
+    border: 5px solid;
+    z-index: -100;
+    
+}
+
+#noga1 {
+    transform: translate(-150px, 100px);
+    animation: animacija-noga1 1s infinite;
+}
+
+#noga2 {
+    transform: translate(40px, 100px);
+    animation: animacija-noga2 1s infinite;
+}
+
+.roka {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 200px;
+    border-radius: 20px;
+    border: 5px solid;
+    z-index: -100;
+}
+
+#roka1 {
+    transform: translate(178px, -105px) rotate(45deg);
+}
+
+#roka2 {
+    transform: translate(-287px, -105px) rotate(-45deg);
+}
+
+
+@keyframes animacija-noga1 {
+    0% {
+        transform: translate(-150px, 100px);    
+    }
+    50% {
+        transform: translate(-150px, 50px);
+    }
+    100% {
+        transform: translate(-150px, 100px);
+    }
+}
+
+@keyframes animacija-noga2 {
+    0% {
+        transform: translate(40px, 50px);   
+    }
+    50% {
+        transform: translate(40px, 100px);
+    }
+    100% {
+        transform: translate(40px, 50px);
+    }
+}
+
+.posastko {
+    transform: scale(0.3);
+    position: fixed;
+    top: 70px;
+    right: 125px;
+}

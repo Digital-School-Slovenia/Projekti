@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+
+h3 {
+    text-align: center;
+    color: rgb(185, 179, 179);
+    font-family: "Eater", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(185, 179, 179);
+    font-family: "Eater", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(185, 179, 179);
+    font-family: "Eater", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+img {
+  display: block;
+  margin: left;
+  width: 20%;
+}
+
+body {
+
+    background-color: rgb(0, 0, 0);
+
+}

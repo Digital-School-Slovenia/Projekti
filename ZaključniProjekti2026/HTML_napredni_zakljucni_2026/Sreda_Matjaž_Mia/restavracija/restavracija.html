@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Restavracija</title>
+<link rel="stylesheet" href="restavracija.css" />
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>🍔 Restavracija</h1>     
+
+     <div class="header">
+    <div class="location">
+        <span class="city">Ljubljana</span>
+        <a href="tel:012323200" class="phone">01 23 23 200</a>
+        <span class="call-text">Call</span>
+    </div>
+</div>
+
+<nav class="menu-nav">
+    <a href="#" class="active" onclick="setCategory(event,'all')">Vse</a>
+    <a href="#" onclick="setCategory(event,'pizza')">Pizza</a>
+    <a href="#" onclick="setCategory(event,'burger')">Burger</a>
+    <a href="#" onclick="setCategory(event,'pijača')">Pijača</a>
+    <a href="#" onclick="setCategory(event,'drugo')">Drugo</a>
+    <a href="#" onclick="setCategory(event,'ocvrto')">Ocvrto</a>
+    <a href="#" onclick="setCategory(event,'testenine')">Testenine</a>
+</nav>
+                                       
+                               
+
+    <div class="header-controls">
+      <button onclick="enterManageMode()">Upravljaj jedi 🔒</button>
+      <button onclick="toggleManageMode()" id="manageToggleBtn" style="display:none">
+        Izhod iz urejanja ❌
+      </button>
+      <button onclick="toggleAddPanel()" id="addBtn" style="display:none">Dodaj jed</button>
+      <button onclick="toggleCartPanel()">Košarica (<span id="cartCount">0</span>)</button>
+      <button onclick="toggleSettingsPanel()">Nastavitve ⚙️</button>
+    </div>
+  </header>
+
+  <section class="filters">
+    <input id="search" type="text" placeholder="Išči..." oninput="renderMenu()" />
+
+    <label>Max cena: <span id="priceVal">20</span> €</label>
+    <input type="range" id="priceRange" min="0" max="100" value="20" />
+  </section>
+
+  <section id="menu" class="menu"></section>
+
+  <!-- ADD / EDIT -->
+  <aside id="addPanel" class="side-panel">
+    <h2>Dodaj/Uredi jed</h2>
+    <label>Ime:</label><input id="name" type="text" />
+    <label>Opis:</label><input id="desc" type="text" />
+    <label>Cena (€):</label><input id="price" type="number" />
+    <label>Slika URL:</label><input id="image" type="text" />
+    <label>Kategorija:</label>
+    <select id="category">
+      <option value="pizza">Pizza</option>
+      <option value="burger">Burger</option>
+      <option value="pijača">Pijača</option>
+       <option value="drugo">Drugo</option>
+       <option value="testenine">Testenine</option>
+    </select>
+    <label>Ocena (1-5):</label><input id="rating" type="number" min="1" max="5" value="3" />
+
+    <div class="buttons-row">
+      <button onclick="addFood()">Shrani</button>
+      <button onclick="toggleAddPanel()">Prekliči</button>
+    </div>
+  </aside>
+
+  <!-- CART -->
+  <aside id="cartPanel" class="side-panel">
+    <h2>Košarica</h2>
+    <div id="cart"></div>
+    <p id="total"></p>
+    <button onclick="order()" class="order-btn">Naroči</button>
+    <button onclick="toggleCartPanel()" class="order-zapri">Zapri</button>
+  </aside>
+
+  <!-- SETTINGS -->
+  <aside id="settingsPanel" class="side-panel">
+    <h2>Nastavitve</h2>
+
+    <label>
+      Dark mode
+      <input type="checkbox" id="darkMode" />
+    </label>
+
+    <div id="adminSettings" style="display:none">
+      <hr />
+      <label>Spremeni admin geslo:</label>
+      <input id="newAdminPass" type="password" placeholder="Novo geslo" />
+      <button onclick="changePassword()">Shrani geslo</button>
+
+      <hr />
+      <button onclick="exportJSON()">Shrani jedi v JSON</button>
+      <input type="file" id="importJSON" accept=".json" onchange="importJSON(event)" />
+    </div>
+
+    <button onclick="toggleSettingsPanel()">Zapri</button>
+  </aside>
+
+</div>
+
+<script src="restavracija.js"></script>
+</body>
+</html>
+

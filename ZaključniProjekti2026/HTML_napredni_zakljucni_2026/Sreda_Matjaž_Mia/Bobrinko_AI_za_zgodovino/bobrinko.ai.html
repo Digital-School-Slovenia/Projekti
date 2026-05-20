@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BOBRINKO.AI</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:'Inter',sans-serif;
+    background:#0b1020;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px;
+    position:sticky;
+    top:0;
+    background:rgba(11,16,32,1);
+    border-bottom:1px solid rgba(255,255,255,1);
+    z-index:100;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:800;
+    color:#8ab4ff;
+}
+
+.bobrinko{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+    padding:80px 8%;
+}
+
+.bobrinko-text{
+    flex:1;
+    min-width:320px;
+}
+
+.bobrinko-text h1{
+    font-size:clamp(3rem,7vw,6rem);
+    line-height:1;
+    margin-bottom:25px;
+}
+
+.bobrinko-text span{
+    background:linear-gradient(135deg,#60a5fa,#a78bfa);
+}
+
+.bobrinko-text p{
+    font-size:1.2rem;
+    line-height:1.8;
+    color:#d0d9ff;
+    max-width:650px;
+}
+
+.bobrinko-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.bobrinko-image img{
+    width:80%;
+    border-radius:30px;
+    box-shadow:0 0 60px rgba(96,165,250,0.35);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
+}
+
+.ai-section{
+    padding:40px;
+}
+
+.ai-box{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:28px;
+    padding:30px;
+}
+
+.ai-box h2{
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.chat{
+    background:#11182f;
+    border-radius:20px;
+    height:400px;
+    overflow-y:auto;
+    padding:20px;
+    margin-bottom:20px;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.message{
+    margin-bottom:18px;
+    padding:16px;
+    border-radius:18px;
+    max-width:90%;
+    line-height:1.7;
+}
+
+.user{
+    background:#2563eb;
+    margin-left:auto;
+}
+
+.bot{
+    background:#1e293b;
+    color:#dce7ff;
+}
+
+.input-area{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+input{
+    flex:1;
+    padding:16px;
+    border:none;
+    border-radius:16px;
+    background:#0f172a;
+    color:white;
+    font-size:24px;
+}
+
+button{
+    padding:16px;
+    border:none;
+    border-radius:16px;
+    background:#7c3aed;
+    color:white;
+    cursor:pointer;
+    font-size:24px;
+}
+
+button:hover{
+    background:#3b82f6;
+}
+
+footer{
+    padding:35px;
+    text-align:center;
+    color:#8da2c7;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid"></div>
+
+<header>
+    <div class="logo">BOBRINKO.AI</div>
+</header>
+
+<section class="bobrinko">
+
+    <div class="bobrinko-text">
+        <h1>
+            Spoznaj <br>BOBRINKO.AI
+        </h1>
+
+        <p>
+            Pametni AI bober za zgodovino,
+            učenje in odgovore.
+            Vprašaj ga karkoli o imperijih,
+            vojnah ali državah
+        </p>
+    </div>
+
+    <div class="bobrinko-image">
+        <img 
+        src="bober.jpg"
+        alt="Bober">
+    </div>
+
+</section>
+
+<section class="ai-section">
+
+    <div class="ai-box">
+
+        <h2>Vprašaj BOBRINKO.AI</h2>
+
+        <div class="chat" id="chat">
+
+            <div class="message bot">
+
+                <div style="display:flex;gap:14px;align-items:flex-start;">
+
+                    <img 
+                    src="bober.jpg"
+                    style="
+                    width:60px;
+                    height:60px;
+                    object-fit:cover;
+                    border-radius:16px;
+                    border:2px solid #60a5fa;
+                    ">
+
+                    <div>
+                        Živjo Jaz sem BOBRINKO.AI.<br><br>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input type="text" id="question" placeholder="Napiši vprašanje...">
+
+            <button onclick="askAI()">
+                Vprašaj
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    c 2026 BOBRINKO.AI
+</footer>
+
+<script>
+
+function askAI() {
+
+    const input = document.getElementById("question");
+    const chat = document.getElementById("chat");
+
+    const question = input.value.trim();
+
+    if(question === "") return;
+    // ce ni vprasanja se ne zgodi nič
+
+    // uporabnik
+    const userMessage = document.createElement("div");
+    userMessage.className = "message user";
+    userMessage.innerText = question;
+
+    chat.appendChild(userMessage);
+
+    const q = question.toLowerCase();  //spremeni crke v male tiskane
+
+    let answer = "";
+
+    // RIMSKI IMPERIJ
+    if(
+        q.includes("rimski imperij") ||
+        q.includes("rim")
+    ){
+
+        answer = `
+Rimski imperij je bil ena največjih civilizacij v zgodovini.
+Nastal je leta 27 pr. n. št. pod cesarjem Avgustom.
+Rimljani so zgradili ceste, akvadukte in mogočno vojsko.
+Imperij je obsegal velik del Evrope, severne Afrike in Bližnjega vzhoda.
+<a href="./Liam1.html" target="_blank">Stran o rimskem imperiju!</a>
+`;
+
+    }
+
+    // NAPOLEON
+    else if(
+        q.includes("napoleon") ||
+        q.includes("napoleonove vojne")
+    ){
+
+        answer = `
+Napoleonove vojne so trajale med letoma 1803 in 1815.
+Vodila jih je Francija pod Napoleonom Bonapartom.
+Napoleon je osvojil velik del Evrope,
+a je bil poražen pri Waterlooju leta 1815.
+<a href="./meni/zakljucniprojekt.html" target="_blank">Stran o napoleonskih vojnah.</a>
+`;
+
+    }
+
+    // PERZIJA
+    else if(
+        q.includes("perzija") ||
+        q.includes("perzijski imperij") ||
+        q.includes("perzijske vojne") 
+    ){
+
+        answer = `
+Perzija je bil velik starodavni imperij
+na območju današnjega Irana.
+Znana je bila po bogastvu,
+veliki vojski in slavnem kralju Kiru Velikem.
+<a href="./Liam2.html" target="_blank">Stran o perzijskem imperiju!</a>
+`;
+
+    }
+
+    // WW1
+    else if(
+        q.includes("ww1") ||
+        q.includes("prva svetovna vojna") ||
+        q.includes("1 svetovna vojna")
+    ){
+
+        answer = `
+Prva svetovna vojna je trajala od leta 1914 do 1918.
+Začela se je po atentatu na Franca Ferdinanda v Sarajevu.
+V vojni so sodelovale velike evropske sile.
+Uporabljali so tanke, mitraljeze in bojne pline.
+<a href="./zakljucni projekt.html" target="_blank">Stran o ww1!</a>
+`;}
+
+    // WW2
+    else if(
+        q.includes("ww2") ||
+        q.includes("druga svetovna vojna") ||
+        q.includes("2 svetovna vojna")
+    ){
+
+        answer = `
+Druga svetovna vojna je trajala od leta 1939 do 1945.
+Začela se je po napadu Nemčije na Poljsko.
+V vojni so sodelovale velike evropske sile.
+<a href="./david_zaklucni.html" target="_blank">Stran o ww2!</a>
+`;
+
+    }
+
+    // SLOVENIJA
+    else if(q.includes("slovenija")){
+
+        answer = `
+Slovenija je država v srednji Evropi.
+Glavno mesto je Ljubljana.
+Znana je po Alpah, Bledu in jami Postojna.
+`;
+
+    }
+
+    // KDO SI
+    else if(q.includes("kdo si")){
+
+        answer = `
+Jaz sem BOBRINKO.AI
+Tvoj AI pomočnik za zgodovino,
+učenje in odgovore.
+`;
+
+    }
+
+    // DEFAULT
+    else{
+
+        answer = `
+BOBRINKO.AI še nima odgovora na to vprašanje.
+Dodaj več znanja v JavaScript kodi,
+da postane še pametnejši.
+`;
+
+    }
+
+    // odgovor AI
+    setTimeout(() => {
+
+        const botMessage = document.createElement("div"); //prazna div znacka
+
+        botMessage.className = "message bot"; //doda razrede
+
+        botMessage.innerHTML = `
+
+        <div style="display:flex;gap:14px;align-items:flex-start;">
+
+            <img 
+            src="bober.jpg"
+            style="
+            width:60px;
+            height:60px;
+            object-fit:cover;
+            border-radius:16px;
+            border:2px solid #60a5fa;
+            ">
+
+            <div>
+                ${answer}
+            </div>
+
+        </div>
+        `;
+
+        chat.appendChild(botMessage); //doda odgovor na stran
+
+        chat.scrollTop = chat.scrollHeight;
+
+    }, 3000); //zgoraj imamo set timeout ki bo po 3 sekundah sprozil odgovor
+
+    input.value = "";
+}
+
+// ENTER tipka
+document.getElementById("question")
+.addEventListener("keypress", function(e){
+
+    if(e.key === "Enter"){
+        askAI();
+    }
+
+});
+
+</script>
+
+</body>
+</html>

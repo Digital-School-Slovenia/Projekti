@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+h3 {
+    text-align: center;
+    color: white;
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+img {
+  display: block;
+  margin: left;
+  width: 20%;
+}
+
+body {
+
+    background-color: rgb(77, 8, 8);
+
+}
