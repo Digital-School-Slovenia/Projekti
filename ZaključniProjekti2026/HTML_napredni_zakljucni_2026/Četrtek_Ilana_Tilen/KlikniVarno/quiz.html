@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz</title>
+	<style>
+
+
+
+input[type="radio"] {
+    margin:0 auto;
+    display: block;
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(0deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%),
+                      -webkit-linear-gradient(90deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%);
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.8),
+                0 0 0 1px hsla(0,0%,0%,.6),
+                0 2px 3px hsla(0,0%,0%,.6),
+                0 4px 3px hsla(0,0%,0%,.4),
+                0 6px 6px hsla(0,0%,0%,.2),
+                0 10px 6px hsla(0,0%,0%,.2);
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    
+    position: relative;
+    width: 15px;
+    -webkit-appearance: none;
+}
+input[type="radio"]:after {
+    background-color: #444;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+                0 1px 1px hsla(0,0%,100%,.8);
+    content: '';
+    display: block;
+    height: 7px;
+    left: 4px;
+    position: relative;
+    top: 4px;
+    width: 7px;
+}
+input[type="radio"]:checked:after {
+    background-color: #f66;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+                inset 0 2px 2px hsla(0,0%,100%,.4),
+                0 1px 1px hsla(0,0%,100%,.8),
+                0 0 2px 2px hsla(0,70%,70%,.4);
+}
+
+body {
+    background-color: aliceblue;
+}
+
+
+
+button {
+    margin-right: 75px;
+    margin-top: 8%;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #4f98c2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #4f98c2;
+    background-color: white;
+    border: 1 px solid #4f98c2;
+}
+
+#score {
+    font-size: 30px;
+    color: darkslategray;
+}
+		body{
+			display: flex;
+  justify-content: center;
+		}
+		body {
+  font-family: Arial, sans-serif;
+  
+}
+
+#quiz {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #66ebf0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+}
+.hidden{
+    visibility: hidden;
+}
+#question {
+  margin-bottom: 20px;
+}
+
+#options {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: rgb(227, 238, 10), 245, 161 ;
+  color: #131313;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8f8d8d;
+}
+
+    </style>
+
+</head>
+
+
+
+<body>
+   
+    <div class="container">
+
+        <div id="quiz-container">
+
+            
+      <div id="question-number" class="question-number"></div>
+
+           
+            <div id="question-text" class="question-text"></div>
+
+            
+            <form id="quiz-form">
+                                <div id="options-container" class="options-container"></div>
+
+                <button type="button" id="next-btn" class="btn">Next</button>
+            </form>
+        </div>
+
+       
+        <div class="hidden" id="results-container" >
+           
+
+            <h2>Results</h2>
+
+            <div id="results-summary"></div>
+
+            <button type="button" id="show-answers-btn" class="btn btn-secondary">View My Answers</button>
+             <button type="button" id="restart-btn" class="btn">Start Over</button>
+            <div id="answers-review" class="hidden"> 
+
+
+            </div>
+
+
+
+  
+            
+        </div>
+    </div>
+
+</body>
+</html>
+
+      <hr>
+
+      <script>
+      
+var allQuestions = [
+   
+    {
+        question: "Dobil si pismo z linkom od neznanega pošiljatelja.Kaj boš naredil?",
+        options: ["Odprl link", "Vprašal prijatelja", "Povedal odrasli osebi,ampak vseeno odprl link", "Poveš odrasli osebi in blokiraš pošiljatelja"],
+        correctAnswer: 3
+    },
+    {
+        question: "Komu lahko zaupaš svoje osebne podatke?",
+        options: ["Družini", "Naj prijatelju", "Nikomur", "Vsem"],
+        correctAnswer: 2
+    },
+    {
+        question: "Kaj je google",
+        options: ["Razpredelnica", "Brskalnik", "Iskalnik", "Vse od naštetega"],
+        correctAnswer: 1
+    },
+    {
+        question: "Kako vpn zaščiti tvoje podatke?",
+        options: ["Nikakor", "Anonimno iskanje", "Šifriranje podatkov", "Ogrozi tvojo zasebnost"],
+        correctAnswer: 2
+    },
+    {
+        question: "kaj je spletno nasilje?",
+        options: ["Trpincenje,ustrahovanje", "Zdrava navada", "Šport", "Šala"],
+        correctAnswer: 0
+    },
+    {
+        question: "Kdo večinoma izavaja spletno nasilje?",
+        options: ["Odrasli", "Babice", "Nasjtniki oziroma medvrstniki", "Otroci >5"],
+        correctAnswer: 2
+    },
+    {
+        question: "Kaj je postal internet danes?",
+        options: ["Šala","Neprogrešljiv del vsakdana", "Nič od tega", "Beležnica"],
+        correctAnswer: 1
+    },
+    {
+        question: "Kaj je prva zdrava spletna navada?",
+        options: ["Jesti sadje", "Žaljivi komentariji", "Uravnoteženje časa na spletu", "67"],
+        correctAnswer: 2
+    },
+    {
+        question: "Kaj je kratica UI?",
+        options: ["Pametna Inteligenca", "Umetna Inteligenca", "Pametni Robot", "Nič od tega"],
+        correctAnswer: 1
+    },
+    {
+        question: "Kaj je Deepfake??",
+        options: ["AI video ali zvočni zapis, ki je bil narejen v pomoč ljudem.", "AI video ali zvočni zapis generator za tiktok... videje", "Nič od tega", "AI video ali zvočni zapis, ki je bil narejen za manipulacijo ljudi."],
+        correctAnswer: 3
+    },
+        
+    
+    {
+        question: "AI je bil narejen za ustrahovanje?",
+        options: ["Mogoče", "Da", "Ne", "Nevem"],
+        correctAnswer: 2
+    },
+    {
+        question: "Ali je širjenje novic narejenih od AI dobro?",
+        options: ["Ne", "Nevem", "Mogoče", "Da"],
+        correctAnswer: 0
+    },
+    {
+        question: "Katero od teh gesel je najvarnejše?",
+        options: ["imepriimek", "1234", "abcde", "T34m r0ck3T"],
+        correctAnswer: 3
+    },
+    
+    
+];
+
+var selectedQuestions = [];
+var currentQuestionIndex = 0;
+
+
+var quizContainer = document.getElementById('quiz-container');
+var resultsContainer = document.getElementById('results-container');
+var questionNumber = document.getElementById('question-number');
+var questionText = document.getElementById('question-text');
+var optionsContainer = document.getElementById('options-container');
+var nextBtn = document.getElementById('next-btn');
+
+var showAnswersBtn = document.getElementById('show-answers-btn');
+var answersReview = document.getElementById('answers-review');
+var restartBtn = document.getElementById('restart-btn');
+var resultsSummary = document.getElementById('results-summary');
+
+function initQuiz() {
+
+    currentQuestionIndex = 0;
+
+    var numQuestions = 10;
+
+   
+    var questionsCopy = [];
+   
+    for (var i = 0; i < allQuestions.length; i++) {
+       
+        questionsCopy.push(allQuestions[i]);
+    }
+
+  
+    for (var i = questionsCopy.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+       
+        var temp = questionsCopy[i];
+        questionsCopy[i] = questionsCopy[j];
+        questionsCopy[j] = temp;
+    }
+
+   
+    selectedQuestions = [];
+    for (var i = 0; i < numQuestions; i++) {
+        var q = questionsCopy[i];
+       
+        var newQuestion = {
+            question: q.question,
+            options: q.options,
+            correctAnswer: q.correctAnswer,
+            userAnswer: null,
+            shuffledOptions: []
+        };
+        selectedQuestions.push(newQuestion);
+    }
+
+
+    for (var i = 0; i < selectedQuestions.length; i++) {
+        var q = selectedQuestions[i];
+
+        var optionsWithIndex = [];
+        for (var j = 0; j < q.options.length; j++) {
+            optionsWithIndex.push({
+                text: q.options[j],
+                originalIndex: j
+            });
+        }
+
+
+        for (var j = optionsWithIndex.length - 1; j > 0; j--) {
+            var k = Math.floor(Math.random() * (j + 1));
+            var temp = optionsWithIndex[j];
+            optionsWithIndex[j] = optionsWithIndex[k];
+            optionsWithIndex[k] = temp;
+        }
+
+        q.shuffledOptions = optionsWithIndex;
+    }
+
+    quizContainer.classList.remove('hidden');
+    resultsContainer.classList.add('hidden');
+    answersReview.classList.add('hidden');
+
+   
+    showQuestion();
+}
+
+
+function showQuestion() {
+    var question = selectedQuestions[currentQuestionIndex];
+
+
+    questionNumber.textContent = (currentQuestionIndex + 1) + ' / ' + selectedQuestions.length;
+
+
+    questionText.textContent = question.question;
+
+
+    optionsContainer.innerHTML = '';
+
+    for (var i = 0; i < question.shuffledOptions.length; i++) {
+        var option = question.shuffledOptions[i];
+
+    
+        var optionDiv = document.createElement('div');
+        
+        optionDiv.className = 'option';
+
+    
+        var radio = document.createElement('input');
+        radio.type = 'radio';
+        radio.name = 'answer';
+        radio.id = 'option-' + i;
+        radio.value = option.originalIndex;
+
+        
+        var label = document.createElement('label');
+        label.htmlFor = 'option-' + i;
+        label.textContent = option.text;
+
+     
+        optionDiv.appendChild(radio);
+        optionDiv.appendChild(label);
+
+       
+        optionDiv.addEventListener('click', function() {
+           
+            var radioInside = this.querySelector('input[type="radio"]');
+            radioInside.checked = true;
+        });
+
+        optionsContainer.appendChild(optionDiv);
+    }
+
+   
+    nextBtn.disabled = false;
+}
+
+nextBtn.addEventListener('click', function() {
+    var selectedOption = document.querySelector('input[name="answer"]:checked');
+
+    if (!selectedOption) {
+        alert('Please select an answer!');
+        return;
+    }
+
+    selectedQuestions[currentQuestionIndex].userAnswer = parseInt(selectedOption.value);
+
+    currentQuestionIndex = currentQuestionIndex + 1;
+
+    if (currentQuestionIndex < selectedQuestions.length) {
+        showQuestion();
+    } else {
+        showResults();
+    }
+});
+
+function showResults() {
+    
+
+    quizContainer.classList.add('hidden');
+
+    resultsContainer.classList.remove('hidden');
+
+    var correctCount = 0;
+    for (var i = 0; i < selectedQuestions.length; i++) {
+        var q = selectedQuestions[i];
+        if (q.userAnswer === q.correctAnswer) {
+            correctCount = correctCount + 1;
+        }
+    }
+
+    var totalQuestions = selectedQuestions.length;
+    var percentage = Math.round((correctCount / totalQuestions) * 100);
+
+   
+
+   
+    
+
+    resultsSummary.innerHTML =
+        '<div class="result-item">Correct answers: <strong>' + correctCount + ' of ' + totalQuestions + '</strong></div>' +
+        '<div class="result-item">Percentage: <strong>' + percentage + '%</strong></div>' +
+        '<div class="result-item">Completion time: <strong>' + timeString + '</strong></div>';
+}
+
+showAnswersBtn.addEventListener('click', function() {
+    if (answersReview.classList.contains('hidden')) {
+        showAnswersReview();
+        answersReview.classList.remove('hidden');
+        showAnswersBtn.textContent = 'Hide Answers';
+    } else {
+        answersReview.classList.add('hidden');
+        showAnswersBtn.textContent = 'View My Answers';
+    }
+});
+
+function showAnswersReview() {
+    answersReview.innerHTML = '';
+
+    for (var i = 0; i < selectedQuestions.length; i++) {
+        var q = selectedQuestions[i];
+
+        var reviewDiv = document.createElement('div');
+        reviewDiv.className = 'review-question';
+
+        var questionTitle = document.createElement('div');
+        questionTitle.className = 'review-question-text';
+        questionTitle.textContent = (i + 1) + '. ' + q.question;
+        reviewDiv.appendChild(questionTitle);
+
+        var correctOption = document.createElement('div');
+        correctOption.className = 'review-option correct-answer';
+        correctOption.textContent = '✓ Correct answer: ' + q.options[q.correctAnswer];
+        reviewDiv.appendChild(correctOption);
+
+        if (q.userAnswer !== q.correctAnswer) {
+            var userOption = document.createElement('div');
+            userOption.className = 'review-option wrong-answer';
+            userOption.textContent = '✗ You selected: ' + q.options[q.userAnswer];
+            reviewDiv.appendChild(userOption);
+        }
+
+        answersReview.appendChild(reviewDiv);
+    }
+}
+
+restartBtn.addEventListener('click', function() {
+    initQuiz();
+});
+
+window.addEventListener('load', function() {
+    initQuiz();
+});
+
+      </script>
+</body>
+
+</div>
+</body>
+</html>
