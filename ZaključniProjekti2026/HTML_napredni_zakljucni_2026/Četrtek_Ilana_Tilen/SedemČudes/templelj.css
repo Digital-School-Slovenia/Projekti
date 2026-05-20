@@ -1,0 +1,14 @@
+h1 {
+	margin: 12.5px;
+	padding: 2px;
+}
+p {
+	margin: 12.5px;
+	padding: 2px;
+}
+#tempelj {
+	float: left;
+}
+#unecentemplej {
+	float: right;
+}

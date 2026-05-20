@@ -1,0 +1,65 @@
+
+body{
+	background-image: url("sedmi.jpeg");
+	
+}
+
+p{
+	color: #F0E68C;
+}
+
+h1{
+	color: #F0E68C;
+}
+
+.links {
+	background-color: #EEE8AA ;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	border: 3px solid #00014e;
+
+	position: sticky;
+	top: 0;
+
+}
+.links li{
+	background-color: #FFFFE0;
+
+	margin: 10px;
+	padding: 20px;
+
+	font-size: 15px;
+	color: #FFFFE0;
+
+	width: 80px;
+	height: 40px;
+
+	border: 2px solid #00014e;
+	list-style-type: none;
+
+	transform: scale(1);
+	transition: .5s ease-in-out;
+
+	text-shadow:
+                -0.5px -0.5px 0 #000,
+                0.5px -0.5px 0 #000,
+                -0.5px 0.5px 0 #000,
+                0.5px 0.5px 0 #000,
+                -1px 0.5px 0 #000,
+                1px 0.5px 0 #000,
+                0.5px -1px 0 #000,
+                0.5px 1px 0 #000;
+}
+
+
+.links li:hover {
+	transform: scale(1.1);
+	background-color: #F0E68C;
+}
+a {
+	text-decoration: none;  
+	color: #FFD700;
+}
+

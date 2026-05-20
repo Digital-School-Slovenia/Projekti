@@ -1,0 +1,83 @@
+ body {
+     background-image: url("Ozadje.jpg");
+     background-size: 1300px;      
+     background-repeat: no-repeat; 
+     background-position: center; 
+     background-position: top center;
+     color: white;
+     margin: 60px;
+     font-size: 18px;
+     padding-top: 70px;
+     text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000,
+                -2px 1px 0 #000,
+                2px 1px 0 #000,
+                1px -2px 0 #000,
+                1px 2px 0 #000;
+    }
+
+p{
+     color: #EEE8AA;
+}
+
+a {
+   color: #EEE8AA;
+   text-decoration: none; 
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 140px;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+
+
+.links {
+background-color: #EEE8AA ;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+border: 3px solid #00014e;
+
+position: absolute;
+top: 0;
+
+}
+.links li{
+background-color: #FAFAD2;
+
+margin: 10px;
+padding: 20px;
+
+font-size: 15px;
+color: #FFFFE0;
+
+width: 70px;
+height: 40px;
+
+border: 2px solid #00014e;
+
+transform: scale(1);
+transition: .5s ease-in-out;
+list-style-type: none;
+}
+
+.links li:hover {
+transform: scale(1.1);
+background-color: #FFE4B5;
+
+
+}
+ 

@@ -1,0 +1,148 @@
+body{
+	background-image: url("ozadje.jpg");
+	background-repeat: no-repeat;
+	background-size: 2500px;
+	background-position: top-center;
+	font-family: "Gill Sans", sans-serif;
+	text-align: start;
+
+
+}
+.links {
+	background-color: #EEE8AA ;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	border: 3px solid #00014e;
+
+	position: sticky;
+	top: 0;
+
+}
+.links li{
+	background-color: #FFFFE0;
+
+	margin: 10px;
+	padding: 20px;
+
+	font-size: 15px;
+	color: #FFFFE0;
+
+	width: 80px;
+	height: 40px;
+
+	border: 2px solid #00014e;
+	list-style-type: none;
+
+	transform: scale(1);
+	transition: .5s ease-in-out;
+
+	text-shadow:
+                -0.5px -0.5px 0 #000,
+                0.5px -0.5px 0 #000,
+                -0.5px 0.5px 0 #000,
+                0.5px 0.5px 0 #000,
+                -1px 0.5px 0 #000,
+                1px 0.5px 0 #000,
+                0.5px -1px 0 #000,
+                0.5px 1px 0 #000;
+}
+
+
+.links li:hover {
+	transform: scale(1.1);
+	background-color: #F0E68C;
+}
+a {
+	text-decoration: none;  
+	color: #FFD700;
+}
+h1 {
+	color: #EEE8AA;
+	margin: 12.5px;
+	padding: 2px;
+	text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000,
+                -2px 1px 0 #000,
+                2px 1px 0 #000,
+                1px -2px 0 #000,
+                1px 2px 0 #000;
+}
+h2{
+	color: #FFEFD5;
+	margin: 12.5px;
+	padding: 2px;
+	text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000,
+                -2px 1px 0 #000,
+                2px 1px 0 #000,
+                1px -2px 0 #000,
+                1px 2px 0 #000;
+}
+p {
+	color:#F0E68C;
+	margin: 12.5px;
+	padding: 2px;
+	font-size: 18px;
+	text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000,
+                -2px 1px 0 #000,
+                2px 1px 0 #000,
+                1px -2px 0 #000,
+                1px 2px 0 #000;
+}
+ol{
+	color: #FFFF00;
+	text-shadow:
+                -1.5px -1.5px 0 #000,
+                1.5px -1.5px 0 #000,
+                -1.5px 1.5px 0 #000,
+                1.5px 1.5px 0 #000,
+                -2.5px 1.5px 0 #000,
+                2.5px 1.5px 0 #000,
+                1.5px -2.5px 0 #000,
+                1.5px 2.5px 0 #000;
+}
+img {
+	border: 3px solid #00014e;
+	margin: 12.5px;
+	padding: 0px;
+}
+.kviz{
+	background-color: #FFFFE0;
+
+	margin: 10px;
+	padding: 20px;
+
+	font-size: 15px;
+	color: #FFFFE0;
+
+	width: 80px;
+	height: 40px;
+
+	border: 2px solid #00014e;
+	list-style-type: none;
+
+	transform: scale(1);
+	transition: .5s ease-in-out;
+
+	text-shadow:
+                -0.5px -0.5px 0 #000,
+                0.5px -0.5px 0 #000,
+                -0.5px 0.5px 0 #000,
+                0.5px 0.5px 0 #000,
+                -1px 0.5px 0 #000,
+                1px 0.5px 0 #000,
+                0.5px -1px 0 #000,
+                0.5px 1px 0 #000;
+}
