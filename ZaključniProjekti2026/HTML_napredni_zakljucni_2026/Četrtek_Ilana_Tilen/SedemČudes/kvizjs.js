@@ -1,6 +1,6 @@
 const vprasanja = [
 	{
-		vprasanje:"Kako se imenuje najstarejša in največja piramida v gizi?",
+		vprasanje:"Kako se imenuje najstarejša in največja piramida v Gizi?",
 		odgovori:[
 			{besedilo:"Keopsova piramida",pravilen:true},
 			{besedilo:"Kefrenova piramida",pravilen:false},
@@ -10,7 +10,7 @@ const vprasanja = [
 		]
 	},
 	{
-		vprasanje:"Koliko je Zevsev kip visok?",
+		vprasanje:"Koliko je Zevsov kip visok?",
 		odgovori:[
 			{besedilo:"21m",pravilen:false},
 			{besedilo:"11m",pravilen:false},
@@ -20,7 +20,7 @@ const vprasanja = [
 		]
 	},
     { 
-        vprasanje:"Koliko stebrov je imel Mavzolj?",
+        vprasanje:"Koliko stebrov je imel Mavzolej?",
         odgovori:[
             {besedilo:"43 stebrov.",pravilen:false},
             {besedilo:"67 stebrov.",pravilen:false},
@@ -30,7 +30,7 @@ const vprasanja = [
         ]
     },
     {
-        vprasanje:"Kdaj je skupina evropskih arhitektov napovedali načrte za izgradnjo sodobnega Kolosa?",
+        vprasanje:"Kdaj je skupina evropskih arhitektov napovedala načrte za izgradnjo sodobnega Kolosa?",
         odgovori:[
             {besedilo:"septembra 1999",pravilen:false},
             {besedilo:"decembra 2015",pravilen:true},
@@ -80,7 +80,7 @@ const vprasanja = [
         ]
     },
     { 
-        vprasanje:"Kdaj so fidija narediv zevsev kip v olimpiji?",
+        vprasanje:"Kdaj so naredili Zevsov kip v olimpiji?",
         odgovori:[
             {besedilo:"261 pr.n.št.",pravilen:false},
             {besedilo:"208 pr.n.št.",pravilen:false},
@@ -90,7 +90,7 @@ const vprasanja = [
         ]
     },
     { 
-        vprasanje:"Kje je lokacija Artemidinovega templja?",
+        vprasanje:"Kje se nahaja Artemidin tempelj?",
         odgovori:[
             {besedilo:"Stal je v bližini starodavnega mesta Ofez.",pravilen:false},
             {besedilo:"Stal je v bližini starodavnega mesta Ifez.",pravilen:false},
@@ -100,7 +100,7 @@ const vprasanja = [
         ]
     },
     { 
-        vprasanje:"Gdo je ustvaril Babilonske viseči vrtovi?",
+        vprasanje:"Kdo je ustvaril Babilonske viseče vrtove?",
         odgovori:[
             {besedilo:"Cesar Gaj Avgust Oktavijan.",pravilen:false},
             {besedilo:"Cesar Nebukadnezar II.",pravilen:true},
@@ -110,7 +110,7 @@ const vprasanja = [
         ]
     },
     { 
-        vprasanje:"Koliko časa je trajala gradnja Aleksandrijevega svetilnika?",
+        vprasanje:"Koliko časa je trajala gradnja Aleksandrijskega svetilnika?",
         odgovori:[
             {besedilo:"Gradnja je trajala 53 let.",pravilen:false},
             {besedilo:"Gradnja je trajala 67 let.",pravilen:false},
@@ -130,7 +130,7 @@ const vprasanja = [
         ]
     },
     { 
-        vprasanje:"Kdaj se je začela rekonstrukcija Srtemidinovega templja?",
+        vprasanje:"Kdaj se je začela rekonstrukcija Artemidinega templja?",
         odgovori:[
             {besedilo:"183 pr. n. št.",pravilen:false},
             {besedilo:"650 pr. n. št.",pravilen:false},
