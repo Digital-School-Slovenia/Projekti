@@ -19,8 +19,6 @@ Napiši program, ki simulira preprosto blagajno: uporabnik dodaja cene, program 
 ### Naloga 5
 Napiši funkcijo `je_palindrom(niz)`, ki preveri, ali se niz enako bere z leve in desne.
 
-**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
-
 ### Naloga 6
 Napiši program, ki za seznam besed izdela nov seznam besed, daljših od 6 znakov.
 

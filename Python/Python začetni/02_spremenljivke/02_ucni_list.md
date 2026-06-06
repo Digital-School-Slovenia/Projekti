@@ -17,7 +17,7 @@ Ustvari spremenljivko `najljubsi_predmet` in jo izpiši v kratkem stavku.
 Ustvari spremenljivko `supermoc` in izpiši stavek `Moja supermoč je, da znam ___.`
 
 ### Naloga 5
-Napiši program, ki shrani ceno ene pice in število pic v dve spremenljivki. Nato izračunaj skupno ceno.
+Napiši program, ki shrani ceno ene pice in število pic v dve spremenljivki. Nato izračunaj skupno ceno. Izpiši račun.
 
 ### Naloga 6
 Napiši program, ki shrani število ur spanja na dan in izračuna, koliko ur prespiš v enem tednu.

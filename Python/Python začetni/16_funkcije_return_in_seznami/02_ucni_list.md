@@ -13,22 +13,14 @@ Napiši funkcijo `odrasli(leta)`, ki za podani seznam vrne samo starosti 18 ali 
 ### Naloga 3
 Napiši funkcijo `povisi(ocene, koliko)`, ki vrne nov seznam ocen, povišanih za dano vrednost, pri čemer nobena ocena ne sme preseči 10.
 
-**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
-
 ### Naloga 4
 Napiši funkcijo `podvoji(seznam)`, ki vrne nov seznam, kjer je vsak element ponovljen dvakrat.
-
-**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
 ### Naloga 5
 Napiši funkcijo `najkrajsa(besede)`, ki vrne najkrajšo besedo v seznamu.
 
-**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
-
 ### Naloga 6
 Napiši funkcijo `koncnice(datoteke, koncnica)`, ki vrne vse datoteke z izbrano končnico.
-
-**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
 ### Naloga 7
 Napiši funkcijo `obrezi_predolge(besede, meja)`, ki vrne samo dovolj kratke besede.

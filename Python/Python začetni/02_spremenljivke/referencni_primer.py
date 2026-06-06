@@ -1,6 +1,5 @@
-"""Rešitve učnega lista – 02 – Spremenljivke in poimenovanje podatkov."""
-
-# Namen: glavna delovna rešitev za učni list tega sklopa.
+# Referenčni primer – 02 Spremenljivke
+# Vir je prilagojen iz tvojega izvornega paketa.
 
 # Razlaga ...
 # cena = 10 	# integer, cela stevila
@@ -11,7 +10,7 @@
 
 
 ime = "Manja"
-starost = 28
+starost = 56
 print(f"Moje ime je {ime} in stara sem {starost} let.")
 
 
