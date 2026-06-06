@@ -13,22 +13,14 @@ Napiši funkcijo `kvadrat(n)`, ki vrne `n ** 2`.
 ### Naloga 3
 Napiši funkcijo `v_sekunde(minute)`, ki minute pretvori v sekunde. Če je število negativno, naj vrne sporočilo po tvoji izbiri.
 
-**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
-
 ### Naloga 4
 Napiši funkcijo `kratica(ime, priimek)`, ki vrne kratico, npr. `M.M.`.
-
-**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
 ### Naloga 5
 Napiši funkcijo `je_polnoleten(starost)`, ki vrne `True` ali `False`.
 
-**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
-
 ### Naloga 6
 Napiši funkcijo `vecje(a, b)`, ki vrne večje izmed dveh števil.
-
-**Namig:** Najprej napiši glavo funkcije z `def`, nato dodaj jedro in na koncu primer klica.
 
 ### Naloga 7
 Napiši funkcijo `opis_ucenca(ime, starost, kraj)`, ki vrne en lepo oblikovan stavek.

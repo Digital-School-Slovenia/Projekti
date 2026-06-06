@@ -5,7 +5,7 @@ Danes je poudarek na nizih, indeksih, rezanju niza in lepem izpisu z uporabo f-n
 ## Naloge
 
 ### Naloga 1
-Ustvari niz `tecaj = "Python za ZGNL dijake"`. Izpiši prvi, drugi, zadnji in predzadnji znak.
+Ustvari niz `tecaj = "Python za pitonce"`. Izpiši prvi, drugi, zadnji in predzadnji znak.
 
 ### Naloga 2
 Iz istega niza izpiši podniz od indeksa 1 do 5.
